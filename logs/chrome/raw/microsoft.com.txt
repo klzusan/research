@@ -1,0 +1,1441 @@
+[1734948835.582][INFO]: Starting ChromeDriver 131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}) on port 50807
+[1734948835.582][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1734948835.583][INFO]: ChromeDriver was started successfully on port 50807
+[1734948835.590][INFO]: [64145d131ca6211b1d99a64f97d0710c] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "browserVersion": null,
+         "goog:chromeOptions": {
+            "args": [ "--incognito", "--disable-extensions" ],
+            "binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1734948835.591][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1734948835.591][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1734948835.591][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1734948835.591][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1734948835.591][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-extensions --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --incognito --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.org.chromium.Chromium.7r1h8d data:,
+
+DevTools listening on ws://127.0.0.1:50812/devtools/browser/6eeae04b-ac68-4ebf-bf85-d9b033b9d3cd
+[1734948835.811][DEBUG]: DevTools HTTP Request: http://localhost:50812/json/version
+[1734948836.081][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Chrome/131.0.6778.205",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+   "V8-Version": "13.1.201.19",
+   "WebKit-Version": "537.36 (@81b36b9535e3e3b610a52df3da48cd81362ec860)",
+   "webSocketDebuggerUrl": "ws://localhost:50812/devtools/browser/6eeae04b-ac68-4ebf-bf85-d9b033b9d3cd"
+}
+
+[1734948836.085][DEBUG]: DevTools HTTP Request: http://localhost:50812/json/list
+[1734948836.105][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50812/devtools/page/EAA49EE332EA37707FBDE0DBA80D8692",
+   "id": "EAA49EE332EA37707FBDE0DBA80D8692",
+   "title": "data:,",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:50812/devtools/page/EAA49EE332EA37707FBDE0DBA80D8692"
+} ]
+
+[1734948836.106][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1734948836.108][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1734948836.121][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "6657F6A8C5C752018B5F3E1A908FD8DC",
+      "canAccessOpener": false,
+      "targetId": "EAA49EE332EA37707FBDE0DBA80D8692",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1734948836.123][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "EAA49EE332EA37707FBDE0DBA80D8692"
+}
+[1734948836.135][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "A7DF4CA094F18E6587F30DAC203A1B90",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "6657F6A8C5C752018B5F3E1A908FD8DC",
+      "canAccessOpener": false,
+      "targetId": "EAA49EE332EA37707FBDE0DBA80D8692",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1734948836.137][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "A7DF4CA094F18E6587F30DAC203A1B90"
+}
+[1734948836.137][DEBUG]: DevTools WebSocket Command: Page.enable (id=3) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+}
+[1734948836.137][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948836.137][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=5) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948836.137][DEBUG]: DevTools WebSocket Command: Log.enable (id=6) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+}
+[1734948836.137][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=7) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734948836.138][DEBUG]: DevTools WebSocket Response: Page.enable (id=3) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+}
+[1734948836.139][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "identifier": "1"
+}
+[1734948836.139][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=5) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734948836.139][DEBUG]: DevTools WebSocket Response: Log.enable (id=6) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+}
+[1734948836.139][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=7) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+}
+[1734948836.139][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+}
+[1734948836.139][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "context": {
+      "auxData": {
+         "frameId": "EAA49EE332EA37707FBDE0DBA80D8692",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "-8377427712402005817.-6329385493412466987"
+   }
+}
+[1734948836.139][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+}
+[1734948836.139][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+}
+[1734948836.139][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+}
+[1734948836.140][INFO]: [64145d131ca6211b1d99a64f97d0710c] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "131.0.6778.205",
+      "chrome": {
+         "chromedriverVersion": "131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7})",
+         "userDataDir": "/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.org.chromium.Chromium.7r1h8d"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:50812"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "64145d131ca6211b1d99a64f97d0710c"
+}
+[1734948836.141][INFO]: [64145d131ca6211b1d99a64f97d0710c] COMMAND Navigate {
+   "url": "https://microsoft.com"
+}
+[1734948836.141][INFO]: Waiting for pending navigations...
+[1734948836.141][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=10) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "expression": "1"
+}
+[1734948836.141][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=10) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948836.141][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=11) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "expression": "document",
+   "objectGroup": "b4ccf020-e4ff-402c-8c1c-e0977e8b7a26"
+}
+[1734948836.142][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=11) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "1674783703607378259.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734948836.144][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=12) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "objectId": "1674783703607378259.1.1"
+}
+[1734948836.144][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=12) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734948836.144][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=13) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "objectGroup": "b4ccf020-e4ff-402c-8c1c-e0977e8b7a26"
+}
+[1734948836.144][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-8377427712402005817.-6329385493412466987"
+}
+[1734948836.144][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=13) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+}
+[1734948836.147][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734948836.147][INFO]: Done waiting for pending navigations. Status: ok
+[1734948836.147][DEBUG]: DevTools WebSocket Command: Page.navigate (id=15) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "url": "https://microsoft.com"
+}
+[1734948836.148][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "EAA49EE332EA37707FBDE0DBA80D8692"
+}
+2024-12-23 19:13:56.341 Google Chrome[23464:980789] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-23 19:13:56.341 Google Chrome[23464:980789] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+[1734948836.990][DEBUG]: DevTools WebSocket Response: Page.navigate (id=15) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "EAA49EE332EA37707FBDE0DBA80D8692",
+   "loaderId": "6AB6DDA2297CF074D2B59B29EDC4A378"
+}
+[1734948836.991][INFO]: Waiting for pending navigations...
+[1734948836.991][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+}
+[1734948836.991][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+}
+[1734948836.991][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "microsoft.com",
+      "gatedAPIFeatures": [  ],
+      "id": "EAA49EE332EA37707FBDE0DBA80D8692",
+      "loaderId": "6AB6DDA2297CF074D2B59B29EDC4A378",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.microsoft.com",
+      "url": "https://www.microsoft.com/ja-jp/"
+   },
+   "type": "Navigation"
+}
+[1734948836.991][INFO]: Done waiting for pending navigations. Status: ok
+[1734948836.991][INFO]: [64145d131ca6211b1d99a64f97d0710c] RESPONSE Navigate
+[1734948837.004][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "context": {
+      "auxData": {
+         "frameId": "EAA49EE332EA37707FBDE0DBA80D8692",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.microsoft.com",
+      "uniqueId": "-1405606086423483422.-5948208450410047849"
+   }
+}
+[1734948837.156][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "767E9FA0095C9DC3E6D3C3785B16DE46",
+   "parentFrameId": "EAA49EE332EA37707FBDE0DBA80D8692"
+}
+[1734948837.156][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "disposition": "currentTab",
+   "frameId": "767E9FA0095C9DC3E6D3C3785B16DE46",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734948837.156][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "767E9FA0095C9DC3E6D3C3785B16DE46",
+      "loaderId": "47B0E6B7E6D27FE7FEB17FC885323845",
+      "mimeType": "text/html",
+      "name": "shell-cart-count",
+      "parentId": "EAA49EE332EA37707FBDE0DBA80D8692",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734948837.156][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "767E9FA0095C9DC3E6D3C3785B16DE46"
+}
+[1734948837.157][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "context": {
+      "auxData": {
+         "frameId": "767E9FA0095C9DC3E6D3C3785B16DE46",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://www.microsoft.com",
+      "uniqueId": "-784009760720143056.-6823513130148490133"
+   }
+}
+[1734948837.157][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "767E9FA0095C9DC3E6D3C3785B16DE46"
+}
+[1734948837.482][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "args": [ {
+      "type": "string",
+      "value": "1DS Initialized.."
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 49,
+         "functionName": "Mi",
+         "lineNumber": 261,
+         "scriptId": "30",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/structure/page/clientlibs/custom-oneds.min.ACSHASHc3aec3d03bc5447975e3ee25b53f6c32.js"
+      }, {
+         "columnNumber": 414,
+         "functionName": "",
+         "lineNumber": 350,
+         "scriptId": "30",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/structure/page/clientlibs/custom-oneds.min.ACSHASHc3aec3d03bc5447975e3ee25b53f6c32.js"
+      }, {
+         "columnNumber": 561,
+         "functionName": "",
+         "lineNumber": 350,
+         "scriptId": "30",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/structure/page/clientlibs/custom-oneds.min.ACSHASHc3aec3d03bc5447975e3ee25b53f6c32.js"
+      } ]
+   },
+   "timestamp": 1.734948837481772e+12,
+   "type": "log"
+}
+[1734948837.485][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "0102647209CB0BBBC29B7C501FA15878",
+   "parentFrameId": "EAA49EE332EA37707FBDE0DBA80D8692",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 376,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "33",
+         "url": "https://www.microsoft.com/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-greenid.min.ACSHASH383b23d12df0d9265d7569a7102c2f96.js"
+      }, {
+         "columnNumber": 387,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "33",
+         "url": "https://www.microsoft.com/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-greenid.min.ACSHASH383b23d12df0d9265d7569a7102c2f96.js"
+      }, {
+         "columnNumber": 28,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "33",
+         "url": "https://www.microsoft.com/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-greenid.min.ACSHASH383b23d12df0d9265d7569a7102c2f96.js"
+      } ]
+   }
+}
+[1734948837.485][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "disposition": "currentTab",
+   "frameId": "0102647209CB0BBBC29B7C501FA15878",
+   "reason": "initialFrameNavigation",
+   "url": "https://fpt.microsoft.com/tags?session_id=d223c190-df60-4443-95f1-75391185c72b"
+}
+[1734948837.485][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "0102647209CB0BBBC29B7C501FA15878"
+}
+[1734948837.488][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "args": [ {
+      "type": "string",
+      "value": "MWF v2.15.1"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 22,
+         "functionName": "",
+         "lineNumber": 12771,
+         "scriptId": "22",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/clientlibs/clientlib-mwf-new/main-light.min.ACSHASH13abf4cf4f8384d04a599349524dbbad.js"
+      }, {
+         "columnNumber": 12,
+         "functionName": "",
+         "lineNumber": 12165,
+         "scriptId": "22",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/clientlibs/clientlib-mwf-new/main-light.min.ACSHASH13abf4cf4f8384d04a599349524dbbad.js"
+      } ]
+   },
+   "timestamp": 1.734948837488221e+12,
+   "type": "log"
+}
+[1734948837.490][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "timestamp": 58830.306378
+}
+[1734948837.490][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "args": [ {
+      "type": "string",
+      "value": "displaying component"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 280,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "7",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/content/holiday-themer/v1/holiday-themer/clientlibs/site.min.ACSHASH33f5d94672996503105c8b74dfe78961.js"
+      }, {
+         "columnNumber": 380,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "7",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/content/holiday-themer/v1/holiday-themer/clientlibs/site.min.ACSHASH33f5d94672996503105c8b74dfe78961.js"
+      }, {
+         "columnNumber": 482,
+         "functionName": "ca",
+         "lineNumber": 103,
+         "scriptId": "10",
+         "url": "https://www.microsoft.com/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery.min.ACSHASH35986a813756f39ab6b922979ffedb03.js"
+      }, {
+         "columnNumber": 308,
+         "functionName": "na",
+         "lineNumber": 104,
+         "scriptId": "10",
+         "url": "https://www.microsoft.com/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery.min.ACSHASH35986a813756f39ab6b922979ffedb03.js"
+      } ]
+   },
+   "timestamp": 1.734948837490213e+12,
+   "type": "log"
+}
+[1734948837.491][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "C10B3289DBD281D81B41255266C9DC5B",
+   "parentFrameId": "EAA49EE332EA37707FBDE0DBA80D8692",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 468,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "8",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/content/universalheader/v1/universalheader/clientlibs/site.min.ACSHASH1dabd5cc3f7b68c178b59ea74dc62947.js"
+      }, {
+         "columnNumber": 483,
+         "functionName": "e",
+         "lineNumber": 1,
+         "scriptId": "8",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/content/universalheader/v1/universalheader/clientlibs/site.min.ACSHASH1dabd5cc3f7b68c178b59ea74dc62947.js"
+      }, {
+         "columnNumber": 142,
+         "functionName": "",
+         "lineNumber": 12,
+         "scriptId": "8",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/content/universalheader/v1/universalheader/clientlibs/site.min.ACSHASH1dabd5cc3f7b68c178b59ea74dc62947.js"
+      }, {
+         "columnNumber": 482,
+         "functionName": "ca",
+         "lineNumber": 103,
+         "scriptId": "10",
+         "url": "https://www.microsoft.com/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery.min.ACSHASH35986a813756f39ab6b922979ffedb03.js"
+      }, {
+         "columnNumber": 308,
+         "functionName": "na",
+         "lineNumber": 104,
+         "scriptId": "10",
+         "url": "https://www.microsoft.com/etc.clientlibs/cascade.component.authoring/clientlibs/clientlib-jquery.min.ACSHASH35986a813756f39ab6b922979ffedb03.js"
+      } ]
+   }
+}
+[1734948837.491][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "disposition": "currentTab",
+   "frameId": "C10B3289DBD281D81B41255266C9DC5B",
+   "reason": "initialFrameNavigation",
+   "url": "https://www.microsoft.com/cascadeauth/store/account/silentauth?auth=default"
+}
+[1734948837.491][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "C10B3289DBD281D81B41255266C9DC5B"
+}
+[1734948837.579][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "microsoft.com",
+      "gatedAPIFeatures": [  ],
+      "id": "C10B3289DBD281D81B41255266C9DC5B",
+      "loaderId": "8300759AADD4D2284A66428373BF0D1F",
+      "mimeType": "text/html",
+      "name": "cascadeauthsso",
+      "parentId": "EAA49EE332EA37707FBDE0DBA80D8692",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.microsoft.com",
+      "url": "https://www.microsoft.com/cascadeauth/store/account/silentauth?auth=default"
+   },
+   "type": "Navigation"
+}
+[1734948837.579][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "8300759AADD4D2284A66428373BF0D1F",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.73494883757893e+12,
+      "url": "https://www.microsoft.com/cascadeauth/store/account/silentauth?auth=default"
+   }
+}
+[1734948837.580][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "context": {
+      "auxData": {
+         "frameId": "C10B3289DBD281D81B41255266C9DC5B",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 3,
+      "name": "",
+      "origin": "https://www.microsoft.com",
+      "uniqueId": "303453680202409022.8026702527258294666"
+   }
+}
+[1734948837.584][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "C10B3289DBD281D81B41255266C9DC5B"
+}
+[1734948837.974][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolatedFeatureDisabled",
+      "domainAndRegistry": "microsoft.com",
+      "gatedAPIFeatures": [  ],
+      "id": "0102647209CB0BBBC29B7C501FA15878",
+      "loaderId": "EB2CBA48FDCC4B2D58967CEDF014D5BA",
+      "mimeType": "text/html",
+      "name": "greenID",
+      "parentId": "EAA49EE332EA37707FBDE0DBA80D8692",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://fpt.microsoft.com",
+      "url": "https://fpt.microsoft.com/tags?session_id=d223c190-df60-4443-95f1-75391185c72b"
+   },
+   "type": "Navigation"
+}
+[1734948837.978][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "context": {
+      "auxData": {
+         "frameId": "0102647209CB0BBBC29B7C501FA15878",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 4,
+      "name": "",
+      "origin": "https://fpt.microsoft.com",
+      "uniqueId": "-3653137730841943430.6652971201115373436"
+   }
+}
+[1734948838.119][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "0102647209CB0BBBC29B7C501FA15878"
+}
+[1734948838.120][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "25C9E9857A7AA409B4F68D547EA10A42",
+   "parentFrameId": "EAA49EE332EA37707FBDE0DBA80D8692",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 26397,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "42",
+         "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+      }, {
+         "columnNumber": 10611,
+         "functionName": "Pe",
+         "lineNumber": 0,
+         "scriptId": "34",
+         "url": "https://mem.gfx.ms/meversion?partner=mshomepage&market=ja-jp&uhf=1"
+      }, {
+         "columnNumber": 9518,
+         "functionName": "Te",
+         "lineNumber": 0,
+         "scriptId": "34",
+         "url": "https://mem.gfx.ms/meversion?partner=mshomepage&market=ja-jp&uhf=1"
+      }, {
+         "columnNumber": 24971,
+         "functionName": "Pt",
+         "lineNumber": 0,
+         "scriptId": "42",
+         "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+      }, {
+         "columnNumber": 24165,
+         "functionName": "Ut",
+         "lineNumber": 0,
+         "scriptId": "42",
+         "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+      }, {
+         "columnNumber": 58661,
+         "functionName": "Gr",
+         "lineNumber": 0,
+         "scriptId": "42",
+         "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+      }, {
+         "columnNumber": 56681,
+         "functionName": "jr.getRememberedAccounts",
+         "lineNumber": 0,
+         "scriptId": "42",
+         "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+      }, {
+         "columnNumber": 74862,
+         "functionName": "ln.getRememberedAccounts",
+         "lineNumber": 0,
+         "scriptId": "42",
+         "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+      }, {
+         "columnNumber": 90684,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "42",
+         "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+      }, {
+         "columnNumber": 95190,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "42",
+         "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+      }, {
+         "columnNumber": 109930,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "42",
+         "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+      }, {
+         "columnNumber": 9702,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "34",
+         "url": "https://mem.gfx.ms/meversion?partner=mshomepage&market=ja-jp&uhf=1"
+      } ]
+   }
+}
+[1734948838.120][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "disposition": "currentTab",
+   "frameId": "25C9E9857A7AA409B4F68D547EA10A42",
+   "reason": "initialFrameNavigation",
+   "url": "https://login.live.com/me.srf?wa=wsignin1.0&wreply=https%3A%2F%2Fwww.microsoft.com&uaid=2e7fce24-fca0-4178-16ac-cfe0ca6c1f35&partnerId=mshomepage"
+}
+[1734948838.121][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "25C9E9857A7AA409B4F68D547EA10A42"
+}
+[1734948838.122][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "timestamp": 58830.937766
+}
+[1734948838.122][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-1405606086423483422.-5948208450410047849"
+}
+[1734948838.123][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "5B157B43A4659FFFBF5BEDFA2A04700E",
+   "parentFrameId": "0102647209CB0BBBC29B7C501FA15878",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 7121,
+         "functionName": "k",
+         "lineNumber": 4,
+         "scriptId": "44",
+         "url": "https://fpt.microsoft.com/tags?session_id=d223c190-df60-4443-95f1-75391185c72b"
+      }, {
+         "columnNumber": 7609,
+         "functionName": "c",
+         "lineNumber": 4,
+         "scriptId": "44",
+         "url": "https://fpt.microsoft.com/tags?session_id=d223c190-df60-4443-95f1-75391185c72b"
+      }, {
+         "columnNumber": 12681,
+         "functionName": "",
+         "lineNumber": 4,
+         "scriptId": "44",
+         "url": "https://fpt.microsoft.com/tags?session_id=d223c190-df60-4443-95f1-75391185c72b"
+      } ]
+   }
+}
+[1734948838.123][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "disposition": "currentTab",
+   "frameId": "5B157B43A4659FFFBF5BEDFA2A04700E",
+   "reason": "initialFrameNavigation",
+   "url": "https://fpt2.microsoft.com/Clear.HTML?ctx=Ls1.0&wl=False&session_id=d223c190-df60-4443-95f1-75391185c72b&id=495d4041-4808-4a29-8482-b1dea832bf35&w=8DD233A8393608D&tkt=H3ihr9e92IdW6yd1ZgQ9S5rgl8oOzJ..."
+}
+[1734948838.123][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "5B157B43A4659FFFBF5BEDFA2A04700E"
+}
+[1734948838.132][DEBUG]: DevTools WebSocket Event: Page.frameScheduledNavigation (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "delay": 0,
+   "frameId": "767E9FA0095C9DC3E6D3C3785B16DE46",
+   "reason": "scriptInitiated",
+   "url": "https://www.microsoft.com/store/buy/cartcount"
+}
+[1734948838.132][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "disposition": "currentTab",
+   "frameId": "767E9FA0095C9DC3E6D3C3785B16DE46",
+   "reason": "scriptInitiated",
+   "url": "https://www.microsoft.com/store/buy/cartcount"
+}
+[1734948838.132][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "767E9FA0095C9DC3E6D3C3785B16DE46"
+}
+[1734948838.133][DEBUG]: DevTools WebSocket Event: Page.frameClearedScheduledNavigation (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "767E9FA0095C9DC3E6D3C3785B16DE46"
+}
+[1734948838.134][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734948838.196][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "executionContextId": 2,
+   "executionContextUniqueId": "-784009760720143056.-6823513130148490133"
+}
+[1734948838.196][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "microsoft.com",
+      "gatedAPIFeatures": [  ],
+      "id": "767E9FA0095C9DC3E6D3C3785B16DE46",
+      "loaderId": "00FAE42425A6E0157D527FF508A03C70",
+      "mimeType": "text/html",
+      "name": "shell-cart-count",
+      "parentId": "EAA49EE332EA37707FBDE0DBA80D8692",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.microsoft.com",
+      "url": "https://www.microsoft.com/store/buy/cartcount"
+   },
+   "type": "Navigation"
+}
+[1734948838.197][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "context": {
+      "auxData": {
+         "frameId": "767E9FA0095C9DC3E6D3C3785B16DE46",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 5,
+      "name": "",
+      "origin": "https://www.microsoft.com",
+      "uniqueId": "4775557679520674153.-3608827650647287897"
+   }
+}
+[1734948838.203][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "767E9FA0095C9DC3E6D3C3785B16DE46"
+}
+[1734948838.345][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "23887B99ED62F14CB2EF0158884ED188",
+   "parentFrameId": "EAA49EE332EA37707FBDE0DBA80D8692",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 3907,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "64",
+         "url": "https://cdnssl.clicktale.net/www32/ptc/05d32363-d534-4d93-9b65-cde674775e71.js"
+      }, {
+         "columnNumber": 4019,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "64",
+         "url": "https://cdnssl.clicktale.net/www32/ptc/05d32363-d534-4d93-9b65-cde674775e71.js"
+      }, {
+         "columnNumber": 4175,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "64",
+         "url": "https://cdnssl.clicktale.net/www32/ptc/05d32363-d534-4d93-9b65-cde674775e71.js"
+      }, {
+         "columnNumber": 402411,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "64",
+         "url": "https://cdnssl.clicktale.net/www32/ptc/05d32363-d534-4d93-9b65-cde674775e71.js"
+      } ]
+   }
+}
+[1734948838.346][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "disposition": "currentTab",
+   "frameId": "23887B99ED62F14CB2EF0158884ED188",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734948838.346][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "23887B99ED62F14CB2EF0158884ED188",
+      "loaderId": "5AEE20DAF84B4A14734393FC26AF4AC4",
+      "mimeType": "text/html",
+      "name": "cs-native-frame",
+      "parentId": "EAA49EE332EA37707FBDE0DBA80D8692",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734948838.346][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "23887B99ED62F14CB2EF0158884ED188"
+}
+[1734948838.347][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "context": {
+      "auxData": {
+         "frameId": "23887B99ED62F14CB2EF0158884ED188",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 6,
+      "name": "",
+      "origin": "https://www.microsoft.com",
+      "uniqueId": "-5685684630140185603.2846634789923305921"
+   }
+}
+[1734948838.347][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "23887B99ED62F14CB2EF0158884ED188"
+}
+[1734948838.357][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolatedFeatureDisabled",
+      "domainAndRegistry": "microsoft.com",
+      "gatedAPIFeatures": [  ],
+      "id": "5B157B43A4659FFFBF5BEDFA2A04700E",
+      "loaderId": "A61FDEA6D18856431B7D98CC17801021",
+      "mimeType": "text/html",
+      "name": "df_ls_frame",
+      "parentId": "0102647209CB0BBBC29B7C501FA15878",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://fpt2.microsoft.com",
+      "url": "https://fpt2.microsoft.com/Clear.HTML?ctx=Ls1.0&wl=False&session_id=d223c190-df60-4443-95f1-75391185c72b&id=495d4041-4808-4a29-8482-b1dea832bf35&w=8DD233A8393608D&tkt=H3ihr9e92IdW6yd1ZgQ9S5rgl8oOzJ..."
+   },
+   "type": "Navigation"
+}
+[1734948838.358][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "context": {
+      "auxData": {
+         "frameId": "5B157B43A4659FFFBF5BEDFA2A04700E",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 7,
+      "name": "",
+      "origin": "https://fpt2.microsoft.com",
+      "uniqueId": "1095610786847707713.-8471164873939293098"
+   }
+}
+[1734948838.358][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "sessionId": "932CCE34B7CC50D426C43E62328E6535",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "6657F6A8C5C752018B5F3E1A908FD8DC",
+      "canAccessOpener": false,
+      "targetId": "2E785541893511183BCE14851F37DDA1",
+      "title": "blob:https://www.microsoft.com/204bf6fa-8ac4-466c-a03e-b1670979045b",
+      "type": "worker",
+      "url": "blob:https://www.microsoft.com/204bf6fa-8ac4-466c-a03e-b1670979045b"
+   },
+   "waitingForDebugger": false
+}
+[1734948838.359][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "5B157B43A4659FFFBF5BEDFA2A04700E"
+}
+[1734948838.364][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "sessionId": "174215B0BB15BC9F366DDE1484A4FFE5",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "6657F6A8C5C752018B5F3E1A908FD8DC",
+      "canAccessOpener": false,
+      "targetId": "25C9E9857A7AA409B4F68D547EA10A42",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734948838.364][DEBUG]: DevTools WebSocket Command: Page.enable (id=17) (session_id=174215B0BB15BC9F366DDE1484A4FFE5) 174215B0BB15BC9F366DDE1484A4FFE5 {
+}
+[1734948838.364][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=18) (session_id=174215B0BB15BC9F366DDE1484A4FFE5) 174215B0BB15BC9F366DDE1484A4FFE5 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948838.364][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=174215B0BB15BC9F366DDE1484A4FFE5) 174215B0BB15BC9F366DDE1484A4FFE5 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948838.364][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=20) (session_id=174215B0BB15BC9F366DDE1484A4FFE5) 174215B0BB15BC9F366DDE1484A4FFE5 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734948838.366][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "6657F6A8C5C752018B5F3E1A908FD8DC",
+      "canAccessOpener": false,
+      "targetId": "25C9E9857A7AA409B4F68D547EA10A42",
+      "title": "https://login.live.com/me.srf?wa=wsignin1.0&wreply=https%3A%2F%2Fwww.microsoft.com&uaid=2e7fce24-fca0-4178-16ac-cfe0ca6c1f35&partnerId=mshomepage",
+      "type": "iframe",
+      "url": "https://login.live.com/me.srf?wa=wsignin1.0&wreply=https%3A%2F%2Fwww.microsoft.com&uaid=2e7fce24-fca0-4178-16ac-cfe0ca6c1f35&partnerId=mshomepage"
+   }
+}
+[1734948838.366][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "25C9E9857A7AA409B4F68D547EA10A42",
+   "reason": "swap"
+}
+[1734948838.367][DEBUG]: DevTools WebSocket Response: Page.enable (id=17) (session_id=174215B0BB15BC9F366DDE1484A4FFE5) 174215B0BB15BC9F366DDE1484A4FFE5 {
+}
+[1734948838.367][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=18) (session_id=174215B0BB15BC9F366DDE1484A4FFE5) 174215B0BB15BC9F366DDE1484A4FFE5 {
+   "identifier": "1"
+}
+[1734948838.367][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=174215B0BB15BC9F366DDE1484A4FFE5) 174215B0BB15BC9F366DDE1484A4FFE5 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734948838.367][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=20) (session_id=174215B0BB15BC9F366DDE1484A4FFE5) 174215B0BB15BC9F366DDE1484A4FFE5 {
+}
+[1734948838.367][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=21) (session_id=174215B0BB15BC9F366DDE1484A4FFE5) 174215B0BB15BC9F366DDE1484A4FFE5 {
+}
+[1734948838.369][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=174215B0BB15BC9F366DDE1484A4FFE5) 174215B0BB15BC9F366DDE1484A4FFE5 {
+   "context": {
+      "auxData": {
+         "frameId": "25C9E9857A7AA409B4F68D547EA10A42",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://login.live.com",
+      "uniqueId": "-8320207006218178064.4070744661348642764"
+   }
+}
+[1734948838.369][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=21) (session_id=174215B0BB15BC9F366DDE1484A4FFE5) 174215B0BB15BC9F366DDE1484A4FFE5 {
+}
+[1734948838.369][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=174215B0BB15BC9F366DDE1484A4FFE5) 174215B0BB15BC9F366DDE1484A4FFE5 {
+   "timestamp": 58831.185947
+}
+[1734948838.619][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "F713FEA2E7B14349DC0A434A0273DB98",
+   "parentFrameId": "EAA49EE332EA37707FBDE0DBA80D8692",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 426,
+         "functionName": "c",
+         "lineNumber": 39,
+         "scriptId": "55",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/structure/page/clientlibs/visitor.min.ACSHASH30368a72d017e4133bfd3b5d073d06ff.js"
+      }, {
+         "columnNumber": 162,
+         "functionName": "attachIframe",
+         "lineNumber": 41,
+         "scriptId": "55",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/structure/page/clientlibs/visitor.min.ACSHASH30368a72d017e4133bfd3b5d073d06ff.js"
+      }, {
+         "columnNumber": 397,
+         "functionName": "c",
+         "lineNumber": 51,
+         "scriptId": "55",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/structure/page/clientlibs/visitor.min.ACSHASH30368a72d017e4133bfd3b5d073d06ff.js"
+      }, {
+         "columnNumber": 441,
+         "functionName": "attachIframeASAP",
+         "lineNumber": 51,
+         "scriptId": "55",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/structure/page/clientlibs/visitor.min.ACSHASH30368a72d017e4133bfd3b5d073d06ff.js"
+      }, {
+         "columnNumber": 65,
+         "functionName": "processIDCallData",
+         "lineNumber": 51,
+         "scriptId": "55",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/structure/page/clientlibs/visitor.min.ACSHASH30368a72d017e4133bfd3b5d073d06ff.js"
+      }, {
+         "columnNumber": 38,
+         "functionName": "W.a._setFields",
+         "lineNumber": 100,
+         "scriptId": "55",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/structure/page/clientlibs/visitor.min.ACSHASH30368a72d017e4133bfd3b5d073d06ff.js"
+      }, {
+         "columnNumber": 137,
+         "functionName": "W.a._setFields",
+         "lineNumber": 98,
+         "scriptId": "55",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/structure/page/clientlibs/visitor.min.ACSHASH30368a72d017e4133bfd3b5d073d06ff.js"
+      }, {
+         "columnNumber": 263,
+         "functionName": "W.a._setMarketingCloudFields",
+         "lineNumber": 102,
+         "scriptId": "55",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/structure/page/clientlibs/visitor.min.ACSHASH30368a72d017e4133bfd3b5d073d06ff.js"
+      }, {
+         "columnNumber": 287,
+         "functionName": "corsMetadata.corsType.p.onreadystatechange",
+         "lineNumber": 34,
+         "scriptId": "55",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/structure/page/clientlibs/visitor.min.ACSHASH30368a72d017e4133bfd3b5d073d06ff.js"
+      } ]
+   }
+}
+[1734948838.620][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "disposition": "currentTab",
+   "frameId": "F713FEA2E7B14349DC0A434A0273DB98",
+   "reason": "initialFrameNavigation",
+   "url": "https://mscom.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.microsoft.com"
+}
+[1734948838.622][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "F713FEA2E7B14349DC0A434A0273DB98"
+}
+[1734948838.640][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=174215B0BB15BC9F366DDE1484A4FFE5) 174215B0BB15BC9F366DDE1484A4FFE5 {
+   "timestamp": 58831.456633
+}
+[1734948838.640][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=174215B0BB15BC9F366DDE1484A4FFE5) 174215B0BB15BC9F366DDE1484A4FFE5 {
+   "frameId": "25C9E9857A7AA409B4F68D547EA10A42"
+}
+[1734948838.641][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "25C9E9857A7AA409B4F68D547EA10A42"
+}
+[1734948838.641][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "25C9E9857A7AA409B4F68D547EA10A42",
+   "reason": "remove"
+}
+[1734948838.641][DEBUG]: DevTools WebSocket Event: Target.detachedFromTarget (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "sessionId": "174215B0BB15BC9F366DDE1484A4FFE5",
+   "targetId": "25C9E9857A7AA409B4F68D547EA10A42"
+}
+[1734948838.647][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "8969049E50E6CD179752FF0374DF33C3",
+   "parentFrameId": "EAA49EE332EA37707FBDE0DBA80D8692",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 26397,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "42",
+         "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+      }, {
+         "columnNumber": 10611,
+         "functionName": "Pe",
+         "lineNumber": 0,
+         "scriptId": "34",
+         "url": "https://mem.gfx.ms/meversion?partner=mshomepage&market=ja-jp&uhf=1"
+      }, {
+         "columnNumber": 9518,
+         "functionName": "Te",
+         "lineNumber": 0,
+         "scriptId": "34",
+         "url": "https://mem.gfx.ms/meversion?partner=mshomepage&market=ja-jp&uhf=1"
+      }, {
+         "columnNumber": 24971,
+         "functionName": "Pt",
+         "lineNumber": 0,
+         "scriptId": "42",
+         "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+      }, {
+         "columnNumber": 24543,
+         "functionName": "Ft",
+         "lineNumber": 0,
+         "scriptId": "42",
+         "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+      }, {
+         "columnNumber": 38061,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "42",
+         "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+      }, {
+         "columnNumber": 34921,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "42",
+         "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+      } ]
+   }
+}
+[1734948838.647][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "disposition": "currentTab",
+   "frameId": "8969049E50E6CD179752FF0374DF33C3",
+   "reason": "initialFrameNavigation",
+   "url": "https://mem.gfx.ms/me/mecache?partner=mshomepage&wreply=https%3A%2F%2Fwww.microsoft.com"
+}
+[1734948838.648][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "8969049E50E6CD179752FF0374DF33C3"
+}
+[1734948838.760][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "sessionId": "8170752B0F6F72A7E12DCCAA75A112F4",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "6657F6A8C5C752018B5F3E1A908FD8DC",
+      "canAccessOpener": false,
+      "targetId": "F713FEA2E7B14349DC0A434A0273DB98",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734948838.760][DEBUG]: DevTools WebSocket Command: Page.enable (id=22) (session_id=8170752B0F6F72A7E12DCCAA75A112F4) 8170752B0F6F72A7E12DCCAA75A112F4 {
+}
+[1734948838.760][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=23) (session_id=8170752B0F6F72A7E12DCCAA75A112F4) 8170752B0F6F72A7E12DCCAA75A112F4 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948838.760][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=24) (session_id=8170752B0F6F72A7E12DCCAA75A112F4) 8170752B0F6F72A7E12DCCAA75A112F4 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948838.760][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=25) (session_id=8170752B0F6F72A7E12DCCAA75A112F4) 8170752B0F6F72A7E12DCCAA75A112F4 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734948838.762][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "6657F6A8C5C752018B5F3E1A908FD8DC",
+      "canAccessOpener": false,
+      "targetId": "F713FEA2E7B14349DC0A434A0273DB98",
+      "title": "https://mscom.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.microsoft.com",
+      "type": "iframe",
+      "url": "https://mscom.demdex.net/dest5.html?d_nsid=0#https%3A%2F%2Fwww.microsoft.com"
+   }
+}
+[1734948838.762][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "F713FEA2E7B14349DC0A434A0273DB98",
+   "reason": "swap"
+}
+[1734948838.763][DEBUG]: DevTools WebSocket Response: Page.enable (id=22) (session_id=8170752B0F6F72A7E12DCCAA75A112F4) 8170752B0F6F72A7E12DCCAA75A112F4 {
+}
+[1734948838.763][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=23) (session_id=8170752B0F6F72A7E12DCCAA75A112F4) 8170752B0F6F72A7E12DCCAA75A112F4 {
+   "identifier": "1"
+}
+[1734948838.763][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=24) (session_id=8170752B0F6F72A7E12DCCAA75A112F4) 8170752B0F6F72A7E12DCCAA75A112F4 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734948838.763][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=25) (session_id=8170752B0F6F72A7E12DCCAA75A112F4) 8170752B0F6F72A7E12DCCAA75A112F4 {
+}
+[1734948838.763][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=26) (session_id=8170752B0F6F72A7E12DCCAA75A112F4) 8170752B0F6F72A7E12DCCAA75A112F4 {
+}
+[1734948838.766][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=8170752B0F6F72A7E12DCCAA75A112F4) 8170752B0F6F72A7E12DCCAA75A112F4 {
+   "context": {
+      "auxData": {
+         "frameId": "F713FEA2E7B14349DC0A434A0273DB98",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://mscom.demdex.net",
+      "uniqueId": "8284618865282161188.818742938753760040"
+   }
+}
+[1734948838.766][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=26) (session_id=8170752B0F6F72A7E12DCCAA75A112F4) 8170752B0F6F72A7E12DCCAA75A112F4 {
+}
+[1734948838.766][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=8170752B0F6F72A7E12DCCAA75A112F4) 8170752B0F6F72A7E12DCCAA75A112F4 {
+   "timestamp": 58831.582266
+}
+[1734948838.766][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=8170752B0F6F72A7E12DCCAA75A112F4) 8170752B0F6F72A7E12DCCAA75A112F4 {
+   "timestamp": 58831.582397
+}
+[1734948838.766][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=8170752B0F6F72A7E12DCCAA75A112F4) 8170752B0F6F72A7E12DCCAA75A112F4 {
+   "frameId": "F713FEA2E7B14349DC0A434A0273DB98"
+}
+[1734948838.887][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "sessionId": "8FA830B9F62D97BA220E0CA566903854",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "6657F6A8C5C752018B5F3E1A908FD8DC",
+      "canAccessOpener": false,
+      "targetId": "8969049E50E6CD179752FF0374DF33C3",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734948838.887][DEBUG]: DevTools WebSocket Command: Page.enable (id=27) (session_id=8FA830B9F62D97BA220E0CA566903854) 8FA830B9F62D97BA220E0CA566903854 {
+}
+[1734948838.887][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=28) (session_id=8FA830B9F62D97BA220E0CA566903854) 8FA830B9F62D97BA220E0CA566903854 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948838.887][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=29) (session_id=8FA830B9F62D97BA220E0CA566903854) 8FA830B9F62D97BA220E0CA566903854 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948838.888][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=30) (session_id=8FA830B9F62D97BA220E0CA566903854) 8FA830B9F62D97BA220E0CA566903854 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734948838.890][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "6657F6A8C5C752018B5F3E1A908FD8DC",
+      "canAccessOpener": false,
+      "targetId": "8969049E50E6CD179752FF0374DF33C3",
+      "title": "https://mem.gfx.ms/me/mecache?partner=mshomepage&wreply=https%3A%2F%2Fwww.microsoft.com",
+      "type": "iframe",
+      "url": "https://mem.gfx.ms/me/mecache?partner=mshomepage&wreply=https%3A%2F%2Fwww.microsoft.com"
+   }
+}
+[1734948838.891][DEBUG]: DevTools WebSocket Response: Page.enable (id=27) (session_id=8FA830B9F62D97BA220E0CA566903854) 8FA830B9F62D97BA220E0CA566903854 {
+}
+[1734948838.892][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=28) (session_id=8FA830B9F62D97BA220E0CA566903854) 8FA830B9F62D97BA220E0CA566903854 {
+   "identifier": "1"
+}
+[1734948838.892][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=29) (session_id=8FA830B9F62D97BA220E0CA566903854) 8FA830B9F62D97BA220E0CA566903854 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734948838.892][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=30) (session_id=8FA830B9F62D97BA220E0CA566903854) 8FA830B9F62D97BA220E0CA566903854 {
+}
+[1734948838.892][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=31) (session_id=8FA830B9F62D97BA220E0CA566903854) 8FA830B9F62D97BA220E0CA566903854 {
+}
+[1734948838.893][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=8FA830B9F62D97BA220E0CA566903854) 8FA830B9F62D97BA220E0CA566903854 {
+   "context": {
+      "auxData": {
+         "frameId": "8969049E50E6CD179752FF0374DF33C3",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://mem.gfx.ms",
+      "uniqueId": "-2277097653541694911.4874778745702877087"
+   }
+}
+[1734948838.893][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=31) (session_id=8FA830B9F62D97BA220E0CA566903854) 8FA830B9F62D97BA220E0CA566903854 {
+}
+[1734948838.894][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=8FA830B9F62D97BA220E0CA566903854) 8FA830B9F62D97BA220E0CA566903854 {
+   "timestamp": 58831.709935
+}
+[1734948838.894][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=8FA830B9F62D97BA220E0CA566903854) 8FA830B9F62D97BA220E0CA566903854 {
+   "timestamp": 58831.710131
+}
+[1734948838.894][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=8FA830B9F62D97BA220E0CA566903854) 8FA830B9F62D97BA220E0CA566903854 {
+   "frameId": "8969049E50E6CD179752FF0374DF33C3"
+}
+[1734948838.903][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "8969049E50E6CD179752FF0374DF33C3",
+   "reason": "swap"
+}
+[1734948838.904][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "8969049E50E6CD179752FF0374DF33C3"
+}
+[1734948838.904][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "8969049E50E6CD179752FF0374DF33C3",
+   "reason": "remove"
+}
+[1734948838.904][DEBUG]: DevTools WebSocket Event: Target.detachedFromTarget (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "sessionId": "8FA830B9F62D97BA220E0CA566903854",
+   "targetId": "8969049E50E6CD179752FF0374DF33C3"
+}
+[1734948838.945][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "args": [ {
+      "type": "string",
+      "value": "sendToVortex Call"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 315,
+         "functionName": "h",
+         "lineNumber": 0,
+         "scriptId": "12",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/clientlibs/exp-analytics/v1.min.ACSHASH4cffc2c9b55f8bde649e0d2535a1eebd.js"
+      }, {
+         "columnNumber": 40,
+         "functionName": "",
+         "lineNumber": 65,
+         "scriptId": "63",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/structure/page/clientlibs/experimentation.min.ACSHASH895e2a12062f1ee44d7d72d266904bde.js"
+      }, {
+         "columnNumber": 40871,
+         "functionName": "Xo",
+         "lineNumber": 145,
+         "scriptId": "63",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/structure/page/clientlibs/experimentation.min.ACSHASH895e2a12062f1ee44d7d72d266904bde.js"
+      }, {
+         "columnNumber": 41841,
+         "functionName": "ai",
+         "lineNumber": 145,
+         "scriptId": "63",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/structure/page/clientlibs/experimentation.min.ACSHASH895e2a12062f1ee44d7d72d266904bde.js"
+      }, {
+         "columnNumber": 65035,
+         "functionName": "ss",
+         "lineNumber": 145,
+         "scriptId": "63",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/structure/page/clientlibs/experimentation.min.ACSHASH895e2a12062f1ee44d7d72d266904bde.js"
+      }, {
+         "columnNumber": 65799,
+         "functionName": "",
+         "lineNumber": 145,
+         "scriptId": "63",
+         "url": "https://www.microsoft.com/etc.clientlibs/microsoft/components/structure/page/clientlibs/experimentation.min.ACSHASH895e2a12062f1ee44d7d72d266904bde.js"
+      } ]
+   },
+   "timestamp": 1.73494883894482e+12,
+   "type": "log"
+}
+[1734948839.453][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "args": [ {
+      "type": "string",
+      "value": "found"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 1551,
+         "functionName": "",
+         "lineNumber": 2,
+         "scriptId": "74",
+         "url": ""
+      } ]
+   },
+   "timestamp": 1.734948839452435e+12,
+   "type": "log"
+}
+[1734948839.454][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "args": [ {
+      "type": "string",
+      "value": "found"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 1605,
+         "functionName": "",
+         "lineNumber": 2,
+         "scriptId": "75",
+         "url": ""
+      } ]
+   },
+   "timestamp": 1.734948839454092e+12,
+   "type": "log"
+}
+[1734948839.476][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=A7DF4CA094F18E6587F30DAC203A1B90) EAA49EE332EA37707FBDE0DBA80D8692 {
+   "frameId": "EAA49EE332EA37707FBDE0DBA80D8692"
+}
+[1734948847.001][INFO]: [64145d131ca6211b1d99a64f97d0710c] COMMAND Quit {
+}
+[1734948847.052][INFO]: [64145d131ca6211b1d99a64f97d0710c] RESPONSE Quit
+[1734948847.052][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1734948847.052][DEBUG]: Log type 'browser' lost 1 entries on destruction

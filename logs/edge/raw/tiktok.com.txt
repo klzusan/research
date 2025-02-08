@@ -1,0 +1,2362 @@
+[1734952997.614][INFO]: Starting Microsoft Edge WebDriver 131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70) on port 59669
+[1734952997.614][INFO]: Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+[1734952997.616][INFO]: msedgedriver was started successfully on port 59669
+[1734952997.624][INFO]: [c44698000f32a9951cf8958bd7c905ef] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "MicrosoftEdge",
+         "browserVersion": null,
+         "ms:edgeOptions": {
+            "args": [ "--disable-extensions", "--inprivate" ],
+            "binary": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1734952997.625][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1734952997.625][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1734952997.625][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1734952997.625][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1734952997.625][INFO]: WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS = 
+[1734952997.625][INFO]: Launching Microsoft Edge: /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-extensions --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --inprivate --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.wplU0J data:,
+
+DevTools listening on ws://127.0.0.1:59674/devtools/browser/3135fcf5-e8ef-421a-89ca-af4c5ec1adc2
+[1734952997.838][DEBUG]: DevTools HTTP Request: http://localhost:59674/json/version
+[1734952998.138][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Edg/131.0.2903.112",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
+   "V8-Version": "13.1.20.9",
+   "WebKit-Version": "537.36 (@16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+   "webSocketDebuggerUrl": "ws://localhost:59674/devtools/browser/3135fcf5-e8ef-421a-89ca-af4c5ec1adc2"
+}
+
+[1734952998.142][DEBUG]: DevTools HTTP Request: http://localhost:59674/json/list
+[1734952998.154][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:59674/devtools/page/BD746C76CFCBD9AEF4DFEF5AD9783B17",
+   "id": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:59674/devtools/page/BD746C76CFCBD9AEF4DFEF5AD9783B17"
+} ]
+
+[1734952998.157][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1734952998.167][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1734952998.182][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "8376EC4D3A37572CDD1905E226DA3B67",
+      "canAccessOpener": false,
+      "pid": 0,
+      "targetId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1734952998.182][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "BD746C76CFCBD9AEF4DFEF5AD9783B17"
+}
+[1734952998.189][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "9027D11E7DBC8A576B3F8D5655A342B9",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "8376EC4D3A37572CDD1905E226DA3B67",
+      "canAccessOpener": false,
+      "pid": 33270,
+      "targetId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1734952998.192][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "9027D11E7DBC8A576B3F8D5655A342B9"
+}
+[1734952998.192][DEBUG]: DevTools WebSocket Command: Page.enable (id=3) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+}
+[1734952998.192][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734952998.192][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=5) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734952998.195][DEBUG]: DevTools WebSocket Command: Log.enable (id=6) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+}
+[1734952998.195][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=7) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734952998.195][DEBUG]: DevTools WebSocket Response: Page.enable (id=3) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+}
+[1734952998.195][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "identifier": "1"
+}
+[1734952998.195][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=5) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734952998.195][DEBUG]: DevTools WebSocket Response: Log.enable (id=6) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+}
+[1734952998.198][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=7) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+}
+[1734952998.198][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+}
+[1734952998.198][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "context": {
+      "auxData": {
+         "frameId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "967318359871378234.4016185173847197118"
+   }
+}
+[1734952998.198][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+}
+[1734952998.198][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+}
+[1734952998.198][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+}
+[1734952998.198][INFO]: [c44698000f32a9951cf8958bd7c905ef] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "MicrosoftEdge",
+      "browserVersion": "131.0.2903.112",
+      "fedcm:accounts": true,
+      "ms:edgeOptions": {
+         "debuggerAddress": "localhost:59674"
+      },
+      "msedge": {
+         "msedgedriverVersion": "131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+         "userDataDir": "/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.wplU0J"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "c44698000f32a9951cf8958bd7c905ef"
+}
+[1734952998.199][INFO]: [c44698000f32a9951cf8958bd7c905ef] COMMAND Navigate {
+   "url": "https://tiktok.com"
+}
+[1734952998.199][INFO]: Waiting for pending navigations...
+[1734952998.199][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=10) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "expression": "1"
+}
+[1734952998.199][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=10) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952998.200][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=11) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "expression": "document",
+   "objectGroup": "c2a59e63-77b3-4493-bce0-2b69368c2de5"
+}
+[1734952998.200][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=11) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "1862150929199429267.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734952998.202][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=12) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "objectId": "1862150929199429267.1.1"
+}
+[1734952998.202][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=12) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734952998.202][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=13) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "objectGroup": "c2a59e63-77b3-4493-bce0-2b69368c2de5"
+}
+[1734952998.202][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "967318359871378234.4016185173847197118"
+}
+[1734952998.203][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=13) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+}
+[1734952998.203][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734952998.203][INFO]: Done waiting for pending navigations. Status: ok
+[1734952998.203][DEBUG]: DevTools WebSocket Command: Page.navigate (id=15) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "url": "https://tiktok.com"
+}
+[1734952998.205][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "BD746C76CFCBD9AEF4DFEF5AD9783B17"
+}
+2024-12-23 20:23:18.397 Microsoft Edge[33262:1126893] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-23 20:23:18.397 Microsoft Edge[33262:1126893] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+[1734952998.574][DEBUG]: DevTools WebSocket Response: Page.navigate (id=15) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+   "loaderId": "85A099749FEAB7D8728522E5E865D697"
+}
+[1734952998.574][INFO]: Waiting for pending navigations...
+[1734952998.574][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "expression": "1"
+}
+[1734952998.576][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+}
+[1734952998.578][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+}
+[1734952998.578][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "tiktok.com",
+      "gatedAPIFeatures": [  ],
+      "id": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+      "loaderId": "85A099749FEAB7D8728522E5E865D697",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.tiktok.com",
+      "url": "https://www.tiktok.com/"
+   },
+   "type": "Navigation"
+}
+[1734952998.589][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "context": {
+      "auxData": {
+         "frameId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.tiktok.com",
+      "uniqueId": "7352751245263015912.8880355123244444652"
+   }
+}
+[1734952998.590][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952998.883][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "timestamp": 62991.796544
+}
+[1734952998.883][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=17) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "expression": "1"
+}
+[1734952998.883][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=17) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952999.388][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "expression": "1"
+}
+[1734952999.389][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952999.618][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "args": [ {
+      "type": "string",
+      "value": "Reflect is polyfilled, using `@abraham/reflection`."
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 42146,
+         "functionName": "14713",
+         "lineNumber": 39,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 150,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/runtime.391e100dbef25b27d2af.js"
+      }, {
+         "columnNumber": 65269,
+         "functionName": "40585",
+         "lineNumber": 1,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 150,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/runtime.391e100dbef25b27d2af.js"
+      }, {
+         "columnNumber": 761142,
+         "functionName": "",
+         "lineNumber": 248,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 442,
+         "functionName": "s.O",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/runtime.391e100dbef25b27d2af.js"
+      }, {
+         "columnNumber": 13425,
+         "functionName": "e",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/runtime.391e100dbef25b27d2af.js"
+      }, {
+         "columnNumber": 70,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "23",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/vendor.714c8927eee3441be190.js"
+      } ]
+   },
+   "timestamp": 1.734952999618109e+12,
+   "type": "info"
+}
+[1734952999.618][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "expression": "1"
+}
+[1734952999.731][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "args": [ {
+      "type": "string",
+      "value": "[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`."
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 783783,
+         "functionName": "l",
+         "lineNumber": 21,
+         "scriptId": "23",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/vendor.714c8927eee3441be190.js"
+      }, {
+         "columnNumber": 806623,
+         "functionName": "48007",
+         "lineNumber": 39,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 150,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/runtime.391e100dbef25b27d2af.js"
+      }, {
+         "columnNumber": 761568,
+         "functionName": "89005",
+         "lineNumber": 39,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 150,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/runtime.391e100dbef25b27d2af.js"
+      }, {
+         "columnNumber": 48803,
+         "functionName": "768",
+         "lineNumber": 5,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 150,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/runtime.391e100dbef25b27d2af.js"
+      }, {
+         "columnNumber": 76819,
+         "functionName": "40585",
+         "lineNumber": 1,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 150,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/runtime.391e100dbef25b27d2af.js"
+      }, {
+         "columnNumber": 761142,
+         "functionName": "",
+         "lineNumber": 248,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 442,
+         "functionName": "s.O",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/runtime.391e100dbef25b27d2af.js"
+      }, {
+         "columnNumber": 13425,
+         "functionName": "e",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/runtime.391e100dbef25b27d2af.js"
+      }, {
+         "columnNumber": 70,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "23",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/vendor.714c8927eee3441be190.js"
+      } ]
+   },
+   "timestamp": 1.73495299973045e+12,
+   "type": "warning"
+}
+[1734952999.837][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952999.838][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "timestamp": 62992.752372
+}
+[1734952999.838][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=20) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "7352751245263015912.8880355123244444652"
+}
+[1734952999.838][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "BD746C76CFCBD9AEF4DFEF5AD9783B17"
+}
+[1734952999.839][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=20) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734952999.839][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=21) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "expression": "1"
+}
+[1734952999.839][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=21) (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952999.839][INFO]: Done waiting for pending navigations. Status: ok
+[1734952999.839][INFO]: [c44698000f32a9951cf8958bd7c905ef] RESPONSE Navigate
+[1734953000.747][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "args": [ {
+      "type": "string",
+      "value": "[TikTok desktop app SDK Monitor]:  "
+   }, {
+      "type": "string",
+      "value": "turn on listening to DOWNLOAD_FILE_FINISHED failed, env is not in client."
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 43851,
+         "functionName": "value",
+         "lineNumber": 39,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 47320,
+         "functionName": "value",
+         "lineNumber": 39,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 226674,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 143769,
+         "functionName": "Fu",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 188105,
+         "functionName": "t.unstable_runWithPriority",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 84622,
+         "functionName": "Ha",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 143237,
+         "functionName": "Au",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 134825,
+         "functionName": "yu",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 84845,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 188105,
+         "functionName": "t.unstable_runWithPriority",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 84622,
+         "functionName": "Ha",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 84790,
+         "functionName": "Ka",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 84725,
+         "functionName": "qa",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 135319,
+         "functionName": "bu",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 149486,
+         "functionName": "rs",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 156992,
+         "functionName": "t.hydrate",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 170728,
+         "functionName": "then.then.then.then.then.then.then.then.jotaiStore",
+         "lineNumber": 1,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 170735,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      } ]
+   },
+   "timestamp": 1.73495300074686e+12,
+   "type": "warning"
+}
+[33262:259:1223/202320.807992:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[33262:259:1223/202320.918702:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[33262:259:1223/202321.025023:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[1734953001.044][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "args": [ {
+      "type": "string",
+      "value": "."
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 17857,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "78",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.170/webmssdk.js"
+      }, {
+         "columnNumber": 462,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "78",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.170/webmssdk.js"
+      }, {
+         "columnNumber": 523,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "78",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.170/webmssdk.js"
+      } ]
+   },
+   "timestamp": 1.734953001043381e+12,
+   "type": "info"
+}
+[1734953001.153][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "args": [ {
+      "type": "string",
+      "value": "AppContext will be overwritten"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 449521,
+         "functionName": "r",
+         "lineNumber": 248,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 97628,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "98",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/7296.5d257f1d71246cc5319c.js"
+      }, {
+         "columnNumber": 98283,
+         "functionName": "6990",
+         "lineNumber": 0,
+         "scriptId": "98",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/7296.5d257f1d71246cc5319c.js"
+      }, {
+         "columnNumber": 150,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/runtime.391e100dbef25b27d2af.js"
+      }, {
+         "columnNumber": 24014,
+         "functionName": "66660",
+         "lineNumber": 20,
+         "scriptId": "98",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/7296.5d257f1d71246cc5319c.js"
+      }, {
+         "columnNumber": 150,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/runtime.391e100dbef25b27d2af.js"
+      }, {
+         "columnNumber": 1611,
+         "functionName": "3502",
+         "lineNumber": 4,
+         "scriptId": "98",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/7296.5d257f1d71246cc5319c.js"
+      }, {
+         "columnNumber": 150,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/runtime.391e100dbef25b27d2af.js"
+      }, {
+         "columnNumber": 88918,
+         "functionName": "73516",
+         "lineNumber": 0,
+         "scriptId": "98",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/7296.5d257f1d71246cc5319c.js"
+      }, {
+         "columnNumber": 150,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/runtime.391e100dbef25b27d2af.js"
+      }, {
+         "columnNumber": 4130,
+         "functionName": "74030",
+         "lineNumber": 0,
+         "scriptId": "103",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/foryou.islands.f085d88a686d284455e5.js"
+      }, {
+         "columnNumber": 150,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/runtime.391e100dbef25b27d2af.js"
+      } ]
+   },
+   "timestamp": 1.734953001152739e+12,
+   "type": "warning"
+}
+[1734953001.153][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "args": [ {
+      "type": "string",
+      "value": "AppContext will be overwritten"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 449521,
+         "functionName": "r",
+         "lineNumber": 248,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 98380,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "98",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/7296.5d257f1d71246cc5319c.js"
+      }, {
+         "columnNumber": 98524,
+         "functionName": "6990",
+         "lineNumber": 0,
+         "scriptId": "98",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/7296.5d257f1d71246cc5319c.js"
+      }, {
+         "columnNumber": 150,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/runtime.391e100dbef25b27d2af.js"
+      }, {
+         "columnNumber": 24014,
+         "functionName": "66660",
+         "lineNumber": 20,
+         "scriptId": "98",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/7296.5d257f1d71246cc5319c.js"
+      }, {
+         "columnNumber": 150,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/runtime.391e100dbef25b27d2af.js"
+      }, {
+         "columnNumber": 1611,
+         "functionName": "3502",
+         "lineNumber": 4,
+         "scriptId": "98",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/7296.5d257f1d71246cc5319c.js"
+      }, {
+         "columnNumber": 150,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/runtime.391e100dbef25b27d2af.js"
+      }, {
+         "columnNumber": 88918,
+         "functionName": "73516",
+         "lineNumber": 0,
+         "scriptId": "98",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/7296.5d257f1d71246cc5319c.js"
+      }, {
+         "columnNumber": 150,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/runtime.391e100dbef25b27d2af.js"
+      }, {
+         "columnNumber": 4130,
+         "functionName": "74030",
+         "lineNumber": 0,
+         "scriptId": "103",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/foryou.islands.f085d88a686d284455e5.js"
+      }, {
+         "columnNumber": 150,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "8",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/runtime.391e100dbef25b27d2af.js"
+      } ]
+   },
+   "timestamp": 1.734953001153e+12,
+   "type": "warning"
+}
+[1734953001.182][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "args": [ {
+      "type": "string",
+      "value": "[getRecommendList]"
+   }, {
+      "type": "string",
+      "value": "originParams"
+   }, {
+      "className": "Object",
+      "description": "Object",
+      "objectId": "-469158482428772076.1.1",
+      "preview": {
+         "description": "Object",
+         "overflow": true,
+         "properties": [ {
+            "name": "isNonPersonalized",
+            "type": "boolean",
+            "value": "false"
+         }, {
+            "name": "aid",
+            "type": "number",
+            "value": "1988"
+         }, {
+            "name": "count",
+            "type": "number",
+            "value": "30"
+         }, {
+            "name": "insertedItemID",
+            "type": "undefined",
+            "value": "undefined"
+         }, {
+            "name": "language",
+            "type": "string",
+            "value": "ja"
+         } ],
+         "type": "object"
+      },
+      "type": "object"
+   }, {
+      "type": "string",
+      "value": "expParams"
+   }, {
+      "className": "Object",
+      "description": "Object",
+      "objectId": "-469158482428772076.1.2",
+      "preview": {
+         "description": "Object",
+         "overflow": true,
+         "properties": [ {
+            "name": "isNonPersonalized",
+            "type": "boolean",
+            "value": "false"
+         }, {
+            "name": "aid",
+            "type": "number",
+            "value": "1988"
+         }, {
+            "name": "count",
+            "type": "number",
+            "value": "30"
+         }, {
+            "name": "insertedItemID",
+            "type": "undefined",
+            "value": "undefined"
+         }, {
+            "name": "language",
+            "type": "string",
+            "value": "ja"
+         } ],
+         "type": "object"
+      },
+      "type": "object"
+   }, {
+      "type": "boolean",
+      "value": true
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 988400,
+         "functionName": "A",
+         "lineNumber": 39,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 989349,
+         "functionName": "",
+         "lineNumber": 39,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 989085,
+         "functionName": "getRecommendList",
+         "lineNumber": 39,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 10439,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "100",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/1870.1cba641fd8d6e24c377d.js"
+      }, {
+         "columnNumber": 158706,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "103",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/foryou.islands.f085d88a686d284455e5.js"
+      }, {
+         "columnNumber": 143769,
+         "functionName": "Fu",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 188105,
+         "functionName": "t.unstable_runWithPriority",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 84622,
+         "functionName": "Ha",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 143237,
+         "functionName": "Au",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 134825,
+         "functionName": "yu",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 84845,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 188105,
+         "functionName": "t.unstable_runWithPriority",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 84622,
+         "functionName": "Ha",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 84790,
+         "functionName": "Ka",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 84725,
+         "functionName": "qa",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 132329,
+         "functionName": "du",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 104213,
+         "functionName": "Tl",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 1025392,
+         "functionName": "",
+         "lineNumber": 39,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      } ]
+   },
+   "timestamp": 1.734953001181306e+12,
+   "type": "debug"
+}
+[1734953001.184][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "args": [ {
+      "type": "string",
+      "value": "[useFYPRecommendListFirstPull]"
+   }, {
+      "type": "string",
+      "value": "originParams"
+   }, {
+      "className": "Object",
+      "description": "Object",
+      "objectId": "-469158482428772076.1.3",
+      "preview": {
+         "description": "Object",
+         "overflow": true,
+         "properties": [ {
+            "name": "itemId",
+            "type": "undefined",
+            "value": "undefined"
+         }, {
+            "name": "key",
+            "type": "string",
+            "value": "foryou"
+         }, {
+            "name": "routeName",
+            "type": "string",
+            "value": "home"
+         }, {
+            "name": "language",
+            "type": "string",
+            "value": "ja-JP"
+         }, {
+            "name": "abTestVersion",
+            "type": "object",
+            "value": "Object"
+         } ],
+         "type": "object"
+      },
+      "type": "object"
+   }, {
+      "type": "string",
+      "value": "expParams"
+   }, {
+      "className": "Object",
+      "description": "Object",
+      "objectId": "-469158482428772076.1.4",
+      "preview": {
+         "description": "Object",
+         "overflow": true,
+         "properties": [ {
+            "name": "itemId",
+            "type": "undefined",
+            "value": "undefined"
+         }, {
+            "name": "key",
+            "type": "string",
+            "value": "foryou"
+         }, {
+            "name": "routeName",
+            "type": "string",
+            "value": "home"
+         }, {
+            "name": "language",
+            "type": "string",
+            "value": "ja-JP"
+         }, {
+            "name": "abTestVersion",
+            "type": "object",
+            "value": "Object"
+         } ],
+         "type": "object"
+      },
+      "type": "object"
+   }, {
+      "type": "boolean",
+      "value": false
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 373606,
+         "functionName": "",
+         "lineNumber": 248,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 145277,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "103",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/foryou.islands.f085d88a686d284455e5.js"
+      }, {
+         "columnNumber": 143769,
+         "functionName": "Fu",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 188105,
+         "functionName": "t.unstable_runWithPriority",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 84622,
+         "functionName": "Ha",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 143237,
+         "functionName": "Au",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 134825,
+         "functionName": "yu",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 84845,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 188105,
+         "functionName": "t.unstable_runWithPriority",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 84622,
+         "functionName": "Ha",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 84790,
+         "functionName": "Ka",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 84725,
+         "functionName": "qa",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 132329,
+         "functionName": "du",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 104213,
+         "functionName": "Tl",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 1025392,
+         "functionName": "",
+         "lineNumber": 39,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      } ]
+   },
+   "timestamp": 1.734953001183869e+12,
+   "type": "debug"
+}
+[1734953001.185][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "args": [ {
+      "type": "string",
+      "value": "[getRecommendList]"
+   }, {
+      "type": "string",
+      "value": "originParams"
+   }, {
+      "className": "Object",
+      "description": "Object",
+      "objectId": "-469158482428772076.1.5",
+      "preview": {
+         "description": "Object",
+         "overflow": true,
+         "properties": [ {
+            "name": "isNonPersonalized",
+            "type": "boolean",
+            "value": "false"
+         }, {
+            "name": "aid",
+            "type": "number",
+            "value": "1988"
+         }, {
+            "name": "count",
+            "type": "number",
+            "value": "9"
+         }, {
+            "name": "insertedItemID",
+            "type": "undefined",
+            "value": "undefined"
+         }, {
+            "name": "language",
+            "type": "string",
+            "value": "ja"
+         } ],
+         "type": "object"
+      },
+      "type": "object"
+   }, {
+      "type": "string",
+      "value": "expParams"
+   }, {
+      "className": "Object",
+      "description": "Object",
+      "objectId": "-469158482428772076.1.6",
+      "preview": {
+         "description": "Object",
+         "overflow": true,
+         "properties": [ {
+            "name": "isNonPersonalized",
+            "type": "boolean",
+            "value": "false"
+         }, {
+            "name": "aid",
+            "type": "number",
+            "value": "1988"
+         }, {
+            "name": "count",
+            "type": "number",
+            "value": "9"
+         }, {
+            "name": "insertedItemID",
+            "type": "undefined",
+            "value": "undefined"
+         }, {
+            "name": "language",
+            "type": "string",
+            "value": "ja"
+         } ],
+         "type": "object"
+      },
+      "type": "object"
+   }, {
+      "type": "boolean",
+      "value": true
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 988400,
+         "functionName": "A",
+         "lineNumber": 39,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 989349,
+         "functionName": "",
+         "lineNumber": 39,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 989085,
+         "functionName": "getRecommendList",
+         "lineNumber": 39,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 373850,
+         "functionName": "",
+         "lineNumber": 248,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 145277,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "103",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/foryou.islands.f085d88a686d284455e5.js"
+      }, {
+         "columnNumber": 143769,
+         "functionName": "Fu",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 188105,
+         "functionName": "t.unstable_runWithPriority",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 84622,
+         "functionName": "Ha",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 143237,
+         "functionName": "Au",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 134825,
+         "functionName": "yu",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 84845,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 188105,
+         "functionName": "t.unstable_runWithPriority",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 84622,
+         "functionName": "Ha",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 84790,
+         "functionName": "Ka",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 84725,
+         "functionName": "qa",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 132329,
+         "functionName": "du",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 104213,
+         "functionName": "Tl",
+         "lineNumber": 1,
+         "scriptId": "17",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-react.7c761c36b99802977099.js"
+      }, {
+         "columnNumber": 1025392,
+         "functionName": "",
+         "lineNumber": 39,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      } ]
+   },
+   "timestamp": 1.734953001183975e+12,
+   "type": "debug"
+}
+[33262:259:1223/202321.201815:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[1734953001.230][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "args": [ {
+      "type": "string",
+      "value": "Failed to get csrf token: host=www.tiktok.com xWareCsrfToken=null"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 21,
+         "functionName": "",
+         "lineNumber": 5039,
+         "scriptId": "79",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/secsdk/secsdk-lastest.umd.js"
+      } ]
+   },
+   "timestamp": 1.734953001229663e+12,
+   "type": "warning"
+}
+[1734953001.235][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "context": {
+      "auxData": {
+         "frameId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+         "isDefault": false,
+         "type": "isolated"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "",
+      "uniqueId": "1656683420767265048.-5753299954397993353"
+   }
+}
+sysctlbyname for kern.hv_vmm_present failed with status -1[33262:259:1223/202321.302996:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[33262:259:1223/202321.405619:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[1734953001.513][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "args": [ {
+      "type": "string",
+      "value": "Check external entry api failed with status_code=20003"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 26882,
+         "functionName": "t",
+         "lineNumber": 0,
+         "scriptId": "99",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/7131.b7e3d1b6fce8704f3a41.js"
+      }, {
+         "columnNumber": 27150,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "99",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/7131.b7e3d1b6fce8704f3a41.js"
+      }, {
+         "columnNumber": 450291,
+         "functionName": "a",
+         "lineNumber": 21,
+         "scriptId": "23",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/vendor.714c8927eee3441be190.js"
+      } ]
+   },
+   "timestamp": 1.734953001513071e+12,
+   "type": "error"
+}
+[33262:259:1223/202321.558068:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[33262:259:1223/202321.725794:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[33262:259:1223/202321.903031:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[33262:259:1223/202322.224124:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[33267:12035:1223/202322.297814:ERROR:socket_manager.cc(148)] Failed to resolve address for stun.l.google.com., errorcode: -105
+[33262:259:1223/202322.327183:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[1734953002.371][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "entry": {
+      "level": "info",
+      "source": "intervention",
+      "text": "Images loaded lazily and replaced with placeholders. Load events are deferred. See https://go.microsoft.com/fwlink/?linkid=2048113",
+      "timestamp": 1.734953002370658e+12,
+      "url": "https://www.tiktok.com/"
+   }
+}
+[1734953002.440][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "args": [ {
+      "type": "string",
+      "value": "Failed to get csrf token: host=www.tiktok.com xWareCsrfToken=null"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 21,
+         "functionName": "",
+         "lineNumber": 5039,
+         "scriptId": "79",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/secsdk/secsdk-lastest.umd.js"
+      } ]
+   },
+   "timestamp": 1.734953002439855e+12,
+   "type": "warning"
+}
+[33262:259:1223/202322.445698:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[33262:259:1223/202322.702727:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[33267:12035:1223/202322.756484:ERROR:socket_manager.cc(148)] Failed to resolve address for stun.l.google.com., errorcode: -105
+[33262:259:1223/202322.810041:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[33262:259:1223/202322.927362:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[33262:259:1223/202323.045904:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[1734953003.274][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "CF89733B4CA5914DD5D9A8CF5A14F8C3",
+   "parentFrameId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 45503,
+         "functionName": "b",
+         "lineNumber": 0,
+         "scriptId": "78",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.170/webmssdk.js"
+      }, {
+         "columnNumber": 43685,
+         "functionName": "Ab",
+         "lineNumber": 0,
+         "scriptId": "78",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.170/webmssdk.js"
+      }, {
+         "columnNumber": 89240,
+         "functionName": "n",
+         "lineNumber": 0,
+         "scriptId": "78",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.170/webmssdk.js"
+      }, {
+         "columnNumber": 38659,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "78",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.170/webmssdk.js"
+      } ]
+   }
+}
+[1734953003.274][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "disposition": "currentTab",
+   "frameId": "CF89733B4CA5914DD5D9A8CF5A14F8C3",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734953003.274][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "CF89733B4CA5914DD5D9A8CF5A14F8C3",
+      "loaderId": "E34752CDF5302B2F61FEACEA4161ED7F",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734953003.274][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "CF89733B4CA5914DD5D9A8CF5A14F8C3"
+}
+[1734953003.274][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "context": {
+      "auxData": {
+         "frameId": "CF89733B4CA5914DD5D9A8CF5A14F8C3",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 3,
+      "name": "",
+      "origin": "https://www.tiktok.com",
+      "uniqueId": "5230218820209040671.-8412573819328041569"
+   }
+}
+[1734953003.274][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "CF89733B4CA5914DD5D9A8CF5A14F8C3"
+}
+[1734953003.274][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "CF89733B4CA5914DD5D9A8CF5A14F8C3"
+}
+[1734953003.274][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "CF89733B4CA5914DD5D9A8CF5A14F8C3",
+   "reason": "remove"
+}
+[1734953003.275][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "executionContextId": 3,
+   "executionContextUniqueId": "5230218820209040671.-8412573819328041569"
+}
+[1734953003.275][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "4291F098186909857527AD79A45ABAD9",
+   "parentFrameId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 45503,
+         "functionName": "b",
+         "lineNumber": 0,
+         "scriptId": "78",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.170/webmssdk.js"
+      }, {
+         "columnNumber": 43685,
+         "functionName": "Ab",
+         "lineNumber": 0,
+         "scriptId": "78",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.170/webmssdk.js"
+      }, {
+         "columnNumber": 89240,
+         "functionName": "n",
+         "lineNumber": 0,
+         "scriptId": "78",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.170/webmssdk.js"
+      }, {
+         "columnNumber": 38659,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "78",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.170/webmssdk.js"
+      } ]
+   }
+}
+[1734953003.275][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "disposition": "currentTab",
+   "frameId": "4291F098186909857527AD79A45ABAD9",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734953003.275][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "4291F098186909857527AD79A45ABAD9",
+      "loaderId": "BE0C2F563269C36CAA0DFAF45D693448",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734953003.275][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "4291F098186909857527AD79A45ABAD9"
+}
+[1734953003.275][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "context": {
+      "auxData": {
+         "frameId": "4291F098186909857527AD79A45ABAD9",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 4,
+      "name": "",
+      "origin": "https://www.tiktok.com",
+      "uniqueId": "2915347319180196269.6402215376311202207"
+   }
+}
+[1734953003.275][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "4291F098186909857527AD79A45ABAD9"
+}
+[1734953003.275][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "4291F098186909857527AD79A45ABAD9"
+}
+[1734953003.275][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "4291F098186909857527AD79A45ABAD9",
+   "reason": "remove"
+}
+[1734953003.275][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "executionContextId": 4,
+   "executionContextUniqueId": "2915347319180196269.6402215376311202207"
+}
+[1734953003.276][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "E4AA6BE97BD78DB48B3A5CD0A7AD7704",
+   "parentFrameId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 45503,
+         "functionName": "b",
+         "lineNumber": 0,
+         "scriptId": "78",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.170/webmssdk.js"
+      }, {
+         "columnNumber": 43685,
+         "functionName": "Ab",
+         "lineNumber": 0,
+         "scriptId": "78",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.170/webmssdk.js"
+      }, {
+         "columnNumber": 89240,
+         "functionName": "n",
+         "lineNumber": 0,
+         "scriptId": "78",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.170/webmssdk.js"
+      }, {
+         "columnNumber": 38659,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "78",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.170/webmssdk.js"
+      } ]
+   }
+}
+[1734953003.276][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "disposition": "currentTab",
+   "frameId": "E4AA6BE97BD78DB48B3A5CD0A7AD7704",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734953003.276][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "E4AA6BE97BD78DB48B3A5CD0A7AD7704",
+      "loaderId": "DCEE07E839128E395200A0FF352C79C8",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734953003.276][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "E4AA6BE97BD78DB48B3A5CD0A7AD7704"
+}
+[1734953003.276][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "context": {
+      "auxData": {
+         "frameId": "E4AA6BE97BD78DB48B3A5CD0A7AD7704",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 5,
+      "name": "",
+      "origin": "https://www.tiktok.com",
+      "uniqueId": "8281905460049283599.-5388523437614360792"
+   }
+}
+[1734953003.276][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "E4AA6BE97BD78DB48B3A5CD0A7AD7704"
+}
+[1734953003.276][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "E4AA6BE97BD78DB48B3A5CD0A7AD7704"
+}
+[1734953003.276][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "E4AA6BE97BD78DB48B3A5CD0A7AD7704",
+   "reason": "remove"
+}
+[1734953003.276][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "executionContextId": 5,
+   "executionContextUniqueId": "8281905460049283599.-5388523437614360792"
+}
+[1734953003.277][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "C7C6290059931D390D9D1AA12657C292",
+   "parentFrameId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 45503,
+         "functionName": "b",
+         "lineNumber": 0,
+         "scriptId": "78",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.170/webmssdk.js"
+      }, {
+         "columnNumber": 43685,
+         "functionName": "Ab",
+         "lineNumber": 0,
+         "scriptId": "78",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.170/webmssdk.js"
+      }, {
+         "columnNumber": 89240,
+         "functionName": "n",
+         "lineNumber": 0,
+         "scriptId": "78",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.170/webmssdk.js"
+      }, {
+         "columnNumber": 38659,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "78",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/webmssdk/1.0.0.170/webmssdk.js"
+      } ]
+   }
+}
+[1734953003.277][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "disposition": "currentTab",
+   "frameId": "C7C6290059931D390D9D1AA12657C292",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734953003.277][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "C7C6290059931D390D9D1AA12657C292",
+      "loaderId": "18B2BDF03F01A08BFF944E6820A48607",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734953003.277][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "C7C6290059931D390D9D1AA12657C292"
+}
+[1734953003.277][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "context": {
+      "auxData": {
+         "frameId": "C7C6290059931D390D9D1AA12657C292",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 6,
+      "name": "",
+      "origin": "https://www.tiktok.com",
+      "uniqueId": "7150524062171719875.8828432459764640764"
+   }
+}
+[1734953003.277][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "C7C6290059931D390D9D1AA12657C292"
+}
+[1734953003.277][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "C7C6290059931D390D9D1AA12657C292"
+}
+[1734953003.277][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "C7C6290059931D390D9D1AA12657C292",
+   "reason": "remove"
+}
+[1734953003.277][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "executionContextId": 6,
+   "executionContextUniqueId": "7150524062171719875.8828432459764640764"
+}
+[33262:259:1223/202323.277287:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+Trying to load the allocator multiple times. This is *not* supported.
+[33262:259:1223/202323.394975:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[1223/202323.485936:ERROR:ffmpeg_common.cc(970)] Unsupported pixel format: -1
+[33262:259:1223/202323.557851:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[1734953003.600][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "args": [ {
+      "type": "string",
+      "value": "[TikTok desktop app SDK Monitor]:  "
+   }, {
+      "type": "string",
+      "value": "WARN:[printFirstFeedShow]The current environment is not inside the client."
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 43851,
+         "functionName": "value",
+         "lineNumber": 39,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 48093,
+         "functionName": "",
+         "lineNumber": 39,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 47866,
+         "functionName": "value",
+         "lineNumber": 39,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 55906,
+         "functionName": "ot",
+         "lineNumber": 39,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 631700,
+         "functionName": "reportClientEvent",
+         "lineNumber": 248,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 631519,
+         "functionName": "reportVideoFirstScreen",
+         "lineNumber": 248,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 279751,
+         "functionName": "",
+         "lineNumber": 248,
+         "scriptId": "22",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/webapp-desktop.abd7e6ae823e8bc4c256.js"
+      }, {
+         "columnNumber": 817956,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "18",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-d801507b.8a1a014321cf71b47f95.js"
+      }, {
+         "columnNumber": 817932,
+         "functionName": "trigger",
+         "lineNumber": 1,
+         "scriptId": "18",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-d801507b.8a1a014321cf71b47f95.js"
+      }, {
+         "columnNumber": 974670,
+         "functionName": "currentPlayer",
+         "lineNumber": 1,
+         "scriptId": "18",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-d801507b.8a1a014321cf71b47f95.js"
+      }, {
+         "columnNumber": 329088,
+         "functionName": "s.emit",
+         "lineNumber": 21,
+         "scriptId": "23",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/vendor.714c8927eee3441be190.js"
+      }, {
+         "columnNumber": 167596,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "18",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-d801507b.8a1a014321cf71b47f95.js"
+      }, {
+         "columnNumber": 183976,
+         "functionName": "value",
+         "lineNumber": 1,
+         "scriptId": "18",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-d801507b.8a1a014321cf71b47f95.js"
+      }, {
+         "columnNumber": 174334,
+         "functionName": "m",
+         "lineNumber": 1,
+         "scriptId": "18",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-d801507b.8a1a014321cf71b47f95.js"
+      }, {
+         "columnNumber": 177165,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "18",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop/npm-d801507b.8a1a014321cf71b47f95.js"
+      } ]
+   },
+   "timestamp": 1.734953003599381e+12,
+   "type": "warning"
+}
+[33262:259:1223/202323.677746:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[33262:259:1223/202323.785233:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[33262:259:1223/202323.888261:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[33262:259:1223/202323.992219:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[1734953004.504][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "598EC1B463AB023B03C07C7B1BA90C4D",
+   "parentFrameId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 23859,
+         "functionName": "b",
+         "lineNumber": 0,
+         "scriptId": "129",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/ttweb_webmssdk_ex/1.0.0.1272/webmssdk_ex.js"
+      }, {
+         "columnNumber": 20393,
+         "functionName": "fg",
+         "lineNumber": 0,
+         "scriptId": "129",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/ttweb_webmssdk_ex/1.0.0.1272/webmssdk_ex.js"
+      }, {
+         "columnNumber": 26271,
+         "functionName": "n",
+         "lineNumber": 0,
+         "scriptId": "129",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/ttweb_webmssdk_ex/1.0.0.1272/webmssdk_ex.js"
+      }, {
+         "columnNumber": 17253,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "129",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/ttweb_webmssdk_ex/1.0.0.1272/webmssdk_ex.js"
+      } ]
+   }
+}
+[1734953004.504][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "disposition": "currentTab",
+   "frameId": "598EC1B463AB023B03C07C7B1BA90C4D",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734953004.504][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "598EC1B463AB023B03C07C7B1BA90C4D",
+      "loaderId": "36896162C761FFA32E114FDD4C5A84FF",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734953004.504][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "598EC1B463AB023B03C07C7B1BA90C4D"
+}
+[1734953004.505][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "context": {
+      "auxData": {
+         "frameId": "598EC1B463AB023B03C07C7B1BA90C4D",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 7,
+      "name": "",
+      "origin": "https://www.tiktok.com",
+      "uniqueId": "-8374674599583021737.-4132097596267699452"
+   }
+}
+[1734953004.505][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "598EC1B463AB023B03C07C7B1BA90C4D"
+}
+[1734953004.509][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "598EC1B463AB023B03C07C7B1BA90C4D"
+}
+[1734953004.509][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "598EC1B463AB023B03C07C7B1BA90C4D",
+   "reason": "remove"
+}
+[1734953004.509][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "executionContextId": 7,
+   "executionContextUniqueId": "-8374674599583021737.-4132097596267699452"
+}
+[1734953004.510][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "6AAA3A944A24AA4E80D63EFDD102611E",
+   "parentFrameId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 23859,
+         "functionName": "b",
+         "lineNumber": 0,
+         "scriptId": "129",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/ttweb_webmssdk_ex/1.0.0.1272/webmssdk_ex.js"
+      }, {
+         "columnNumber": 20393,
+         "functionName": "fg",
+         "lineNumber": 0,
+         "scriptId": "129",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/ttweb_webmssdk_ex/1.0.0.1272/webmssdk_ex.js"
+      }, {
+         "columnNumber": 26271,
+         "functionName": "n",
+         "lineNumber": 0,
+         "scriptId": "129",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/ttweb_webmssdk_ex/1.0.0.1272/webmssdk_ex.js"
+      }, {
+         "columnNumber": 17253,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "129",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/ttweb_webmssdk_ex/1.0.0.1272/webmssdk_ex.js"
+      } ]
+   }
+}
+[1734953004.510][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "disposition": "currentTab",
+   "frameId": "6AAA3A944A24AA4E80D63EFDD102611E",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734953004.510][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "6AAA3A944A24AA4E80D63EFDD102611E",
+      "loaderId": "E55625FED917BE2D9A95AAE6BE296A9A",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734953004.510][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "6AAA3A944A24AA4E80D63EFDD102611E"
+}
+[1734953004.511][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "context": {
+      "auxData": {
+         "frameId": "6AAA3A944A24AA4E80D63EFDD102611E",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 8,
+      "name": "",
+      "origin": "https://www.tiktok.com",
+      "uniqueId": "-7157982021755200912.-8757418168820553858"
+   }
+}
+[1734953004.511][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "6AAA3A944A24AA4E80D63EFDD102611E"
+}
+[1734953004.512][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "6AAA3A944A24AA4E80D63EFDD102611E"
+}
+[1734953004.512][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "6AAA3A944A24AA4E80D63EFDD102611E",
+   "reason": "remove"
+}
+[1734953004.512][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "executionContextId": 8,
+   "executionContextUniqueId": "-7157982021755200912.-8757418168820553858"
+}
+[1734953004.521][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "62DB01DF26C219E15333226D3475E960",
+   "parentFrameId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 23859,
+         "functionName": "b",
+         "lineNumber": 0,
+         "scriptId": "129",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/ttweb_webmssdk_ex/1.0.0.1272/webmssdk_ex.js"
+      }, {
+         "columnNumber": 20393,
+         "functionName": "fg",
+         "lineNumber": 0,
+         "scriptId": "129",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/ttweb_webmssdk_ex/1.0.0.1272/webmssdk_ex.js"
+      }, {
+         "columnNumber": 26271,
+         "functionName": "n",
+         "lineNumber": 0,
+         "scriptId": "129",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/ttweb_webmssdk_ex/1.0.0.1272/webmssdk_ex.js"
+      }, {
+         "columnNumber": 17253,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "129",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/ttweb_webmssdk_ex/1.0.0.1272/webmssdk_ex.js"
+      } ]
+   }
+}
+[1734953004.521][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "disposition": "currentTab",
+   "frameId": "62DB01DF26C219E15333226D3475E960",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734953004.521][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "62DB01DF26C219E15333226D3475E960",
+      "loaderId": "15E29D2C1B74421D9A6A63B4CA6D7AA3",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734953004.521][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "62DB01DF26C219E15333226D3475E960"
+}
+[1734953004.522][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "context": {
+      "auxData": {
+         "frameId": "62DB01DF26C219E15333226D3475E960",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 9,
+      "name": "",
+      "origin": "https://www.tiktok.com",
+      "uniqueId": "1512955042177335332.-4693626643011175073"
+   }
+}
+[1734953004.522][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "62DB01DF26C219E15333226D3475E960"
+}
+[1734953004.526][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "62DB01DF26C219E15333226D3475E960"
+}
+[1734953004.526][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "62DB01DF26C219E15333226D3475E960",
+   "reason": "remove"
+}
+[1734953004.526][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "executionContextId": 9,
+   "executionContextUniqueId": "1512955042177335332.-4693626643011175073"
+}
+[1734953004.526][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "2087AC2614E5A2E8430847900388F347",
+   "parentFrameId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 23859,
+         "functionName": "b",
+         "lineNumber": 0,
+         "scriptId": "129",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/ttweb_webmssdk_ex/1.0.0.1272/webmssdk_ex.js"
+      }, {
+         "columnNumber": 20393,
+         "functionName": "fg",
+         "lineNumber": 0,
+         "scriptId": "129",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/ttweb_webmssdk_ex/1.0.0.1272/webmssdk_ex.js"
+      }, {
+         "columnNumber": 26271,
+         "functionName": "n",
+         "lineNumber": 0,
+         "scriptId": "129",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/ttweb_webmssdk_ex/1.0.0.1272/webmssdk_ex.js"
+      }, {
+         "columnNumber": 17253,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "129",
+         "url": "https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/ttweb_webmssdk_ex/1.0.0.1272/webmssdk_ex.js"
+      } ]
+   }
+}
+[1734953004.526][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "disposition": "currentTab",
+   "frameId": "2087AC2614E5A2E8430847900388F347",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734953004.527][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "2087AC2614E5A2E8430847900388F347",
+      "loaderId": "63D9AFD013F80981297AD66EAFFFE4F4",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "BD746C76CFCBD9AEF4DFEF5AD9783B17",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734953004.527][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "2087AC2614E5A2E8430847900388F347"
+}
+[1734953004.527][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "context": {
+      "auxData": {
+         "frameId": "2087AC2614E5A2E8430847900388F347",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 10,
+      "name": "",
+      "origin": "https://www.tiktok.com",
+      "uniqueId": "-4399331599502112646.5386062666871567843"
+   }
+}
+[1734953004.527][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "2087AC2614E5A2E8430847900388F347"
+}
+[1734953004.528][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "2087AC2614E5A2E8430847900388F347"
+}
+[1734953004.528][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "frameId": "2087AC2614E5A2E8430847900388F347",
+   "reason": "remove"
+}
+[1734953004.528][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=9027D11E7DBC8A576B3F8D5655A342B9) BD746C76CFCBD9AEF4DFEF5AD9783B17 {
+   "executionContextId": 10,
+   "executionContextUniqueId": "-4399331599502112646.5386062666871567843"
+}
+[33262:259:1223/202324.599272:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[33262:259:1223/202324.846606:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[33262:259:1223/202326.837037:ERROR:page_load_metrics_update_dispatcher.cc(179)] Invalid first_paint 2.61 s for first_image_paint 2.588 s
+[1734953009.847][INFO]: [c44698000f32a9951cf8958bd7c905ef] COMMAND Quit {
+}
+[1734953009.902][INFO]: [c44698000f32a9951cf8958bd7c905ef] RESPONSE Quit
+[1734953009.902][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1734953009.903][DEBUG]: Log type 'browser' lost 8 entries on destruction

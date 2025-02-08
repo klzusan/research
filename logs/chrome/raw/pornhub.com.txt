@@ -1,0 +1,1820 @@
+[1734948733.616][INFO]: Starting ChromeDriver 131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}) on port 50445
+[1734948733.616][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1734948733.617][INFO]: ChromeDriver was started successfully on port 50445
+[1734948733.624][INFO]: [d65eccfcd27f9549ef164fa0d478d64c] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "browserVersion": null,
+         "goog:chromeOptions": {
+            "args": [ "--incognito", "--disable-extensions" ],
+            "binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1734948733.625][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1734948733.625][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1734948733.625][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1734948733.625][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1734948733.625][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-extensions --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --incognito --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.org.chromium.Chromium.uXLtZB data:,
+
+DevTools listening on ws://127.0.0.1:50450/devtools/browser/71623129-f72e-4fc3-ba1a-76dc8ab64d31
+[1734948733.842][DEBUG]: DevTools HTTP Request: http://localhost:50450/json/version
+[1734948734.114][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Chrome/131.0.6778.205",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+   "V8-Version": "13.1.201.19",
+   "WebKit-Version": "537.36 (@81b36b9535e3e3b610a52df3da48cd81362ec860)",
+   "webSocketDebuggerUrl": "ws://localhost:50450/devtools/browser/71623129-f72e-4fc3-ba1a-76dc8ab64d31"
+}
+
+[1734948734.118][DEBUG]: DevTools HTTP Request: http://localhost:50450/json/list
+[1734948734.136][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:50450/devtools/page/47E9206DE6287D65228E0CA203AEEDA5",
+   "id": "47E9206DE6287D65228E0CA203AEEDA5",
+   "title": "data:,",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:50450/devtools/page/47E9206DE6287D65228E0CA203AEEDA5"
+} ]
+
+[1734948734.139][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1734948734.151][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1734948734.165][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "C6042536D7EA49E45A03AF26AD7E6F01",
+      "canAccessOpener": false,
+      "targetId": "47E9206DE6287D65228E0CA203AEEDA5",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1734948734.166][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "47E9206DE6287D65228E0CA203AEEDA5"
+}
+[1734948734.166][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "8463EB83E9A6A0946D5578BC9B888835",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "C6042536D7EA49E45A03AF26AD7E6F01",
+      "canAccessOpener": false,
+      "targetId": "47E9206DE6287D65228E0CA203AEEDA5",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1734948734.166][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "8463EB83E9A6A0946D5578BC9B888835"
+}
+[1734948734.168][DEBUG]: DevTools WebSocket Command: Page.enable (id=3) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+}
+[1734948734.168][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948734.169][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=5) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948734.169][DEBUG]: DevTools WebSocket Command: Log.enable (id=6) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+}
+[1734948734.169][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=7) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734948734.169][DEBUG]: DevTools WebSocket Response: Page.enable (id=3) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+}
+[1734948734.169][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "identifier": "1"
+}
+[1734948734.169][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=5) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734948734.169][DEBUG]: DevTools WebSocket Response: Log.enable (id=6) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+}
+[1734948734.169][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=7) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+}
+[1734948734.169][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+}
+[1734948734.169][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "context": {
+      "auxData": {
+         "frameId": "47E9206DE6287D65228E0CA203AEEDA5",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "7684457006971589234.-8783225362527051209"
+   }
+}
+[1734948734.171][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+}
+[1734948734.171][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+}
+[1734948734.172][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+}
+[1734948734.174][INFO]: [d65eccfcd27f9549ef164fa0d478d64c] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "131.0.6778.205",
+      "chrome": {
+         "chromedriverVersion": "131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7})",
+         "userDataDir": "/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.org.chromium.Chromium.uXLtZB"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:50450"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "d65eccfcd27f9549ef164fa0d478d64c"
+}
+[1734948734.175][INFO]: [d65eccfcd27f9549ef164fa0d478d64c] COMMAND Navigate {
+   "url": "https://pornhub.com"
+}
+[1734948734.177][INFO]: Waiting for pending navigations...
+[1734948734.177][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=10) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "1"
+}
+[1734948734.178][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=10) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948734.178][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=11) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "document",
+   "objectGroup": "66a29e30-687c-443e-a07d-291686c33f5a"
+}
+[1734948734.178][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=11) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "6812148147810757711.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734948734.178][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=12) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "objectId": "6812148147810757711.1.1"
+}
+[1734948734.178][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=12) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734948734.179][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=13) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "objectGroup": "66a29e30-687c-443e-a07d-291686c33f5a"
+}
+[1734948734.179][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "7684457006971589234.-8783225362527051209"
+}
+[1734948734.179][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=13) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+}
+[1734948734.179][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734948734.179][INFO]: Done waiting for pending navigations. Status: ok
+[1734948734.179][DEBUG]: DevTools WebSocket Command: Page.navigate (id=15) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "url": "https://pornhub.com"
+}
+[1734948734.181][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "47E9206DE6287D65228E0CA203AEEDA5"
+}
+2024-12-23 19:12:14.375 Google Chrome[23011:976183] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-23 19:12:14.375 Google Chrome[23011:976183] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+[1734948734.910][DEBUG]: DevTools WebSocket Response: Page.navigate (id=15) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "47E9206DE6287D65228E0CA203AEEDA5",
+   "loaderId": "60DDF54D5D532A2C994F734DB74A4FC2"
+}
+[1734948734.910][INFO]: Waiting for pending navigations...
+[1734948734.910][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "1"
+}
+[1734948734.911][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+}
+[1734948734.912][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+}
+[1734948734.912][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "pornhub.com",
+      "gatedAPIFeatures": [  ],
+      "id": "47E9206DE6287D65228E0CA203AEEDA5",
+      "loaderId": "60DDF54D5D532A2C994F734DB74A4FC2",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://jp.pornhub.com",
+      "url": "https://jp.pornhub.com/"
+   },
+   "type": "Navigation"
+}
+[1734948734.924][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "context": {
+      "auxData": {
+         "frameId": "47E9206DE6287D65228E0CA203AEEDA5",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://jp.pornhub.com",
+      "uniqueId": "-8761304944210290117.2864504854821586237"
+   }
+}
+[1734948734.927][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948735.433][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=17) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "1"
+}
+[1734948735.434][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=17) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948735.939][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "1"
+}
+[1734948735.946][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948736.443][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "29F922778C2234125684EA0855627013",
+   "parentFrameId": "47E9206DE6287D65228E0CA203AEEDA5",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 317,
+         "functionName": "oc",
+         "lineNumber": 197,
+         "scriptId": "38",
+         "url": "https://www.googletagmanager.com/gtag/js?id=G-B39RFFWGYY&l=dataLayer&cx=c&gtm=45He4cc1v892446692za200"
+      }, {
+         "columnNumber": 128,
+         "functionName": "Ju",
+         "lineNumber": 514,
+         "scriptId": "38",
+         "url": "https://www.googletagmanager.com/gtag/js?id=G-B39RFFWGYY&l=dataLayer&cx=c&gtm=45He4cc1v892446692za200"
+      }, {
+         "columnNumber": 153,
+         "functionName": "q",
+         "lineNumber": 661,
+         "scriptId": "38",
+         "url": "https://www.googletagmanager.com/gtag/js?id=G-B39RFFWGYY&l=dataLayer&cx=c&gtm=45He4cc1v892446692za200"
+      }, {
+         "columnNumber": 394,
+         "functionName": "KH",
+         "lineNumber": 661,
+         "scriptId": "38",
+         "url": "https://www.googletagmanager.com/gtag/js?id=G-B39RFFWGYY&l=dataLayer&cx=c&gtm=45He4cc1v892446692za200"
+      }, {
+         "columnNumber": 88,
+         "functionName": "LH.j",
+         "lineNumber": 663,
+         "scriptId": "38",
+         "url": "https://www.googletagmanager.com/gtag/js?id=G-B39RFFWGYY&l=dataLayer&cx=c&gtm=45He4cc1v892446692za200"
+      }, {
+         "columnNumber": 201,
+         "functionName": "LH.add",
+         "lineNumber": 663,
+         "scriptId": "38",
+         "url": "https://www.googletagmanager.com/gtag/js?id=G-B39RFFWGYY&l=dataLayer&cx=c&gtm=45He4cc1v892446692za200"
+      }, {
+         "columnNumber": 133,
+         "functionName": "h.lk",
+         "lineNumber": 681,
+         "scriptId": "38",
+         "url": "https://www.googletagmanager.com/gtag/js?id=G-B39RFFWGYY&l=dataLayer&cx=c&gtm=45He4cc1v892446692za200"
+      }, {
+         "columnNumber": 55,
+         "functionName": "h.kn",
+         "lineNumber": 681,
+         "scriptId": "38",
+         "url": "https://www.googletagmanager.com/gtag/js?id=G-B39RFFWGYY&l=dataLayer&cx=c&gtm=45He4cc1v892446692za200"
+      }, {
+         "columnNumber": 30,
+         "functionName": "",
+         "lineNumber": 678,
+         "scriptId": "38",
+         "url": "https://www.googletagmanager.com/gtag/js?id=G-B39RFFWGYY&l=dataLayer&cx=c&gtm=45He4cc1v892446692za200"
+      }, {
+         "columnNumber": 149,
+         "functionName": "el",
+         "lineNumber": 371,
+         "scriptId": "38",
+         "url": "https://www.googletagmanager.com/gtag/js?id=G-B39RFFWGYY&l=dataLayer&cx=c&gtm=45He4cc1v892446692za200"
+      }, {
+         "columnNumber": 431,
+         "functionName": "El",
+         "lineNumber": 376,
+         "scriptId": "38",
+         "url": "https://www.googletagmanager.com/gtag/js?id=G-B39RFFWGYY&l=dataLayer&cx=c&gtm=45He4cc1v892446692za200"
+      }, {
+         "columnNumber": 14,
+         "functionName": "",
+         "lineNumber": 678,
+         "scriptId": "38",
+         "url": "https://www.googletagmanager.com/gtag/js?id=G-B39RFFWGYY&l=dataLayer&cx=c&gtm=45He4cc1v892446692za200"
+      }, {
+         "columnNumber": 462,
+         "functionName": "c",
+         "lineNumber": 511,
+         "scriptId": "38",
+         "url": "https://www.googletagmanager.com/gtag/js?id=G-B39RFFWGYY&l=dataLayer&cx=c&gtm=45He4cc1v892446692za200"
+      }, {
+         "columnNumber": 493,
+         "functionName": "Eu",
+         "lineNumber": 511,
+         "scriptId": "38",
+         "url": "https://www.googletagmanager.com/gtag/js?id=G-B39RFFWGYY&l=dataLayer&cx=c&gtm=45He4cc1v892446692za200"
+      }, {
+         "columnNumber": 0,
+         "functionName": "h.jn",
+         "lineNumber": 678,
+         "scriptId": "38",
+         "url": "https://www.googletagmanager.com/gtag/js?id=G-B39RFFWGYY&l=dataLayer&cx=c&gtm=45He4cc1v892446692za200"
+      }, {
+         "columnNumber": 880,
+         "functionName": "c",
+         "lineNumber": 693,
+         "scriptId": "38",
+         "url": "https://www.googletagmanager.com/gtag/js?id=G-B39RFFWGYY&l=dataLayer&cx=c&gtm=45He4cc1v892446692za200"
+      }, {
+         "columnNumber": 27,
+         "functionName": "fn",
+         "lineNumber": 392,
+         "scriptId": "38",
+         "url": "https://www.googletagmanager.com/gtag/js?id=G-B39RFFWGYY&l=dataLayer&cx=c&gtm=45He4cc1v892446692za200"
+      }, {
+         "columnNumber": 161,
+         "functionName": "en.flush",
+         "lineNumber": 394,
+         "scriptId": "38",
+         "url": "https://www.googletagmanager.com/gtag/js?id=G-B39RFFWGYY&l=dataLayer&cx=c&gtm=45He4cc1v892446692za200"
+      }, {
+         "columnNumber": 430,
+         "functionName": "en.push",
+         "lineNumber": 392,
+         "scriptId": "38",
+         "url": "https://www.googletagmanager.com/gtag/js?id=G-B39RFFWGYY&l=dataLayer&cx=c&gtm=45He4cc1v892446692za200"
+      }, "..." ]
+   }
+}
+[1734948736.443][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "1"
+}
+[1734948736.443][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "disposition": "currentTab",
+   "frameId": "29F922778C2234125684EA0855627013",
+   "reason": "initialFrameNavigation",
+   "url": "https://td.doubleclick.net/td/ga/rul?tid=G-B39RFFWGYY&gacid=1503404291.1734948736&gtm=45je4cc1v889308053z8892446692za200zb892446692&dma=0&gcs=G111&gcd=13t3t3l3l5l1&npa=0&pscdl=noapi&aip=1&fledge=1&..."
+}
+[1734948736.445][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "29F922778C2234125684EA0855627013"
+}
+[1734948736.445][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948736.533][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "0397487AE90A6667C27DAAECBA5080FD",
+   "parentFrameId": "47E9206DE6287D65228E0CA203AEEDA5",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 31277,
+         "functionName": "insertIntoDOM",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://static.trafficjunky.com/invocation/embeddedads/production/embeddedads.es6.min.js"
+      }, {
+         "columnNumber": 30835,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://static.trafficjunky.com/invocation/embeddedads/production/embeddedads.es6.min.js"
+      }, {
+         "columnNumber": 28956,
+         "functionName": "o",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://static.trafficjunky.com/invocation/embeddedads/production/embeddedads.es6.min.js"
+      } ]
+   }
+}
+[1734948736.533][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "disposition": "currentTab",
+   "frameId": "0397487AE90A6667C27DAAECBA5080FD",
+   "reason": "initialFrameNavigation",
+   "url": "about:srcdoc"
+}
+[1734948736.533][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "0397487AE90A6667C27DAAECBA5080FD"
+}
+[1734948736.533][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=20) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "1"
+}
+[1734948736.534][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "171A76F5E9E4A45CFA7948FA0F253D32",
+   "parentFrameId": "47E9206DE6287D65228E0CA203AEEDA5",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 31277,
+         "functionName": "insertIntoDOM",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://static.trafficjunky.com/invocation/embeddedads/production/embeddedads.es6.min.js"
+      }, {
+         "columnNumber": 30835,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://static.trafficjunky.com/invocation/embeddedads/production/embeddedads.es6.min.js"
+      }, {
+         "columnNumber": 28956,
+         "functionName": "o",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://static.trafficjunky.com/invocation/embeddedads/production/embeddedads.es6.min.js"
+      } ]
+   }
+}
+[1734948736.534][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "disposition": "currentTab",
+   "frameId": "171A76F5E9E4A45CFA7948FA0F253D32",
+   "reason": "initialFrameNavigation",
+   "url": "about:srcdoc"
+}
+[1734948736.534][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "171A76F5E9E4A45CFA7948FA0F253D32"
+}
+[1734948736.542][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "timestamp": 58729.356725
+}
+[1734948736.543][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=20) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948736.543][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "0397487AE90A6667C27DAAECBA5080FD",
+      "loaderId": "D55F81145BDB5EA8172F10CCC8AAFC53",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "47E9206DE6287D65228E0CA203AEEDA5",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:srcdoc"
+   },
+   "type": "Navigation"
+}
+[1734948736.544][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=21) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "1"
+}
+[1734948736.544][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "context": {
+      "auxData": {
+         "frameId": "0397487AE90A6667C27DAAECBA5080FD",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://jp.pornhub.com",
+      "uniqueId": "1776406725104071727.-1118448000136791330"
+   }
+}
+[1734948736.545][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "171A76F5E9E4A45CFA7948FA0F253D32",
+      "loaderId": "8AACEA906DC6549A319C329BED3DDCEF",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "47E9206DE6287D65228E0CA203AEEDA5",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:srcdoc"
+   },
+   "type": "Navigation"
+}
+[1734948736.545][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "context": {
+      "auxData": {
+         "frameId": "171A76F5E9E4A45CFA7948FA0F253D32",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 3,
+      "name": "",
+      "origin": "https://jp.pornhub.com",
+      "uniqueId": "4990485742774075858.7832670876817627678"
+   }
+}
+[1734948736.546][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=21) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948736.546][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "41A2B38F30E49F8F4FB4C9C7651BDCAA",
+   "parentFrameId": "0397487AE90A6667C27DAAECBA5080FD"
+}
+[1734948736.546][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "disposition": "currentTab",
+   "frameId": "41A2B38F30E49F8F4FB4C9C7651BDCAA",
+   "reason": "initialFrameNavigation",
+   "url": "https://a.adtng.com/get/10000098?&uuid=0f27d46734474fb28bcc4fdf075ca6d2&impid=0f27d46734474fb28bcc4fdf075ca6d2-1&tj_zid=5&tj_cid=1007935961&tj_aid=2071998101&infos=CiQ1OGRmZWU4Ny1jMTdkLTQxMDQtYmU1O..."
+}
+[1734948736.546][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=22) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "1"
+}
+[1734948736.547][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "41A2B38F30E49F8F4FB4C9C7651BDCAA"
+}
+[1734948736.548][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "49F6DEC6937746F93327F26A47A4729B",
+   "parentFrameId": "171A76F5E9E4A45CFA7948FA0F253D32"
+}
+[1734948736.548][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "disposition": "currentTab",
+   "frameId": "49F6DEC6937746F93327F26A47A4729B",
+   "reason": "initialFrameNavigation",
+   "url": "https://r.trwl1.com/s1/dc515f2b-9cb1-4a6e-899f-04f12d181971?externalId={ACLID}&cv1=1009491591&cv2=&cv3=1851151531&cv4=2184351&cv5=Pornhub&cv6=TJ2%20JPSTRIP%203025%20M&cv7=0.261&cv8=Pornhub%20PC%20-..."
+}
+[1734948736.548][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "49F6DEC6937746F93327F26A47A4729B"
+}
+[1734948736.549][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=22) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948736.687][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "sessionId": "3C6F1E4CE98FA0475F4E29188066E94A",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "C6042536D7EA49E45A03AF26AD7E6F01",
+      "canAccessOpener": false,
+      "targetId": "29F922778C2234125684EA0855627013",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734948736.687][DEBUG]: DevTools WebSocket Command: Page.enable (id=23) (session_id=3C6F1E4CE98FA0475F4E29188066E94A) 3C6F1E4CE98FA0475F4E29188066E94A {
+}
+[1734948736.687][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=24) (session_id=3C6F1E4CE98FA0475F4E29188066E94A) 3C6F1E4CE98FA0475F4E29188066E94A {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948736.687][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=25) (session_id=3C6F1E4CE98FA0475F4E29188066E94A) 3C6F1E4CE98FA0475F4E29188066E94A {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948736.687][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=26) (session_id=3C6F1E4CE98FA0475F4E29188066E94A) 3C6F1E4CE98FA0475F4E29188066E94A {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734948736.689][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "C6042536D7EA49E45A03AF26AD7E6F01",
+      "canAccessOpener": false,
+      "targetId": "29F922778C2234125684EA0855627013",
+      "title": "https://td.doubleclick.net/td/ga/rul?tid=G-B39RFFWGYY&gacid=1503404291.1734948736&gtm=45je4cc1v889308053z8892446692za200zb892446692&dma=0&gcs=G111&gcd=13t3t3l3l5l1&npa=0&pscdl=noapi&aip=1&fledge=1&...",
+      "type": "iframe",
+      "url": "https://td.doubleclick.net/td/ga/rul?tid=G-B39RFFWGYY&gacid=1503404291.1734948736&gtm=45je4cc1v889308053z8892446692za200zb892446692&dma=0&gcs=G111&gcd=13t3t3l3l5l1&npa=0&pscdl=noapi&aip=1&fledge=1&..."
+   }
+}
+[1734948736.689][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "29F922778C2234125684EA0855627013",
+   "reason": "swap"
+}
+[1734948736.690][DEBUG]: DevTools WebSocket Response: Page.enable (id=23) (session_id=3C6F1E4CE98FA0475F4E29188066E94A) 3C6F1E4CE98FA0475F4E29188066E94A {
+}
+[1734948736.690][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=24) (session_id=3C6F1E4CE98FA0475F4E29188066E94A) 3C6F1E4CE98FA0475F4E29188066E94A {
+   "identifier": "1"
+}
+[1734948736.690][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=25) (session_id=3C6F1E4CE98FA0475F4E29188066E94A) 3C6F1E4CE98FA0475F4E29188066E94A {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734948736.690][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=26) (session_id=3C6F1E4CE98FA0475F4E29188066E94A) 3C6F1E4CE98FA0475F4E29188066E94A {
+}
+[1734948736.690][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=27) (session_id=3C6F1E4CE98FA0475F4E29188066E94A) 3C6F1E4CE98FA0475F4E29188066E94A {
+}
+[1734948736.691][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=3C6F1E4CE98FA0475F4E29188066E94A) 3C6F1E4CE98FA0475F4E29188066E94A {
+   "context": {
+      "auxData": {
+         "frameId": "29F922778C2234125684EA0855627013",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://td.doubleclick.net",
+      "uniqueId": "-5807043237536065381.-4494214354121203667"
+   }
+}
+[1734948736.691][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=27) (session_id=3C6F1E4CE98FA0475F4E29188066E94A) 3C6F1E4CE98FA0475F4E29188066E94A {
+}
+[1734948736.691][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=28) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "1"
+}
+[1734948736.691][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=3C6F1E4CE98FA0475F4E29188066E94A) 3C6F1E4CE98FA0475F4E29188066E94A {
+   "timestamp": 58729.507819
+}
+[1734948736.691][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=3C6F1E4CE98FA0475F4E29188066E94A) 3C6F1E4CE98FA0475F4E29188066E94A {
+   "timestamp": 58729.507951
+}
+[1734948736.691][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=3C6F1E4CE98FA0475F4E29188066E94A) 3C6F1E4CE98FA0475F4E29188066E94A {
+   "frameId": "29F922778C2234125684EA0855627013"
+}
+[1734948736.691][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=28) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948736.691][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=29) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "document",
+   "objectGroup": "d1c736ab-66f2-4a77-bec0-a4d92594f4cc"
+}
+[1734948736.692][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=29) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "832168735744193678.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734948736.692][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=30) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "objectId": "832168735744193678.1.1"
+}
+[1734948736.692][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=30) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "https://jp.pornhub.com/",
+      "childNodeCount": 2,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "https://jp.pornhub.com/",
+      "isScrollable": true,
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734948736.692][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=31) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "objectGroup": "d1c736ab-66f2-4a77-bec0-a4d92594f4cc"
+}
+[1734948736.692][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=32) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-8761304944210290117.2864504854821586237"
+}
+[1734948736.692][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=31) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+}
+[1734948736.692][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=32) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "type": "string",
+      "value": "interactive"
+   }
+}
+[1734948736.749][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "1769C3D3D44A3CDA1C9DF37A665931FB",
+   "parentFrameId": "47E9206DE6287D65228E0CA203AEEDA5",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 12659,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 12378,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 4955,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 5060,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 3976,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 3721,
+         "functionName": "o",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 12115,
+         "functionName": "T",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 18617,
+         "functionName": "fonts",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 5496,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 9264,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 9222,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 9807,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 5814,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 4955,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 5060,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 3976,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 3721,
+         "functionName": "o",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 5643,
+         "functionName": "d",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 9176,
+         "functionName": "R",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, "..." ]
+   }
+}
+[1734948736.749][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=33) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "1"
+}
+[1734948736.749][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "disposition": "currentTab",
+   "frameId": "1769C3D3D44A3CDA1C9DF37A665931FB",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734948736.749][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "1769C3D3D44A3CDA1C9DF37A665931FB",
+      "loaderId": "B95DAD145DDD23B7DE1D7EB9639EC6E7",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "47E9206DE6287D65228E0CA203AEEDA5",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734948736.749][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "1769C3D3D44A3CDA1C9DF37A665931FB"
+}
+[1734948736.750][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "context": {
+      "auxData": {
+         "frameId": "1769C3D3D44A3CDA1C9DF37A665931FB",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 4,
+      "name": "",
+      "origin": "https://jp.pornhub.com",
+      "uniqueId": "-3465527024689062650.-1955998350898781542"
+   }
+}
+[1734948736.750][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "1769C3D3D44A3CDA1C9DF37A665931FB"
+}
+[1734948736.751][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "21DBC90F8C8F8FA358BEE496E56F5D27",
+   "parentFrameId": "47E9206DE6287D65228E0CA203AEEDA5",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 12659,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 12378,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 4955,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 5060,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 3976,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 3721,
+         "functionName": "o",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 12115,
+         "functionName": "T",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 27481,
+         "functionName": "n",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 27925,
+         "functionName": "fontPreferences",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 5496,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 9264,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 9222,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 9807,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 5814,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 4955,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 5060,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 3976,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 3721,
+         "functionName": "o",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, {
+         "columnNumber": 5643,
+         "functionName": "d",
+         "lineNumber": 0,
+         "scriptId": "86",
+         "url": "https://static.trafficjunky.com/invocation/idsync/production/idsync.min.js?v=1734879600000"
+      }, "..." ]
+   }
+}
+[1734948736.751][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "disposition": "currentTab",
+   "frameId": "21DBC90F8C8F8FA358BEE496E56F5D27",
+   "reason": "initialFrameNavigation",
+   "url": "about:srcdoc"
+}
+[1734948736.751][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "21DBC90F8C8F8FA358BEE496E56F5D27"
+}
+[1734948736.890][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "context": {
+      "auxData": {
+         "frameId": "21DBC90F8C8F8FA358BEE496E56F5D27",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 5,
+      "name": "",
+      "origin": "https://jp.pornhub.com",
+      "uniqueId": "-5781113995497235386.3584638559700417422"
+   }
+}
+[1734948736.890][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "1769C3D3D44A3CDA1C9DF37A665931FB"
+}
+[1734948736.890][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "1769C3D3D44A3CDA1C9DF37A665931FB",
+   "reason": "remove"
+}
+[1734948736.890][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "executionContextId": 4,
+   "executionContextUniqueId": "-3465527024689062650.-1955998350898781542"
+}
+[1734948736.890][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "21DBC90F8C8F8FA358BEE496E56F5D27"
+}
+[1734948736.890][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "21DBC90F8C8F8FA358BEE496E56F5D27"
+}
+[1734948736.890][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "21DBC90F8C8F8FA358BEE496E56F5D27",
+   "reason": "remove"
+}
+[1734948736.890][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "executionContextId": 5,
+   "executionContextUniqueId": "-5781113995497235386.3584638559700417422"
+}
+[1734948736.893][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=33) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948737.020][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "sessionId": "1EEE70D73CE195C56709A6059817753D",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "C6042536D7EA49E45A03AF26AD7E6F01",
+      "canAccessOpener": false,
+      "targetId": "41A2B38F30E49F8F4FB4C9C7651BDCAA",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734948737.020][DEBUG]: DevTools WebSocket Command: Page.enable (id=34) (session_id=1EEE70D73CE195C56709A6059817753D) 1EEE70D73CE195C56709A6059817753D {
+}
+[1734948737.020][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=35) (session_id=1EEE70D73CE195C56709A6059817753D) 1EEE70D73CE195C56709A6059817753D {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948737.020][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=36) (session_id=1EEE70D73CE195C56709A6059817753D) 1EEE70D73CE195C56709A6059817753D {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948737.020][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=37) (session_id=1EEE70D73CE195C56709A6059817753D) 1EEE70D73CE195C56709A6059817753D {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734948737.021][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "C6042536D7EA49E45A03AF26AD7E6F01",
+      "canAccessOpener": false,
+      "targetId": "41A2B38F30E49F8F4FB4C9C7651BDCAA",
+      "title": "https://a.adtng.com/get/10000098?&uuid=0f27d46734474fb28bcc4fdf075ca6d2&impid=0f27d46734474fb28bcc4fdf075ca6d2-1&tj_zid=5&tj_cid=1007935961&tj_aid=2071998101&infos=CiQ1OGRmZWU4Ny1jMTdkLTQxMDQtYmU1O...",
+      "type": "iframe",
+      "url": "https://a.adtng.com/get/10000098?&uuid=0f27d46734474fb28bcc4fdf075ca6d2&impid=0f27d46734474fb28bcc4fdf075ca6d2-1&tj_zid=5&tj_cid=1007935961&tj_aid=2071998101&infos=CiQ1OGRmZWU4Ny1jMTdkLTQxMDQtYmU1O..."
+   }
+}
+[1734948737.022][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "41A2B38F30E49F8F4FB4C9C7651BDCAA",
+   "reason": "swap"
+}
+[1734948737.023][DEBUG]: DevTools WebSocket Response: Page.enable (id=34) (session_id=1EEE70D73CE195C56709A6059817753D) 1EEE70D73CE195C56709A6059817753D {
+}
+[1734948737.023][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=35) (session_id=1EEE70D73CE195C56709A6059817753D) 1EEE70D73CE195C56709A6059817753D {
+   "identifier": "1"
+}
+[1734948737.023][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=36) (session_id=1EEE70D73CE195C56709A6059817753D) 1EEE70D73CE195C56709A6059817753D {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734948737.023][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=37) (session_id=1EEE70D73CE195C56709A6059817753D) 1EEE70D73CE195C56709A6059817753D {
+}
+[1734948737.023][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=38) (session_id=1EEE70D73CE195C56709A6059817753D) 1EEE70D73CE195C56709A6059817753D {
+}
+[1734948737.024][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=1EEE70D73CE195C56709A6059817753D) 1EEE70D73CE195C56709A6059817753D {
+   "context": {
+      "auxData": {
+         "frameId": "41A2B38F30E49F8F4FB4C9C7651BDCAA",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://a.adtng.com",
+      "uniqueId": "-4190042192453031527.4421888020417664841"
+   }
+}
+[1734948737.024][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=38) (session_id=1EEE70D73CE195C56709A6059817753D) 1EEE70D73CE195C56709A6059817753D {
+}
+[1734948737.024][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=39) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "1"
+}
+[1734948737.024][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=39) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948737.024][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=40) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "document",
+   "objectGroup": "b449fe70-e6d4-4a9e-89c0-803a185acd62"
+}
+[1734948737.024][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=40) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "832168735744193678.1.2",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734948737.024][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=41) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "objectId": "832168735744193678.1.2"
+}
+[1734948737.025][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=41) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "https://jp.pornhub.com/",
+      "childNodeCount": 2,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "https://jp.pornhub.com/",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734948737.025][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=42) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "objectGroup": "b449fe70-e6d4-4a9e-89c0-803a185acd62"
+}
+[1734948737.025][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=43) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-8761304944210290117.2864504854821586237"
+}
+[1734948737.025][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=42) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+}
+[1734948737.025][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=43) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "type": "string",
+      "value": "interactive"
+   }
+}
+[1734948737.530][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=44) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "1"
+}
+[1734948737.532][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=44) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948737.548][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "08150DFE4B4EBB86B493A3BAD83850D2",
+   "parentFrameId": "47E9206DE6287D65228E0CA203AEEDA5",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 34252,
+         "functionName": "sendAdsViewedEvent",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://static.trafficjunky.com/invocation/embeddedads/production/embeddedads.es6.min.js"
+      }, {
+         "columnNumber": 34341,
+         "functionName": "sendEvent",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://static.trafficjunky.com/invocation/embeddedads/production/embeddedads.es6.min.js"
+      }, {
+         "columnNumber": 35078,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://static.trafficjunky.com/invocation/embeddedads/production/embeddedads.es6.min.js"
+      } ]
+   }
+}
+[1734948737.549][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "disposition": "currentTab",
+   "frameId": "08150DFE4B4EBB86B493A3BAD83850D2",
+   "reason": "initialFrameNavigation",
+   "url": "https://jp.pornhub.com/_xa/fla/log?action=ad_view&ad_id=1066959081&campaign_id=1009491591&initial_zone_id=2184351&member_id=1005010141&zone_id=2184351"
+}
+[1734948737.549][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "08150DFE4B4EBB86B493A3BAD83850D2"
+}
+[1734948737.549][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=45) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "1"
+}
+[1734948737.552][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=45) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948737.559][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "sessionId": "EF164C12391C8529FDAD22410DFFC56B",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "C6042536D7EA49E45A03AF26AD7E6F01",
+      "canAccessOpener": false,
+      "targetId": "49F6DEC6937746F93327F26A47A4729B",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734948737.560][DEBUG]: DevTools WebSocket Command: Page.enable (id=46) (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+}
+[1734948737.560][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=47) (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948737.560][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=48) (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948737.560][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=49) (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734948737.563][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "C6042536D7EA49E45A03AF26AD7E6F01",
+      "canAccessOpener": false,
+      "targetId": "49F6DEC6937746F93327F26A47A4729B",
+      "title": "https://r.trwl1.com/s1/dc515f2b-9cb1-4a6e-899f-04f12d181971?externalId={ACLID}&cv1=1009491591&cv2=&cv3=1851151531&cv4=2184351&cv5=Pornhub&cv6=TJ2%20JPSTRIP%203025%20M&cv7=0.261&cv8=Pornhub%20PC%20-...",
+      "type": "iframe",
+      "url": "https://r.trwl1.com/s1/dc515f2b-9cb1-4a6e-899f-04f12d181971?externalId={ACLID}&cv1=1009491591&cv2=&cv3=1851151531&cv4=2184351&cv5=Pornhub&cv6=TJ2%20JPSTRIP%203025%20M&cv7=0.261&cv8=Pornhub%20PC%20-..."
+   }
+}
+[1734948737.563][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "49F6DEC6937746F93327F26A47A4729B",
+   "reason": "swap"
+}
+[1734948737.565][DEBUG]: DevTools WebSocket Response: Page.enable (id=46) (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+}
+[1734948737.566][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=47) (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+   "identifier": "1"
+}
+[1734948737.566][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=48) (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734948737.566][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=49) (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+}
+[1734948737.566][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=50) (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+}
+[1734948737.568][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+   "frameId": "630B1274182C1887DABD2D792E88FFBE",
+   "parentFrameId": "49F6DEC6937746F93327F26A47A4729B"
+}
+[1734948737.568][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+   "disposition": "currentTab",
+   "frameId": "630B1274182C1887DABD2D792E88FFBE",
+   "reason": "initialFrameNavigation",
+   "url": "https://creative.xliirdr.com/widgets/v4/Universal?campaignId=%7Bcampaign.id%7D&creativeId=tit_ban&sourceId=%7Buser.id%7D&memberId=%7Bclick.id%7D&tag=girls%2Fjapanese&hideButton=1&hideTitle=1&userId..."
+}
+[1734948737.569][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+   "frameId": "630B1274182C1887DABD2D792E88FFBE"
+}
+[1734948737.571][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+   "context": {
+      "auxData": {
+         "frameId": "630B1274182C1887DABD2D792E88FFBE",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://r.trwl1.com",
+      "uniqueId": "2490910240156610541.4955898378704263032"
+   }
+}
+[1734948737.571][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+   "context": {
+      "auxData": {
+         "frameId": "49F6DEC6937746F93327F26A47A4729B",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://r.trwl1.com",
+      "uniqueId": "-92307292905064481.-5210563446825900440"
+   }
+}
+[1734948737.571][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=50) (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+}
+[1734948737.571][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=51) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "1"
+}
+[1734948737.571][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+   "timestamp": 58730.387534
+}
+[1734948737.571][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=51) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948737.571][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=52) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "document",
+   "objectGroup": "77bb9ad5-d1d2-416e-bf6a-6534b7bcddf2"
+}
+[1734948737.572][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=52) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "832168735744193678.1.3",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734948737.572][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=53) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "objectId": "832168735744193678.1.3"
+}
+[1734948737.572][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=53) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "https://jp.pornhub.com/",
+      "childNodeCount": 2,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "https://jp.pornhub.com/",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734948737.572][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=54) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "objectGroup": "77bb9ad5-d1d2-416e-bf6a-6534b7bcddf2"
+}
+[1734948737.572][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=55) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-8761304944210290117.2864504854821586237"
+}
+[1734948737.572][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=54) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+}
+[1734948737.572][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=55) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "type": "string",
+      "value": "interactive"
+   }
+}
+[1734948737.639][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+   "sessionId": "403F70B196F460886D843A8ADD1A73B1",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "C6042536D7EA49E45A03AF26AD7E6F01",
+      "canAccessOpener": false,
+      "targetId": "630B1274182C1887DABD2D792E88FFBE",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734948737.639][DEBUG]: DevTools WebSocket Command: Page.enable (id=56) (session_id=403F70B196F460886D843A8ADD1A73B1) 403F70B196F460886D843A8ADD1A73B1 {
+}
+[1734948737.639][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=57) (session_id=403F70B196F460886D843A8ADD1A73B1) 403F70B196F460886D843A8ADD1A73B1 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948737.639][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=58) (session_id=403F70B196F460886D843A8ADD1A73B1) 403F70B196F460886D843A8ADD1A73B1 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948737.639][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=59) (session_id=403F70B196F460886D843A8ADD1A73B1) 403F70B196F460886D843A8ADD1A73B1 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734948737.640][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "C6042536D7EA49E45A03AF26AD7E6F01",
+      "canAccessOpener": false,
+      "targetId": "630B1274182C1887DABD2D792E88FFBE",
+      "title": "https://creative.xliirdr.com/widgets/v4/Universal?campaignId=%7Bcampaign.id%7D&creativeId=tit_ban&sourceId=%7Buser.id%7D&memberId=%7Bclick.id%7D&tag=girls%2Fjapanese&hideButton=1&hideTitle=1&userId...",
+      "type": "iframe",
+      "url": "https://creative.xliirdr.com/widgets/v4/Universal?campaignId=%7Bcampaign.id%7D&creativeId=tit_ban&sourceId=%7Buser.id%7D&memberId=%7Bclick.id%7D&tag=girls%2Fjapanese&hideButton=1&hideTitle=1&userId..."
+   }
+}
+[1734948737.641][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+   "frameId": "630B1274182C1887DABD2D792E88FFBE",
+   "reason": "swap"
+}
+[1734948737.641][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+   "executionContextId": 2,
+   "executionContextUniqueId": "2490910240156610541.4955898378704263032"
+}
+[1734948737.642][DEBUG]: DevTools WebSocket Response: Page.enable (id=56) (session_id=403F70B196F460886D843A8ADD1A73B1) 403F70B196F460886D843A8ADD1A73B1 {
+}
+[1734948737.642][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=57) (session_id=403F70B196F460886D843A8ADD1A73B1) 403F70B196F460886D843A8ADD1A73B1 {
+   "identifier": "1"
+}
+[1734948737.642][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=58) (session_id=403F70B196F460886D843A8ADD1A73B1) 403F70B196F460886D843A8ADD1A73B1 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734948737.642][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=59) (session_id=403F70B196F460886D843A8ADD1A73B1) 403F70B196F460886D843A8ADD1A73B1 {
+}
+[1734948737.642][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=60) (session_id=403F70B196F460886D843A8ADD1A73B1) 403F70B196F460886D843A8ADD1A73B1 {
+}
+[1734948737.643][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=403F70B196F460886D843A8ADD1A73B1) 403F70B196F460886D843A8ADD1A73B1 {
+   "context": {
+      "auxData": {
+         "frameId": "630B1274182C1887DABD2D792E88FFBE",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://creative.xliirdr.com",
+      "uniqueId": "-1360035161225013688.-5221160730065077732"
+   }
+}
+[1734948737.643][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=60) (session_id=403F70B196F460886D843A8ADD1A73B1) 403F70B196F460886D843A8ADD1A73B1 {
+}
+[1734948737.643][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=61) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "1"
+}
+[1734948737.643][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=61) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948737.643][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=62) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "document",
+   "objectGroup": "2e4fbb6f-3583-4ed5-a1d9-7a6df97700ff"
+}
+[1734948737.644][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=62) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "832168735744193678.1.4",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734948737.644][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=63) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "objectId": "832168735744193678.1.4"
+}
+[1734948737.644][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=63) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "https://jp.pornhub.com/",
+      "childNodeCount": 2,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "https://jp.pornhub.com/",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734948737.644][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=64) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "objectGroup": "2e4fbb6f-3583-4ed5-a1d9-7a6df97700ff"
+}
+[1734948737.644][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=65) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-8761304944210290117.2864504854821586237"
+}
+[1734948737.644][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=64) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+}
+[1734948737.644][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=65) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "type": "string",
+      "value": "interactive"
+   }
+}
+[1734948737.651][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=1EEE70D73CE195C56709A6059817753D) 1EEE70D73CE195C56709A6059817753D {
+   "timestamp": 58730.467753
+}
+[1734948737.651][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=66) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "1"
+}
+[1734948737.651][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=66) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948737.706][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=403F70B196F460886D843A8ADD1A73B1) 403F70B196F460886D843A8ADD1A73B1 {
+   "timestamp": 58730.522039
+}
+[1734948737.706][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=403F70B196F460886D843A8ADD1A73B1) 403F70B196F460886D843A8ADD1A73B1 {
+   "timestamp": 58730.522211
+}
+[1734948737.706][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=403F70B196F460886D843A8ADD1A73B1) 403F70B196F460886D843A8ADD1A73B1 {
+   "frameId": "630B1274182C1887DABD2D792E88FFBE"
+}
+[1734948737.706][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+   "timestamp": 58730.522421
+}
+[1734948737.706][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=EF164C12391C8529FDAD22410DFFC56B) EF164C12391C8529FDAD22410DFFC56B {
+   "frameId": "49F6DEC6937746F93327F26A47A4729B"
+}
+[1734948737.706][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "171A76F5E9E4A45CFA7948FA0F253D32"
+}
+[1734948737.706][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=67) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "1"
+}
+[1734948737.706][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=67) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948737.726][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "pornhub.com",
+      "gatedAPIFeatures": [  ],
+      "id": "08150DFE4B4EBB86B493A3BAD83850D2",
+      "loaderId": "B68EB67DE8748594AE645DE31417D7EB",
+      "mimeType": "text/plain",
+      "name": "",
+      "parentId": "47E9206DE6287D65228E0CA203AEEDA5",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://jp.pornhub.com",
+      "url": "https://jp.pornhub.com/_xa/fla/log?action=ad_view&ad_id=1066959081&campaign_id=1009491591&initial_zone_id=2184351&member_id=1005010141&zone_id=2184351"
+   },
+   "type": "Navigation"
+}
+[1734948737.726][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=68) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "1"
+}
+[1734948737.727][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "context": {
+      "auxData": {
+         "frameId": "08150DFE4B4EBB86B493A3BAD83850D2",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 6,
+      "name": "",
+      "origin": "https://jp.pornhub.com",
+      "uniqueId": "-4095488254650779175.-1341556464509274739"
+   }
+}
+[1734948737.727][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=68) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948737.727][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "08150DFE4B4EBB86B493A3BAD83850D2"
+}
+[1734948737.727][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=69) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "1"
+}
+[1734948737.727][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=69) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[23024:43267:1223/191217.877135:ERROR:ffmpeg_common.cc(970)] Unsupported pixel format: -1
+sysctlbyname for kern.hv_vmm_present failed with status -1[1734948737.941][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=1EEE70D73CE195C56709A6059817753D) 1EEE70D73CE195C56709A6059817753D {
+   "timestamp": 58730.757102
+}
+[1734948737.941][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=1EEE70D73CE195C56709A6059817753D) 1EEE70D73CE195C56709A6059817753D {
+   "frameId": "41A2B38F30E49F8F4FB4C9C7651BDCAA"
+}
+[1734948737.941][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "0397487AE90A6667C27DAAECBA5080FD"
+}
+[1734948737.941][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=70) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "expression": "1"
+}
+[1734948737.942][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "sessionId": "AD93078F2BA5ED15F6B2F69FF419C056",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "C6042536D7EA49E45A03AF26AD7E6F01",
+      "canAccessOpener": false,
+      "targetId": "5CEAA34B21E23670BF19F802D94B3D7E",
+      "title": "Service Worker https://jp.pornhub.com/service-worker.js",
+      "type": "service_worker",
+      "url": "https://jp.pornhub.com/service-worker.js"
+   },
+   "waitingForDebugger": false
+}
+[1734948737.942][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "timestamp": 58730.758211
+}
+[1734948737.942][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=71) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-8761304944210290117.2864504854821586237"
+}
+[1734948737.942][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "frameId": "47E9206DE6287D65228E0CA203AEEDA5"
+}
+[1734948737.943][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=70) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948737.943][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=71) (session_id=8463EB83E9A6A0946D5578BC9B888835) 47E9206DE6287D65228E0CA203AEEDA5 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734948737.943][INFO]: Done waiting for pending navigations. Status: ok
+[1734948737.943][INFO]: [d65eccfcd27f9549ef164fa0d478d64c] RESPONSE Navigate
+[1734948738.795][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=403F70B196F460886D843A8ADD1A73B1) 403F70B196F460886D843A8ADD1A73B1 {
+   "sessionId": "6080B7BD51AF628C008012C69A32EAAA",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "C6042536D7EA49E45A03AF26AD7E6F01",
+      "canAccessOpener": false,
+      "targetId": "98FD77AC7D0E1FE0B4191753FA2C4E45",
+      "title": "https://creative.xliirdr.com/hls.worker.js",
+      "type": "worker",
+      "url": "https://creative.xliirdr.com/hls.worker.js"
+   },
+   "waitingForDebugger": false
+}
+[1734948747.949][INFO]: [d65eccfcd27f9549ef164fa0d478d64c] COMMAND Quit {
+}
+[1734948748.005][INFO]: [d65eccfcd27f9549ef164fa0d478d64c] RESPONSE Quit
+[1734948748.005][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1734948748.005][DEBUG]: Log type 'browser' lost 0 entries on destruction

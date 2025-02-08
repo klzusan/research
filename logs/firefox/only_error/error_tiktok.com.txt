@@ -1,0 +1,4 @@
+console.error: "Warning: unrecognized command line flag" "-disable-extensions"
+
+JavaScript warning: https://sf16-website-login.neutral.ttwstatic.com/obj/tiktok_web_login_static/tiktok/webapp/main/webapp-desktop-islands/npm-d801507b.19ac3a0b17a1aad886d1.js, line 2: This error message will be blank when privacy.resistFingerprinting = true.  If it is really necessary, please add it to the whitelist in MediaError::GetMessage: Failed to open media
+

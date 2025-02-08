@@ -1,0 +1,312 @@
+URL: amazon.com
+Cat: Marketplace
+Err:
+(Err)Failed to load resource: net::ERR_TRUST_TOKEN_OPERATION_FAILED
+War:
+
+URL: baidu.com
+Cat: Search Engines
+Err:
+War:
+
+URL: bilibili.com
+Cat: Animation and Comics
+Err:
+War:
+(War)document.domain mutation is ignored because the surrounding agent cluster is origin-keyed.
+
+URL: bing.com
+Cat: Search Engines
+Err:
+(Err)Failed to load resource: the server responded with a status of 400 ()
+(Err)Failed to load resource: net::ERR_CERT_DATE_INVALID
+War:
+(War)An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+
+URL: canva.com
+Cat: Graphics Multimedia and Web Design
+Err:
+(Err)Failed to load resource: the server responded with a status of 403 ()
+(Err)Provider's accounts list is empty.
+War:
+
+URL: chatgpt.com
+Cat: Programming and Developer Software
+Err:
+(Err)Failed to load resource: the server responded with a status of 403 ()
+War:
+
+URL: duckduckgo.com
+Cat: Search Engines
+Err:
+War:
+(War)The resource REPLACED_URL was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value a...
+
+URL: dzen.ru
+Cat: Community and Society - Other
+Err:
+War:
+(War)Failed to parse video contentType: video/ogg; codecs=theora
+
+URL: facebook.com
+Cat: Social Media Networks
+Err:
+War:
+
+URL: fandom.com
+Cat: Arts and Entertainment - Other
+Err:
+(Err)[Report Only] Refused to load the image 'REPLACED_URL' because it violates the following Content Security Policy di...
+(Err)Failed to load resource: the server responded with a status of 401 ()
+(Err)Failed to load resource: the server responded with a status of 400 ()
+(Err)Failed to load resource: the server responded with a status of 404 ()
+(Err)Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+War:
+
+URL: globo.com
+Cat: News & Media Publishers
+Err:
+(Err)Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+(Err)Failed to load resource: net::ERR_CONNECTION_REFUSED
+(Err)Failed to load resource: the server responded with a status of 404 ()
+War:
+
+URL: google.com
+Cat: Search Engines
+Err:
+War:
+
+URL: instagram.com
+Cat: Social Media Networks
+Err:
+War:
+
+URL: kwai-video.com
+Cat: Streaming & Online TV
+Err:
+(Err)[Report Only] Refused to load the script 'REPLACED_URL' because it violates the following Content Security Policy di...
+(Err)[Report Only] Refused to load the script 'REPLACED_URL' because it violates the following Content Security P...
+(Err)[Report Only] Refused to load the script 'REPLACED_URL' because it violates the following Content Security Policy directive: \"default-s...
+(Err)[Report Only] Refused to load the script 'REPLACED_URL' because it violates the following Content Security Policy directive: \"default-src 'self' 'unsafe-inlin...
+(Err)[Report Only] Refused to frame 'REPLACED_URL' because it violates the following Content Security Policy directive: \"default-src 'self' *.mythad.com REPLACED_URL ht...
+War:
+
+URL: lazlogistics.ph
+Cat: Shipping and Logistics
+Err:
+(Err)Failed to load resource: the server responded with a status of 404 ()
+War:
+
+URL: linkedin.com
+Cat: Social Media Networks
+Err:
+War:
+
+URL: live.com
+Cat: Email
+Err:
+(Err)Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+War:
+
+URL: mail.ru
+Cat: Email
+Err:
+War:
+(War)Failed to parse video contentType: video/ogg; codecs=theora
+(War)The resource REPLACED_URL was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropri...
+
+URL: microsoft.com
+Cat: Programming and Developer Software
+Err:
+(Err)Failed to load resource: the server responded with a status of 403 ()
+War:
+
+URL: microsoftonline.com
+Cat: Programming and Developer Software
+Err:
+War:
+
+URL: naver.com
+Cat: News & Media Publishers
+Err:
+War:
+(War)Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('REPLACED_URL') does not match the recipient window's origin ('REPLACED_URL').
+
+URL: netflix.com
+Cat: Streaming & Online TV
+Err:
+War:
+
+URL: news.yahoo.co.jp
+Cat: News & Media Publishers
+Err:
+(Err)Permissions policy violation: unload is not allowed in this document.
+War:
+(War)Allow attribute will take precedence over 'allowfullscreen'.
+
+URL: office.com
+Cat: Programming and Developer Software
+Err:
+War:
+
+URL: pinterest.com
+Cat: Social Media Networks
+Err:
+(Err)Provider's accounts list is empty.
+War:
+
+URL: pornhub.com
+Cat: Adult
+Err:
+War:
+
+URL: quora.com
+Cat: Dictionaries and Encyclopedias
+Err:
+(Err)Provider's accounts list is empty.
+War:
+(War)The resource REPLACED_URL was preloaded using link preload in Early Hints but not used within a few seconds ...
+(War)The resource REPLACED_URL was preloaded using link preload in Early Hints but not used within a few seconds from the w...
+(War)The resource REPLACED_URL was preloaded using link preload in Early Hints but not used within a few seconds fr...
+(War)The resource REPLACED_URL was preloaded using link preload in Early Hints but not used within a few seconds from the ...
+(War)The resource REPLACED_URL was preloaded using link preload in Early Hints but not used within a few ...
+(War)The resource REPLACED_URL was preloaded using link preload in Early Hints but not used within a few s...
+
+URL: reddit.com
+Cat: Social Media Networks
+Err:
+(Err)Provider's accounts list is empty.
+War:
+
+URL: rpr.one
+Cat: Adult
+Err:
+War:
+
+URL: samsung.com
+Cat: Consumer Electronics
+Err:
+(Err)Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+War:
+
+URL: sharepoint.com
+Cat: Computers Electronics and Technology - Other
+Err:
+War:
+
+URL: t.me
+Cat: Computers Electronics and Technology - Other
+Err:
+War:
+
+URL: temu.com
+Cat: Marketplace
+Err:
+(Err)Failed to load resource: the server responded with a status of 403 ()
+(Err)Failed to load resource: the server responded with a status of 424 ()
+(Err)Failed to load resource: the server responded with a status of 429 ()
+War:
+
+URL: tiktok.com
+Cat: Social Media Networks
+Err:
+(Err)Failed to load resource: the server responded with a status of 403 ()
+War:
+
+URL: twitch.tv
+Cat: Video Games Consoles and Accessories
+Err:
+(Err)Failed to load resource: the server responded with a status of 429 ()
+(Err)Failed to load resource: the server responded with a status of 429 (Too Many Requests)
+War:
+
+URL: twitter.com
+Cat: Social Media Networks
+Err:
+(Err)The request has been aborted.
+(Err)Failed to load resource: the server responded with a status of 404 ()
+(Err)Provider's accounts list is empty.
+War:
+
+URL: vk.com
+Cat: Social Media Networks
+Err:
+War:
+(War)Failed to parse video contentType: video/ogg; codecs=theora
+
+URL: weather.com
+Cat: Weather
+Err:
+(Err)Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+War:
+
+URL: whatsapp.com
+Cat: Social Media Networks
+Err:
+War:
+
+URL: wikipedia.org
+Cat: Dictionaries and Encyclopedias
+Err:
+War:
+
+URL: x.com
+Cat: Social Media Networks
+Err:
+(Err)The request has been aborted.
+(Err)Failed to load resource: the server responded with a status of 404 ()
+(Err)Provider's accounts list is empty.
+War:
+
+URL: xhamster.com
+Cat: Adult
+Err:
+War:
+
+URL: xhamster42.desi
+Cat: File Sharing and Hosting
+Err:
+War:
+
+URL: xnxx.com
+Cat: Adult
+Err:
+War:
+
+URL: xvideos.com
+Cat: Adult
+Err:
+War:
+
+URL: yahoo.co.jp
+Cat: News & Media Publishers
+Err:
+(Err)Permissions policy violation: unload is not allowed in this document.
+War:
+(War)Allow attribute will take precedence over 'allowfullscreen'.
+
+URL: yahoo.com
+Cat: News & Media Publishers
+Err:
+(Err)Failed to load resource: net::ERR_NAME_NOT_RESOLVED
+War:
+(War)An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+
+URL: yandex.ru
+Cat: Search Engines
+Err:
+War:
+(War)Failed to parse video contentType: video/ogg; codecs=theora
+
+URL: youtube.com
+Cat: Streaming & Online TV
+Err:
+(Err)Failed to load resource: the server responded with a status of 403 (Forbidden)
+War:
+(War)The resource REPLACED_URL was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and ...
+
+URL: zoom.us
+Cat: Computers Electronics and Technology - Other
+Err:
+War:
+

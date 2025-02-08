@@ -1,0 +1,6 @@
+console.error: "Warning: unrecognized command line flag" "-disable-extensions"
+
+JavaScript error: https://www.youtube.com/?themeRefresh=1, line 12: TypeError: can't access dead object
+
+JavaScript error: https://www.youtube.com/?themeRefresh=1, line 12: TypeError: can't access dead object
+

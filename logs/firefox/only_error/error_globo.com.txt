@@ -1,0 +1,6 @@
+console.error: "Warning: unrecognized command line flag" "-disable-extensions"
+
+JavaScript error: https://www.globo.com/, line 403: TypeError: t is undefined
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+

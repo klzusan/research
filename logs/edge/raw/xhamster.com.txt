@@ -1,0 +1,927 @@
+[1734950532.243][INFO]: Starting Microsoft Edge WebDriver 131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70) on port 58189
+[1734950532.243][INFO]: Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+[1734950532.245][INFO]: msedgedriver was started successfully on port 58189
+[1734950532.255][INFO]: [50b05e482e907dbd786ebbec847f6fd3] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "MicrosoftEdge",
+         "browserVersion": null,
+         "ms:edgeOptions": {
+            "args": [ "--disable-extensions", "--inprivate" ],
+            "binary": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1734950532.256][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1734950532.256][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1734950532.256][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1734950532.256][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1734950532.256][INFO]: WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS = 
+[1734950532.256][INFO]: Launching Microsoft Edge: /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-extensions --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --inprivate --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.oFGJfH data:,
+
+DevTools listening on ws://127.0.0.1:58194/devtools/browser/4754642e-90f8-4f81-bd34-21f5f5d25bef
+[1734950532.534][DEBUG]: DevTools HTTP Request: http://localhost:58194/json/version
+[1734950532.846][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Edg/131.0.2903.112",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
+   "V8-Version": "13.1.20.9",
+   "WebKit-Version": "537.36 (@16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+   "webSocketDebuggerUrl": "ws://localhost:58194/devtools/browser/4754642e-90f8-4f81-bd34-21f5f5d25bef"
+}
+
+[1734950532.848][DEBUG]: DevTools HTTP Request: http://localhost:58194/json/list
+[1734950532.862][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:58194/devtools/page/3CD62329080CCC86B7F925A92ADD5CF0",
+   "id": "3CD62329080CCC86B7F925A92ADD5CF0",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:58194/devtools/page/3CD62329080CCC86B7F925A92ADD5CF0"
+} ]
+
+[1734950532.865][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1734950532.867][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1734950532.871][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "BC79A1AC808AD1F466CF60971AFD0189",
+      "canAccessOpener": false,
+      "pid": 0,
+      "targetId": "3CD62329080CCC86B7F925A92ADD5CF0",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1734950532.871][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "3CD62329080CCC86B7F925A92ADD5CF0"
+}
+[1734950532.872][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "86E56630564DD87554440FF4EBFD3425",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "BC79A1AC808AD1F466CF60971AFD0189",
+      "canAccessOpener": false,
+      "pid": 31036,
+      "targetId": "3CD62329080CCC86B7F925A92ADD5CF0",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1734950532.874][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "86E56630564DD87554440FF4EBFD3425"
+}
+[1734950532.875][DEBUG]: DevTools WebSocket Command: Page.enable (id=3) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+}
+[1734950532.875][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950532.875][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=5) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950532.877][DEBUG]: DevTools WebSocket Command: Log.enable (id=6) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+}
+[1734950532.878][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=7) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734950532.890][DEBUG]: DevTools WebSocket Response: Page.enable (id=3) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+}
+[1734950532.890][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "identifier": "1"
+}
+[1734950532.891][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=5) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734950532.892][DEBUG]: DevTools WebSocket Response: Log.enable (id=6) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+}
+[1734950532.892][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=7) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+}
+[1734950532.892][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+}
+[1734950532.896][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "context": {
+      "auxData": {
+         "frameId": "3CD62329080CCC86B7F925A92ADD5CF0",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "-8886333879824536183.-6749004197209014796"
+   }
+}
+[1734950532.899][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+}
+[1734950532.899][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+}
+[1734950532.899][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+}
+[1734950532.900][INFO]: [50b05e482e907dbd786ebbec847f6fd3] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "MicrosoftEdge",
+      "browserVersion": "131.0.2903.112",
+      "fedcm:accounts": true,
+      "ms:edgeOptions": {
+         "debuggerAddress": "localhost:58194"
+      },
+      "msedge": {
+         "msedgedriverVersion": "131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+         "userDataDir": "/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.oFGJfH"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "50b05e482e907dbd786ebbec847f6fd3"
+}
+[1734950532.902][INFO]: [50b05e482e907dbd786ebbec847f6fd3] COMMAND Navigate {
+   "url": "https://xhamster.com"
+}
+[1734950532.903][INFO]: Waiting for pending navigations...
+[1734950532.903][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=10) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "expression": "1"
+}
+[1734950532.904][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=10) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950532.905][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=11) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "expression": "document",
+   "objectGroup": "d8180bcb-0895-4606-8efe-cdfba82656c9"
+}
+[1734950532.905][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=11) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "-8559053517005784881.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734950532.905][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=12) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "objectId": "-8559053517005784881.1.1"
+}
+[1734950532.906][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=12) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734950532.908][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=13) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "objectGroup": "d8180bcb-0895-4606-8efe-cdfba82656c9"
+}
+[1734950532.908][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-8886333879824536183.-6749004197209014796"
+}
+[1734950532.909][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=13) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+}
+[1734950532.909][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734950532.909][INFO]: Done waiting for pending navigations. Status: ok
+[1734950532.909][DEBUG]: DevTools WebSocket Command: Page.navigate (id=15) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "url": "https://xhamster.com"
+}
+[1734950532.911][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "frameId": "3CD62329080CCC86B7F925A92ADD5CF0"
+}
+2024-12-23 19:42:13.104 Microsoft Edge[31026:1077047] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-23 19:42:13.104 Microsoft Edge[31026:1077047] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+[1734950533.930][DEBUG]: DevTools WebSocket Response: Page.navigate (id=15) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "frameId": "3CD62329080CCC86B7F925A92ADD5CF0",
+   "loaderId": "65DC976CCE8AA5E004DEE4418884D951"
+}
+[1734950533.930][INFO]: Waiting for pending navigations...
+[1734950533.930][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "expression": "1"
+}
+[1734950533.931][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+}
+[1734950533.932][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+}
+[1734950533.932][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "xhamster.com",
+      "gatedAPIFeatures": [  ],
+      "id": "3CD62329080CCC86B7F925A92ADD5CF0",
+      "loaderId": "65DC976CCE8AA5E004DEE4418884D951",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://jp.xhamster.com",
+      "url": "https://jp.xhamster.com/"
+   },
+   "type": "Navigation"
+}
+[1734950533.939][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "context": {
+      "auxData": {
+         "frameId": "3CD62329080CCC86B7F925A92ADD5CF0",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://jp.xhamster.com",
+      "uniqueId": "-8483474465701524840.7468374518187961773"
+   }
+}
+[1734950533.941][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950533.942][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://lcdn.tsyndicate.com/sdk/v1/interstitial.ts.css.",
+      "timestamp": 1.734950533941245e+12,
+      "url": "https://jp.xhamster.com/"
+   }
+}
+[1734950533.942][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://lcdn.tsyndicate.com/sdk/v1/interstitial.ts.css.",
+      "timestamp": 1.734950533941457e+12,
+      "url": "https://jp.xhamster.com/"
+   }
+}
+[1734950533.942][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://lcdn.tsyndicate.com/sdk/v1/interstitial.ts.css.",
+      "timestamp": 1.734950533941504e+12,
+      "url": "https://jp.xhamster.com/"
+   }
+}
+[1734950533.942][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://lcdn.tsyndicate.com/sdk/v1/interstitial.ts.css.",
+      "timestamp": 1.734950533941556e+12,
+      "url": "https://jp.xhamster.com/"
+   }
+}
+[1734950533.942][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=17) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "expression": "1"
+}
+[1734950533.942][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=17) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950534.077][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 159,
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://lcdn.tsyndicate.com/sdk/v1/interstitial.ts.js?v=1.",
+      "timestamp": 1.734950534076591e+12,
+      "url": "https://jp.xhamster.com/"
+   }
+}
+[1734950534.077][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 159,
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://lcdn.tsyndicate.com/sdk/v1/interstitial.ts.js?v=1.",
+      "timestamp": 1.734950534076634e+12,
+      "url": "https://jp.xhamster.com/"
+   }
+}
+[1734950534.077][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 159,
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://lcdn.tsyndicate.com/sdk/v1/interstitial.ts.js?v=1.",
+      "timestamp": 1.734950534076654e+12,
+      "url": "https://jp.xhamster.com/"
+   }
+}
+[1734950534.077][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 159,
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://lcdn.tsyndicate.com/sdk/v1/interstitial.ts.js?v=1.",
+      "timestamp": 1.734950534076719e+12,
+      "url": "https://jp.xhamster.com/"
+   }
+}
+[1734950534.077][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "expression": "1"
+}
+[1734950534.077][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950534.182][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "entry": {
+      "level": "info",
+      "lineNumber": 168,
+      "source": "intervention",
+      "text": "Images loaded lazily and replaced with placeholders. Load events are deferred. See https://go.microsoft.com/fwlink/?linkid=2048113",
+      "timestamp": 1.73495053418138e+12,
+      "url": "https://jp.xhamster.com/"
+   }
+}
+[1734950534.182][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "expression": "1"
+}
+[1734950534.204][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950534.563][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "frameId": "3CEFDBB2977B632A52175AB8803C0C46",
+   "parentFrameId": "3CD62329080CCC86B7F925A92ADD5CF0",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 128526,
+         "functionName": "ei",
+         "lineNumber": 16,
+         "scriptId": "18",
+         "url": "https://static-ah.xhcdn.com/xh-desktop/js/v5ac38fec5a.start.js"
+      }, {
+         "columnNumber": 134243,
+         "functionName": "value",
+         "lineNumber": 16,
+         "scriptId": "18",
+         "url": "https://static-ah.xhcdn.com/xh-desktop/js/v5ac38fec5a.start.js"
+      }, {
+         "columnNumber": 134773,
+         "functionName": "value",
+         "lineNumber": 16,
+         "scriptId": "18",
+         "url": "https://static-ah.xhcdn.com/xh-desktop/js/v5ac38fec5a.start.js"
+      }, {
+         "columnNumber": 670714,
+         "functionName": "m",
+         "lineNumber": 0,
+         "scriptId": "23",
+         "url": "https://static-ah.xhcdn.com/xh-desktop/js/v0bdd717512.index.js"
+      }, {
+         "columnNumber": 669788,
+         "functionName": "m",
+         "lineNumber": 0,
+         "scriptId": "23",
+         "url": "https://static-ah.xhcdn.com/xh-desktop/js/v0bdd717512.index.js"
+      }, {
+         "columnNumber": 668692,
+         "functionName": "m",
+         "lineNumber": 0,
+         "scriptId": "23",
+         "url": "https://static-ah.xhcdn.com/xh-desktop/js/v0bdd717512.index.js"
+      }, {
+         "columnNumber": 668184,
+         "functionName": "p",
+         "lineNumber": 0,
+         "scriptId": "23",
+         "url": "https://static-ah.xhcdn.com/xh-desktop/js/v0bdd717512.index.js"
+      }, {
+         "columnNumber": 671495,
+         "functionName": "p",
+         "lineNumber": 0,
+         "scriptId": "23",
+         "url": "https://static-ah.xhcdn.com/xh-desktop/js/v0bdd717512.index.js"
+      }, {
+         "columnNumber": 137407,
+         "functionName": "",
+         "lineNumber": 16,
+         "scriptId": "18",
+         "url": "https://static-ah.xhcdn.com/xh-desktop/js/v5ac38fec5a.start.js"
+      }, {
+         "columnNumber": 137446,
+         "functionName": "tc",
+         "lineNumber": 16,
+         "scriptId": "18",
+         "url": "https://static-ah.xhcdn.com/xh-desktop/js/v5ac38fec5a.start.js"
+      }, {
+         "columnNumber": 144534,
+         "functionName": "tO",
+         "lineNumber": 16,
+         "scriptId": "18",
+         "url": "https://static-ah.xhcdn.com/xh-desktop/js/v5ac38fec5a.start.js"
+      }, {
+         "columnNumber": 158238,
+         "functionName": "tF",
+         "lineNumber": 49,
+         "scriptId": "23",
+         "url": "https://static-ah.xhcdn.com/xh-desktop/js/v0bdd717512.index.js"
+      }, {
+         "columnNumber": 38187,
+         "functionName": "d",
+         "lineNumber": 16,
+         "scriptId": "18",
+         "url": "https://static-ah.xhcdn.com/xh-desktop/js/v5ac38fec5a.start.js"
+      }, {
+         "columnNumber": 158634,
+         "functionName": "26086",
+         "lineNumber": 49,
+         "scriptId": "23",
+         "url": "https://static-ah.xhcdn.com/xh-desktop/js/v0bdd717512.index.js"
+      }, {
+         "columnNumber": 1162,
+         "functionName": "t",
+         "lineNumber": 0,
+         "scriptId": "17",
+         "url": "https://static-ah.xhcdn.com/xh-desktop/js/v3f39e2784d.runtime.js"
+      }, {
+         "columnNumber": 78885,
+         "functionName": "e",
+         "lineNumber": 70,
+         "scriptId": "23",
+         "url": "https://static-ah.xhcdn.com/xh-desktop/js/v0bdd717512.index.js"
+      }, {
+         "columnNumber": 78953,
+         "functionName": "",
+         "lineNumber": 70,
+         "scriptId": "23",
+         "url": "https://static-ah.xhcdn.com/xh-desktop/js/v0bdd717512.index.js"
+      }, {
+         "columnNumber": 1541,
+         "functionName": "t.O",
+         "lineNumber": 0,
+         "scriptId": "17",
+         "url": "https://static-ah.xhcdn.com/xh-desktop/js/v3f39e2784d.runtime.js"
+      }, {
+         "columnNumber": 78966,
+         "functionName": "",
+         "lineNumber": 70,
+         "scriptId": "23",
+         "url": "https://static-ah.xhcdn.com/xh-desktop/js/v0bdd717512.index.js"
+      }, "..." ]
+   }
+}
+[1734950534.563][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "disposition": "currentTab",
+   "frameId": "3CEFDBB2977B632A52175AB8803C0C46",
+   "reason": "initialFrameNavigation",
+   "url": "https://nex8.space/recommended_1.html?language=jp&spotPageType=mainPage&spotType=widgetMiddleLine&locationCountry=jp&webp=1&orientation=straight&page=1&statsUID=67693e8597fd39.13148706f6a&exp=%7B%2..."
+}
+[1734950534.563][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=20) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "expression": "1"
+}
+[1734950534.564][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "frameId": "3CEFDBB2977B632A52175AB8803C0C46"
+}
+[1734950534.568][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "timestamp": 60527.447033
+}
+[1734950534.569][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "entry": {
+      "args": [ {
+         "className": "HTMLInputElement",
+         "description": "input#password.input-text.show-password",
+         "objectId": "7354540710862228468.1.1",
+         "subtype": "node",
+         "type": "object"
+      } ],
+      "level": "verbose",
+      "source": "recommendation",
+      "text": "[DOM] Input elements should have autocomplete attributes (suggested: \"current-password\"): (More info: https://www.chromium.org/developers/design-documents/create-amazing-password-forms) %o",
+      "timestamp": 1.734950534568251e+12,
+      "url": "https://jp.xhamster.com/"
+   }
+}
+[1734950534.579][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=20) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950534.579][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "sessionId": "A5BFD627EC3FBB558644AFFFC1D8BE73",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "BC79A1AC808AD1F466CF60971AFD0189",
+      "canAccessOpener": false,
+      "pid": 0,
+      "targetId": "9510D1B7E8782DAAB914B042376066DA",
+      "title": "Service Worker https://jp.xhamster.com/pwa.js?version=1.3.30&enableSearchMirrors=1",
+      "type": "service_worker",
+      "url": "https://jp.xhamster.com/pwa.js?version=1.3.30&enableSearchMirrors=1"
+   },
+   "waitingForDebugger": false
+}
+[1734950534.579][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=21) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "expression": "1"
+}
+[1734950534.584][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=21) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950534.617][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "entry": {
+      "level": "warning",
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950534616848e+12,
+      "url": "https://jp.xhamster.com/"
+   }
+}
+[1734950534.617][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "entry": {
+      "level": "warning",
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.73495053461688e+12,
+      "url": "https://jp.xhamster.com/"
+   }
+}
+[1734950534.617][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=22) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "expression": "1"
+}
+[1734950534.629][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=22) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950534.648][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "frameId": "3CD62329080CCC86B7F925A92ADD5CF0",
+   "navigationType": "historyApi",
+   "url": "https://jp.xhamster.com/#back_url"
+}
+[1734950534.648][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "frameId": "3CD62329080CCC86B7F925A92ADD5CF0",
+   "navigationType": "historyApi",
+   "url": "https://jp.xhamster.com/"
+}
+[1734950534.648][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=23) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "expression": "1"
+}
+[1734950534.649][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=23) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950534.791][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "sessionId": "EC22AB140FFFF629E472B69927099BDF",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "BC79A1AC808AD1F466CF60971AFD0189",
+      "canAccessOpener": false,
+      "pid": 31038,
+      "targetId": "3CEFDBB2977B632A52175AB8803C0C46",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734950534.791][DEBUG]: DevTools WebSocket Command: Page.enable (id=24) (session_id=EC22AB140FFFF629E472B69927099BDF) EC22AB140FFFF629E472B69927099BDF {
+}
+[1734950534.791][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=25) (session_id=EC22AB140FFFF629E472B69927099BDF) EC22AB140FFFF629E472B69927099BDF {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950534.791][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=26) (session_id=EC22AB140FFFF629E472B69927099BDF) EC22AB140FFFF629E472B69927099BDF {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950534.791][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=27) (session_id=EC22AB140FFFF629E472B69927099BDF) EC22AB140FFFF629E472B69927099BDF {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734950534.793][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "BC79A1AC808AD1F466CF60971AFD0189",
+      "canAccessOpener": false,
+      "pid": 31038,
+      "targetId": "3CEFDBB2977B632A52175AB8803C0C46",
+      "title": "https://nex8.space/recommended_1.html?language=jp&spotPageType=mainPage&spotType=widgetMiddleLine&locationCountry=jp&webp=1&orientation=straight&page=1&statsUID=67693e8597fd39.13148706f6a&exp=%7B%2...",
+      "type": "iframe",
+      "url": "https://nex8.space/recommended_1.html?language=jp&spotPageType=mainPage&spotType=widgetMiddleLine&locationCountry=jp&webp=1&orientation=straight&page=1&statsUID=67693e8597fd39.13148706f6a&exp=%7B%2..."
+   }
+}
+[1734950534.793][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "frameId": "3CEFDBB2977B632A52175AB8803C0C46",
+   "reason": "swap"
+}
+[1734950534.794][DEBUG]: DevTools WebSocket Response: Page.enable (id=24) (session_id=EC22AB140FFFF629E472B69927099BDF) EC22AB140FFFF629E472B69927099BDF {
+}
+[1734950534.794][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=25) (session_id=EC22AB140FFFF629E472B69927099BDF) EC22AB140FFFF629E472B69927099BDF {
+   "identifier": "1"
+}
+[1734950534.794][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=26) (session_id=EC22AB140FFFF629E472B69927099BDF) EC22AB140FFFF629E472B69927099BDF {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734950534.794][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=27) (session_id=EC22AB140FFFF629E472B69927099BDF) EC22AB140FFFF629E472B69927099BDF {
+}
+[1734950534.794][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=28) (session_id=EC22AB140FFFF629E472B69927099BDF) EC22AB140FFFF629E472B69927099BDF {
+}
+[1734950534.802][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=EC22AB140FFFF629E472B69927099BDF) EC22AB140FFFF629E472B69927099BDF {
+   "context": {
+      "auxData": {
+         "frameId": "3CEFDBB2977B632A52175AB8803C0C46",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://nex8.space",
+      "uniqueId": "-8135663121158697830.-6729569073114567370"
+   }
+}
+[1734950534.803][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=28) (session_id=EC22AB140FFFF629E472B69927099BDF) EC22AB140FFFF629E472B69927099BDF {
+}
+[1734950534.803][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=29) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "expression": "1"
+}
+[1734950534.803][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=EC22AB140FFFF629E472B69927099BDF) EC22AB140FFFF629E472B69927099BDF {
+   "timestamp": 60527.681947
+}
+[1734950534.803][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=29) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950534.803][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=30) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "expression": "document",
+   "objectGroup": "e04209eb-d2d2-4cc1-acdd-f953fe0856f4"
+}
+[1734950534.803][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=30) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "7354540710862228468.1.2",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734950534.803][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=31) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "objectId": "7354540710862228468.1.2"
+}
+[1734950534.803][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=31) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "https://jp.xhamster.com/",
+      "childNodeCount": 2,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "https://jp.xhamster.com/",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734950534.804][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=32) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "objectGroup": "e04209eb-d2d2-4cc1-acdd-f953fe0856f4"
+}
+[1734950534.804][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=33) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-8483474465701524840.7468374518187961773"
+}
+[1734950534.804][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=32) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+}
+[1734950534.804][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=33) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "result": {
+      "type": "string",
+      "value": "interactive"
+   }
+}
+[1734950535.310][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=34) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "expression": "1"
+}
+[1734950535.310][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=34) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950535.375][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2.",
+      "timestamp": 1.734950535374287e+12,
+      "url": "https://jp.xhamster.com/"
+   }
+}
+[1734950535.375][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2.",
+      "timestamp": 1.734950535374323e+12,
+      "url": "https://jp.xhamster.com/"
+   }
+}
+[1734950535.375][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=35) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "expression": "1"
+}
+[1734950535.375][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2.",
+      "timestamp": 1.734950535374631e+12,
+      "url": "https://jp.xhamster.com/"
+   }
+}
+[1734950535.375][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2.",
+      "timestamp": 1.734950535374658e+12,
+      "url": "https://jp.xhamster.com/"
+   }
+}
+[1734950535.375][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=35) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950535.492][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=EC22AB140FFFF629E472B69927099BDF) EC22AB140FFFF629E472B69927099BDF {
+   "timestamp": 60528.371269
+}
+[1734950535.492][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=EC22AB140FFFF629E472B69927099BDF) EC22AB140FFFF629E472B69927099BDF {
+   "frameId": "3CEFDBB2977B632A52175AB8803C0C46"
+}
+[1734950535.492][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=36) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "expression": "1"
+}
+[1734950535.495][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "timestamp": 60528.372528
+}
+[1734950535.495][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=37) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-8483474465701524840.7468374518187961773"
+}
+[1734950535.495][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "frameId": "3CD62329080CCC86B7F925A92ADD5CF0"
+}
+[1734950535.495][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=36) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950535.495][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=37) (session_id=86E56630564DD87554440FF4EBFD3425) 3CD62329080CCC86B7F925A92ADD5CF0 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734950535.495][INFO]: Done waiting for pending navigations. Status: ok
+[1734950535.495][INFO]: [50b05e482e907dbd786ebbec847f6fd3] RESPONSE Navigate
+Trying to load the allocator multiple times. This is *not* supported.
+[1734950545.508][INFO]: [50b05e482e907dbd786ebbec847f6fd3] COMMAND Quit {
+}
+[1734950545.562][INFO]: [50b05e482e907dbd786ebbec847f6fd3] RESPONSE Quit
+[1734950545.562][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1734950545.562][DEBUG]: Log type 'browser' lost 14 entries on destruction

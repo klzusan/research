@@ -1,0 +1,477 @@
+URL: amazon.com
+Cat: Marketplace
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+
+URL: baidu.com
+Cat: Search Engines
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+
+URL: bilibili.com
+Cat: Animation and Comics
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WebGL context was lost.
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+(War)Script terminated by timeout at:
+
+URL: bing.com
+Cat: Search Engines
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)Successfully compiled asm.js code (total compilation time 3ms)
+(War)Script terminated by timeout at:
+
+URL: canva.com
+Cat: Graphics Multimedia and Web Design
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+(Err)Error: Minified React error #418; visit REPLACED_URL for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+(Err)Error: Minified React error #423; visit REPLACED_URL for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)Error: Minified React error #418; visit REPLACED_URL for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+(War)Error: Minified React error #423; visit REPLACED_URL for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+
+URL: chatgpt.com
+Cat: Programming and Developer Software
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+(Err)RequestError: Something went wrong. If this issue persists please contact us through our help center at help.openai.com.
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+URL: duckduckgo.com
+Cat: Search Engines
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+URL: dzen.ru
+Cat: Community and Society - Other
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+(Err)({})
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+
+URL: facebook.com
+Cat: Social Media Networks
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+
+URL: fandom.com
+Cat: Arts and Entertainment - Other
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+(Err)TypeError: NetworkError when attempting to fetch resource.
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+
+URL: globo.com
+Cat: News & Media Publishers
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+(Err)TypeError: t is undefined
+(Err)TypeError: NetworkError when attempting to fetch resource.
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+
+URL: google.com
+Cat: Search Engines
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+URL: instagram.com
+Cat: Social Media Networks
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+
+URL: kwai-video.com
+Cat: Streaming & Online TV
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+(War)WebGL context was lost.
+
+URL: lazlogistics.ph
+Cat: Shipping and Logistics
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+URL: linkedin.com
+Cat: Social Media Networks
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+(War)Script terminated by timeout at:
+
+URL: live.com
+Cat: Email
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+(War)Script terminated by timeout at:
+
+URL: mail.ru
+Cat: Email
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+
+URL: microsoft.com
+Cat: Programming and Developer Software
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+(War)Script terminated by timeout at:
+
+URL: microsoftonline.com
+Cat: Programming and Developer Software
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+URL: naver.com
+Cat: News & Media Publishers
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+URL: netflix.com
+Cat: Streaming & Online TV
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+URL: news.yahoo.co.jp
+Cat: News & Media Publishers
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+
+URL: office.com
+Cat: Programming and Developer Software
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)Script terminated by timeout at:
+
+URL: pinterest.com
+Cat: Social Media Networks
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)Script terminated by timeout at:
+
+URL: pornhub.com
+Cat: Adult
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+URL: quora.com
+Cat: Dictionaries and Encyclopedias
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+URL: reddit.com
+Cat: Social Media Networks
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+(Err)TypeError: can't access dead object
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+URL: rpr.one
+Cat: Adult
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+(Err)
+(Err)TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.sys.mjs", 107))
+(Err)Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+(Err)({})
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+URL: samsung.com
+Cat: Consumer Electronics
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+URL: sharepoint.com
+Cat: Computers Electronics and Technology - Other
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+(Err)uncaught exception: Object
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+
+URL: t.me
+Cat: Computers Electronics and Technology - Other
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+URL: temu.com
+Cat: Marketplace
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+(Err)Error: Request failed with status code 424
+(Err)Error: Request failed with status code 403
+(Err)Error: Request aborted
+(Err)Error: homeModuleList is empty
+(Err)Error: システムが混雑しているため、後でもう一度お試しください。
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+
+URL: tiktok.com
+Cat: Social Media Networks
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+(Err)This error message will be blank when privacy.resistFingerprinting = true.  If it is really necessary, please add it to the whitelist in MediaError::GetMessage: Failed to open media
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+(War)This error message will be blank when privacy.resistFingerprinting = true.  If it is really necessary, please add it to the whitelist in MediaError::GetMessage: Failed to open media
+(War)Script terminated by timeout at:
+
+URL: twitch.tv
+Cat: Video Games Consoles and Accessories
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+(Err)InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+
+URL: twitter.com
+Cat: Social Media Networks
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+(Err)TypeError: can't access dead object
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+URL: vk.com
+Cat: Social Media Networks
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)"Falling back to a synchronous message for: REPLACED_URL
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+
+URL: weather.com
+Cat: Weather
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+(Err)ReferenceError: ReportingObserver is not defined
+(Err)Error: Braze must be initialized before calling methods.
+(Err)TypeError: window.CONFIG_JS_CALLBACK is not a function
+(Err)TypeError: NetworkError when attempting to fetch resource.
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)unreachable code after return statement
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+
+URL: whatsapp.com
+Cat: Social Media Networks
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+URL: wikipedia.org
+Cat: Dictionaries and Encyclopedias
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+URL: x.com
+Cat: Social Media Networks
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+(Err)TypeError: can't access dead object
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)Script terminated by timeout at:
+
+URL: xhamster.com
+Cat: Adult
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)"Falling back to a synchronous message for: REPLACED_URL
+(War)unreachable code after return statement
+
+URL: xhamster42.desi
+Cat: File Sharing and Hosting
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)"Falling back to a synchronous message for: REPLACED_URL
+(War)unreachable code after return statement
+(War)Script terminated by timeout at:
+
+URL: xnxx.com
+Cat: Adult
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+URL: xvideos.com
+Cat: Adult
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+URL: yahoo.co.jp
+Cat: News & Media Publishers
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+
+URL: yahoo.com
+Cat: News & Media Publishers
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+(Err)SecurityError: Permission denied to access property "addEventListener" on cross-origin object
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+
+URL: yandex.ru
+Cat: Search Engines
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+(Err)({})
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+
+URL: youtube.com
+Cat: Streaming & Online TV
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+(Err)TypeError: can't access dead object
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+(War)Script terminated by timeout at:
+
+URL: zoom.us
+Cat: Computers Electronics and Technology - Other
+Err:
+(Err)unrecognized command line flag" "-disable-extensions"
+War:
+(War)Ignoring preference override of remote settings server
+(War)Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+(War)Script terminated by timeout at:
+

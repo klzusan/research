@@ -1,0 +1,2242 @@
+[1734950757.173][INFO]: Starting Microsoft Edge WebDriver 131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70) on port 58968
+[1734950757.173][INFO]: Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+[1734950757.175][INFO]: msedgedriver was started successfully on port 58968
+[1734950757.185][INFO]: [897285836515aa7a875ade48e42ed2b3] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "MicrosoftEdge",
+         "browserVersion": null,
+         "ms:edgeOptions": {
+            "args": [ "--disable-extensions", "--inprivate" ],
+            "binary": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1734950757.186][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1734950757.186][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1734950757.186][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1734950757.186][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1734950757.186][INFO]: WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS = 
+[1734950757.186][INFO]: Launching Microsoft Edge: /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-extensions --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --inprivate --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.mERnII data:,
+
+DevTools listening on ws://127.0.0.1:58973/devtools/browser/9de7f902-db1a-4f24-b77a-8597f9e43b32
+[1734950757.413][DEBUG]: DevTools HTTP Request: http://localhost:58973/json/version
+[1734950757.710][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Edg/131.0.2903.112",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
+   "V8-Version": "13.1.20.9",
+   "WebKit-Version": "537.36 (@16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+   "webSocketDebuggerUrl": "ws://localhost:58973/devtools/browser/9de7f902-db1a-4f24-b77a-8597f9e43b32"
+}
+
+[1734950757.712][DEBUG]: DevTools HTTP Request: http://localhost:58973/json/list
+[1734950757.727][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:58973/devtools/page/68D79F9863E80AFE87679D4E9964CA26",
+   "id": "68D79F9863E80AFE87679D4E9964CA26",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:58973/devtools/page/68D79F9863E80AFE87679D4E9964CA26"
+} ]
+
+[1734950757.730][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1734950757.732][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1734950757.737][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "AB0321F3C27F655E3CD7B326C4DFCD30",
+      "canAccessOpener": false,
+      "pid": 0,
+      "targetId": "68D79F9863E80AFE87679D4E9964CA26",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1734950757.740][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "68D79F9863E80AFE87679D4E9964CA26"
+}
+[1734950757.752][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "81565F5C89B23D66BD1BDA185178EE3F",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "AB0321F3C27F655E3CD7B326C4DFCD30",
+      "canAccessOpener": false,
+      "pid": 32180,
+      "targetId": "68D79F9863E80AFE87679D4E9964CA26",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1734950757.753][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "81565F5C89B23D66BD1BDA185178EE3F"
+}
+[1734950757.755][DEBUG]: DevTools WebSocket Command: Page.enable (id=3) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+}
+[1734950757.755][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950757.758][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=5) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950757.758][DEBUG]: DevTools WebSocket Command: Log.enable (id=6) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+}
+[1734950757.758][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=7) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734950757.759][DEBUG]: DevTools WebSocket Response: Page.enable (id=3) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+}
+[1734950757.761][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "identifier": "1"
+}
+[1734950757.761][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=5) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734950757.761][DEBUG]: DevTools WebSocket Response: Log.enable (id=6) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+}
+[1734950757.761][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=7) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+}
+[1734950757.761][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+}
+[1734950757.762][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "context": {
+      "auxData": {
+         "frameId": "68D79F9863E80AFE87679D4E9964CA26",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "237158889434190119.694618965560702078"
+   }
+}
+[1734950757.764][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+}
+[1734950757.764][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+}
+[1734950757.765][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+}
+[1734950757.765][INFO]: [897285836515aa7a875ade48e42ed2b3] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "MicrosoftEdge",
+      "browserVersion": "131.0.2903.112",
+      "fedcm:accounts": true,
+      "ms:edgeOptions": {
+         "debuggerAddress": "localhost:58973"
+      },
+      "msedge": {
+         "msedgedriverVersion": "131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+         "userDataDir": "/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.mERnII"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "897285836515aa7a875ade48e42ed2b3"
+}
+[1734950757.765][INFO]: [897285836515aa7a875ade48e42ed2b3] COMMAND Navigate {
+   "url": "https://temu.com"
+}
+[1734950757.766][INFO]: Waiting for pending navigations...
+[1734950757.766][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=10) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "expression": "1"
+}
+[1734950757.766][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=10) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950757.767][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=11) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "expression": "document",
+   "objectGroup": "3b5ec36f-706d-4aee-bf14-3626858f3b66"
+}
+[1734950757.767][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=11) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "-94937122430353767.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734950757.767][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=12) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "objectId": "-94937122430353767.1.1"
+}
+[1734950757.767][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=12) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734950757.770][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=13) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "objectGroup": "3b5ec36f-706d-4aee-bf14-3626858f3b66"
+}
+[1734950757.771][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "237158889434190119.694618965560702078"
+}
+[1734950757.773][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=13) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+}
+[1734950757.773][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734950757.773][INFO]: Done waiting for pending navigations. Status: ok
+[1734950757.773][DEBUG]: DevTools WebSocket Command: Page.navigate (id=15) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "url": "https://temu.com"
+}
+[1734950757.775][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "frameId": "68D79F9863E80AFE87679D4E9964CA26"
+}
+2024-12-23 19:45:57.969 Microsoft Edge[32172:1088772] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-23 19:45:57.969 Microsoft Edge[32172:1088772] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+[1734950758.712][DEBUG]: DevTools WebSocket Response: Page.navigate (id=15) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "frameId": "68D79F9863E80AFE87679D4E9964CA26",
+   "loaderId": "EF51635B9A646EF54CA1883207CD4839"
+}
+[1734950758.712][INFO]: Waiting for pending navigations...
+[1734950758.713][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "expression": "1"
+}
+[1734950758.713][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+}
+[1734950758.714][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+}
+[1734950758.715][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "temu.com",
+      "gatedAPIFeatures": [  ],
+      "id": "68D79F9863E80AFE87679D4E9964CA26",
+      "loaderId": "EF51635B9A646EF54CA1883207CD4839",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.temu.com",
+      "url": "https://www.temu.com/"
+   },
+   "type": "Navigation"
+}
+[1734950758.720][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "context": {
+      "auxData": {
+         "frameId": "68D79F9863E80AFE87679D4E9964CA26",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.temu.com",
+      "uniqueId": "-1017083244766304763.5491917575421679138"
+   }
+}
+[1734950758.721][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950758.866][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 61,
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950758866181e+12,
+      "url": "https://www.temu.com/"
+   }
+}
+[1734950758.867][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=17) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "expression": "1"
+}
+[1734950758.868][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=17) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950758.868][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 61,
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950758867935e+12,
+      "url": "https://www.temu.com/"
+   }
+}
+[1734950758.868][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "expression": "1"
+}
+[1734950758.869][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 62,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 34,
+            "functionName": "",
+            "lineNumber": 62,
+            "scriptId": "26",
+            "url": "https://www.temu.com/"
+         }, {
+            "columnNumber": 952,
+            "functionName": "",
+            "lineNumber": 61,
+            "scriptId": "26",
+            "url": "https://www.temu.com/"
+         } ]
+      },
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950758869038e+12,
+      "url": "https://www.temu.com/"
+   }
+}
+[1734950758.870][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950758.875][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "timestamp": 60751.75348
+}
+[1734950758.875][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "timestamp": 60751.754556
+}
+[1734950758.875][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-1017083244766304763.5491917575421679138"
+}
+[1734950758.877][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "frameId": "68D79F9863E80AFE87679D4E9964CA26"
+}
+[1734950758.878][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734950758.878][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=20) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "expression": "1"
+}
+[1734950758.878][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=20) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950758.878][INFO]: Done waiting for pending navigations. Status: ok
+[1734950758.878][INFO]: [897285836515aa7a875ade48e42ed2b3] RESPONSE Navigate
+[1734950759.173][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "loadable: `loadableReady()` requires state, please use `getScriptTags` or `getScriptElements` server-side"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 831761,
+         "functionName": "l",
+         "lineNumber": 0,
+         "scriptId": "39",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+      }, {
+         "columnNumber": 836594,
+         "functionName": "O",
+         "lineNumber": 0,
+         "scriptId": "39",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+      }, {
+         "columnNumber": 21218,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "33",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/6011_c4463cc922d383c47f74.js"
+      }, {
+         "columnNumber": 824259,
+         "functionName": "h",
+         "lineNumber": 0,
+         "scriptId": "39",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+      }, {
+         "columnNumber": 825601,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "39",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+      }, {
+         "columnNumber": 824688,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "39",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+      }, {
+         "columnNumber": 898677,
+         "functionName": "r",
+         "lineNumber": 0,
+         "scriptId": "39",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+      }, {
+         "columnNumber": 898880,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "39",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+      }, {
+         "columnNumber": 898939,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "39",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+      }, {
+         "columnNumber": 898820,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "39",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+      }, {
+         "columnNumber": 21330,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "33",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/6011_c4463cc922d383c47f74.js"
+      }, {
+         "columnNumber": 398,
+         "functionName": "initPage",
+         "lineNumber": 0,
+         "scriptId": "32",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/w/index_fed_temp_a718c287bc807142d79f.js"
+      }, {
+         "columnNumber": 1967,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "32",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/w/index_fed_temp_a718c287bc807142d79f.js"
+      } ]
+   },
+   "timestamp": 1.734950759172597e+12,
+   "type": "warning"
+}
+[1734950759.276][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "sessionId": "17C1CDB6986115436CC439A7140D6293",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "AB0321F3C27F655E3CD7B326C4DFCD30",
+      "canAccessOpener": false,
+      "pid": 32181,
+      "targetId": "A72522F9575F3E74525C4CC80A800079",
+      "title": "blob:https://www.temu.com/54ed9338-543f-4f00-81fe-452165ba387e",
+      "type": "worker",
+      "url": "blob:https://www.temu.com/54ed9338-543f-4f00-81fe-452165ba387e"
+   },
+   "waitingForDebugger": false
+}
+[32177:14083:1223/194559.337086:ERROR:socket_manager.cc(148)] Failed to resolve address for stun.ideasip.com., errorcode: -105
+[1734950759.415][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "32181.52",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 424 ()",
+      "timestamp": 1.734950759414296e+12,
+      "url": "https://www.temu.com/api/passport/token/touch"
+   }
+}
+[1734950759.418][DEBUG]: DevTools WebSocket Event: Runtime.exceptionThrown (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "exceptionDetails": {
+      "columnNumber": 13011,
+      "exception": {
+         "className": "Error",
+         "description": "Error: Request failed with status code 424\n    at t.exports (https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js:1:13012)\n    at t.exports (https://static.kwcdn.com/m-assets/ass...",
+         "objectId": "-3460781336237177754.1.1",
+         "preview": {
+            "description": "Error: Request failed with status code 424\n    at t.exports (https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js:1:13012)\n    at t.exports (https://static.kwcdn.com/m-assets/ass...",
+            "overflow": true,
+            "properties": [ {
+               "name": "config",
+               "type": "object",
+               "value": "Object"
+            }, {
+               "name": "request",
+               "type": "object",
+               "value": "XMLHttpRequest"
+            }, {
+               "name": "response",
+               "type": "object",
+               "value": "Object"
+            }, {
+               "name": "isAxiosError",
+               "type": "boolean",
+               "value": "true"
+            }, {
+               "name": "toJSON",
+               "type": "function",
+               "value": ""
+            } ],
+            "subtype": "error",
+            "type": "object"
+         },
+         "subtype": "error",
+         "type": "object"
+      },
+      "exceptionId": 1,
+      "executionContextId": 1,
+      "lineNumber": 0,
+      "scriptId": "39",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 13011,
+            "functionName": "t.exports",
+            "lineNumber": 0,
+            "scriptId": "39",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+         }, {
+            "columnNumber": 15461,
+            "functionName": "t.exports",
+            "lineNumber": 0,
+            "scriptId": "39",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+         }, {
+            "columnNumber": 7589,
+            "functionName": "x",
+            "lineNumber": 0,
+            "scriptId": "39",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+         } ]
+      },
+      "text": "Uncaught",
+      "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+   },
+   "timestamp": 1.734950759417204e+12
+}
+[32177:14083:1223/194559.506877:ERROR:socket_manager.cc(148)] Failed to resolve address for stun.ekiga.net., errorcode: -105
+[32177:14083:1223/194559.522675:ERROR:socket_manager.cc(148)] Failed to resolve address for stun.ideasip.com., errorcode: -105
+[32177:14083:1223/194559.538283:ERROR:socket_manager.cc(148)] Failed to resolve address for stun.l.google.com., errorcode: -105
+[32177:14083:1223/194559.553433:ERROR:socket_manager.cc(148)] Failed to resolve address for stun.schlund.de., errorcode: -105
+[32177:14083:1223/194559.569804:ERROR:socket_manager.cc(148)] Failed to resolve address for stun.voiparound.com., errorcode: -105
+[1734950759.580][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "32181.64",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.734950759580017e+12,
+      "url": "https://www.temu.com/api/seo/get_page_seo_data"
+   }
+}
+[1734950759.581][DEBUG]: DevTools WebSocket Event: Runtime.exceptionThrown (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "exceptionDetails": {
+      "columnNumber": 13011,
+      "exception": {
+         "className": "Error",
+         "description": "Error: Request failed with status code 403\n    at t.exports (https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js:1:13012)\n    at t.exports (https://static.kwcdn.com/m-assets/ass...",
+         "objectId": "-3460781336237177754.1.2",
+         "preview": {
+            "description": "Error: Request failed with status code 403\n    at t.exports (https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js:1:13012)\n    at t.exports (https://static.kwcdn.com/m-assets/ass...",
+            "overflow": true,
+            "properties": [ {
+               "name": "config",
+               "type": "object",
+               "value": "Object"
+            }, {
+               "name": "request",
+               "type": "object",
+               "value": "XMLHttpRequest"
+            }, {
+               "name": "response",
+               "type": "object",
+               "value": "Object"
+            }, {
+               "name": "isAxiosError",
+               "type": "boolean",
+               "value": "true"
+            }, {
+               "name": "toJSON",
+               "type": "function",
+               "value": ""
+            } ],
+            "subtype": "error",
+            "type": "object"
+         },
+         "subtype": "error",
+         "type": "object"
+      },
+      "exceptionId": 2,
+      "executionContextId": 1,
+      "lineNumber": 0,
+      "scriptId": "39",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 13011,
+            "functionName": "t.exports",
+            "lineNumber": 0,
+            "scriptId": "39",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+         }, {
+            "columnNumber": 15461,
+            "functionName": "t.exports",
+            "lineNumber": 0,
+            "scriptId": "39",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+         }, {
+            "columnNumber": 7589,
+            "functionName": "x",
+            "lineNumber": 0,
+            "scriptId": "39",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+         } ]
+      },
+      "text": "Uncaught",
+      "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+   },
+   "timestamp": 1.734950759580829e+12
+}
+[1734950759.582][DEBUG]: DevTools WebSocket Event: Runtime.exceptionThrown (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "exceptionDetails": {
+      "columnNumber": 13011,
+      "exception": {
+         "className": "Error",
+         "description": "Error: Request failed with status code 403\n    at t.exports (https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js:1:13012)\n    at t.exports (https://static.kwcdn.com/m-assets/ass...",
+         "objectId": "-3460781336237177754.1.3",
+         "preview": {
+            "description": "Error: Request failed with status code 403\n    at t.exports (https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js:1:13012)\n    at t.exports (https://static.kwcdn.com/m-assets/ass...",
+            "overflow": true,
+            "properties": [ {
+               "name": "config",
+               "type": "object",
+               "value": "Object"
+            }, {
+               "name": "request",
+               "type": "object",
+               "value": "XMLHttpRequest"
+            }, {
+               "name": "response",
+               "type": "object",
+               "value": "Object"
+            }, {
+               "name": "isAxiosError",
+               "type": "boolean",
+               "value": "true"
+            }, {
+               "name": "toJSON",
+               "type": "function",
+               "value": ""
+            } ],
+            "subtype": "error",
+            "type": "object"
+         },
+         "subtype": "error",
+         "type": "object"
+      },
+      "exceptionId": 3,
+      "executionContextId": 1,
+      "lineNumber": 0,
+      "scriptId": "39",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 13011,
+            "functionName": "t.exports",
+            "lineNumber": 0,
+            "scriptId": "39",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+         }, {
+            "columnNumber": 15461,
+            "functionName": "t.exports",
+            "lineNumber": 0,
+            "scriptId": "39",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+         }, {
+            "columnNumber": 7589,
+            "functionName": "x",
+            "lineNumber": 0,
+            "scriptId": "39",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+         } ]
+      },
+      "text": "Uncaught",
+      "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+   },
+   "timestamp": 1.734950759581529e+12
+}
+[32177:14083:1223/194559.587162:ERROR:socket_manager.cc(148)] Failed to resolve address for stun.voipbuster.com., errorcode: -105
+[1734950759.590][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "32181.71",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.734950759589968e+12,
+      "url": "https://www.temu.com/api/seo/get_common_biz_data"
+   }
+}
+[1734950759.591][DEBUG]: DevTools WebSocket Event: Runtime.exceptionThrown (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "exceptionDetails": {
+      "columnNumber": 13011,
+      "exception": {
+         "className": "Error",
+         "description": "Error: Request failed with status code 403\n    at t.exports (https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js:1:13012)\n    at t.exports (https://static.kwcdn.com/m-assets/ass...",
+         "objectId": "-3460781336237177754.1.4",
+         "preview": {
+            "description": "Error: Request failed with status code 403\n    at t.exports (https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js:1:13012)\n    at t.exports (https://static.kwcdn.com/m-assets/ass...",
+            "overflow": true,
+            "properties": [ {
+               "name": "config",
+               "type": "object",
+               "value": "Object"
+            }, {
+               "name": "request",
+               "type": "object",
+               "value": "XMLHttpRequest"
+            }, {
+               "name": "response",
+               "type": "object",
+               "value": "Object"
+            }, {
+               "name": "isAxiosError",
+               "type": "boolean",
+               "value": "true"
+            }, {
+               "name": "toJSON",
+               "type": "function",
+               "value": ""
+            } ],
+            "subtype": "error",
+            "type": "object"
+         },
+         "subtype": "error",
+         "type": "object"
+      },
+      "exceptionId": 4,
+      "executionContextId": 1,
+      "lineNumber": 0,
+      "scriptId": "39",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 13011,
+            "functionName": "t.exports",
+            "lineNumber": 0,
+            "scriptId": "39",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+         }, {
+            "columnNumber": 15461,
+            "functionName": "t.exports",
+            "lineNumber": 0,
+            "scriptId": "39",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+         }, {
+            "columnNumber": 7589,
+            "functionName": "x",
+            "lineNumber": 0,
+            "scriptId": "39",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+         } ]
+      },
+      "text": "Uncaught",
+      "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+   },
+   "timestamp": 1.734950759590523e+12
+}
+[1734950759.599][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "32181.67",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.734950759598929e+12,
+      "url": "https://www.temu.com/api/poppy/v1/shade_words?scene=shade_words"
+   }
+}
+[1734950759.600][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "frameId": "68D79F9863E80AFE87679D4E9964CA26"
+}
+[1734950759.603][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "frameId": "68D79F9863E80AFE87679D4E9964CA26",
+   "navigationType": "historyApi",
+   "url": "https://www.temu.com/login.html?from=https%3A%2F%2Fwww.temu.com%2F&login_scene=2&refer_page_name=home&refer_page_id=10005_1734950759180_qwir2el9sl&refer_page_sn=10005&_x_sessn_id=7smhyx9wtn"
+}
+[1734950759.603][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "frameId": "68D79F9863E80AFE87679D4E9964CA26"
+}
+[1734950759.603][DEBUG]: DevTools WebSocket Event: Runtime.exceptionThrown (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "exceptionDetails": {
+      "columnNumber": 13011,
+      "exception": {
+         "className": "Error",
+         "description": "Error: Request failed with status code 403\n    at t.exports (https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js:1:13012)\n    at t.exports (https://static.kwcdn.com/m-assets/ass...",
+         "objectId": "-3460781336237177754.1.5",
+         "preview": {
+            "description": "Error: Request failed with status code 403\n    at t.exports (https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js:1:13012)\n    at t.exports (https://static.kwcdn.com/m-assets/ass...",
+            "overflow": true,
+            "properties": [ {
+               "name": "config",
+               "type": "object",
+               "value": "Object"
+            }, {
+               "name": "request",
+               "type": "object",
+               "value": "XMLHttpRequest"
+            }, {
+               "name": "response",
+               "type": "object",
+               "value": "Object"
+            }, {
+               "name": "isAxiosError",
+               "type": "boolean",
+               "value": "true"
+            }, {
+               "name": "toJSON",
+               "type": "function",
+               "value": ""
+            } ],
+            "subtype": "error",
+            "type": "object"
+         },
+         "subtype": "error",
+         "type": "object"
+      },
+      "exceptionId": 5,
+      "executionContextId": 1,
+      "lineNumber": 0,
+      "scriptId": "39",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 13011,
+            "functionName": "t.exports",
+            "lineNumber": 0,
+            "scriptId": "39",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+         }, {
+            "columnNumber": 15461,
+            "functionName": "t.exports",
+            "lineNumber": 0,
+            "scriptId": "39",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+         }, {
+            "columnNumber": 7589,
+            "functionName": "x",
+            "lineNumber": 0,
+            "scriptId": "39",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+         } ]
+      },
+      "text": "Uncaught",
+      "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+   },
+   "timestamp": 1.734950759600436e+12
+}
+[1734950759.603][DEBUG]: DevTools WebSocket Event: Page.frameScheduledNavigation (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "delay": 0,
+   "frameId": "68D79F9863E80AFE87679D4E9964CA26",
+   "reason": "scriptInitiated",
+   "url": "https://www.temu.com/login.html?from=https%3A%2F%2Fwww.temu.com%2F&login_scene=2&refer_page_name=home&refer_page_id=10005_1734950759180_qwir2el9sl&refer_page_sn=10005&_x_sessn_id=7smhyx9wtn"
+}
+[1734950759.603][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "disposition": "currentTab",
+   "frameId": "68D79F9863E80AFE87679D4E9964CA26",
+   "reason": "scriptInitiated",
+   "url": "https://www.temu.com/login.html?from=https%3A%2F%2Fwww.temu.com%2F&login_scene=2&refer_page_name=home&refer_page_id=10005_1734950759180_qwir2el9sl&refer_page_sn=10005&_x_sessn_id=7smhyx9wtn"
+}
+[1734950759.603][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "frameId": "68D79F9863E80AFE87679D4E9964CA26"
+}
+[1734950759.604][DEBUG]: DevTools WebSocket Event: Page.frameClearedScheduledNavigation (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "frameId": "68D79F9863E80AFE87679D4E9964CA26"
+}
+[1734950759.604][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "32181.66",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.734950759602551e+12,
+      "url": "https://www.temu.com/api/poppy/v1/title_bar_list?scene=home_title_bar_list"
+   }
+}
+[1734950759.606][DEBUG]: DevTools WebSocket Event: Runtime.exceptionThrown (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "exceptionDetails": {
+      "columnNumber": 13011,
+      "exception": {
+         "className": "Error",
+         "description": "Error: Request failed with status code 403\n    at t.exports (https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js:1:13012)\n    at t.exports (https://static.kwcdn.com/m-assets/ass...",
+         "objectId": "-3460781336237177754.1.6",
+         "preview": {
+            "description": "Error: Request failed with status code 403\n    at t.exports (https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js:1:13012)\n    at t.exports (https://static.kwcdn.com/m-assets/ass...",
+            "overflow": true,
+            "properties": [ {
+               "name": "config",
+               "type": "object",
+               "value": "Object"
+            }, {
+               "name": "request",
+               "type": "object",
+               "value": "XMLHttpRequest"
+            }, {
+               "name": "response",
+               "type": "object",
+               "value": "Object"
+            }, {
+               "name": "isAxiosError",
+               "type": "boolean",
+               "value": "true"
+            }, {
+               "name": "toJSON",
+               "type": "function",
+               "value": ""
+            } ],
+            "subtype": "error",
+            "type": "object"
+         },
+         "subtype": "error",
+         "type": "object"
+      },
+      "exceptionId": 6,
+      "executionContextId": 1,
+      "lineNumber": 0,
+      "scriptId": "39",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 13011,
+            "functionName": "t.exports",
+            "lineNumber": 0,
+            "scriptId": "39",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+         }, {
+            "columnNumber": 15461,
+            "functionName": "t.exports",
+            "lineNumber": 0,
+            "scriptId": "39",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+         }, {
+            "columnNumber": 7589,
+            "functionName": "x",
+            "lineNumber": 0,
+            "scriptId": "39",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+         } ]
+      },
+      "text": "Uncaught",
+      "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+   },
+   "timestamp": 1.734950759604362e+12
+}
+[32177:14083:1223/194559.608455:ERROR:socket_manager.cc(148)] Failed to resolve address for stun.voipstunt.com., errorcode: -105
+[32177:14083:1223/194559.625281:ERROR:socket_manager.cc(148)] Failed to resolve address for stun1.l.google.com., errorcode: -105
+[1734950759.640][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "login token renewal need browser platform"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 169151,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "38",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/biz_vendors_7c9f8576ede17c82.js"
+      }, {
+         "columnNumber": 824259,
+         "functionName": "h",
+         "lineNumber": 0,
+         "scriptId": "39",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+      }, {
+         "columnNumber": 825601,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "39",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+      }, {
+         "columnNumber": 824688,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "39",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+      }, {
+         "columnNumber": 898677,
+         "functionName": "r",
+         "lineNumber": 0,
+         "scriptId": "39",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+      }, {
+         "columnNumber": 898880,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "39",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+      }, {
+         "columnNumber": 898939,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "39",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+      }, {
+         "columnNumber": 898820,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "39",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+      }, {
+         "columnNumber": 169474,
+         "functionName": "H",
+         "lineNumber": 0,
+         "scriptId": "38",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/biz_vendors_7c9f8576ede17c82.js"
+      }, {
+         "columnNumber": 168804,
+         "functionName": "z",
+         "lineNumber": 0,
+         "scriptId": "38",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/biz_vendors_7c9f8576ede17c82.js"
+      }, {
+         "columnNumber": 173798,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "38",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/biz_vendors_7c9f8576ede17c82.js"
+      }, {
+         "columnNumber": 824259,
+         "functionName": "h",
+         "lineNumber": 0,
+         "scriptId": "39",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+      }, {
+         "columnNumber": 825601,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "39",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+      }, {
+         "columnNumber": 824688,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "39",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+      }, {
+         "columnNumber": 898677,
+         "functionName": "r",
+         "lineNumber": 0,
+         "scriptId": "39",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+      }, {
+         "columnNumber": 898880,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "39",
+         "url": "https://static.kwcdn.com/m-assets/assets/js/vendors_66499c897596922b.js"
+      } ]
+   },
+   "timestamp": 1.734950759640036e+12,
+   "type": "warning"
+}
+[32177:14083:1223/194559.641702:ERROR:socket_manager.cc(148)] Failed to resolve address for stun2.l.google.com., errorcode: -105
+[1734950759.666][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "sessionId": "4F7DFE6A098883CA23447F5F50BD621B",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "AB0321F3C27F655E3CD7B326C4DFCD30",
+      "canAccessOpener": false,
+      "pid": 0,
+      "targetId": "BA0523DDE2172236F994E1CF9E4C4C30",
+      "title": "Service Worker https://www.temu.com/sw.js",
+      "type": "service_worker",
+      "url": "https://www.temu.com/sw.js"
+   },
+   "waitingForDebugger": false
+}
+[32177:14083:1223/194559.668920:ERROR:socket_manager.cc(148)] Failed to resolve address for stun3.l.google.com., errorcode: -105
+[32177:14083:1223/194559.692541:ERROR:socket_manager.cc(148)] Failed to resolve address for stun4.l.google.com., errorcode: -105
+[1734950759.834][DEBUG]: DevTools WebSocket Event: Target.detachedFromTarget (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "sessionId": "17C1CDB6986115436CC439A7140D6293",
+   "targetId": "A72522F9575F3E74525C4CC80A800079"
+}
+[1734950759.838][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "frameId": "68D79F9863E80AFE87679D4E9964CA26",
+   "navigationType": "historyApi",
+   "url": "https://www.temu.com/login.html?from=https%3A%2F%2Fwww.temu.com%2F&login_scene=2&refer_page_name=home&refer_page_id=10005_1734950759180_qwir2el9sl&refer_page_sn=10005&_x_sessn_id=7smhyx9wtn&no_cach..."
+}
+[1734950759.838][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "network",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 1136485,
+            "functionName": "value",
+            "lineNumber": 0,
+            "scriptId": "38",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/biz_vendors_7c9f8576ede17c82.js"
+         }, {
+            "columnNumber": 1446499,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "38",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/biz_vendors_7c9f8576ede17c82.js"
+         }, {
+            "columnNumber": 1776273,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "38",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/biz_vendors_7c9f8576ede17c82.js"
+         }, {
+            "columnNumber": 1200099,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "38",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/biz_vendors_7c9f8576ede17c82.js"
+         }, {
+            "columnNumber": 1200071,
+            "functionName": "close",
+            "lineNumber": 0,
+            "scriptId": "38",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/biz_vendors_7c9f8576ede17c82.js"
+         }, {
+            "columnNumber": 61276,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "37",
+            "url": "https://static.kwcdn.com/m-assets/assets/js/9250_8bb558698f509c768ba3.js"
+         } ]
+      },
+      "text": "WebSocket connection to 'wss://www.temu.com/?ws-titan-request-sign=dee0ea73' failed: WebSocket is closed before the connection is established.",
+      "timestamp": 1.734950759835541e+12,
+      "url": "https://static.kwcdn.com/m-assets/assets/js/biz_vendors_7c9f8576ede17c82.js"
+   }
+}
+[1734950760.116][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+}
+[1734950760.116][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "temu.com",
+      "gatedAPIFeatures": [  ],
+      "id": "68D79F9863E80AFE87679D4E9964CA26",
+      "loaderId": "10E243A05BF5EAE2C9C1EBF9122E1FDD",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.temu.com",
+      "url": "https://www.temu.com/login.html?from=https%3A%2F%2Fwww.temu.com%2F&login_scene=2&refer_page_name=home&refer_page_id=10005_1734950759180_qwir2el9sl&refer_page_sn=10005&_x_sessn_id=7smhyx9wtn"
+   },
+   "type": "Navigation"
+}
+[1734950760.122][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "context": {
+      "auxData": {
+         "frameId": "68D79F9863E80AFE87679D4E9964CA26",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://www.temu.com",
+      "uniqueId": "-1995056651053878452.-4340810050768244323"
+   }
+}
+[1734950760.129][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 11,
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950760128389e+12,
+      "url": "https://www.temu.com/login.html?from=https%3A%2F%2Fwww.temu.com%2F&login_scene=2&refer_page_name=home&refer_page_id=10005_1734950759180_qwir2el9sl&refer_page_sn=10005&_x_sessn_id=7smhyx9wtn"
+   }
+}
+[1734950760.140][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "timestamp": 60753.022228
+}
+[1734950760.140][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "timestamp": 60753.022326
+}
+[1734950760.140][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=21) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-1995056651053878452.-4340810050768244323"
+}
+[1734950760.141][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "frameId": "68D79F9863E80AFE87679D4E9964CA26"
+}
+[1734950760.141][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=21) (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734950760.610][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://connect.facebook.net/en_US/sdk.js.",
+      "timestamp": 1.734950760609603e+12,
+      "url": "https://www.temu.com/login.html?from=https%3A%2F%2Fwww.temu.com%2F&login_scene=2&refer_page_name=home&refer_page_id=10005_1734950759180_qwir2el9sl&refer_page_sn=10005&_x_sessn_id=7smhyx9wtn"
+   }
+}
+[1734950760.610][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://connect.facebook.net/en_US/sdk.js.",
+      "timestamp": 1.734950760609635e+12,
+      "url": "https://www.temu.com/login.html?from=https%3A%2F%2Fwww.temu.com%2F&login_scene=2&refer_page_name=home&refer_page_id=10005_1734950759180_qwir2el9sl&refer_page_sn=10005&_x_sessn_id=7smhyx9wtn"
+   }
+}
+[1734950760.610][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://connect.facebook.net/en_US/sdk.js.",
+      "timestamp": 1.734950760609651e+12,
+      "url": "https://www.temu.com/login.html?from=https%3A%2F%2Fwww.temu.com%2F&login_scene=2&refer_page_name=home&refer_page_id=10005_1734950759180_qwir2el9sl&refer_page_sn=10005&_x_sessn_id=7smhyx9wtn"
+   }
+}
+[1734950760.610][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://connect.facebook.net/en_US/sdk.js.",
+      "timestamp": 1.73495076060971e+12,
+      "url": "https://www.temu.com/login.html?from=https%3A%2F%2Fwww.temu.com%2F&login_scene=2&refer_page_name=home&refer_page_id=10005_1734950759180_qwir2el9sl&refer_page_sn=10005&_x_sessn_id=7smhyx9wtn"
+   }
+}
+[1734950760.613][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "sessionId": "B345383770E1185807637D45CDEF3CF1",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "AB0321F3C27F655E3CD7B326C4DFCD30",
+      "canAccessOpener": false,
+      "pid": 32181,
+      "targetId": "953AAF62AD1FA2B6DBA855B63B64F14D",
+      "title": "blob:https://www.temu.com/3420f307-93df-402d-a786-8c584ce4edd0",
+      "type": "worker",
+      "url": "blob:https://www.temu.com/3420f307-93df-402d-a786-8c584ce4edd0"
+   },
+   "waitingForDebugger": false
+}
+[1734950760.656][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "facebook sdk load successfully"
+   } ],
+   "executionContextId": 2,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 555497,
+         "functionName": "init",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      } ]
+   },
+   "timestamp": 1.734950760655573e+12,
+   "type": "log"
+}
+[1734950760.656][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://connect.facebook.net/en_US/sdk.js?hash=42fbf48ab6d9ff1299c586f5058a1493.",
+      "timestamp": 1.734950760655643e+12,
+      "url": "https://www.temu.com/login.html?from=https%3A%2F%2Fwww.temu.com%2F&login_scene=2&refer_page_name=home&refer_page_id=10005_1734950759180_qwir2el9sl&refer_page_sn=10005&_x_sessn_id=7smhyx9wtn"
+   }
+}
+[1734950760.656][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://connect.facebook.net/en_US/sdk.js?hash=42fbf48ab6d9ff1299c586f5058a1493.",
+      "timestamp": 1.734950760655662e+12,
+      "url": "https://www.temu.com/login.html?from=https%3A%2F%2Fwww.temu.com%2F&login_scene=2&refer_page_name=home&refer_page_id=10005_1734950759180_qwir2el9sl&refer_page_sn=10005&_x_sessn_id=7smhyx9wtn"
+   }
+}
+[32177:14083:1223/194600.705722:ERROR:socket_manager.cc(148)] Failed to resolve address for stun.ideasip.com., errorcode: -105
+[32177:14083:1223/194600.721924:ERROR:socket_manager.cc(148)] Failed to resolve address for stun.ekiga.net., errorcode: -105
+[32177:14083:1223/194600.740162:ERROR:socket_manager.cc(148)] Failed to resolve address for stun.ideasip.com., errorcode: -105
+[1734950760.742][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "await init() first to get correct uin"
+   } ],
+   "executionContextId": 2,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 117821,
+         "functionName": "I",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315241,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315390,
+         "functionName": "T",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 316424,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      } ]
+   },
+   "timestamp": 1.734950760741473e+12,
+   "type": "warning"
+}
+[1734950760.747][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "apple sdk load successfully"
+   } ],
+   "executionContextId": 2,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 554221,
+         "functionName": "init",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      } ]
+   },
+   "timestamp": 1.734950760746494e+12,
+   "type": "log"
+}
+[1734950760.749][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "await init() first to get correct uin"
+   } ],
+   "executionContextId": 2,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 117821,
+         "functionName": "I",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315241,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315390,
+         "functionName": "T",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 316424,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      } ]
+   },
+   "timestamp": 1.734950760749192e+12,
+   "type": "warning"
+}
+[1734950760.779][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "await init() first to get correct uin"
+   } ],
+   "executionContextId": 2,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 117821,
+         "functionName": "I",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315241,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315390,
+         "functionName": "T",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 316424,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      } ]
+   },
+   "timestamp": 1.734950760778401e+12,
+   "type": "warning"
+}
+[32177:14083:1223/194600.784037:ERROR:socket_manager.cc(148)] Failed to resolve address for stun.l.google.com., errorcode: -105
+[1734950760.788][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "await init() first to get correct uin"
+   } ],
+   "executionContextId": 2,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 117821,
+         "functionName": "I",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315241,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315390,
+         "functionName": "T",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 316424,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      } ]
+   },
+   "timestamp": 1.734950760787302e+12,
+   "type": "warning"
+}
+[1734950760.789][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "32181.236",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 424 ()",
+      "timestamp": 1.734950760788923e+12,
+      "url": "https://www.temu.com/api/passport/token/touch"
+   }
+}
+[1734950760.790][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "await init() first to get correct uin"
+   } ],
+   "executionContextId": 2,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 117821,
+         "functionName": "I",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315241,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315390,
+         "functionName": "T",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 316424,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      } ]
+   },
+   "timestamp": 1.73495076078942e+12,
+   "type": "warning"
+}
+[1734950760.793][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "await init() first to get correct uin"
+   } ],
+   "executionContextId": 2,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 117821,
+         "functionName": "I",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315241,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315390,
+         "functionName": "T",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 316424,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      } ]
+   },
+   "timestamp": 1.73495076079264e+12,
+   "type": "warning"
+}
+[32177:14083:1223/194600.805741:ERROR:socket_manager.cc(148)] Failed to resolve address for stun.schlund.de., errorcode: -105
+[1734950760.812][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "await init() first to get correct uin"
+   } ],
+   "executionContextId": 2,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 117821,
+         "functionName": "I",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 232871,
+         "functionName": "N",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 1096126,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 594239,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "81",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/vendors_7a7c5afa01e86f9029be.js"
+      }, {
+         "columnNumber": 594778,
+         "functionName": "l",
+         "lineNumber": 0,
+         "scriptId": "81",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/vendors_7a7c5afa01e86f9029be.js"
+      }, {
+         "columnNumber": 594366,
+         "functionName": "u",
+         "lineNumber": 0,
+         "scriptId": "81",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/vendors_7a7c5afa01e86f9029be.js"
+      } ]
+   },
+   "timestamp": 1.734950760812111e+12,
+   "type": "warning"
+}
+[1734950760.813][DEBUG]: DevTools WebSocket Event: Runtime.exceptionThrown (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "exceptionDetails": {
+      "columnNumber": 13027,
+      "exception": {
+         "className": "Error",
+         "description": "Error: Request failed with status code 424\n    at e.exports (https://static.kwcdn.com/m-assets/assets/modernjs/vendors_7a7c5afa01e86f9029be.js:1:13028)\n    at e.exports (https://static.kwcdn.com/m-...",
+         "objectId": "-3460781336237177754.2.1",
+         "preview": {
+            "description": "Error: Request failed with status code 424\n    at e.exports (https://static.kwcdn.com/m-assets/assets/modernjs/vendors_7a7c5afa01e86f9029be.js:1:13028)\n    at e.exports (https://static.kwcdn.com/m-...",
+            "overflow": true,
+            "properties": [ {
+               "name": "config",
+               "type": "object",
+               "value": "Object"
+            }, {
+               "name": "request",
+               "type": "object",
+               "value": "XMLHttpRequest"
+            }, {
+               "name": "response",
+               "type": "object",
+               "value": "Object"
+            }, {
+               "name": "isAxiosError",
+               "type": "boolean",
+               "value": "true"
+            }, {
+               "name": "toJSON",
+               "type": "function",
+               "value": ""
+            } ],
+            "subtype": "error",
+            "type": "object"
+         },
+         "subtype": "error",
+         "type": "object"
+      },
+      "exceptionId": 7,
+      "executionContextId": 2,
+      "lineNumber": 0,
+      "scriptId": "81",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 13027,
+            "functionName": "e.exports",
+            "lineNumber": 0,
+            "scriptId": "81",
+            "url": "https://static.kwcdn.com/m-assets/assets/modernjs/vendors_7a7c5afa01e86f9029be.js"
+         }, {
+            "columnNumber": 15477,
+            "functionName": "e.exports",
+            "lineNumber": 0,
+            "scriptId": "81",
+            "url": "https://static.kwcdn.com/m-assets/assets/modernjs/vendors_7a7c5afa01e86f9029be.js"
+         }, {
+            "columnNumber": 7605,
+            "functionName": "x",
+            "lineNumber": 0,
+            "scriptId": "81",
+            "url": "https://static.kwcdn.com/m-assets/assets/modernjs/vendors_7a7c5afa01e86f9029be.js"
+         } ]
+      },
+      "text": "Uncaught",
+      "url": "https://static.kwcdn.com/m-assets/assets/modernjs/vendors_7a7c5afa01e86f9029be.js"
+   },
+   "timestamp": 1.734950760812167e+12
+}
+[32177:14083:1223/194600.822826:ERROR:socket_manager.cc(148)] Failed to resolve address for stun.voiparound.com., errorcode: -105
+[32177:14083:1223/194600.840227:ERROR:socket_manager.cc(148)] Failed to resolve address for stun.voipbuster.com., errorcode: -105
+[1734950760.853][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 360,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 8675,
+            "functionName": "",
+            "lineNumber": 360,
+            "scriptId": "102",
+            "url": "https://accounts.google.com/gsi/client"
+         }, {
+            "columnNumber": 8697,
+            "functionName": "",
+            "lineNumber": 360,
+            "scriptId": "102",
+            "url": "https://accounts.google.com/gsi/client"
+         } ]
+      },
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950760852529e+12,
+      "url": "https://accounts.google.com/gsi/client"
+   }
+}
+[1734950760.853][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "google sdk load successfully"
+   } ],
+   "executionContextId": 2,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 557279,
+         "functionName": "init",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      } ]
+   },
+   "timestamp": 1.734950760852706e+12,
+   "type": "log"
+}
+[32177:14083:1223/194600.856166:ERROR:socket_manager.cc(148)] Failed to resolve address for stun.voipstunt.com., errorcode: -105
+[32177:14083:1223/194600.871516:ERROR:socket_manager.cc(148)] Failed to resolve address for stun1.l.google.com., errorcode: -105
+[32177:14083:1223/194600.887926:ERROR:socket_manager.cc(148)] Failed to resolve address for stun2.l.google.com., errorcode: -105
+[32177:14083:1223/194600.903937:ERROR:socket_manager.cc(148)] Failed to resolve address for stun3.l.google.com., errorcode: -105
+[32177:14083:1223/194600.910843:ERROR:socket_manager.cc(148)] Failed to resolve address for stun4.l.google.com., errorcode: -105
+[1734950761.022][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "await init() first to get correct uin"
+   } ],
+   "executionContextId": 2,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 117821,
+         "functionName": "I",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315241,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315390,
+         "functionName": "T",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 316424,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      } ]
+   },
+   "timestamp": 1.734950761021296e+12,
+   "type": "warning"
+}
+[1734950761.023][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "await init() first to get correct uin"
+   } ],
+   "executionContextId": 2,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 117821,
+         "functionName": "I",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315241,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315390,
+         "functionName": "T",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 316424,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      } ]
+   },
+   "timestamp": 1.734950761022377e+12,
+   "type": "warning"
+}
+[1734950761.024][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "await init() first to get correct uin"
+   } ],
+   "executionContextId": 2,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 117821,
+         "functionName": "I",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315241,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315390,
+         "functionName": "T",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 316424,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      } ]
+   },
+   "timestamp": 1.734950761023108e+12,
+   "type": "warning"
+}
+[1734950761.024][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "await init() first to get correct uin"
+   } ],
+   "executionContextId": 2,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 117821,
+         "functionName": "I",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315241,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315390,
+         "functionName": "T",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 316424,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      } ]
+   },
+   "timestamp": 1.734950761023963e+12,
+   "type": "warning"
+}
+[1734950761.027][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "32181.257",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 429 ()",
+      "timestamp": 1.73495076102627e+12,
+      "url": "https://www.temu.com/api/bg/sigerus/auth/history_login_info/query"
+   }
+}
+[1734950761.027][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "await init() first to get correct uin"
+   } ],
+   "executionContextId": 2,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 117821,
+         "functionName": "I",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315241,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315390,
+         "functionName": "T",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 316424,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      } ]
+   },
+   "timestamp": 1.734950761026887e+12,
+   "type": "warning"
+}
+[1734950761.028][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "await init() first to get correct uin"
+   } ],
+   "executionContextId": 2,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 117821,
+         "functionName": "I",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 232871,
+         "functionName": "N",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 1096126,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 594239,
+         "functionName": "s",
+         "lineNumber": 0,
+         "scriptId": "81",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/vendors_7a7c5afa01e86f9029be.js"
+      }, {
+         "columnNumber": 594778,
+         "functionName": "l",
+         "lineNumber": 0,
+         "scriptId": "81",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/vendors_7a7c5afa01e86f9029be.js"
+      }, {
+         "columnNumber": 594366,
+         "functionName": "u",
+         "lineNumber": 0,
+         "scriptId": "81",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/vendors_7a7c5afa01e86f9029be.js"
+      } ]
+   },
+   "timestamp": 1.734950761027419e+12,
+   "type": "warning"
+}
+[1734950761.028][DEBUG]: DevTools WebSocket Event: Runtime.exceptionThrown (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "exceptionDetails": {
+      "columnNumber": 13027,
+      "exception": {
+         "className": "Error",
+         "description": "Error: システムが混雑しているため、後でもう一度お試しください。\n    at e.exports (https://static.kwcdn.com/m-assets/assets/modernjs/vendors_7a7c5afa01e86f9029be.js:1:130...",
+         "objectId": "-3460781336237177754.2.2",
+         "preview": {
+            "description": "Error: システムが混雑しているため、後でもう一度お試しください。\n    at e.exports (https://static.kwcdn.com/m-assets/assets/modernjs/vendors_7a7c5afa01e86f9029be.js:1:130...",
+            "overflow": true,
+            "properties": [ {
+               "name": "config",
+               "type": "object",
+               "value": "Object"
+            }, {
+               "name": "request",
+               "type": "object",
+               "value": "XMLHttpRequest"
+            }, {
+               "name": "response",
+               "type": "object",
+               "value": "Object"
+            }, {
+               "name": "isAxiosError",
+               "type": "boolean",
+               "value": "true"
+            }, {
+               "name": "toJSON",
+               "type": "function",
+               "value": ""
+            } ],
+            "subtype": "error",
+            "type": "object"
+         },
+         "subtype": "error",
+         "type": "object"
+      },
+      "exceptionId": 8,
+      "executionContextId": 2,
+      "lineNumber": 0,
+      "scriptId": "81",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 13027,
+            "functionName": "e.exports",
+            "lineNumber": 0,
+            "scriptId": "81",
+            "url": "https://static.kwcdn.com/m-assets/assets/modernjs/vendors_7a7c5afa01e86f9029be.js"
+         }, {
+            "columnNumber": 15477,
+            "functionName": "e.exports",
+            "lineNumber": 0,
+            "scriptId": "81",
+            "url": "https://static.kwcdn.com/m-assets/assets/modernjs/vendors_7a7c5afa01e86f9029be.js"
+         }, {
+            "columnNumber": 7605,
+            "functionName": "x",
+            "lineNumber": 0,
+            "scriptId": "81",
+            "url": "https://static.kwcdn.com/m-assets/assets/modernjs/vendors_7a7c5afa01e86f9029be.js"
+         } ]
+      },
+      "text": "Uncaught",
+      "url": "https://static.kwcdn.com/m-assets/assets/modernjs/vendors_7a7c5afa01e86f9029be.js"
+   },
+   "timestamp": 1.734950761027509e+12
+}
+[1734950761.033][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "await init() first to get correct uin"
+   } ],
+   "executionContextId": 2,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 117821,
+         "functionName": "I",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315241,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315390,
+         "functionName": "T",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 316424,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      } ]
+   },
+   "timestamp": 1.734950761033155e+12,
+   "type": "warning"
+}
+[1734950761.039][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "await init() first to get correct uin"
+   } ],
+   "executionContextId": 2,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 117821,
+         "functionName": "I",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315241,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315390,
+         "functionName": "T",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 316424,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      } ]
+   },
+   "timestamp": 1.734950761038826e+12,
+   "type": "warning"
+}
+[1734950761.255][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "await init() first to get correct uin"
+   } ],
+   "executionContextId": 2,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 117821,
+         "functionName": "I",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315241,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315390,
+         "functionName": "T",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 316424,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      } ]
+   },
+   "timestamp": 1.73495076125402e+12,
+   "type": "warning"
+}
+[1734950761.265][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=81565F5C89B23D66BD1BDA185178EE3F) 68D79F9863E80AFE87679D4E9964CA26 {
+   "args": [ {
+      "type": "string",
+      "value": "await init() first to get correct uin"
+   } ],
+   "executionContextId": 2,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 117821,
+         "functionName": "I",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315241,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 315390,
+         "functionName": "T",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      }, {
+         "columnNumber": 316424,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "80",
+         "url": "https://static.kwcdn.com/m-assets/assets/modernjs/biz_vendors_6dd326025a1e1fc22d85.js"
+      } ]
+   },
+   "timestamp": 1.734950761264197e+12,
+   "type": "warning"
+}
+Trying to load the allocator multiple times. This is *not* supported.
+[1734950768.886][INFO]: [897285836515aa7a875ade48e42ed2b3] COMMAND Quit {
+}
+[1734950768.938][INFO]: [897285836515aa7a875ade48e42ed2b3] RESPONSE Quit
+[1734950768.938][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1734950768.938][DEBUG]: Log type 'browser' lost 46 entries on destruction

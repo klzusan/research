@@ -1,0 +1,1682 @@
+[1734949139.479][INFO]: Starting ChromeDriver 131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}) on port 51918
+[1734949139.479][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1734949139.480][INFO]: ChromeDriver was started successfully on port 51918
+[1734949139.488][INFO]: [d11851b926aa5a99a2bdf5ae174265fa] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "browserVersion": null,
+         "goog:chromeOptions": {
+            "args": [ "--incognito", "--disable-extensions" ],
+            "binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1734949139.489][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1734949139.489][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1734949139.489][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1734949139.489][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1734949139.489][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-extensions --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --incognito --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.org.chromium.Chromium.o5qVPW data:,
+
+DevTools listening on ws://127.0.0.1:51923/devtools/browser/c80f6cdd-8f8e-436e-805f-afc1ca537e1a
+[1734949139.700][DEBUG]: DevTools HTTP Request: http://localhost:51923/json/version
+[1734949139.982][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Chrome/131.0.6778.205",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+   "V8-Version": "13.1.201.19",
+   "WebKit-Version": "537.36 (@81b36b9535e3e3b610a52df3da48cd81362ec860)",
+   "webSocketDebuggerUrl": "ws://localhost:51923/devtools/browser/c80f6cdd-8f8e-436e-805f-afc1ca537e1a"
+}
+
+[1734949139.987][DEBUG]: DevTools HTTP Request: http://localhost:51923/json/list
+[1734949139.999][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:51923/devtools/page/A7132DD5A4CBAD0F45D217A79FB149A5",
+   "id": "A7132DD5A4CBAD0F45D217A79FB149A5",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:51923/devtools/page/A7132DD5A4CBAD0F45D217A79FB149A5"
+} ]
+
+[1734949140.003][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1734949140.016][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1734949140.031][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "E6E7E3BCC9D94398B163533DD89E3E1D",
+      "canAccessOpener": false,
+      "targetId": "A7132DD5A4CBAD0F45D217A79FB149A5",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1734949140.032][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "A7132DD5A4CBAD0F45D217A79FB149A5"
+}
+[1734949140.032][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "E80342C59DA704450B6A9F1475B57059",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "E6E7E3BCC9D94398B163533DD89E3E1D",
+      "canAccessOpener": false,
+      "targetId": "A7132DD5A4CBAD0F45D217A79FB149A5",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1734949140.033][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "E80342C59DA704450B6A9F1475B57059"
+}
+[1734949140.033][DEBUG]: DevTools WebSocket Command: Page.enable (id=3) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+}
+[1734949140.033][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734949140.037][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=5) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734949140.037][DEBUG]: DevTools WebSocket Command: Log.enable (id=6) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+}
+[1734949140.037][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=7) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734949140.039][DEBUG]: DevTools WebSocket Response: Page.enable (id=3) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+}
+[1734949140.039][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "identifier": "1"
+}
+[1734949140.039][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=5) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734949140.039][DEBUG]: DevTools WebSocket Response: Log.enable (id=6) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+}
+[1734949140.039][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=7) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+}
+[1734949140.039][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+}
+[1734949140.040][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "context": {
+      "auxData": {
+         "frameId": "A7132DD5A4CBAD0F45D217A79FB149A5",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "716074887421682909.8220236898419633586"
+   }
+}
+[1734949140.042][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+}
+[1734949140.042][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+}
+[1734949140.042][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+}
+[1734949140.042][INFO]: [d11851b926aa5a99a2bdf5ae174265fa] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "131.0.6778.205",
+      "chrome": {
+         "chromedriverVersion": "131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7})",
+         "userDataDir": "/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.org.chromium.Chromium.o5qVPW"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:51923"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "d11851b926aa5a99a2bdf5ae174265fa"
+}
+[1734949140.043][INFO]: [d11851b926aa5a99a2bdf5ae174265fa] COMMAND Navigate {
+   "url": "https://zoom.us"
+}
+[1734949140.045][INFO]: Waiting for pending navigations...
+[1734949140.045][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=10) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "expression": "1"
+}
+[1734949140.045][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=10) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734949140.048][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=11) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "expression": "document",
+   "objectGroup": "71c760ea-4b45-4eb8-90e1-7e19c7147cbb"
+}
+[1734949140.048][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=11) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "7994740300599348595.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734949140.048][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=12) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "objectId": "7994740300599348595.1.1"
+}
+[1734949140.048][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=12) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734949140.049][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=13) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "objectGroup": "71c760ea-4b45-4eb8-90e1-7e19c7147cbb"
+}
+[1734949140.049][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "716074887421682909.8220236898419633586"
+}
+[1734949140.050][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=13) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+}
+[1734949140.052][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734949140.052][INFO]: Done waiting for pending navigations. Status: ok
+[1734949140.052][DEBUG]: DevTools WebSocket Command: Page.navigate (id=15) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "url": "https://zoom.us"
+}
+[1734949140.054][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "A7132DD5A4CBAD0F45D217A79FB149A5"
+}
+2024-12-23 19:19:00.241 Google Chrome[24959:995232] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-23 19:19:00.242 Google Chrome[24959:995232] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+[1734949140.706][DEBUG]: DevTools WebSocket Response: Page.navigate (id=15) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "A7132DD5A4CBAD0F45D217A79FB149A5",
+   "loaderId": "4F6852FB62B81E1F24FC8D1BFF69E3C6"
+}
+[1734949140.706][INFO]: Waiting for pending navigations...
+[1734949140.706][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "expression": "1"
+}
+[1734949140.707][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+}
+[1734949140.707][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+}
+[1734949140.707][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "zoom.com",
+      "gatedAPIFeatures": [  ],
+      "id": "A7132DD5A4CBAD0F45D217A79FB149A5",
+      "loaderId": "4F6852FB62B81E1F24FC8D1BFF69E3C6",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.zoom.com",
+      "url": "https://www.zoom.com/"
+   },
+   "type": "Navigation"
+}
+[1734949140.711][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "context": {
+      "auxData": {
+         "frameId": "A7132DD5A4CBAD0F45D217A79FB149A5",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.zoom.com",
+      "uniqueId": "5987085091625363007.1550641932630028363"
+   }
+}
+[1734949140.711][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734949141.211][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "A7132DD5A4CBAD0F45D217A79FB149A5",
+   "navigationType": "historyApi",
+   "url": "https://www.zoom.com/"
+}
+[1734949141.211][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "args": [ {
+      "type": "string",
+      "value": "Init iframe start"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 5859,
+         "functionName": "Qo",
+         "lineNumber": 8,
+         "scriptId": "14",
+         "url": "https://us01ccistatic.zoom.us/us01cci/web-sdk/chat-client.js"
+      }, {
+         "columnNumber": 19409,
+         "functionName": "loadZccSdk",
+         "lineNumber": 21,
+         "scriptId": "14",
+         "url": "https://us01ccistatic.zoom.us/us01cci/web-sdk/chat-client.js"
+      }, {
+         "columnNumber": 21404,
+         "functionName": "",
+         "lineNumber": 21,
+         "scriptId": "14",
+         "url": "https://us01ccistatic.zoom.us/us01cci/web-sdk/chat-client.js"
+      }, {
+         "columnNumber": 20901,
+         "functionName": "i",
+         "lineNumber": 21,
+         "scriptId": "14",
+         "url": "https://us01ccistatic.zoom.us/us01cci/web-sdk/chat-client.js"
+      }, {
+         "columnNumber": 21756,
+         "functionName": "discover",
+         "lineNumber": 21,
+         "scriptId": "14",
+         "url": "https://us01ccistatic.zoom.us/us01cci/web-sdk/chat-client.js"
+      }, {
+         "columnNumber": 21990,
+         "functionName": "",
+         "lineNumber": 21,
+         "scriptId": "14",
+         "url": "https://us01ccistatic.zoom.us/us01cci/web-sdk/chat-client.js"
+      }, {
+         "columnNumber": 22035,
+         "functionName": "",
+         "lineNumber": 21,
+         "scriptId": "14",
+         "url": "https://us01ccistatic.zoom.us/us01cci/web-sdk/chat-client.js"
+      } ]
+   },
+   "timestamp": 1.734949141210346e+12,
+   "type": "log"
+}
+[1734949141.211][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=17) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "expression": "1"
+}
+[1734949141.222][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "25E213B9249EE1B3A288B924EE43D478",
+   "parentFrameId": "A7132DD5A4CBAD0F45D217A79FB149A5",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 6090,
+         "functionName": "",
+         "lineNumber": 8,
+         "scriptId": "14",
+         "url": "https://us01ccistatic.zoom.us/us01cci/web-sdk/chat-client.js"
+      }, {
+         "columnNumber": 5930,
+         "functionName": "Qo",
+         "lineNumber": 8,
+         "scriptId": "14",
+         "url": "https://us01ccistatic.zoom.us/us01cci/web-sdk/chat-client.js"
+      } ]
+   }
+}
+[1734949141.222][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "disposition": "currentTab",
+   "frameId": "25E213B9249EE1B3A288B924EE43D478",
+   "reason": "initialFrameNavigation",
+   "url": "https://us01ccistatic.zoom.us/us01cci/web-sdk/cross-storage.html"
+}
+[1734949141.223][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "25E213B9249EE1B3A288B924EE43D478"
+}
+[1734949141.223][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "timestamp": 59134.038084
+}
+[1734949141.223][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=17) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734949141.226][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "A7132DD5A4CBAD0F45D217A79FB149A5",
+   "navigationType": "historyApi",
+   "url": "https://www.zoom.com/"
+}
+[1734949141.226][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "expression": "1"
+}
+[1734949141.226][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734949141.302][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "A7132DD5A4CBAD0F45D217A79FB149A5",
+   "navigationType": "historyApi",
+   "url": "https://www.zoom.com/ja"
+}
+[1734949141.302][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "expression": "1"
+}
+[1734949141.309][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734949141.318][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "sessionId": "A75C230B2FCA0E4ACE6196642D4191E1",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "E6E7E3BCC9D94398B163533DD89E3E1D",
+      "canAccessOpener": false,
+      "targetId": "25E213B9249EE1B3A288B924EE43D478",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734949141.318][DEBUG]: DevTools WebSocket Command: Page.enable (id=20) (session_id=A75C230B2FCA0E4ACE6196642D4191E1) A75C230B2FCA0E4ACE6196642D4191E1 {
+}
+[1734949141.318][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=21) (session_id=A75C230B2FCA0E4ACE6196642D4191E1) A75C230B2FCA0E4ACE6196642D4191E1 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734949141.319][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=22) (session_id=A75C230B2FCA0E4ACE6196642D4191E1) A75C230B2FCA0E4ACE6196642D4191E1 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734949141.319][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=23) (session_id=A75C230B2FCA0E4ACE6196642D4191E1) A75C230B2FCA0E4ACE6196642D4191E1 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734949141.320][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "E6E7E3BCC9D94398B163533DD89E3E1D",
+      "canAccessOpener": false,
+      "targetId": "25E213B9249EE1B3A288B924EE43D478",
+      "title": "https://us01ccistatic.zoom.us/us01cci/web-sdk/cross-storage.html",
+      "type": "iframe",
+      "url": "https://us01ccistatic.zoom.us/us01cci/web-sdk/cross-storage.html"
+   }
+}
+[1734949141.320][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "25E213B9249EE1B3A288B924EE43D478",
+   "reason": "swap"
+}
+[1734949141.321][DEBUG]: DevTools WebSocket Response: Page.enable (id=20) (session_id=A75C230B2FCA0E4ACE6196642D4191E1) A75C230B2FCA0E4ACE6196642D4191E1 {
+}
+[1734949141.321][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=21) (session_id=A75C230B2FCA0E4ACE6196642D4191E1) A75C230B2FCA0E4ACE6196642D4191E1 {
+   "identifier": "1"
+}
+[1734949141.321][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=22) (session_id=A75C230B2FCA0E4ACE6196642D4191E1) A75C230B2FCA0E4ACE6196642D4191E1 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734949141.321][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=23) (session_id=A75C230B2FCA0E4ACE6196642D4191E1) A75C230B2FCA0E4ACE6196642D4191E1 {
+}
+[1734949141.321][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=24) (session_id=A75C230B2FCA0E4ACE6196642D4191E1) A75C230B2FCA0E4ACE6196642D4191E1 {
+}
+[1734949141.322][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=A75C230B2FCA0E4ACE6196642D4191E1) A75C230B2FCA0E4ACE6196642D4191E1 {
+   "context": {
+      "auxData": {
+         "frameId": "25E213B9249EE1B3A288B924EE43D478",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://us01ccistatic.zoom.us",
+      "uniqueId": "-592802330533080547.8028587732253283025"
+   }
+}
+[1734949141.322][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=24) (session_id=A75C230B2FCA0E4ACE6196642D4191E1) A75C230B2FCA0E4ACE6196642D4191E1 {
+}
+[1734949141.322][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=25) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "expression": "1"
+}
+[1734949141.322][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=25) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734949141.322][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=26) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "expression": "document",
+   "objectGroup": "3c907757-b969-4ede-9857-8aa85059aaa4"
+}
+[1734949141.322][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=26) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "-8994288031382152908.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734949141.322][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=27) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "objectId": "-8994288031382152908.1.1"
+}
+[1734949141.323][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=A75C230B2FCA0E4ACE6196642D4191E1) A75C230B2FCA0E4ACE6196642D4191E1 {
+   "timestamp": 59134.138541
+}
+[1734949141.323][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=A75C230B2FCA0E4ACE6196642D4191E1) A75C230B2FCA0E4ACE6196642D4191E1 {
+   "timestamp": 59134.138687
+}
+[1734949141.323][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=A75C230B2FCA0E4ACE6196642D4191E1) A75C230B2FCA0E4ACE6196642D4191E1 {
+   "frameId": "25E213B9249EE1B3A288B924EE43D478"
+}
+[1734949141.323][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "args": [ {
+      "type": "string",
+      "value": "Init iframe onload"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 6127,
+         "functionName": "s.onload",
+         "lineNumber": 8,
+         "scriptId": "14",
+         "url": "https://us01ccistatic.zoom.us/us01cci/web-sdk/chat-client.js"
+      } ]
+   },
+   "timestamp": 1.734949141322481e+12,
+   "type": "log"
+}
+[1734949141.323][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=27) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "https://www.zoom.com/ja",
+      "childNodeCount": 2,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "https://www.zoom.com/ja",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734949141.323][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=28) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "objectGroup": "3c907757-b969-4ede-9857-8aa85059aaa4"
+}
+[1734949141.323][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=29) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "5987085091625363007.1550641932630028363"
+}
+[1734949141.323][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=28) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+}
+[1734949141.323][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=29) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "type": "string",
+      "value": "interactive"
+   }
+}
+[1734949141.825][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=30) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "expression": "1"
+}
+[1734949141.826][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=30) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734949141.913][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "args": [ {
+      "type": "string",
+      "value": "Added optimizely_user_id to cross-domain links"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 16,
+         "functionName": "addZuidToZoomComLinks",
+         "lineNumber": 12269,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 8,
+         "functionName": "initAddZuidToZoomComLinks",
+         "lineNumber": 12277,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 10,
+         "functionName": "",
+         "lineNumber": 12273,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 6,
+         "functionName": "",
+         "lineNumber": 12471,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 2,
+         "functionName": "projectJS",
+         "lineNumber": 12539,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 141401,
+         "functionName": "exports.apply",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 74707,
+         "functionName": "t.initializePlugins",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 319219,
+         "functionName": "n",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 2931,
+         "functionName": "main",
+         "lineNumber": 13310,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 3019,
+         "functionName": "",
+         "lineNumber": 13310,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 3111,
+         "functionName": "",
+         "lineNumber": 13310,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      } ]
+   },
+   "timestamp": 1.734949141913131e+12,
+   "type": "log"
+}
+[1734949141.914][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=31) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "expression": "1"
+}
+[1734949141.921][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "args": [ {
+      "type": "string",
+      "value": "callback"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 10,
+         "functionName": "callbackFn",
+         "lineNumber": 11094,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 141401,
+         "functionName": "exports.apply",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 78458,
+         "functionName": "cn.activateViewOnCallback",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 77846,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 31342,
+         "functionName": "ut",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 37067,
+         "functionName": "jt",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 77470,
+         "functionName": "cn.setUpViewActivation",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 77026,
+         "functionName": "t.activate",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 140753,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 31342,
+         "functionName": "ut",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 37067,
+         "functionName": "jt",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 140719,
+         "functionName": "t.emit",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 47754,
+         "functionName": "t.emitActivateEvent",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 72109,
+         "functionName": "sn",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 75952,
+         "functionName": "t.initializePlugins",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 319219,
+         "functionName": "n",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 2931,
+         "functionName": "main",
+         "lineNumber": 13310,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 3019,
+         "functionName": "",
+         "lineNumber": 13310,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 3111,
+         "functionName": "",
+         "lineNumber": 13310,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      } ]
+   },
+   "timestamp": 1.734949141920804e+12,
+   "type": "log"
+}
+[1734949141.928][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "6A32FE5BAE072B3954E143E076712BB6",
+   "parentFrameId": "A7132DD5A4CBAD0F45D217A79FB149A5",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 137018,
+         "functionName": "t.appendTo",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 213157,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 20093,
+         "functionName": "W",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 21415,
+         "functionName": "un",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 212825,
+         "functionName": "t.loadIframe",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 213581,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 19796,
+         "functionName": "$",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 19921,
+         "functionName": "K",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 18097,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 17788,
+         "functionName": "b",
+         "lineNumber": 1,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      } ]
+   }
+}
+[1734949141.928][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "disposition": "currentTab",
+   "frameId": "6A32FE5BAE072B3954E143E076712BB6",
+   "reason": "initialFrameNavigation",
+   "url": "https://a20673560014.cdn.optimizely.com/client_storage/a20673560014.html"
+}
+[1734949141.929][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "6A32FE5BAE072B3954E143E076712BB6"
+}
+[1734949141.936][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=31) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734949141.980][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "8A908A4FB3F1D22E1CE350A3A1416D73",
+   "parentFrameId": "A7132DD5A4CBAD0F45D217A79FB149A5",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 8099,
+         "functionName": "r",
+         "lineNumber": 0,
+         "scriptId": "31",
+         "url": "https://st1.zoom.us/static/6.3.27919/js/app/billing/lib/shopping_bag.min.js"
+      }, {
+         "columnNumber": 98383,
+         "functionName": "Jn",
+         "lineNumber": 0,
+         "scriptId": "31",
+         "url": "https://st1.zoom.us/static/6.3.27919/js/app/billing/lib/shopping_bag.min.js"
+      }, {
+         "columnNumber": 30,
+         "functionName": "scriptElement.onload",
+         "lineNumber": 11886,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      } ]
+   }
+}
+[1734949141.980][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "disposition": "currentTab",
+   "frameId": "8A908A4FB3F1D22E1CE350A3A1416D73",
+   "reason": "initialFrameNavigation",
+   "url": "https://zoom.us/buy/cart/persist"
+}
+[1734949141.980][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=32) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "expression": "1"
+}
+[1734949141.981][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "8A908A4FB3F1D22E1CE350A3A1416D73"
+}
+[1734949141.981][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "args": [ {
+      "type": "string",
+      "value": "[OPT-ZTSPZ-445] Success init BillingShoppingBag"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 14,
+         "functionName": "scriptElement.onload",
+         "lineNumber": 11888,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      } ]
+   },
+   "timestamp": 1.734949141980197e+12,
+   "type": "log"
+}
+[1734949141.981][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=32) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734949142.165][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "sessionId": "C8E7B49F37658755BDF5AF198F50CA5F",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "E6E7E3BCC9D94398B163533DD89E3E1D",
+      "canAccessOpener": false,
+      "targetId": "6A32FE5BAE072B3954E143E076712BB6",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734949142.165][DEBUG]: DevTools WebSocket Command: Page.enable (id=33) (session_id=C8E7B49F37658755BDF5AF198F50CA5F) C8E7B49F37658755BDF5AF198F50CA5F {
+}
+[1734949142.165][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=34) (session_id=C8E7B49F37658755BDF5AF198F50CA5F) C8E7B49F37658755BDF5AF198F50CA5F {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734949142.165][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=35) (session_id=C8E7B49F37658755BDF5AF198F50CA5F) C8E7B49F37658755BDF5AF198F50CA5F {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734949142.165][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=36) (session_id=C8E7B49F37658755BDF5AF198F50CA5F) C8E7B49F37658755BDF5AF198F50CA5F {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734949142.166][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "E6E7E3BCC9D94398B163533DD89E3E1D",
+      "canAccessOpener": false,
+      "targetId": "6A32FE5BAE072B3954E143E076712BB6",
+      "title": "https://a20673560014.cdn.optimizely.com/client_storage/a20673560014.html",
+      "type": "iframe",
+      "url": "https://a20673560014.cdn.optimizely.com/client_storage/a20673560014.html"
+   }
+}
+[1734949142.167][DEBUG]: DevTools WebSocket Response: Page.enable (id=33) (session_id=C8E7B49F37658755BDF5AF198F50CA5F) C8E7B49F37658755BDF5AF198F50CA5F {
+}
+[1734949142.167][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=34) (session_id=C8E7B49F37658755BDF5AF198F50CA5F) C8E7B49F37658755BDF5AF198F50CA5F {
+   "identifier": "1"
+}
+[1734949142.167][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=35) (session_id=C8E7B49F37658755BDF5AF198F50CA5F) C8E7B49F37658755BDF5AF198F50CA5F {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734949142.167][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=36) (session_id=C8E7B49F37658755BDF5AF198F50CA5F) C8E7B49F37658755BDF5AF198F50CA5F {
+}
+[1734949142.167][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=37) (session_id=C8E7B49F37658755BDF5AF198F50CA5F) C8E7B49F37658755BDF5AF198F50CA5F {
+}
+[1734949142.168][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=C8E7B49F37658755BDF5AF198F50CA5F) C8E7B49F37658755BDF5AF198F50CA5F {
+   "context": {
+      "auxData": {
+         "frameId": "6A32FE5BAE072B3954E143E076712BB6",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://a20673560014.cdn.optimizely.com",
+      "uniqueId": "-4188430459289716247.2552569771896070240"
+   }
+}
+[1734949142.168][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=37) (session_id=C8E7B49F37658755BDF5AF198F50CA5F) C8E7B49F37658755BDF5AF198F50CA5F {
+}
+[1734949142.168][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=38) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "expression": "1"
+}
+[1734949142.169][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=C8E7B49F37658755BDF5AF198F50CA5F) C8E7B49F37658755BDF5AF198F50CA5F {
+   "timestamp": 59134.984588
+}
+[1734949142.169][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=C8E7B49F37658755BDF5AF198F50CA5F) C8E7B49F37658755BDF5AF198F50CA5F {
+   "timestamp": 59134.984708
+}
+[1734949142.169][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=C8E7B49F37658755BDF5AF198F50CA5F) C8E7B49F37658755BDF5AF198F50CA5F {
+   "frameId": "6A32FE5BAE072B3954E143E076712BB6"
+}
+[1734949142.173][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "833B6D588BA5BB8D8375DFAB937BF279",
+   "parentFrameId": "A7132DD5A4CBAD0F45D217A79FB149A5",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 63847,
+         "functionName": "Po.append",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 227651,
+         "functionName": "kr.insertPcHtml",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 401190,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 1758,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 1863,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 801,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 580,
+         "functionName": "u",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 400255,
+         "functionName": "ns.windowLoadBanner",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 62140,
+         "functionName": "r",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 62292,
+         "functionName": "Po.trigger",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 142327,
+         "functionName": "fn.loadBanner",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 300868,
+         "functionName": "gi.LoadBanner",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 416461,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 1758,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 1863,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 634,
+         "functionName": "o",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      } ]
+   }
+}
+[1734949142.173][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "disposition": "currentTab",
+   "frameId": "833B6D588BA5BB8D8375DFAB937BF279",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734949142.173][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "833B6D588BA5BB8D8375DFAB937BF279",
+      "loaderId": "D04CA40E248004D99FE91DF6961F9182",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "A7132DD5A4CBAD0F45D217A79FB149A5",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734949142.173][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "833B6D588BA5BB8D8375DFAB937BF279"
+}
+[1734949142.174][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "context": {
+      "auxData": {
+         "frameId": "833B6D588BA5BB8D8375DFAB937BF279",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://www.zoom.com",
+      "uniqueId": "2476019795582615117.-3582759742508227501"
+   }
+}
+[1734949142.174][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "833B6D588BA5BB8D8375DFAB937BF279"
+}
+[1734949142.174][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "833B6D588BA5BB8D8375DFAB937BF279"
+}
+[1734949142.174][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "833B6D588BA5BB8D8375DFAB937BF279",
+   "reason": "remove"
+}
+[1734949142.174][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "executionContextId": 2,
+   "executionContextUniqueId": "2476019795582615117.-3582759742508227501"
+}
+[1734949142.174][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "ED0814EADE5BB4DE3684DB25975214F4",
+   "parentFrameId": "A7132DD5A4CBAD0F45D217A79FB149A5",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 63847,
+         "functionName": "Po.append",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 227706,
+         "functionName": "kr.insertPcHtml",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 401190,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 1758,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 1863,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 801,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 580,
+         "functionName": "u",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 400255,
+         "functionName": "ns.windowLoadBanner",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 62140,
+         "functionName": "r",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 62292,
+         "functionName": "Po.trigger",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 142327,
+         "functionName": "fn.loadBanner",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 300868,
+         "functionName": "gi.LoadBanner",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 416461,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 1758,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 1863,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 634,
+         "functionName": "o",
+         "lineNumber": 6,
+         "scriptId": "32",
+         "url": "https://cdn.cookielaw.org/scripttemplates/202303.1.0/otBannerSdk.js"
+      } ]
+   }
+}
+[1734949142.174][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "disposition": "currentTab",
+   "frameId": "ED0814EADE5BB4DE3684DB25975214F4",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734949142.174][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "ED0814EADE5BB4DE3684DB25975214F4",
+      "loaderId": "106C99A8E42FEFA82FF3223577E3D080",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "A7132DD5A4CBAD0F45D217A79FB149A5",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734949142.174][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "ED0814EADE5BB4DE3684DB25975214F4"
+}
+[1734949142.175][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "context": {
+      "auxData": {
+         "frameId": "ED0814EADE5BB4DE3684DB25975214F4",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 3,
+      "name": "",
+      "origin": "https://www.zoom.com",
+      "uniqueId": "8287068833185380193.1873158931914335392"
+   }
+}
+[1734949142.175][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "ED0814EADE5BB4DE3684DB25975214F4"
+}
+[1734949142.178][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "6A32FE5BAE072B3954E143E076712BB6",
+   "reason": "swap"
+}
+[1734949142.179][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=38) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734949142.179][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=39) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "expression": "document",
+   "objectGroup": "66b36a2b-a929-437d-91d1-6739a7eb08fb"
+}
+[1734949142.180][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=39) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "-8994288031382152908.1.2",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734949142.180][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=40) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "objectId": "-8994288031382152908.1.2"
+}
+[1734949142.180][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=40) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "https://www.zoom.com/ja",
+      "childNodeCount": 2,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "https://www.zoom.com/ja",
+      "isScrollable": true,
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734949142.180][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=41) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "objectGroup": "66b36a2b-a929-437d-91d1-6739a7eb08fb"
+}
+[1734949142.180][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=42) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "5987085091625363007.1550641932630028363"
+}
+[1734949142.181][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=41) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+}
+[1734949142.182][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=42) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "type": "string",
+      "value": "interactive"
+   }
+}
+[1734949142.458][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "args": [ {
+      "type": "string",
+      "value": "Added optimizely_user_id to cross-domain links"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 16,
+         "functionName": "addZuidToZoomComLinks",
+         "lineNumber": 12269,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 25,
+         "functionName": "",
+         "lineNumber": 12289,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      }, {
+         "columnNumber": 41,
+         "functionName": "",
+         "lineNumber": 12284,
+         "scriptId": "24",
+         "url": "https://explore.zoom.us/docs/js/optimizely/optimizely.js"
+      } ]
+   },
+   "timestamp": 1.734949142457405e+12,
+   "type": "log"
+}
+[1734949142.458][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=43) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "expression": "1"
+}
+[1734949142.459][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=43) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734949142.938][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "sessionId": "F048842916C74D29ED94F67B382DB896",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "E6E7E3BCC9D94398B163533DD89E3E1D",
+      "canAccessOpener": false,
+      "targetId": "8A908A4FB3F1D22E1CE350A3A1416D73",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734949142.938][DEBUG]: DevTools WebSocket Command: Page.enable (id=44) (session_id=F048842916C74D29ED94F67B382DB896) F048842916C74D29ED94F67B382DB896 {
+}
+[1734949142.938][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=45) (session_id=F048842916C74D29ED94F67B382DB896) F048842916C74D29ED94F67B382DB896 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734949142.938][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=46) (session_id=F048842916C74D29ED94F67B382DB896) F048842916C74D29ED94F67B382DB896 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734949142.938][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=47) (session_id=F048842916C74D29ED94F67B382DB896) F048842916C74D29ED94F67B382DB896 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734949142.946][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "E6E7E3BCC9D94398B163533DD89E3E1D",
+      "canAccessOpener": false,
+      "targetId": "8A908A4FB3F1D22E1CE350A3A1416D73",
+      "title": "https://zoom.us/buy/cart/persist",
+      "type": "iframe",
+      "url": "https://zoom.us/buy/cart/persist"
+   }
+}
+[1734949142.946][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "8A908A4FB3F1D22E1CE350A3A1416D73",
+   "reason": "swap"
+}
+[1734949142.946][DEBUG]: DevTools WebSocket Response: Page.enable (id=44) (session_id=F048842916C74D29ED94F67B382DB896) F048842916C74D29ED94F67B382DB896 {
+}
+[1734949142.946][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=45) (session_id=F048842916C74D29ED94F67B382DB896) F048842916C74D29ED94F67B382DB896 {
+   "identifier": "1"
+}
+[1734949142.946][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=46) (session_id=F048842916C74D29ED94F67B382DB896) F048842916C74D29ED94F67B382DB896 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734949142.946][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=47) (session_id=F048842916C74D29ED94F67B382DB896) F048842916C74D29ED94F67B382DB896 {
+}
+[1734949142.946][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=48) (session_id=F048842916C74D29ED94F67B382DB896) F048842916C74D29ED94F67B382DB896 {
+}
+[1734949142.946][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=F048842916C74D29ED94F67B382DB896) F048842916C74D29ED94F67B382DB896 {
+   "context": {
+      "auxData": {
+         "frameId": "8A908A4FB3F1D22E1CE350A3A1416D73",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://zoom.us",
+      "uniqueId": "9199033138317237992.-794954586746564563"
+   }
+}
+[1734949142.946][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=48) (session_id=F048842916C74D29ED94F67B382DB896) F048842916C74D29ED94F67B382DB896 {
+}
+[1734949142.947][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=49) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "expression": "1"
+}
+[1734949142.947][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=49) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734949142.947][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=50) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "expression": "document",
+   "objectGroup": "a2431a99-b121-4591-b738-489a1dff3b6b"
+}
+[1734949142.948][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=50) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "-8994288031382152908.1.3",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734949142.948][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=51) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "objectId": "-8994288031382152908.1.3"
+}
+[1734949142.948][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=51) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "https://www.zoom.com/ja",
+      "childNodeCount": 2,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "https://www.zoom.com/ja",
+      "isScrollable": true,
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734949142.948][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=52) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "objectGroup": "a2431a99-b121-4591-b738-489a1dff3b6b"
+}
+[1734949142.948][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=53) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "5987085091625363007.1550641932630028363"
+}
+[1734949142.948][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=52) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+}
+[1734949142.949][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=53) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "type": "string",
+      "value": "interactive"
+   }
+}
+[1734949143.454][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=54) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "expression": "1"
+}
+[1734949143.454][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=54) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734949143.480][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=F048842916C74D29ED94F67B382DB896) F048842916C74D29ED94F67B382DB896 {
+   "timestamp": 59136.295965
+}
+[1734949143.480][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=F048842916C74D29ED94F67B382DB896) F048842916C74D29ED94F67B382DB896 {
+   "timestamp": 59136.296254
+}
+[1734949143.480][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=F048842916C74D29ED94F67B382DB896) F048842916C74D29ED94F67B382DB896 {
+   "frameId": "8A908A4FB3F1D22E1CE350A3A1416D73"
+}
+[1734949143.480][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=55) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "expression": "1"
+}
+[1734949143.481][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=55) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734949143.986][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=56) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "expression": "1"
+}
+[1734949143.986][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=56) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734949144.333][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "timestamp": 59137.141755
+}
+[1734949144.333][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=57) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "5987085091625363007.1550641932630028363"
+}
+[1734949144.334][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "frameId": "A7132DD5A4CBAD0F45D217A79FB149A5"
+}
+[1734949144.336][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=57) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734949144.336][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=58) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "expression": "1"
+}
+[1734949144.336][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=58) (session_id=E80342C59DA704450B6A9F1475B57059) A7132DD5A4CBAD0F45D217A79FB149A5 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734949144.336][INFO]: Done waiting for pending navigations. Status: ok
+[1734949144.336][INFO]: [d11851b926aa5a99a2bdf5ae174265fa] RESPONSE Navigate
+Created TensorFlow Lite XNNPACK delegate for CPU.
+[1734949154.344][INFO]: [d11851b926aa5a99a2bdf5ae174265fa] COMMAND Quit {
+}
+[1734949154.399][INFO]: [d11851b926aa5a99a2bdf5ae174265fa] RESPONSE Quit
+[1734949154.399][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1734949154.399][DEBUG]: Log type 'browser' lost 0 entries on destruction

@@ -1,0 +1,492 @@
+[1734950122.214][INFO]: Starting Microsoft Edge WebDriver 131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70) on port 56523
+[1734950122.214][INFO]: Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+[1734950122.216][INFO]: msedgedriver was started successfully on port 56523
+[1734950122.223][INFO]: [6099a33f9052e95c62efbd7a68fde675] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "MicrosoftEdge",
+         "browserVersion": null,
+         "ms:edgeOptions": {
+            "args": [ "--disable-extensions", "--inprivate" ],
+            "binary": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1734950122.223][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1734950122.224][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1734950122.224][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1734950122.224][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1734950122.224][INFO]: WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS = 
+[1734950122.224][INFO]: Launching Microsoft Edge: /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-extensions --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --inprivate --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.VGyUWs data:,
+
+DevTools listening on ws://127.0.0.1:56528/devtools/browser/d914f73e-b59e-4cc6-9597-7e82f6ff22d3
+[1734950122.455][DEBUG]: DevTools HTTP Request: http://localhost:56528/json/version
+[1734950122.721][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Edg/131.0.2903.112",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
+   "V8-Version": "13.1.20.9",
+   "WebKit-Version": "537.36 (@16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+   "webSocketDebuggerUrl": "ws://localhost:56528/devtools/browser/d914f73e-b59e-4cc6-9597-7e82f6ff22d3"
+}
+
+[1734950122.722][DEBUG]: DevTools HTTP Request: http://localhost:56528/json/list
+[1734950122.737][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:56528/devtools/page/52AE7C6EE4450B01B4AB201C6DF7DC03",
+   "id": "52AE7C6EE4450B01B4AB201C6DF7DC03",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:56528/devtools/page/52AE7C6EE4450B01B4AB201C6DF7DC03"
+} ]
+
+[1734950122.740][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1734950122.743][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1734950122.748][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "16A332DF7F33039E5EE3CBD3B79406F5",
+      "canAccessOpener": false,
+      "pid": 0,
+      "targetId": "52AE7C6EE4450B01B4AB201C6DF7DC03",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1734950122.751][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "52AE7C6EE4450B01B4AB201C6DF7DC03"
+}
+[1734950122.764][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "84C2D02E25ABB2A55816E65676AD9A9E",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "16A332DF7F33039E5EE3CBD3B79406F5",
+      "canAccessOpener": false,
+      "pid": 28810,
+      "targetId": "52AE7C6EE4450B01B4AB201C6DF7DC03",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1734950122.764][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "84C2D02E25ABB2A55816E65676AD9A9E"
+}
+[1734950122.764][DEBUG]: DevTools WebSocket Command: Page.enable (id=3) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+}
+[1734950122.764][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950122.766][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=5) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950122.766][DEBUG]: DevTools WebSocket Command: Log.enable (id=6) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+}
+[1734950122.766][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=7) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734950122.770][DEBUG]: DevTools WebSocket Response: Page.enable (id=3) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+}
+[1734950122.772][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "identifier": "1"
+}
+[1734950122.772][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=5) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734950122.772][DEBUG]: DevTools WebSocket Response: Log.enable (id=6) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+}
+[1734950122.772][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=7) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+}
+[1734950122.772][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+}
+[1734950122.772][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "context": {
+      "auxData": {
+         "frameId": "52AE7C6EE4450B01B4AB201C6DF7DC03",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "4378076431773653124.-4078301083299537405"
+   }
+}
+[1734950122.772][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+}
+[1734950122.772][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+}
+[1734950122.772][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+}
+[1734950122.775][INFO]: [6099a33f9052e95c62efbd7a68fde675] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "MicrosoftEdge",
+      "browserVersion": "131.0.2903.112",
+      "fedcm:accounts": true,
+      "ms:edgeOptions": {
+         "debuggerAddress": "localhost:56528"
+      },
+      "msedge": {
+         "msedgedriverVersion": "131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+         "userDataDir": "/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.VGyUWs"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "6099a33f9052e95c62efbd7a68fde675"
+}
+[1734950122.776][INFO]: [6099a33f9052e95c62efbd7a68fde675] COMMAND Navigate {
+   "url": "https://facebook.com"
+}
+[1734950122.778][INFO]: Waiting for pending navigations...
+[1734950122.778][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=10) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "expression": "1"
+}
+[1734950122.778][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=10) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950122.778][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=11) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "expression": "document",
+   "objectGroup": "5c111548-f7b0-4f1c-ba6f-a4209bc55c28"
+}
+[1734950122.778][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=11) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "7925831419473333789.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734950122.778][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=12) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "objectId": "7925831419473333789.1.1"
+}
+[1734950122.779][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=12) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734950122.779][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=13) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "objectGroup": "5c111548-f7b0-4f1c-ba6f-a4209bc55c28"
+}
+[1734950122.779][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "4378076431773653124.-4078301083299537405"
+}
+[1734950122.780][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=13) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+}
+[1734950122.780][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734950122.780][INFO]: Done waiting for pending navigations. Status: ok
+[1734950122.780][DEBUG]: DevTools WebSocket Command: Page.navigate (id=15) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "url": "https://facebook.com"
+}
+[1734950122.782][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "frameId": "52AE7C6EE4450B01B4AB201C6DF7DC03"
+}
+2024-12-23 19:35:22.983 Microsoft Edge[28802:1054994] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-23 19:35:22.983 Microsoft Edge[28802:1054994] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+[1734950123.274][DEBUG]: DevTools WebSocket Response: Page.navigate (id=15) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "frameId": "52AE7C6EE4450B01B4AB201C6DF7DC03",
+   "loaderId": "2CDEC217F9838E40FD320CA720E5D5FF"
+}
+[1734950123.274][INFO]: Waiting for pending navigations...
+[1734950123.274][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "expression": "1"
+}
+[1734950123.275][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+}
+[1734950123.276][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+}
+[1734950123.276][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "facebook.com",
+      "gatedAPIFeatures": [  ],
+      "id": "52AE7C6EE4450B01B4AB201C6DF7DC03",
+      "loaderId": "2CDEC217F9838E40FD320CA720E5D5FF",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.facebook.com",
+      "url": "https://www.facebook.com/"
+   },
+   "type": "Navigation"
+}
+[1734950123.283][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "context": {
+      "auxData": {
+         "frameId": "52AE7C6EE4450B01B4AB201C6DF7DC03",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.facebook.com",
+      "uniqueId": "8245928563391558961.-2365286842531387786"
+   }
+}
+[1734950123.285][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950123.466][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 20,
+      "source": "deprecation",
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950123466006e+12,
+      "url": "https://www.facebook.com/"
+   }
+}
+[1734950123.466][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=17) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "expression": "1"
+}
+[1734950123.494][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=17) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950123.495][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "timestamp": 60116.367985
+}
+[1734950123.495][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "entry": {
+      "args": [ {
+         "className": "HTMLInputElement",
+         "description": "input#pass.inputtext._55r1._6luy._9npi",
+         "objectId": "3288194011994343115.1.1",
+         "subtype": "node",
+         "type": "object"
+      } ],
+      "level": "verbose",
+      "source": "recommendation",
+      "text": "[DOM] Input elements should have autocomplete attributes (suggested: \"current-password\"): (More info: https://www.chromium.org/developers/design-documents/create-amazing-password-forms) %o",
+      "timestamp": 1.734950123494449e+12,
+      "url": "https://www.facebook.com/"
+   }
+}
+[1734950123.495][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "expression": "1"
+}
+[1734950123.497][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950123.548][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "args": [ {
+      "type": "string",
+      "value": "\n%cSTOP！"
+   }, {
+      "type": "string",
+      "value": "font-family:helvetica; font-size:20px; font-size:50px; font-weight:bold; color:red; -webkit-text-stroke:1px black;"
+   } ],
+   "executionContextId": 1,
+   "timestamp": 1.734950123547691e+12,
+   "type": "log"
+}
+[1734950123.548][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "args": [ {
+      "type": "string",
+      "value": "\n%cこれは開発者向けのブラウザー機能です。Facebook機能を有効にするためまたは誰かのアカウントをハッキングするために、ここに何かをコピー・..."
+   }, {
+      "type": "string",
+      "value": "font-family:helvetica; font-size:20px; "
+   } ],
+   "executionContextId": 1,
+   "timestamp": 1.734950123547732e+12,
+   "type": "log"
+}
+[1734950123.548][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "args": [ {
+      "type": "string",
+      "value": "\n%c詳細はhttps://www.facebook.com/selfxssをご覧ください。"
+   }, {
+      "type": "string",
+      "value": "font-family:helvetica; font-size:20px; "
+   } ],
+   "executionContextId": 1,
+   "timestamp": 1.734950123547752e+12,
+   "type": "log"
+}
+[1734950123.548][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "args": [ {
+      "type": "string",
+      "value": "\n%c"
+   }, {
+      "type": "string",
+      "value": ""
+   } ],
+   "executionContextId": 1,
+   "timestamp": 1.734950123547768e+12,
+   "type": "log"
+}
+[1734950123.548][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "expression": "1"
+}
+[1734950123.551][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950124.057][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "timestamp": 60116.929648
+}
+[1734950124.057][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=20) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "8245928563391558961.-2365286842531387786"
+}
+[1734950124.058][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "frameId": "52AE7C6EE4450B01B4AB201C6DF7DC03"
+}
+[1734950124.059][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=20) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734950124.059][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=21) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "expression": "1"
+}
+[1734950124.060][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=21) (session_id=84C2D02E25ABB2A55816E65676AD9A9E) 52AE7C6EE4450B01B4AB201C6DF7DC03 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950124.060][INFO]: Done waiting for pending navigations. Status: ok
+[1734950124.060][INFO]: [6099a33f9052e95c62efbd7a68fde675] RESPONSE Navigate
+Trying to load the allocator multiple times. This is *not* supported.
+[1734950134.070][INFO]: [6099a33f9052e95c62efbd7a68fde675] COMMAND Quit {
+}
+[1734950134.122][INFO]: [6099a33f9052e95c62efbd7a68fde675] RESPONSE Quit
+[1734950134.122][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1734950134.122][DEBUG]: Log type 'browser' lost 1 entries on destruction

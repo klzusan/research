@@ -1,0 +1,3283 @@
+[1734950560.006][INFO]: Starting Microsoft Edge WebDriver 131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70) on port 58300
+[1734950560.006][INFO]: Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+[1734950560.008][INFO]: msedgedriver was started successfully on port 58300
+[1734950560.018][INFO]: [d6e6d74567160e8222c51a420bd48678] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "MicrosoftEdge",
+         "browserVersion": null,
+         "ms:edgeOptions": {
+            "args": [ "--disable-extensions", "--inprivate" ],
+            "binary": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1734950560.019][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1734950560.019][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1734950560.020][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1734950560.020][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1734950560.020][INFO]: WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS = 
+[1734950560.020][INFO]: Launching Microsoft Edge: /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-extensions --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --inprivate --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.A87E2g data:,
+
+DevTools listening on ws://127.0.0.1:58305/devtools/browser/63b4e4d7-ab9b-482a-888d-f77057d6c303
+[1734950560.258][DEBUG]: DevTools HTTP Request: http://localhost:58305/json/version
+[1734950560.550][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Edg/131.0.2903.112",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
+   "V8-Version": "13.1.20.9",
+   "WebKit-Version": "537.36 (@16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+   "webSocketDebuggerUrl": "ws://localhost:58305/devtools/browser/63b4e4d7-ab9b-482a-888d-f77057d6c303"
+}
+
+[1734950560.552][DEBUG]: DevTools HTTP Request: http://localhost:58305/json/list
+[1734950560.566][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:58305/devtools/page/D73F3B71C3B99073D05E8930A7CE313C",
+   "id": "D73F3B71C3B99073D05E8930A7CE313C",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:58305/devtools/page/D73F3B71C3B99073D05E8930A7CE313C"
+} ]
+
+[1734950560.575][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1734950560.590][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1734950560.596][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "E8A713E265609D0CBF4FE3F11FD98F8D",
+      "canAccessOpener": false,
+      "pid": 0,
+      "targetId": "D73F3B71C3B99073D05E8930A7CE313C",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1734950560.598][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "D73F3B71C3B99073D05E8930A7CE313C"
+}
+[1734950560.598][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "3249E9ABFE85C07F8EFE1C33998BB0BB",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "E8A713E265609D0CBF4FE3F11FD98F8D",
+      "canAccessOpener": false,
+      "pid": 31187,
+      "targetId": "D73F3B71C3B99073D05E8930A7CE313C",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1734950560.599][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "3249E9ABFE85C07F8EFE1C33998BB0BB"
+}
+[1734950560.599][DEBUG]: DevTools WebSocket Command: Page.enable (id=3) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+}
+[1734950560.599][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950560.599][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=5) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950560.599][DEBUG]: DevTools WebSocket Command: Log.enable (id=6) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+}
+[1734950560.599][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=7) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734950560.601][DEBUG]: DevTools WebSocket Response: Page.enable (id=3) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+}
+[1734950560.602][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "identifier": "1"
+}
+[1734950560.602][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=5) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734950560.602][DEBUG]: DevTools WebSocket Response: Log.enable (id=6) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+}
+[1734950560.602][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=7) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+}
+[1734950560.602][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+}
+[1734950560.602][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "context": {
+      "auxData": {
+         "frameId": "D73F3B71C3B99073D05E8930A7CE313C",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "5379476912907928205.-5251428552941789073"
+   }
+}
+[1734950560.604][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+}
+[1734950560.604][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+}
+[1734950560.605][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+}
+[1734950560.605][INFO]: [d6e6d74567160e8222c51a420bd48678] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "MicrosoftEdge",
+      "browserVersion": "131.0.2903.112",
+      "fedcm:accounts": true,
+      "ms:edgeOptions": {
+         "debuggerAddress": "localhost:58305"
+      },
+      "msedge": {
+         "msedgedriverVersion": "131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+         "userDataDir": "/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.A87E2g"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "d6e6d74567160e8222c51a420bd48678"
+}
+[1734950560.606][INFO]: [d6e6d74567160e8222c51a420bd48678] COMMAND Navigate {
+   "url": "https://samsung.com"
+}
+[1734950560.607][INFO]: Waiting for pending navigations...
+[1734950560.607][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=10) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950560.608][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=10) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950560.608][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=11) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "document",
+   "objectGroup": "f4e00e43-d101-48fb-bdc9-162e25e9a6d4"
+}
+[1734950560.610][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=11) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "-1700708679337587177.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734950560.610][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=12) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "objectId": "-1700708679337587177.1.1"
+}
+[1734950560.611][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=12) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734950560.613][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=13) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "objectGroup": "f4e00e43-d101-48fb-bdc9-162e25e9a6d4"
+}
+[1734950560.613][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "5379476912907928205.-5251428552941789073"
+}
+[1734950560.613][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=13) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+}
+[1734950560.614][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734950560.617][INFO]: Done waiting for pending navigations. Status: ok
+[1734950560.620][DEBUG]: DevTools WebSocket Command: Page.navigate (id=15) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "url": "https://samsung.com"
+}
+[1734950560.625][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "D73F3B71C3B99073D05E8930A7CE313C"
+}
+2024-12-23 19:42:40.808 Microsoft Edge[31179:1078507] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-23 19:42:40.808 Microsoft Edge[31179:1078507] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+[1734950561.401][DEBUG]: DevTools WebSocket Response: Page.navigate (id=15) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "D73F3B71C3B99073D05E8930A7CE313C",
+   "loaderId": "977580ED1446B9FC0774AEA4BD6B052E"
+}
+[1734950561.402][INFO]: Waiting for pending navigations...
+[1734950561.402][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950561.403][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+}
+[1734950561.405][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+}
+[1734950561.405][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "samsung.com",
+      "gatedAPIFeatures": [  ],
+      "id": "D73F3B71C3B99073D05E8930A7CE313C",
+      "loaderId": "977580ED1446B9FC0774AEA4BD6B052E",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.samsung.com",
+      "url": "https://www.samsung.com/jp/"
+   },
+   "type": "Navigation"
+}
+[1734950561.417][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "context": {
+      "auxData": {
+         "frameId": "D73F3B71C3B99073D05E8930A7CE313C",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.samsung.com",
+      "uniqueId": "-5541724019386014299.6194771388175719154"
+   }
+}
+[1734950561.418][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950561.496][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950561495583e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950561.496][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.73495056149572e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950561.496][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=17) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950561.497][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950561496412e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950561.497][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950561496441e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950561.497][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=17) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950561.514][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "8653F5DF7A68E13C4A8ECDA4077E9378",
+   "parentFrameId": "D73F3B71C3B99073D05E8930A7CE313C",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 847,
+         "functionName": "",
+         "lineNumber": 320,
+         "scriptId": "12",
+         "url": "https://www.samsung.com/jp/"
+      }, {
+         "columnNumber": 1269,
+         "functionName": "",
+         "lineNumber": 320,
+         "scriptId": "12",
+         "url": "https://www.samsung.com/jp/"
+      }, {
+         "columnNumber": 3088,
+         "functionName": "",
+         "lineNumber": 320,
+         "scriptId": "12",
+         "url": "https://www.samsung.com/jp/"
+      } ]
+   }
+}
+[1734950561.514][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950561.518][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "context": {
+      "auxData": {
+         "frameId": "8653F5DF7A68E13C4A8ECDA4077E9378",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://www.samsung.com",
+      "uniqueId": "4198145358880033705.4281061042521599973"
+   }
+}
+[1734950561.518][DEBUG]: DevTools WebSocket Event: Page.documentOpened (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "samsung.com",
+      "gatedAPIFeatures": [  ],
+      "id": "8653F5DF7A68E13C4A8ECDA4077E9378",
+      "loaderId": "9D570C7CD7178DD3F004EE21155E7A7D",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "D73F3B71C3B99073D05E8930A7CE313C",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.samsung.com",
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950561.523][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950561.627][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "E932D691B24B9D6FA11D3C5E624DF672",
+   "parentFrameId": "D73F3B71C3B99073D05E8930A7CE313C"
+}
+[1734950561.627][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "disposition": "currentTab",
+   "frameId": "E932D691B24B9D6FA11D3C5E624DF672",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734950561.627][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "E932D691B24B9D6FA11D3C5E624DF672",
+      "loaderId": "32881ECABF97409F02320FC41085E832",
+      "mimeType": "text/html",
+      "name": "Estimate_iframe",
+      "parentId": "D73F3B71C3B99073D05E8930A7CE313C",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734950561.627][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950561.628][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "E932D691B24B9D6FA11D3C5E624DF672"
+}
+[1734950561.628][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "context": {
+      "auxData": {
+         "frameId": "E932D691B24B9D6FA11D3C5E624DF672",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 3,
+      "name": "",
+      "origin": "https://www.samsung.com",
+      "uniqueId": "-6084239062457324778.4503454373813378146"
+   }
+}
+[1734950561.628][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "E932D691B24B9D6FA11D3C5E624DF672"
+}
+[1734950561.629][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950561.630][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "E932D691B24B9D6FA11D3C5E624DF672"
+}
+[1734950561.630][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=20) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950561.631][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "E932D691B24B9D6FA11D3C5E624DF672",
+   "reason": "remove"
+}
+[1734950561.631][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "executionContextId": 3,
+   "executionContextUniqueId": "-6084239062457324778.4503454373813378146"
+}
+[1734950561.631][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "D7479FDC4C424EFFF1313E7BFD79058B",
+   "parentFrameId": "D73F3B71C3B99073D05E8930A7CE313C",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 16,
+         "functionName": "k.setElement",
+         "lineNumber": 497,
+         "scriptId": "18",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-base-ux2.min.js"
+      }, {
+         "columnNumber": 58,
+         "functionName": "k.init",
+         "lineNumber": 495,
+         "scriptId": "18",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-base-ux2.min.js"
+      }, {
+         "columnNumber": 446,
+         "functionName": "k",
+         "lineNumber": 494,
+         "scriptId": "18",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-base-ux2.min.js"
+      }, {
+         "columnNumber": 456,
+         "functionName": "",
+         "lineNumber": 519,
+         "scriptId": "18",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-base-ux2.min.js"
+      }, {
+         "columnNumber": 416,
+         "functionName": "initAll",
+         "lineNumber": 519,
+         "scriptId": "18",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-base-ux2.min.js"
+      } ]
+   }
+}
+[1734950561.631][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "disposition": "currentTab",
+   "frameId": "D7479FDC4C424EFFF1313E7BFD79058B",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734950561.631][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "D7479FDC4C424EFFF1313E7BFD79058B",
+      "loaderId": "464223397D0EA2025DC66FB87D50B2F9",
+      "mimeType": "text/html",
+      "name": "Estimate_iframe",
+      "parentId": "D73F3B71C3B99073D05E8930A7CE313C",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734950561.631][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "D7479FDC4C424EFFF1313E7BFD79058B"
+}
+[1734950561.632][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "context": {
+      "auxData": {
+         "frameId": "D7479FDC4C424EFFF1313E7BFD79058B",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 4,
+      "name": "",
+      "origin": "https://www.samsung.com",
+      "uniqueId": "313837837846608613.8729204557137101959"
+   }
+}
+[1734950561.632][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "D7479FDC4C424EFFF1313E7BFD79058B"
+}
+[1734950561.641][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "timestamp": 60554.519527
+}
+[1734950561.760][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=20) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950561.770][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "args": [ {
+      "type": "string",
+      "value": "Error retrieving ECID:"
+   }, {
+      "type": "string",
+      "value": "alloy is not defined"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 247,
+         "functionName": "",
+         "lineNumber": 118,
+         "scriptId": "177",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/components/content/consumer/global/mySamsung/my-g-recommended-product/clientlibs/site.min.js"
+      }, {
+         "columnNumber": 104,
+         "functionName": "$jscomp.generator.Engine_.nextStep_",
+         "lineNumber": 19,
+         "scriptId": "177",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/components/content/consumer/global/mySamsung/my-g-recommended-product/clientlibs/site.min.js"
+      }, {
+         "columnNumber": 233,
+         "functionName": "$jscomp.generator.Engine_.next_",
+         "lineNumber": 15,
+         "scriptId": "177",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/components/content/consumer/global/mySamsung/my-g-recommended-product/clientlibs/site.min.js"
+      }, {
+         "columnNumber": 72,
+         "functionName": "next",
+         "lineNumber": 20,
+         "scriptId": "177",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/components/content/consumer/global/mySamsung/my-g-recommended-product/clientlibs/site.min.js"
+      }, {
+         "columnNumber": 226,
+         "functionName": "",
+         "lineNumber": 21,
+         "scriptId": "177",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/components/content/consumer/global/mySamsung/my-g-recommended-product/clientlibs/site.min.js"
+      }, {
+         "columnNumber": 119,
+         "functionName": "$jscomp.asyncExecutePromiseGenerator",
+         "lineNumber": 21,
+         "scriptId": "177",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/components/content/consumer/global/mySamsung/my-g-recommended-product/clientlibs/site.min.js"
+      }, {
+         "columnNumber": 415,
+         "functionName": "$jscomp.asyncExecutePromiseGeneratorProgram",
+         "lineNumber": 21,
+         "scriptId": "177",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/components/content/consumer/global/mySamsung/my-g-recommended-product/clientlibs/site.min.js"
+      }, {
+         "columnNumber": 509,
+         "functionName": "L",
+         "lineNumber": 117,
+         "scriptId": "177",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/components/content/consumer/global/mySamsung/my-g-recommended-product/clientlibs/site.min.js"
+      }, {
+         "columnNumber": 493,
+         "functionName": "",
+         "lineNumber": 119,
+         "scriptId": "177",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/components/content/consumer/global/mySamsung/my-g-recommended-product/clientlibs/site.min.js"
+      }, {
+         "columnNumber": 104,
+         "functionName": "$jscomp.generator.Engine_.nextStep_",
+         "lineNumber": 19,
+         "scriptId": "177",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/components/content/consumer/global/mySamsung/my-g-recommended-product/clientlibs/site.min.js"
+      }, {
+         "columnNumber": 233,
+         "functionName": "$jscomp.generator.Engine_.next_",
+         "lineNumber": 15,
+         "scriptId": "177",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/components/content/consumer/global/mySamsung/my-g-recommended-product/clientlibs/site.min.js"
+      }, {
+         "columnNumber": 72,
+         "functionName": "next",
+         "lineNumber": 20,
+         "scriptId": "177",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/components/content/consumer/global/mySamsung/my-g-recommended-product/clientlibs/site.min.js"
+      }, {
+         "columnNumber": 226,
+         "functionName": "",
+         "lineNumber": 21,
+         "scriptId": "177",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/components/content/consumer/global/mySamsung/my-g-recommended-product/clientlibs/site.min.js"
+      }, {
+         "columnNumber": 119,
+         "functionName": "$jscomp.asyncExecutePromiseGenerator",
+         "lineNumber": 21,
+         "scriptId": "177",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/components/content/consumer/global/mySamsung/my-g-recommended-product/clientlibs/site.min.js"
+      }, {
+         "columnNumber": 415,
+         "functionName": "$jscomp.asyncExecutePromiseGeneratorProgram",
+         "lineNumber": 21,
+         "scriptId": "177",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/components/content/consumer/global/mySamsung/my-g-recommended-product/clientlibs/site.min.js"
+      }, {
+         "columnNumber": 378,
+         "functionName": "ma",
+         "lineNumber": 118,
+         "scriptId": "177",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/components/content/consumer/global/mySamsung/my-g-recommended-product/clientlibs/site.min.js"
+      }, {
+         "columnNumber": 57,
+         "functionName": "ua",
+         "lineNumber": 128,
+         "scriptId": "177",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/components/content/consumer/global/mySamsung/my-g-recommended-product/clientlibs/site.min.js"
+      }, {
+         "columnNumber": 232,
+         "functionName": "",
+         "lineNumber": 134,
+         "scriptId": "177",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/components/content/consumer/global/mySamsung/my-g-recommended-product/clientlibs/site.min.js"
+      }, {
+         "columnNumber": 481,
+         "functionName": "$a",
+         "lineNumber": 120,
+         "scriptId": "18",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-base-ux2.min.js"
+      }, "..." ]
+   },
+   "timestamp": 1.734950561769984e+12,
+   "type": "error"
+}
+[1734950561.770][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=21) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950561.772][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=21) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950562.067][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "0BACD2531B4F3ED7810A9100477A5220",
+   "parentFrameId": "D73F3B71C3B99073D05E8930A7CE313C",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 317,
+         "functionName": "oc",
+         "lineNumber": 106,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 128,
+         "functionName": "Ju",
+         "lineNumber": 432,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 366,
+         "functionName": "Mw",
+         "lineNumber": 477,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 51,
+         "functionName": "",
+         "lineNumber": 488,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 398,
+         "functionName": "fx",
+         "lineNumber": 490,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 472,
+         "functionName": "gx",
+         "lineNumber": 486,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 71,
+         "functionName": "f",
+         "lineNumber": 573,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 51,
+         "functionName": "",
+         "lineNumber": 575,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 149,
+         "functionName": "el",
+         "lineNumber": 270,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 431,
+         "functionName": "El",
+         "lineNumber": 275,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 37,
+         "functionName": "pE",
+         "lineNumber": 575,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 27,
+         "functionName": "fn",
+         "lineNumber": 291,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 161,
+         "functionName": "en.flush",
+         "lineNumber": 293,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 430,
+         "functionName": "en.push",
+         "lineNumber": 291,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 290,
+         "functionName": "config",
+         "lineNumber": 523,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 468,
+         "functionName": "Sz",
+         "lineNumber": 532,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 319,
+         "functionName": "Wz.b.push",
+         "lineNumber": 537,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 28,
+         "functionName": "gtag",
+         "lineNumber": 2,
+         "scriptId": "219",
+         "url": ""
+      }, {
+         "columnNumber": 2,
+         "functionName": "",
+         "lineNumber": 5,
+         "scriptId": "219",
+         "url": ""
+      }, "..." ]
+   }
+}
+[1734950562.067][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "disposition": "currentTab",
+   "frameId": "0BACD2531B4F3ED7810A9100477A5220",
+   "reason": "initialFrameNavigation",
+   "url": "https://td.doubleclick.net/td/rul/316016226?random=1734950562054&cv=11&fst=1734950562054&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212za200&gcd=13l3l3l3l1l1&dma=0&tag_exp=101925629~1020675..."
+}
+[1734950562.067][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=22) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950562.068][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "0BACD2531B4F3ED7810A9100477A5220"
+}
+[1734950562.074][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "args": [ {
+      "type": "string",
+      "value": "directCallFlv2 : undefined"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 8,
+         "functionName": "",
+         "lineNumber": 5,
+         "scriptId": "228",
+         "url": ""
+      }, {
+         "columnNumber": 27893,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "188",
+         "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+      }, {
+         "columnNumber": 27870,
+         "functionName": "_satellite.\u003Ccomputed>",
+         "lineNumber": 6,
+         "scriptId": "188",
+         "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+      }, {
+         "columnNumber": 25,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "228",
+         "url": ""
+      }, {
+         "columnNumber": 15777,
+         "functionName": "e._insertCursor",
+         "lineNumber": 6,
+         "scriptId": "188",
+         "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+      }, {
+         "columnNumber": 16430,
+         "functionName": "e._writeScriptToken",
+         "lineNumber": 6,
+         "scriptId": "188",
+         "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+      }, {
+         "columnNumber": 14989,
+         "functionName": "e._handleScriptToken",
+         "lineNumber": 6,
+         "scriptId": "188",
+         "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+      }, {
+         "columnNumber": 13601,
+         "functionName": "e._writeImpl",
+         "lineNumber": 6,
+         "scriptId": "188",
+         "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+      }, {
+         "columnNumber": 13164,
+         "functionName": "e.write",
+         "lineNumber": 6,
+         "scriptId": "188",
+         "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+      }, {
+         "columnNumber": 10832,
+         "functionName": "s",
+         "lineNumber": 6,
+         "scriptId": "188",
+         "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+      }, {
+         "columnNumber": 10201,
+         "functionName": "i",
+         "lineNumber": 6,
+         "scriptId": "188",
+         "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+      }, {
+         "columnNumber": 10891,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "188",
+         "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+      }, {
+         "columnNumber": 13294,
+         "functionName": "e._callFunction",
+         "lineNumber": 6,
+         "scriptId": "188",
+         "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+      }, {
+         "columnNumber": 13142,
+         "functionName": "e.write",
+         "lineNumber": 6,
+         "scriptId": "188",
+         "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+      }, {
+         "columnNumber": 16012,
+         "functionName": "e._onScriptDone",
+         "lineNumber": 6,
+         "scriptId": "188",
+         "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+      }, {
+         "columnNumber": 15023,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "188",
+         "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+      }, {
+         "columnNumber": 16460,
+         "functionName": "e._writeScriptToken",
+         "lineNumber": 6,
+         "scriptId": "188",
+         "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+      }, {
+         "columnNumber": 14989,
+         "functionName": "e._handleScriptToken",
+         "lineNumber": 6,
+         "scriptId": "188",
+         "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+      }, {
+         "columnNumber": 13601,
+         "functionName": "e._writeImpl",
+         "lineNumber": 6,
+         "scriptId": "188",
+         "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+      }, "..." ]
+   },
+   "timestamp": 1.734950562073151e+12,
+   "type": "log"
+}
+[1734950562.077][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "31B3058694C5584A0BA3E8B6479BB4DB",
+   "parentFrameId": "D73F3B71C3B99073D05E8930A7CE313C",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 317,
+         "functionName": "oc",
+         "lineNumber": 106,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 38,
+         "functionName": "h.Im",
+         "lineNumber": 419,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 208,
+         "functionName": "",
+         "lineNumber": 418,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      } ]
+   }
+}
+[1734950562.078][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "disposition": "currentTab",
+   "frameId": "31B3058694C5584A0BA3E8B6479BB4DB",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734950562.078][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "31B3058694C5584A0BA3E8B6479BB4DB",
+      "loaderId": "D59200992F1B64D388E4A510941EBB99",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "D73F3B71C3B99073D05E8930A7CE313C",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734950562.078][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "31B3058694C5584A0BA3E8B6479BB4DB"
+}
+[1734950562.079][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "context": {
+      "auxData": {
+         "frameId": "31B3058694C5584A0BA3E8B6479BB4DB",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 5,
+      "name": "",
+      "origin": "https://www.samsung.com",
+      "uniqueId": "7141356068385424876.1710236044311274232"
+   }
+}
+[1734950562.079][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "31B3058694C5584A0BA3E8B6479BB4DB"
+}
+[1734950562.079][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "87530A96A928667C993289162AD7B0EA",
+   "parentFrameId": "31B3058694C5584A0BA3E8B6479BB4DB",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 358,
+         "functionName": "q",
+         "lineNumber": 419,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 77,
+         "functionName": "h.Im",
+         "lineNumber": 420,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 208,
+         "functionName": "",
+         "lineNumber": 418,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      } ]
+   }
+}
+[1734950562.079][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "disposition": "currentTab",
+   "frameId": "87530A96A928667C993289162AD7B0EA",
+   "reason": "initialFrameNavigation",
+   "url": "https://www.googletagmanager.com/static/service_worker/4cc0/sw_iframe.html?origin=https%3A%2F%2Fwww.samsung.com"
+}
+[1734950562.080][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "87530A96A928667C993289162AD7B0EA"
+}
+[1734950562.080][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=22) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950562.081][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://td.doubleclick.net/td/rul/316016226?random=1734950562054&cv=11&fst=1734950562054&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212za20...",
+      "timestamp": 1.73495056207918e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.081][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://td.doubleclick.net/td/rul/316016226?random=1734950562054&cv=11&fst=1734950562054&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212za20...",
+      "timestamp": 1.734950562079202e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.081][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://td.doubleclick.net/td/rul/316016226?random=1734950562054&cv=11&fst=1734950562054&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212za20...",
+      "timestamp": 1.734950562079216e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.081][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://td.doubleclick.net/td/rul/316016226?random=1734950562054&cv=11&fst=1734950562054&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212za20...",
+      "timestamp": 1.734950562079234e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.081][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "args": [ {
+      "type": "string",
+      "value": "data.recommendations::[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]..."
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 120,
+         "functionName": "",
+         "lineNumber": 121,
+         "scriptId": "177",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/components/content/consumer/global/mySamsung/my-g-recommended-product/clientlibs/site.min.js"
+      }, {
+         "columnNumber": 268,
+         "functionName": "W",
+         "lineNumber": 117,
+         "scriptId": "18",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-base-ux2.min.js"
+      }, {
+         "columnNumber": 39,
+         "functionName": "fireWith",
+         "lineNumber": 119,
+         "scriptId": "18",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-base-ux2.min.js"
+      }, {
+         "columnNumber": 396,
+         "functionName": "q",
+         "lineNumber": 194,
+         "scriptId": "18",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-base-ux2.min.js"
+      }, {
+         "columnNumber": 364,
+         "functionName": "",
+         "lineNumber": 204,
+         "scriptId": "18",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-base-ux2.min.js"
+      } ]
+   },
+   "timestamp": 1.734950562080386e+12,
+   "type": "log"
+}
+[1734950562.081][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=23) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950562.087][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "args": [ {
+      "type": "string",
+      "value": "window.sg.components.myRecommendedProduct.reInit..."
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 67,
+         "functionName": "",
+         "lineNumber": 127,
+         "scriptId": "177",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/components/content/consumer/global/mySamsung/my-g-recommended-product/clientlibs/site.min.js"
+      }, {
+         "columnNumber": 268,
+         "functionName": "W",
+         "lineNumber": 117,
+         "scriptId": "18",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-base-ux2.min.js"
+      }, {
+         "columnNumber": 39,
+         "functionName": "fireWith",
+         "lineNumber": 119,
+         "scriptId": "18",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-base-ux2.min.js"
+      }, {
+         "columnNumber": 396,
+         "functionName": "q",
+         "lineNumber": 194,
+         "scriptId": "18",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-base-ux2.min.js"
+      }, {
+         "columnNumber": 364,
+         "functionName": "",
+         "lineNumber": 204,
+         "scriptId": "18",
+         "url": "https://www.samsung.com/etc.clientlibs/samsung/clientlibs/consumer/global/clientlib-base-ux2.min.js"
+      } ]
+   },
+   "timestamp": 1.734950562086719e+12,
+   "type": "log"
+}
+[1734950562.138][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/ccm/collect?en=page_view&dl=https%3A%2F%2Fwww.samsung.com%2Fjp%2F&scrsrc=www.googletagmanager.com&frm=0&rnd=1746605799.17349...",
+      "timestamp": 1.734950562137415e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.138][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/ccm/collect?en=page_view&dl=https%3A%2F%2Fwww.samsung.com%2Fjp%2F&scrsrc=www.googletagmanager.com&frm=0&rnd=1746605799.17349...",
+      "timestamp": 1.734950562137446e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.138][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/ccm/collect?en=page_view&dl=https%3A%2F%2Fwww.samsung.com%2Fjp%2F&scrsrc=www.googletagmanager.com&frm=0&rnd=1746605799.17349...",
+      "timestamp": 1.734950562137461e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.138][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/ccm/collect?en=page_view&dl=https%3A%2F%2Fwww.samsung.com%2Fjp%2F&scrsrc=www.googletagmanager.com&frm=0&rnd=1746605799.17349...",
+      "timestamp": 1.734950562137473e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.138][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=23) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950562.142][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://googleads.g.doubleclick.net/pagead/viewthroughconversion/316016226/?random=1734950562054&cv=11&fst=1734950562054&bg=ffffff&guid=ON&async=1&...",
+      "timestamp": 1.734950562141621e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.142][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://googleads.g.doubleclick.net/pagead/viewthroughconversion/316016226/?random=1734950562054&cv=11&fst=1734950562054&bg=ffffff&guid=ON&async=1&...",
+      "timestamp": 1.734950562141652e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.142][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://googleads.g.doubleclick.net/pagead/viewthroughconversion/316016226/?random=1734950562054&cv=11&fst=1734950562054&bg=ffffff&guid=ON&async=1&...",
+      "timestamp": 1.734950562141666e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.142][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://googleads.g.doubleclick.net/pagead/viewthroughconversion/316016226/?random=1734950562054&cv=11&fst=1734950562054&bg=ffffff&guid=ON&async=1&...",
+      "timestamp": 1.734950562141676e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.142][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=24) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950562.149][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=24) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950562.314][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "sessionId": "CAF45DA13A21E5F967200D7EAB127C0C",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "E8A713E265609D0CBF4FE3F11FD98F8D",
+      "canAccessOpener": false,
+      "pid": 31189,
+      "targetId": "0BACD2531B4F3ED7810A9100477A5220",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734950562.314][DEBUG]: DevTools WebSocket Command: Page.enable (id=25) (session_id=CAF45DA13A21E5F967200D7EAB127C0C) CAF45DA13A21E5F967200D7EAB127C0C {
+}
+[1734950562.314][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=26) (session_id=CAF45DA13A21E5F967200D7EAB127C0C) CAF45DA13A21E5F967200D7EAB127C0C {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950562.314][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=27) (session_id=CAF45DA13A21E5F967200D7EAB127C0C) CAF45DA13A21E5F967200D7EAB127C0C {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950562.315][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=28) (session_id=CAF45DA13A21E5F967200D7EAB127C0C) CAF45DA13A21E5F967200D7EAB127C0C {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734950562.315][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://td.doubleclick.net/td/rul/316016226?random=1734950562054&cv=11&fst=1734950562054&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212za20...",
+      "timestamp": 1.734950562312732e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.317][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "D7A2F99976BD2364C72558BE2181DF35",
+   "parentFrameId": "D73F3B71C3B99073D05E8930A7CE313C",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 5433,
+         "functionName": "X",
+         "lineNumber": 3,
+         "scriptId": "188",
+         "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+      }, {
+         "columnNumber": 9008,
+         "functionName": "",
+         "lineNumber": 3,
+         "scriptId": "188",
+         "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+      } ]
+   }
+}
+[1734950562.317][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "E8A713E265609D0CBF4FE3F11FD98F8D",
+      "canAccessOpener": false,
+      "pid": 31189,
+      "targetId": "0BACD2531B4F3ED7810A9100477A5220",
+      "title": "https://td.doubleclick.net/td/rul/316016226?random=1734950562054&cv=11&fst=1734950562054&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212za200&gcd=13l3l3l3l1l1&dma=0&tag_exp=101925629~1020675...",
+      "type": "iframe",
+      "url": "https://td.doubleclick.net/td/rul/316016226?random=1734950562054&cv=11&fst=1734950562054&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212za200&gcd=13l3l3l3l1l1&dma=0&tag_exp=101925629~1020675..."
+   }
+}
+[1734950562.317][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "disposition": "currentTab",
+   "frameId": "D7A2F99976BD2364C72558BE2181DF35",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734950562.317][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "D7A2F99976BD2364C72558BE2181DF35",
+      "loaderId": "F2E8A176442D9191DD1F998DF485DAA2",
+      "mimeType": "text/html",
+      "name": "Adobe Alloy",
+      "parentId": "D73F3B71C3B99073D05E8930A7CE313C",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734950562.318][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "D7A2F99976BD2364C72558BE2181DF35"
+}
+[1734950562.318][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "context": {
+      "auxData": {
+         "frameId": "D7A2F99976BD2364C72558BE2181DF35",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 6,
+      "name": "",
+      "origin": "https://www.samsung.com",
+      "uniqueId": "2001855556185231495.8516750133820051237"
+   }
+}
+[1734950562.319][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "D7A2F99976BD2364C72558BE2181DF35"
+}
+[1734950562.319][DEBUG]: DevTools WebSocket Response: Page.enable (id=25) (session_id=CAF45DA13A21E5F967200D7EAB127C0C) CAF45DA13A21E5F967200D7EAB127C0C {
+}
+[1734950562.319][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=26) (session_id=CAF45DA13A21E5F967200D7EAB127C0C) CAF45DA13A21E5F967200D7EAB127C0C {
+   "identifier": "1"
+}
+[1734950562.319][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=27) (session_id=CAF45DA13A21E5F967200D7EAB127C0C) CAF45DA13A21E5F967200D7EAB127C0C {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734950562.319][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=28) (session_id=CAF45DA13A21E5F967200D7EAB127C0C) CAF45DA13A21E5F967200D7EAB127C0C {
+}
+[1734950562.319][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=29) (session_id=CAF45DA13A21E5F967200D7EAB127C0C) CAF45DA13A21E5F967200D7EAB127C0C {
+}
+[1734950562.321][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=CAF45DA13A21E5F967200D7EAB127C0C) CAF45DA13A21E5F967200D7EAB127C0C {
+   "context": {
+      "auxData": {
+         "frameId": "0BACD2531B4F3ED7810A9100477A5220",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://td.doubleclick.net",
+      "uniqueId": "3466211568015796978.-3056811614232295526"
+   }
+}
+[1734950562.321][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=29) (session_id=CAF45DA13A21E5F967200D7EAB127C0C) CAF45DA13A21E5F967200D7EAB127C0C {
+}
+[1734950562.322][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=CAF45DA13A21E5F967200D7EAB127C0C) CAF45DA13A21E5F967200D7EAB127C0C {
+   "timestamp": 60555.200605
+}
+[1734950562.322][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=CAF45DA13A21E5F967200D7EAB127C0C) CAF45DA13A21E5F967200D7EAB127C0C {
+   "timestamp": 60555.200793
+}
+[1734950562.322][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=CAF45DA13A21E5F967200D7EAB127C0C) CAF45DA13A21E5F967200D7EAB127C0C {
+   "frameId": "0BACD2531B4F3ED7810A9100477A5220"
+}
+[1734950562.322][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "0BACD2531B4F3ED7810A9100477A5220",
+   "reason": "swap"
+}
+[1734950562.322][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://cm.everesttech.net/cm/dd?d_uuid=30951519573881870023415222933732606673.",
+      "timestamp": 1.734950562321409e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.322][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://cm.everesttech.net/cm/dd?d_uuid=30951519573881870023415222933732606673.",
+      "timestamp": 1.734950562321552e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.322][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://cm.everesttech.net/cm/dd?d_uuid=30951519573881870023415222933732606673.",
+      "timestamp": 1.734950562321581e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.322][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://cm.everesttech.net/cm/dd?d_uuid=30951519573881870023415222933732606673.",
+      "timestamp": 1.734950562321597e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.322][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=30) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950562.322][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=30) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950562.322][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=31) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "document",
+   "objectGroup": "514ebf48-2d54-4e06-a89c-a418a1304f4a"
+}
+[1734950562.322][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm&gdpr=0&gdpr_consent=&google_hm=MzA5NTE1MTk1NzM4ODE4NzAwMjM0MTUyMjI5MzM3MzI2MDY2NzM=.",
+      "timestamp": 1.734950562322007e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.322][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm&gdpr=0&gdpr_consent=&google_hm=MzA5NTE1MTk1NzM4ODE4NzAwMjM0MTUyMjI5MzM3MzI2MDY2NzM=.",
+      "timestamp": 1.734950562322095e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.322][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm&gdpr=0&gdpr_consent=&google_hm=MzA5NTE1MTk1NzM4ODE4NzAwMjM0MTUyMjI5MzM3MzI2MDY2NzM=.",
+      "timestamp": 1.734950562322193e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.323][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm&gdpr=0&gdpr_consent=&google_hm=MzA5NTE1MTk1NzM4ODE4NzAwMjM0MTUyMjI5MzM3MzI2MDY2NzM=.",
+      "timestamp": 1.734950562322222e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.323][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=31) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "-881914347972594355.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734950562.323][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=32) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "objectId": "-881914347972594355.1.1"
+}
+[1734950562.323][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.twitter.com/i/adsct?p_user_id=30951519573881870023415222933732606673&p_id=38594.",
+      "timestamp": 1.734950562322557e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.323][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.twitter.com/i/adsct?p_user_id=30951519573881870023415222933732606673&p_id=38594.",
+      "timestamp": 1.734950562322588e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.323][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.twitter.com/i/adsct?p_user_id=30951519573881870023415222933732606673&p_id=38594.",
+      "timestamp": 1.734950562322644e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.323][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.twitter.com/i/adsct?p_user_id=30951519573881870023415222933732606673&p_id=38594.",
+      "timestamp": 1.734950562322693e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.323][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=32) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "node": {
+      "backendNodeId": 2,
+      "baseURL": "https://www.samsung.com/jp/",
+      "childNodeCount": 2,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "https://www.samsung.com/jp/",
+      "isScrollable": true,
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734950562.323][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=33) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "objectGroup": "514ebf48-2d54-4e06-a89c-a418a1304f4a"
+}
+[1734950562.323][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=34) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-5541724019386014299.6194771388175719154"
+}
+[1734950562.323][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=33) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+}
+[1734950562.323][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=34) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "type": "string",
+      "value": "interactive"
+   }
+}
+[1734950562.369][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.facebook.com/tr/?id=920280788585072&ev=Adobe-Audience-Manager-Segment&cd[segID]=18566084&noscript=1.",
+      "timestamp": 1.734950562368256e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.369][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.facebook.com/tr/?id=920280788585072&ev=Adobe-Audience-Manager-Segment&cd[segID]=18566084&noscript=1.",
+      "timestamp": 1.734950562368317e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.369][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.facebook.com/tr/?id=920280788585072&ev=Adobe-Audience-Manager-Segment&cd[segID]=18566084&noscript=1.",
+      "timestamp": 1.73495056236834e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.369][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.facebook.com/tr/?id=920280788585072&ev=Adobe-Audience-Manager-Segment&cd[segID]=18566084&noscript=1.",
+      "timestamp": 1.734950562368445e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.369][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=35) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950562.369][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=35) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950562.409][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "sessionId": "A9AAA40669AF9325DE3555B5E4FE30E5",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "E8A713E265609D0CBF4FE3F11FD98F8D",
+      "canAccessOpener": false,
+      "pid": 31192,
+      "targetId": "87530A96A928667C993289162AD7B0EA",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734950562.409][DEBUG]: DevTools WebSocket Command: Page.enable (id=36) (session_id=A9AAA40669AF9325DE3555B5E4FE30E5) A9AAA40669AF9325DE3555B5E4FE30E5 {
+}
+[1734950562.409][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=37) (session_id=A9AAA40669AF9325DE3555B5E4FE30E5) A9AAA40669AF9325DE3555B5E4FE30E5 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950562.409][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=38) (session_id=A9AAA40669AF9325DE3555B5E4FE30E5) A9AAA40669AF9325DE3555B5E4FE30E5 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950562.409][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=39) (session_id=A9AAA40669AF9325DE3555B5E4FE30E5) A9AAA40669AF9325DE3555B5E4FE30E5 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734950562.411][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "E8A713E265609D0CBF4FE3F11FD98F8D",
+      "canAccessOpener": false,
+      "pid": 31192,
+      "targetId": "87530A96A928667C993289162AD7B0EA",
+      "title": "https://www.googletagmanager.com/static/service_worker/4cc0/sw_iframe.html?origin=https%3A%2F%2Fwww.samsung.com",
+      "type": "iframe",
+      "url": "https://www.googletagmanager.com/static/service_worker/4cc0/sw_iframe.html?origin=https%3A%2F%2Fwww.samsung.com"
+   }
+}
+[1734950562.411][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "87530A96A928667C993289162AD7B0EA",
+   "reason": "swap"
+}
+[1734950562.412][DEBUG]: DevTools WebSocket Response: Page.enable (id=36) (session_id=A9AAA40669AF9325DE3555B5E4FE30E5) A9AAA40669AF9325DE3555B5E4FE30E5 {
+}
+[1734950562.412][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=37) (session_id=A9AAA40669AF9325DE3555B5E4FE30E5) A9AAA40669AF9325DE3555B5E4FE30E5 {
+   "identifier": "1"
+}
+[1734950562.412][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=38) (session_id=A9AAA40669AF9325DE3555B5E4FE30E5) A9AAA40669AF9325DE3555B5E4FE30E5 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734950562.413][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=39) (session_id=A9AAA40669AF9325DE3555B5E4FE30E5) A9AAA40669AF9325DE3555B5E4FE30E5 {
+}
+[1734950562.413][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=40) (session_id=A9AAA40669AF9325DE3555B5E4FE30E5) A9AAA40669AF9325DE3555B5E4FE30E5 {
+}
+[1734950562.459][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=A9AAA40669AF9325DE3555B5E4FE30E5) A9AAA40669AF9325DE3555B5E4FE30E5 {
+   "context": {
+      "auxData": {
+         "frameId": "87530A96A928667C993289162AD7B0EA",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.googletagmanager.com",
+      "uniqueId": "8045188432648285806.6765650952250473943"
+   }
+}
+[1734950562.459][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=40) (session_id=A9AAA40669AF9325DE3555B5E4FE30E5) A9AAA40669AF9325DE3555B5E4FE30E5 {
+}
+[1734950562.459][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=A9AAA40669AF9325DE3555B5E4FE30E5) A9AAA40669AF9325DE3555B5E4FE30E5 {
+   "timestamp": 60555.338265
+}
+[1734950562.459][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=A9AAA40669AF9325DE3555B5E4FE30E5) A9AAA40669AF9325DE3555B5E4FE30E5 {
+   "timestamp": 60555.338419
+}
+[1734950562.459][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=A9AAA40669AF9325DE3555B5E4FE30E5) A9AAA40669AF9325DE3555B5E4FE30E5 {
+   "frameId": "87530A96A928667C993289162AD7B0EA"
+}
+[1734950562.459][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=41) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950562.459][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=41) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950562.459][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=42) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "document",
+   "objectGroup": "7349a9d3-d4af-4adc-a984-d14e6f8f04dd"
+}
+[1734950562.460][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=42) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "-881914347972594355.1.2",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734950562.460][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=43) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "objectId": "-881914347972594355.1.2"
+}
+[1734950562.460][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "sessionId": "C0A8B502069F4E72E6ADCC5F4DF9321F",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "E8A713E265609D0CBF4FE3F11FD98F8D",
+      "canAccessOpener": false,
+      "pid": 0,
+      "targetId": "4768E454C9D149288EA7D5AD478A8E4F",
+      "title": "Service Worker https://www.googletagmanager.com/static/service_worker/4cc0/sw.js?origin=https%3A%2F%2Fwww.samsung.com",
+      "type": "service_worker",
+      "url": "https://www.googletagmanager.com/static/service_worker/4cc0/sw.js?origin=https%3A%2F%2Fwww.samsung.com"
+   },
+   "waitingForDebugger": false
+}
+[1734950562.460][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=43) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "node": {
+      "backendNodeId": 2,
+      "baseURL": "https://www.samsung.com/jp/",
+      "childNodeCount": 2,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "https://www.samsung.com/jp/",
+      "isScrollable": true,
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734950562.460][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=44) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "objectGroup": "7349a9d3-d4af-4adc-a984-d14e6f8f04dd"
+}
+[1734950562.460][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=45) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-5541724019386014299.6194771388175719154"
+}
+[1734950562.460][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=44) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+}
+[1734950562.460][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=45) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "type": "string",
+      "value": "interactive"
+   }
+}
+[1734950562.518][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-user-list/316016226/?random=1734950562054&cv=11&fst=1734948000000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212...",
+      "timestamp": 1.734950562517578e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.518][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-user-list/316016226/?random=1734950562054&cv=11&fst=1734948000000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212...",
+      "timestamp": 1.734950562517612e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.518][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-user-list/316016226/?random=1734950562054&cv=11&fst=1734948000000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212...",
+      "timestamp": 1.734950562517629e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.518][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-user-list/316016226/?random=1734950562054&cv=11&fst=1734948000000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212...",
+      "timestamp": 1.734950562517645e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.518][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.co.jp/pagead/1p-user-list/316016226/?random=1734950562054&cv=11&fst=1734948000000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v8699872...",
+      "timestamp": 1.734950562517813e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.518][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.co.jp/pagead/1p-user-list/316016226/?random=1734950562054&cv=11&fst=1734948000000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v8699872...",
+      "timestamp": 1.734950562517837e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.518][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.co.jp/pagead/1p-user-list/316016226/?random=1734950562054&cv=11&fst=1734948000000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v8699872...",
+      "timestamp": 1.734950562517851e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.518][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.co.jp/pagead/1p-user-list/316016226/?random=1734950562054&cv=11&fst=1734948000000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v8699872...",
+      "timestamp": 1.734950562517919e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.518][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=46) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950562.518][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=46) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950562.786][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://cm.everesttech.net/cm/dd?d_uuid=30951519573881870023415222933732606673.",
+      "timestamp": 1.734950562785251e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.786][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://cm.everesttech.net/cm/dd?d_uuid=30951519573881870023415222933732606673.",
+      "timestamp": 1.734950562785514e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.786][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=47) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950562.786][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://dpm.demdex.net/ibs:dpid=411&dpuuid=Z2k_ogAAAI1hegM8.",
+      "timestamp": 1.734950562786099e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.787][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://dpm.demdex.net/ibs:dpid=411&dpuuid=Z2k_ogAAAI1hegM8.",
+      "timestamp": 1.734950562786174e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.787][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=47) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950562.852][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.108",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.734950562851457e+12,
+      "url": "https://cm.g.doubleclick.net/pixel?google_nid=adobe_dmp&google_cm&gdpr=0&gdpr_consent=&google_hm=MzA5NTE1MTk1NzM4ODE4NzAwMjM0MTUyMjI5MzM3MzI2MDY2NzM="
+   }
+}
+[1734950562.852][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=48) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950562.852][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=48) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950562.874][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.109",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.734950562873907e+12,
+      "url": "https://analytics.twitter.com/i/adsct?p_user_id=30951519573881870023415222933732606673&p_id=38594"
+   }
+}
+[1734950562.874][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=49) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950562.875][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=49) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950562.900][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.111",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.734950562899127e+12,
+      "url": "https://www.facebook.com/tr/?id=920280788585072&ev=Adobe-Audience-Manager-Segment&cd[segID]=18566084&noscript=1"
+   }
+}
+[1734950562.900][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=50) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950562.902][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=50) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950562.988][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.co.jp/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&dma=0&npa=0&gcd=13l3l3l3l1l1&tid=G-6SRV9ZPCXM&cid=469065402.1734950562&gtm=45j91e4...",
+      "timestamp": 1.734950562987624e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.988][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.co.jp/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&dma=0&npa=0&gcd=13l3l3l3l1l1&tid=G-6SRV9ZPCXM&cid=469065402.1734950562&gtm=45j91e4...",
+      "timestamp": 1.734950562987705e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.988][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.co.jp/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&dma=0&npa=0&gcd=13l3l3l3l1l1&tid=G-6SRV9ZPCXM&cid=469065402.1734950562&gtm=45j91e4...",
+      "timestamp": 1.734950562987735e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.988][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.co.jp/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&dma=0&npa=0&gcd=13l3l3l3l1l1&tid=G-6SRV9ZPCXM&cid=469065402.1734950562&gtm=45j91e4...",
+      "timestamp": 1.734950562987856e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.989][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=51) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950562.989][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.google.com/g/s/collect?dma=0&npa=0&gcd=13l3l3l3l1l1&gtm=45j91e4c50v9116131375z99100601182za200zb869987212&tag_exp=101925629~10206...",
+      "timestamp": 1.734950562988243e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.989][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.google.com/g/s/collect?dma=0&npa=0&gcd=13l3l3l3l1l1&gtm=45j91e4c50v9116131375z99100601182za200zb869987212&tag_exp=101925629~10206...",
+      "timestamp": 1.734950562988329e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.989][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.google.com/g/s/collect?dma=0&npa=0&gcd=13l3l3l3l1l1&gtm=45j91e4c50v9116131375z99100601182za200zb869987212&tag_exp=101925629~10206...",
+      "timestamp": 1.734950562988358e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.989][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.google.com/g/s/collect?dma=0&npa=0&gcd=13l3l3l3l1l1&gtm=45j91e4c50v9116131375z99100601182za200zb869987212&tag_exp=101925629~10206...",
+      "timestamp": 1.734950562988384e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.989][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=51) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950562.990][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://stats.g.doubleclick.net/g/collect?v=2&dma=0&npa=0&gcd=13l3l3l3l1l1&tid=G-6SRV9ZPCXM&cid=469065402.1734950562&gtm=45j91e4c50v9116131375z9910...",
+      "timestamp": 1.734950562989248e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.990][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://stats.g.doubleclick.net/g/collect?v=2&dma=0&npa=0&gcd=13l3l3l3l1l1&tid=G-6SRV9ZPCXM&cid=469065402.1734950562&gtm=45j91e4c50v9116131375z9910...",
+      "timestamp": 1.734950562989327e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.990][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://stats.g.doubleclick.net/g/collect?v=2&dma=0&npa=0&gcd=13l3l3l3l1l1&tid=G-6SRV9ZPCXM&cid=469065402.1734950562&gtm=45j91e4c50v9116131375z9910...",
+      "timestamp": 1.734950562989441e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.990][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://stats.g.doubleclick.net/g/collect?v=2&dma=0&npa=0&gcd=13l3l3l3l1l1&tid=G-6SRV9ZPCXM&cid=469065402.1734950562&gtm=45j91e4c50v9116131375z9910...",
+      "timestamp": 1.734950562989524e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950562.990][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=52) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950562.990][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=52) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950563.035][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.113",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.73495056303388e+12,
+      "url": "https://www.google.co.jp/pagead/1p-user-list/316016226/?random=1734950562054&cv=11&fst=1734948000000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212za200&gcd=13l3l3l3l1l1&dma=0&tag_exp=101925629~1..."
+   }
+}
+[1734950563.035][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.115",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.734950563034221e+12,
+      "url": "https://www.google.co.jp/ads/ga-audiences?v=1&t=sr&slf_rd=1&_r=4&dma=0&npa=0&gcd=13l3l3l3l1l1&tid=G-6SRV9ZPCXM&cid=469065402.1734950562&gtm=45j91e4c50v9116131375z99100601182za200zb869987212&tag_exp..."
+   }
+}
+[1734950563.035][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=53) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950563.035][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=53) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950563.169][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.107",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.734950563168553e+12,
+      "url": "https://dpm.demdex.net/ibs:dpid=411&dpuuid=Z2k_ogAAAI1hegM8"
+   }
+}
+[1734950563.169][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=54) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950563.170][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=54) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950563.401][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.114",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.734950563400993e+12,
+      "url": "https://analytics.google.com/g/s/collect?dma=0&npa=0&gcd=13l3l3l3l1l1&gtm=45j91e4c50v9116131375z99100601182za200zb869987212&tag_exp=101925629~102067555~102067808~102081485~102198178&_gsid=6SRV9ZPCX..."
+   }
+}
+[1734950563.401][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=55) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950563.402][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=55) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950563.541][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "timestamp": 60556.413801
+}
+[1734950563.541][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=56) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-5541724019386014299.6194771388175719154"
+}
+[1734950563.541][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "D73F3B71C3B99073D05E8930A7CE313C"
+}
+[1734950563.542][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=56) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734950563.542][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=57) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "expression": "1"
+}
+[1734950563.543][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=57) (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950563.543][INFO]: Done waiting for pending navigations. Status: ok
+[1734950563.543][INFO]: [d6e6d74567160e8222c51a420bd48678] RESPONSE Navigate
+[1734950563.551][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://static.ads-twitter.com/uwt.js.",
+      "timestamp": 1.734950563550702e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950563.551][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://static.ads-twitter.com/uwt.js.",
+      "timestamp": 1.734950563550732e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950563.551][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://static.ads-twitter.com/uwt.js.",
+      "timestamp": 1.734950563550746e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950563.551][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://static.ads-twitter.com/uwt.js.",
+      "timestamp": 1.734950563550778e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950564.017][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.118",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.734950564016425e+12,
+      "url": "https://cdn.decibelinsight.net/i/14121/1818711/di.js"
+   }
+}
+[1734950564.039][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.119",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.73495056403857e+12,
+      "url": "https://samsungrum.beusable.net/load/b170105e175055u968?url=https%3A%2F%2Fwww.samsung.com%2Fjp%2F"
+   }
+}
+[1734950564.062][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.121",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.734950564062154e+12,
+      "url": "https://static.ads-twitter.com/uwt.js"
+   }
+}
+[1734950564.113][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.123",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.734950564113011e+12,
+      "url": "https://s.yimg.jp/images/listing/tool/cv/ytag.js"
+   }
+}
+[1734950564.288][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.132",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.734950564287953e+12,
+      "url": "https://trial-eum-clientnsv4-s.akamaihd.net/eum/getdns.txt?c=pzr9ecg7v"
+   }
+}
+[1734950564.312][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.133",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.734950564311537e+12,
+      "url": "https://trial-eum-clienttons-s.akamaihd.net/eum/getdns.txt?c=pzr9ecg7v"
+   }
+}
+[1734950564.436][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.137",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.734950564435827e+12,
+      "url": "https://684d0d43.akstat.io/"
+   }
+}
+[1734950564.460][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.138",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.734950564459653e+12,
+      "url": "https://static.prismpartner.smt.docomo.ne.jp/mark/index.js"
+   }
+}
+[1734950564.462][DEBUG]: DevTools WebSocket Event: Runtime.exceptionThrown (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "exceptionDetails": {
+      "columnNumber": 32,
+      "exception": {
+         "className": "TypeError",
+         "description": "TypeError: window.pp_tag is not a function\n    at e (\u003Canonymous>:1:33)\n    at \u003Canonymous>:1:132\n    at \u003Canonymous>:1:184\n    at e._insertCursor (https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c9...",
+         "objectId": "-881914347972594355.1.3",
+         "preview": {
+            "description": "TypeError: window.pp_tag is not a function\n    at e (\u003Canonymous>:1:33)\n    at \u003Canonymous>:1:132\n    at \u003Canonymous>:1:184\n    at e._insertCursor (https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c9...",
+            "overflow": false,
+            "properties": [ {
+               "name": "stack",
+               "type": "string",
+               "value": "TypeError: window.pp_tag is not a function\n    at …6/15bb6bfc9c90/launch-a22d48d0e50c.min.js:7:15024"
+            }, {
+               "name": "message",
+               "type": "string",
+               "value": "window.pp_tag is not a function"
+            } ],
+            "subtype": "error",
+            "type": "object"
+         },
+         "subtype": "error",
+         "type": "object"
+      },
+      "exceptionId": 1,
+      "executionContextId": 1,
+      "lineNumber": 0,
+      "scriptId": "291",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 32,
+            "functionName": "e",
+            "lineNumber": 0,
+            "scriptId": "291",
+            "url": ""
+         }, {
+            "columnNumber": 131,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "291",
+            "url": ""
+         }, {
+            "columnNumber": 183,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "291",
+            "url": ""
+         }, {
+            "columnNumber": 15777,
+            "functionName": "e._insertCursor",
+            "lineNumber": 6,
+            "scriptId": "188",
+            "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+         }, {
+            "columnNumber": 16430,
+            "functionName": "e._writeScriptToken",
+            "lineNumber": 6,
+            "scriptId": "188",
+            "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+         }, {
+            "columnNumber": 14989,
+            "functionName": "e._handleScriptToken",
+            "lineNumber": 6,
+            "scriptId": "188",
+            "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+         }, {
+            "columnNumber": 13601,
+            "functionName": "e._writeImpl",
+            "lineNumber": 6,
+            "scriptId": "188",
+            "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+         }, {
+            "columnNumber": 13164,
+            "functionName": "e.write",
+            "lineNumber": 6,
+            "scriptId": "188",
+            "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+         }, {
+            "columnNumber": 16012,
+            "functionName": "e._onScriptDone",
+            "lineNumber": 6,
+            "scriptId": "188",
+            "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+         }, {
+            "columnNumber": 15023,
+            "functionName": "",
+            "lineNumber": 6,
+            "scriptId": "188",
+            "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+         }, {
+            "columnNumber": 16410,
+            "functionName": "",
+            "lineNumber": 6,
+            "scriptId": "188",
+            "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+         }, {
+            "columnNumber": 16848,
+            "functionName": "r",
+            "lineNumber": 6,
+            "scriptId": "188",
+            "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+         }, {
+            "columnNumber": 17299,
+            "functionName": "onerror",
+            "lineNumber": 6,
+            "scriptId": "188",
+            "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+         } ]
+      },
+      "text": "Uncaught"
+   },
+   "timestamp": 1.734950564461088e+12
+}
+[1734950564.570][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.139",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.73495056456926e+12,
+      "url": "https://static.prismpartner.smt.docomo.ne.jp/storecookie/index.js"
+   }
+}
+[1734950564.592][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "39260F3CADB8F272AF2CF3DF4E6861A9",
+   "parentFrameId": "D73F3B71C3B99073D05E8930A7CE313C",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 317,
+         "functionName": "oc",
+         "lineNumber": 106,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 128,
+         "functionName": "Ju",
+         "lineNumber": 432,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 366,
+         "functionName": "Mw",
+         "lineNumber": 477,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 51,
+         "functionName": "",
+         "lineNumber": 488,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 398,
+         "functionName": "fx",
+         "lineNumber": 490,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 472,
+         "functionName": "gx",
+         "lineNumber": 486,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 71,
+         "functionName": "f",
+         "lineNumber": 573,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 51,
+         "functionName": "",
+         "lineNumber": 575,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 149,
+         "functionName": "el",
+         "lineNumber": 270,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 431,
+         "functionName": "El",
+         "lineNumber": 275,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 37,
+         "functionName": "pE",
+         "lineNumber": 575,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 27,
+         "functionName": "fn",
+         "lineNumber": 291,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 161,
+         "functionName": "en.flush",
+         "lineNumber": 293,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 430,
+         "functionName": "en.push",
+         "lineNumber": 291,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 290,
+         "functionName": "config",
+         "lineNumber": 523,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 468,
+         "functionName": "Sz",
+         "lineNumber": 532,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 319,
+         "functionName": "Wz.b.push",
+         "lineNumber": 537,
+         "scriptId": "218",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-316016226"
+      }, {
+         "columnNumber": 169,
+         "functionName": "Wz.b.push",
+         "lineNumber": 551,
+         "scriptId": "217",
+         "url": "https://www.googletagmanager.com/gtag/js?id=G-6SRV9ZPCXM"
+      }, {
+         "columnNumber": 28,
+         "functionName": "gtag",
+         "lineNumber": 2,
+         "scriptId": "219",
+         "url": ""
+      }, "..." ]
+   }
+}
+[1734950564.592][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "disposition": "currentTab",
+   "frameId": "39260F3CADB8F272AF2CF3DF4E6861A9",
+   "reason": "initialFrameNavigation",
+   "url": "https://td.doubleclick.net/td/rul/316016226?random=1734950564580&cv=11&fst=1734950564580&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212za200&gcd=13l3l3l3l1l1&dma=0&tag_exp=101925629~1020675..."
+}
+[1734950564.594][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "39260F3CADB8F272AF2CF3DF4E6861A9"
+}
+[1734950564.594][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://googleads.g.doubleclick.net/pagead/viewthroughconversion/316016226/?random=1734950564580&cv=11&fst=1734950564580&bg=ffffff&guid=ON&async=1&...",
+      "timestamp": 1.734950564593981e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950564.594][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://googleads.g.doubleclick.net/pagead/viewthroughconversion/316016226/?random=1734950564580&cv=11&fst=1734950564580&bg=ffffff&guid=ON&async=1&...",
+      "timestamp": 1.734950564594026e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950564.595][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://googleads.g.doubleclick.net/pagead/viewthroughconversion/316016226/?random=1734950564580&cv=11&fst=1734950564580&bg=ffffff&guid=ON&async=1&...",
+      "timestamp": 1.734950564594059e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950564.595][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://googleads.g.doubleclick.net/pagead/viewthroughconversion/316016226/?random=1734950564580&cv=11&fst=1734950564580&bg=ffffff&guid=ON&async=1&...",
+      "timestamp": 1.734950564594086e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950564.595][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://td.doubleclick.net/td/rul/316016226?random=1734950564580&cv=11&fst=1734950564580&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212za20...",
+      "timestamp": 1.734950564594507e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950564.595][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://td.doubleclick.net/td/rul/316016226?random=1734950564580&cv=11&fst=1734950564580&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212za20...",
+      "timestamp": 1.734950564594554e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950564.595][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://td.doubleclick.net/td/rul/316016226?random=1734950564580&cv=11&fst=1734950564580&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212za20...",
+      "timestamp": 1.734950564594579e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950564.595][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://td.doubleclick.net/td/rul/316016226?random=1734950564580&cv=11&fst=1734950564580&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212za20...",
+      "timestamp": 1.734950564594636e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950564.595][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://p.teads.tv/teads-fellow.js.",
+      "timestamp": 1.734950564595232e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950564.596][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://p.teads.tv/teads-fellow.js.",
+      "timestamp": 1.734950564595293e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950564.596][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://p.teads.tv/teads-fellow.js.",
+      "timestamp": 1.734950564595326e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950564.596][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://p.teads.tv/teads-fellow.js.",
+      "timestamp": 1.734950564595345e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950564.660][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-user-list/316016226/?random=1734950564580&cv=11&fst=1734948000000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212...",
+      "timestamp": 1.734950564659064e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950564.660][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-user-list/316016226/?random=1734950564580&cv=11&fst=1734948000000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212...",
+      "timestamp": 1.734950564659111e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950564.660][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-user-list/316016226/?random=1734950564580&cv=11&fst=1734948000000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212...",
+      "timestamp": 1.734950564659143e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950564.660][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-user-list/316016226/?random=1734950564580&cv=11&fst=1734948000000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212...",
+      "timestamp": 1.734950564659174e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950564.660][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.co.jp/pagead/1p-user-list/316016226/?random=1734950564580&cv=11&fst=1734948000000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v8699872...",
+      "timestamp": 1.734950564659334e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950564.660][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.co.jp/pagead/1p-user-list/316016226/?random=1734950564580&cv=11&fst=1734948000000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v8699872...",
+      "timestamp": 1.734950564659396e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950564.660][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.co.jp/pagead/1p-user-list/316016226/?random=1734950564580&cv=11&fst=1734948000000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v8699872...",
+      "timestamp": 1.734950564659492e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950564.660][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.co.jp/pagead/1p-user-list/316016226/?random=1734950564580&cv=11&fst=1734948000000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v8699872...",
+      "timestamp": 1.73495056465954e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950564.673][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://td.doubleclick.net/td/rul/316016226?random=1734950564580&cv=11&fst=1734950564580&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212za20...",
+      "timestamp": 1.734950564672418e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[31179:259:1223/194244.789473:ERROR:smartscreen_dns_resolver.cc(110)] SmartScreenDnsResolver::OnComplete Error: -105 DidTimeOut: 0 URL: https://td.doubleclick.net/td/rul/316016226?random=1734950564580&cv=11&fst=1734950564580&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212za200&gcd=13l3l3l3l1l1&dma=0&tag_exp=101925629~102067555~102067808~102081485~102198178&u_w=1470&u_h=956&url=https%3A%2F%2Fwww.samsung.com%2Fjp%2F&hn=www.googleadservices.com&frm=0&tiba=Samsung%20Japan%20%E5%85%AC%E5%BC%8F%20%7C%20Samsung%EF%BC%88%E3%82%AE%E3%83%A3%E3%83%A9%E3%82%AF%E3%82%B7%E3%83%BC%EF%BC%89%E3%83%9B%E3%83%BC%E3%83%A0&npa=0&pscdl=noapi&auid=1676324295.1734950562&uaa=arm&uab=64&uafvl=Microsoft%2520Edge%3B131.0.2903.112%7CChromium%3B131.0.6778.205%7CNot_A%2520Brand%3B24.0.0.0&uamb=0&uam=&uap=macOS&uapv=15.2.0&uaw=0&fledge=1&data=event%3Dgtag.config
+[31179:259:1223/194244.826769:ERROR:smartscreen_dns_resolver.cc(110)] SmartScreenDnsResolver::OnComplete Error: -105 DidTimeOut: 0 URL: https://www.samsung.com/
+[1734950564.828][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "sessionId": "746B5AD0E653DFFCC2E32FD5A8C96E8D",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "E8A713E265609D0CBF4FE3F11FD98F8D",
+      "canAccessOpener": false,
+      "pid": 31189,
+      "targetId": "39260F3CADB8F272AF2CF3DF4E6861A9",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734950564.828][DEBUG]: DevTools WebSocket Command: Page.enable (id=58) (session_id=746B5AD0E653DFFCC2E32FD5A8C96E8D) 746B5AD0E653DFFCC2E32FD5A8C96E8D {
+}
+[1734950564.828][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=59) (session_id=746B5AD0E653DFFCC2E32FD5A8C96E8D) 746B5AD0E653DFFCC2E32FD5A8C96E8D {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950564.828][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=60) (session_id=746B5AD0E653DFFCC2E32FD5A8C96E8D) 746B5AD0E653DFFCC2E32FD5A8C96E8D {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950564.828][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=61) (session_id=746B5AD0E653DFFCC2E32FD5A8C96E8D) 746B5AD0E653DFFCC2E32FD5A8C96E8D {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734950564.836][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "E8A713E265609D0CBF4FE3F11FD98F8D",
+      "canAccessOpener": false,
+      "pid": 31189,
+      "targetId": "39260F3CADB8F272AF2CF3DF4E6861A9",
+      "title": "https://td.doubleclick.net/td/rul/316016226?random=1734950564580&cv=11&fst=1734950564580&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212za200&gcd=13l3l3l3l1l1&dma=0&tag_exp=101925629~1020675...",
+      "type": "iframe",
+      "url": "https://td.doubleclick.net/td/rul/316016226?random=1734950564580&cv=11&fst=1734950564580&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212za200&gcd=13l3l3l3l1l1&dma=0&tag_exp=101925629~1020675..."
+   }
+}
+[1734950564.836][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "frameId": "39260F3CADB8F272AF2CF3DF4E6861A9",
+   "reason": "swap"
+}
+[1734950564.836][DEBUG]: DevTools WebSocket Response: Page.enable (id=58) (session_id=746B5AD0E653DFFCC2E32FD5A8C96E8D) 746B5AD0E653DFFCC2E32FD5A8C96E8D {
+}
+[1734950564.836][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=59) (session_id=746B5AD0E653DFFCC2E32FD5A8C96E8D) 746B5AD0E653DFFCC2E32FD5A8C96E8D {
+   "identifier": "1"
+}
+[1734950564.836][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=60) (session_id=746B5AD0E653DFFCC2E32FD5A8C96E8D) 746B5AD0E653DFFCC2E32FD5A8C96E8D {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734950564.836][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=61) (session_id=746B5AD0E653DFFCC2E32FD5A8C96E8D) 746B5AD0E653DFFCC2E32FD5A8C96E8D {
+}
+[1734950564.836][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=62) (session_id=746B5AD0E653DFFCC2E32FD5A8C96E8D) 746B5AD0E653DFFCC2E32FD5A8C96E8D {
+}
+[1734950564.836][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=746B5AD0E653DFFCC2E32FD5A8C96E8D) 746B5AD0E653DFFCC2E32FD5A8C96E8D {
+   "timestamp": 60557.713963
+}
+[1734950564.836][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=746B5AD0E653DFFCC2E32FD5A8C96E8D) 746B5AD0E653DFFCC2E32FD5A8C96E8D {
+   "timestamp": 60557.714337
+}
+[1734950564.836][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=746B5AD0E653DFFCC2E32FD5A8C96E8D) 746B5AD0E653DFFCC2E32FD5A8C96E8D {
+   "frameId": "39260F3CADB8F272AF2CF3DF4E6861A9"
+}
+[1734950564.836][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=746B5AD0E653DFFCC2E32FD5A8C96E8D) 746B5AD0E653DFFCC2E32FD5A8C96E8D {
+   "context": {
+      "auxData": {
+         "frameId": "39260F3CADB8F272AF2CF3DF4E6861A9",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://td.doubleclick.net",
+      "uniqueId": "887509580314709408.-2375202660741221615"
+   }
+}
+[1734950564.836][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=62) (session_id=746B5AD0E653DFFCC2E32FD5A8C96E8D) 746B5AD0E653DFFCC2E32FD5A8C96E8D {
+}
+[1734950565.028][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.142",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.734950565027875e+12,
+      "url": "https://p.teads.tv/teads-fellow.js"
+   }
+}
+[1734950565.055][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.144",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.734950565054427e+12,
+      "url": "https://www.google.co.jp/pagead/1p-user-list/316016226/?random=1734950564580&cv=11&fst=1734948000000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v869987212za200&gcd=13l3l3l3l1l1&dma=0&tag_exp=101925629~1..."
+   }
+}
+[1734950565.163][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.145",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.734950565162025e+12,
+      "url": "https://resources.digital-cloud-west.medallia.com/wdcwest/468861/onsite/embed.js"
+   }
+}
+[1734950565.221][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.146",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.734950565220965e+12,
+      "url": "https://s.yimg.jp/images/listing/tool/cv/ytag.js"
+   }
+}
+[1734950565.231][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://connect.facebook.net/en_US/fbevents.js.",
+      "timestamp": 1.734950565230047e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950565.231][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://connect.facebook.net/en_US/fbevents.js.",
+      "timestamp": 1.734950565230134e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950565.231][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://connect.facebook.net/en_US/fbevents.js.",
+      "timestamp": 1.734950565230157e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950565.231][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://connect.facebook.net/en_US/fbevents.js.",
+      "timestamp": 1.734950565230188e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950565.231][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://js.adsrvr.org/up_loader.1.1.0.js.",
+      "timestamp": 1.734950565230697e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950565.231][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://js.adsrvr.org/up_loader.1.1.0.js.",
+      "timestamp": 1.734950565230754e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950565.231][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://js.adsrvr.org/up_loader.1.1.0.js.",
+      "timestamp": 1.734950565230775e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950565.231][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://js.adsrvr.org/up_loader.1.1.0.js.",
+      "timestamp": 1.734950565230938e+12,
+      "url": "https://www.samsung.com/jp/"
+   }
+}
+[1734950565.527][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.147",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.734950565526245e+12,
+      "url": "https://cdn.smartnews-ads.com/i/pixel.js"
+   }
+}
+[1734950565.552][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.148",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.734950565551652e+12,
+      "url": "https://connect.facebook.net/en_US/fbevents.js"
+   }
+}
+[1734950565.576][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31188.149",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED",
+      "timestamp": 1.734950565576192e+12,
+      "url": "https://js.adsrvr.org/up_loader.1.1.0.js"
+   }
+}
+[1734950565.577][DEBUG]: DevTools WebSocket Event: Runtime.exceptionThrown (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "exceptionDetails": {
+      "columnNumber": 2,
+      "exception": {
+         "className": "ReferenceError",
+         "description": "ReferenceError: ttd_dom_ready is not defined\n    at \u003Canonymous>:2:3\n    at e._insertCursor (https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js:7:15778)\n    at e._write...",
+         "objectId": "-881914347972594355.1.4",
+         "preview": {
+            "description": "ReferenceError: ttd_dom_ready is not defined\n    at \u003Canonymous>:2:3\n    at e._insertCursor (https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js:7:15778)\n    at e._write...",
+            "overflow": false,
+            "properties": [ {
+               "name": "stack",
+               "type": "string",
+               "value": "ReferenceError: ttd_dom_ready is not defined\n    a…/15bb6bfc9c90/launch-a22d48d0e50c.min.js:7:16849)"
+            }, {
+               "name": "message",
+               "type": "string",
+               "value": "ttd_dom_ready is not defined"
+            } ],
+            "subtype": "error",
+            "type": "object"
+         },
+         "subtype": "error",
+         "type": "object"
+      },
+      "exceptionId": 2,
+      "executionContextId": 1,
+      "lineNumber": 1,
+      "scriptId": "299",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 2,
+            "functionName": "",
+            "lineNumber": 1,
+            "scriptId": "299",
+            "url": ""
+         }, {
+            "columnNumber": 15777,
+            "functionName": "e._insertCursor",
+            "lineNumber": 6,
+            "scriptId": "188",
+            "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+         }, {
+            "columnNumber": 16430,
+            "functionName": "e._writeScriptToken",
+            "lineNumber": 6,
+            "scriptId": "188",
+            "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+         }, {
+            "columnNumber": 14989,
+            "functionName": "e._handleScriptToken",
+            "lineNumber": 6,
+            "scriptId": "188",
+            "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+         }, {
+            "columnNumber": 13601,
+            "functionName": "e._writeImpl",
+            "lineNumber": 6,
+            "scriptId": "188",
+            "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+         }, {
+            "columnNumber": 13164,
+            "functionName": "e.write",
+            "lineNumber": 6,
+            "scriptId": "188",
+            "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+         }, {
+            "columnNumber": 16012,
+            "functionName": "e._onScriptDone",
+            "lineNumber": 6,
+            "scriptId": "188",
+            "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+         }, {
+            "columnNumber": 15023,
+            "functionName": "",
+            "lineNumber": 6,
+            "scriptId": "188",
+            "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+         }, {
+            "columnNumber": 16410,
+            "functionName": "",
+            "lineNumber": 6,
+            "scriptId": "188",
+            "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+         }, {
+            "columnNumber": 16848,
+            "functionName": "r",
+            "lineNumber": 6,
+            "scriptId": "188",
+            "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+         }, {
+            "columnNumber": 17299,
+            "functionName": "onerror",
+            "lineNumber": 6,
+            "scriptId": "188",
+            "url": "https://assets.adobedtm.com/72afb75f5516/15bb6bfc9c90/launch-a22d48d0e50c.min.js"
+         } ]
+      },
+      "text": "Uncaught"
+   },
+   "timestamp": 1.734950565576828e+12
+}
+Trying to load the allocator multiple times. This is *not* supported.
+[1223/194247.239998:ERROR:ffmpeg_common.cc(970)] Unsupported pixel format: -1
+[1734950567.560][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "context": {
+      "auxData": {
+         "frameId": "D73F3B71C3B99073D05E8930A7CE313C",
+         "isDefault": false,
+         "type": "isolated"
+      },
+      "id": 7,
+      "name": "",
+      "origin": "",
+      "uniqueId": "-5061184794238064825.5574660640148706029"
+   }
+}
+[1734950567.561][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=CAF45DA13A21E5F967200D7EAB127C0C) CAF45DA13A21E5F967200D7EAB127C0C {
+   "context": {
+      "auxData": {
+         "frameId": "0BACD2531B4F3ED7810A9100477A5220",
+         "isDefault": false,
+         "type": "isolated"
+      },
+      "id": 3,
+      "name": "",
+      "origin": "",
+      "uniqueId": "-3154900474185110873.2039959767920696835"
+   }
+}
+[1734950567.561][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=A9AAA40669AF9325DE3555B5E4FE30E5) A9AAA40669AF9325DE3555B5E4FE30E5 {
+   "context": {
+      "auxData": {
+         "frameId": "87530A96A928667C993289162AD7B0EA",
+         "isDefault": false,
+         "type": "isolated"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "",
+      "uniqueId": "-1803235460188941361.9018020874967872310"
+   }
+}
+[1734950567.561][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=746B5AD0E653DFFCC2E32FD5A8C96E8D) 746B5AD0E653DFFCC2E32FD5A8C96E8D {
+   "context": {
+      "auxData": {
+         "frameId": "39260F3CADB8F272AF2CF3DF4E6861A9",
+         "isDefault": false,
+         "type": "isolated"
+      },
+      "id": 4,
+      "name": "",
+      "origin": "",
+      "uniqueId": "3010246799888401457.8054714586395201836"
+   }
+}
+[1734950567.561][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "context": {
+      "auxData": {
+         "frameId": "8653F5DF7A68E13C4A8ECDA4077E9378",
+         "isDefault": false,
+         "type": "isolated"
+      },
+      "id": 8,
+      "name": "",
+      "origin": "",
+      "uniqueId": "-6697125392424009140.-6958305781495794893"
+   }
+}
+[1734950567.561][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "context": {
+      "auxData": {
+         "frameId": "D7479FDC4C424EFFF1313E7BFD79058B",
+         "isDefault": false,
+         "type": "isolated"
+      },
+      "id": 9,
+      "name": "",
+      "origin": "",
+      "uniqueId": "9123218123243493879.892630665979428919"
+   }
+}
+[1734950567.562][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "context": {
+      "auxData": {
+         "frameId": "31B3058694C5584A0BA3E8B6479BB4DB",
+         "isDefault": false,
+         "type": "isolated"
+      },
+      "id": 10,
+      "name": "",
+      "origin": "",
+      "uniqueId": "-1115015622028488200.-6850132525458037860"
+   }
+}
+[1734950567.562][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=3249E9ABFE85C07F8EFE1C33998BB0BB) D73F3B71C3B99073D05E8930A7CE313C {
+   "context": {
+      "auxData": {
+         "frameId": "D7A2F99976BD2364C72558BE2181DF35",
+         "isDefault": false,
+         "type": "isolated"
+      },
+      "id": 11,
+      "name": "",
+      "origin": "",
+      "uniqueId": "-1334720350197127537.1735529715926296849"
+   }
+}
+sysctlbyname for kern.hv_vmm_present failed with status -1[1223/194252.970674:ERROR:ffmpeg_common.cc(970)] Unsupported pixel format: -1
+[1734950573.554][INFO]: [d6e6d74567160e8222c51a420bd48678] COMMAND Quit {
+}
+[1734950573.607][INFO]: [d6e6d74567160e8222c51a420bd48678] RESPONSE Quit
+[1734950573.608][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1734950573.608][DEBUG]: Log type 'browser' lost 116 entries on destruction

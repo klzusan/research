@@ -1,0 +1,149 @@
+URL:google.com
+CAT:Search Engines
+
+URL:youtube.com
+CAT:Streaming & Online TV
+
+URL:facebook.com
+CAT:Social Media Networks
+
+URL:instagram.com
+CAT:Social Media Networks
+
+URL:whatsapp.com
+CAT:Social Media Networks
+
+URL:x.com
+CAT:Social Media Networks
+
+URL:wikipedia.org
+CAT:Dictionaries and Encyclopedias
+
+URL:yahoo.com
+CAT:News & Media Publishers
+
+URL:reddit.com
+CAT:Social Media Networks
+
+URL:yahoo.co.jp
+CAT:News & Media Publishers
+
+URL:chatgpt.com
+CAT:Programming and Developer Software
+
+URL:yandex.ru
+CAT:Search Engines
+
+URL:amazon.com
+CAT:Marketplace
+
+URL:baidu.com
+CAT:Search Engines
+
+URL:tiktok.com
+CAT:Social Media Networks
+
+URL:microsoftonline.com
+CAT:Programming and Developer Software
+
+URL:bing.com
+CAT:Search Engines
+
+URL:netflix.com
+CAT:Streaming & Online TV
+
+URL:linkedin.com
+CAT:Social Media Networks
+
+URL:pornhub.com
+CAT:Adult
+
+URL:live.com
+CAT:Email
+
+URL:office.com
+CAT:Programming and Developer Software
+
+URL:dzen.ru
+CAT:Community and Society - Other
+
+URL:naver.com
+CAT:News & Media Publishers
+
+URL:xvideos.com
+CAT:Adult
+
+URL:microsoft.com
+CAT:Programming and Developer Software
+
+URL:bilibili.com
+CAT:Animation and Comics
+
+URL:twitch.tv
+CAT:Video Games Consoles and Accessories
+
+URL:vk.com
+CAT:Social Media Networks
+
+URL:news.yahoo.co.jp
+CAT:News & Media Publishers
+
+URL:pinterest.com
+CAT:Social Media Networks
+
+URL:mail.ru
+CAT:Email
+
+URL:xhamster.com
+CAT:Adult
+
+URL:sharepoint.com
+CAT:Computers Electronics and Technology - Other
+
+URL:samsung.com
+CAT:Consumer Electronics
+
+URL:xhamster42.desi
+CAT:File Sharing and Hosting
+
+URL:weather.com
+CAT:Weather
+
+URL:globo.com
+CAT:News & Media Publishers
+
+URL:fandom.com
+CAT:Arts and Entertainment - Other
+
+URL:duckduckgo.com
+CAT:Search Engines
+
+URL:xnxx.com
+CAT:Adult
+
+URL:quora.com
+CAT:Dictionaries and Encyclopedias
+
+URL:canva.com
+CAT:Graphics Multimedia and Web Design
+
+URL:twitter.com
+CAT:Social Media Networks
+
+URL:t.me
+CAT:Computers Electronics and Technology - Other
+
+URL:rpr.one
+CAT:Adult
+
+URL:zoom.us
+CAT:Computers Electronics and Technology - Other
+
+URL:lazlogistics.ph
+CAT:Shipping and Logistics
+
+URL:temu.com
+CAT:Marketplace
+
+URL:kwai-video.com
+CAT:Streaming & Online TV

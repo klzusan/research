@@ -1,0 +1,4 @@
+console.error: "Warning: unrecognized command line flag" "-disable-extensions"
+
+JavaScript error: https://www.redditstatic.com/shreddit/en-US/shell-091aa980.js, line 4: TypeError: can't access dead object
+

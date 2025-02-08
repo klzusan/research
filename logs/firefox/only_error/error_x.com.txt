@@ -1,0 +1,4 @@
+console.error: "Warning: unrecognized command line flag" "-disable-extensions"
+
+JavaScript error: https://abs.twimg.com/responsive-web/client-web/main.e541178a.js, line 1: TypeError: can't access dead object
+

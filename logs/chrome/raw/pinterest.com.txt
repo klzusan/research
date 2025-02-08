@@ -1,0 +1,1657 @@
+[1734948907.695][INFO]: Starting ChromeDriver 131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}) on port 51096
+[1734948907.695][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1734948907.696][INFO]: ChromeDriver was started successfully on port 51096
+[1734948907.703][INFO]: [04e2856588a4f6b5cadc3aee24d0ea4a] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "browserVersion": null,
+         "goog:chromeOptions": {
+            "args": [ "--incognito", "--disable-extensions" ],
+            "binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1734948907.704][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1734948907.704][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1734948907.704][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1734948907.704][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1734948907.704][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-extensions --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --incognito --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.org.chromium.Chromium.ZTKoe8 data:,
+
+DevTools listening on ws://127.0.0.1:51101/devtools/browser/32870fc0-742b-4163-af58-75b0f8815224
+[1734948907.920][DEBUG]: DevTools HTTP Request: http://localhost:51101/json/version
+[1734948908.199][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Chrome/131.0.6778.205",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+   "V8-Version": "13.1.201.19",
+   "WebKit-Version": "537.36 (@81b36b9535e3e3b610a52df3da48cd81362ec860)",
+   "webSocketDebuggerUrl": "ws://localhost:51101/devtools/browser/32870fc0-742b-4163-af58-75b0f8815224"
+}
+
+[1734948908.201][DEBUG]: DevTools HTTP Request: http://localhost:51101/json/list
+[1734948908.218][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:51101/devtools/page/DE789A4516C81C7BED5162AC1923BCB4",
+   "id": "DE789A4516C81C7BED5162AC1923BCB4",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:51101/devtools/page/DE789A4516C81C7BED5162AC1923BCB4"
+} ]
+
+[1734948908.221][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1734948908.234][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1734948908.251][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "7430E012619FA8E1387935D1573F0C79",
+      "canAccessOpener": false,
+      "targetId": "DE789A4516C81C7BED5162AC1923BCB4",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1734948908.252][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "DE789A4516C81C7BED5162AC1923BCB4"
+}
+[1734948908.253][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "762C80EB8A6DA4F0147A2BA37D405655",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "7430E012619FA8E1387935D1573F0C79",
+      "canAccessOpener": false,
+      "targetId": "DE789A4516C81C7BED5162AC1923BCB4",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1734948908.255][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "762C80EB8A6DA4F0147A2BA37D405655"
+}
+[1734948908.255][DEBUG]: DevTools WebSocket Command: Page.enable (id=3) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+}
+[1734948908.255][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948908.255][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=5) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948908.256][DEBUG]: DevTools WebSocket Command: Log.enable (id=6) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+}
+[1734948908.256][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=7) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734948908.258][DEBUG]: DevTools WebSocket Response: Page.enable (id=3) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+}
+[1734948908.258][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "identifier": "1"
+}
+[1734948908.258][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=5) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734948908.258][DEBUG]: DevTools WebSocket Response: Log.enable (id=6) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+}
+[1734948908.258][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=7) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+}
+[1734948908.258][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+}
+[1734948908.259][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "context": {
+      "auxData": {
+         "frameId": "DE789A4516C81C7BED5162AC1923BCB4",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "1656983636468650853.-8651758080025321566"
+   }
+}
+[1734948908.259][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+}
+[1734948908.259][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+}
+[1734948908.260][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+}
+[1734948908.261][INFO]: [04e2856588a4f6b5cadc3aee24d0ea4a] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "131.0.6778.205",
+      "chrome": {
+         "chromedriverVersion": "131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7})",
+         "userDataDir": "/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.org.chromium.Chromium.ZTKoe8"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:51101"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "04e2856588a4f6b5cadc3aee24d0ea4a"
+}
+[1734948908.261][INFO]: [04e2856588a4f6b5cadc3aee24d0ea4a] COMMAND Navigate {
+   "url": "https://pinterest.com"
+}
+[1734948908.264][INFO]: Waiting for pending navigations...
+[1734948908.264][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=10) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "expression": "1"
+}
+[1734948908.264][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=10) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948908.267][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=11) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "expression": "document",
+   "objectGroup": "e7aaad6e-152f-444c-bdab-f8c613ae2736"
+}
+[1734948908.267][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=11) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "656900898027404195.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734948908.267][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=12) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "objectId": "656900898027404195.1.1"
+}
+[1734948908.268][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=12) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734948908.268][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=13) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "objectGroup": "e7aaad6e-152f-444c-bdab-f8c613ae2736"
+}
+[1734948908.268][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "1656983636468650853.-8651758080025321566"
+}
+[1734948908.268][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=13) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+}
+[1734948908.269][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734948908.269][INFO]: Done waiting for pending navigations. Status: ok
+[1734948908.269][DEBUG]: DevTools WebSocket Command: Page.navigate (id=15) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "url": "https://pinterest.com"
+}
+[1734948908.270][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "DE789A4516C81C7BED5162AC1923BCB4"
+}
+2024-12-23 19:15:08.457 Google Chrome[23841:984517] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-23 19:15:08.457 Google Chrome[23841:984517] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+[1734948908.970][DEBUG]: DevTools WebSocket Response: Page.navigate (id=15) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "DE789A4516C81C7BED5162AC1923BCB4",
+   "loaderId": "3718F98EBA65BF773BD00C0EB6C34D89"
+}
+[1734948908.971][INFO]: Waiting for pending navigations...
+[1734948908.971][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "expression": "1"
+}
+[1734948908.975][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+}
+[1734948908.975][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+}
+[1734948908.975][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "pinterest.com",
+      "gatedAPIFeatures": [  ],
+      "id": "DE789A4516C81C7BED5162AC1923BCB4",
+      "loaderId": "3718F98EBA65BF773BD00C0EB6C34D89",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://jp.pinterest.com",
+      "url": "https://jp.pinterest.com/"
+   },
+   "type": "Navigation"
+}
+[1734948908.982][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "context": {
+      "auxData": {
+         "frameId": "DE789A4516C81C7BED5162AC1923BCB4",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://jp.pinterest.com",
+      "uniqueId": "825152948758580859.4841339161369943706"
+   }
+}
+[1734948908.987][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948909.181][DEBUG]: DevTools WebSocket Event: Page.frameResized (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+}
+[1734948909.181][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=17) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "expression": "1"
+}
+[1734948909.182][DEBUG]: DevTools WebSocket Event: Page.frameResized (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+}
+[1734948909.183][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=17) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948909.383][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "timestamp": 58902.199214
+}
+[1734948909.383][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "timestamp": 58902.199364
+}
+[1734948909.384][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "825152948758580859.4841339161369943706"
+}
+[1734948909.384][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "DE789A4516C81C7BED5162AC1923BCB4"
+}
+[1734948909.390][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734948909.390][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "expression": "1"
+}
+[1734948909.402][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "0A6AD95BCEC255CA09C53584A32514F7",
+   "parentFrameId": "DE789A4516C81C7BED5162AC1923BCB4",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 89645,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "15",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "15",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89729,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "15",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "15",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "15",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "15",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "15",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "15",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "15",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "15",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "15",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "15",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "15",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "15",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "15",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "15",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "15",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "15",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "15",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, "..." ]
+   }
+}
+[1734948909.403][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "disposition": "currentTab",
+   "frameId": "0A6AD95BCEC255CA09C53584A32514F7",
+   "reason": "initialFrameNavigation",
+   "url": "https://ct.pinterest.com/ct.html"
+}
+[1734948909.403][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "0A6AD95BCEC255CA09C53584A32514F7"
+}
+[1734948909.408][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734948909.408][INFO]: Done waiting for pending navigations. Status: ok
+[1734948909.408][INFO]: [04e2856588a4f6b5cadc3aee24d0ea4a] RESPONSE Navigate
+[1734948909.694][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolatedFeatureDisabled",
+      "domainAndRegistry": "pinterest.com",
+      "gatedAPIFeatures": [  ],
+      "id": "0A6AD95BCEC255CA09C53584A32514F7",
+      "loaderId": "8697C1BE479CA4D87F8929136E7D5FF3",
+      "mimeType": "text/html",
+      "name": "epik_localstore",
+      "parentId": "DE789A4516C81C7BED5162AC1923BCB4",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://ct.pinterest.com",
+      "url": "https://ct.pinterest.com/ct.html"
+   },
+   "type": "Navigation"
+}
+[1734948909.695][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "context": {
+      "auxData": {
+         "frameId": "0A6AD95BCEC255CA09C53584A32514F7",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://ct.pinterest.com",
+      "uniqueId": "991611388573965757.-7339498517292503894"
+   }
+}
+[1734948909.696][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "0A6AD95BCEC255CA09C53584A32514F7"
+}
+[1734948909.765][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "BC399B51F94303175C92ABB43AE2F01E",
+   "parentFrameId": "DE789A4516C81C7BED5162AC1923BCB4",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 4100,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 3873,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 30091,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 30196,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 29138,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 28887,
+         "functionName": "a",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 3599,
+         "functionName": "_",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 12983,
+         "functionName": "fonts",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 259,
+         "functionName": "c",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 26513,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 26472,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 596,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 30091,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 30196,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 29138,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 28887,
+         "functionName": "a",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 434,
+         "functionName": "u",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 26430,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 30091,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, "..." ]
+   }
+}
+[1734948909.765][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "disposition": "currentTab",
+   "frameId": "BC399B51F94303175C92ABB43AE2F01E",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734948909.765][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "BC399B51F94303175C92ABB43AE2F01E",
+      "loaderId": "DA5F48C0B4126168CA337FD4CC113D6C",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "DE789A4516C81C7BED5162AC1923BCB4",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734948909.765][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "BC399B51F94303175C92ABB43AE2F01E"
+}
+[1734948909.766][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "context": {
+      "auxData": {
+         "frameId": "BC399B51F94303175C92ABB43AE2F01E",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 3,
+      "name": "",
+      "origin": "https://jp.pinterest.com",
+      "uniqueId": "1272892674221268157.-5429872521658228380"
+   }
+}
+[1734948909.766][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "BC399B51F94303175C92ABB43AE2F01E"
+}
+[1734948909.767][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "5ED4775399DE5D82127031C04CD983CB",
+   "parentFrameId": "DE789A4516C81C7BED5162AC1923BCB4",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 4100,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 3873,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 30091,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 30196,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 29138,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 28887,
+         "functionName": "a",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 3599,
+         "functionName": "_",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 16021,
+         "functionName": "fontPreferences",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 259,
+         "functionName": "c",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 26513,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 26472,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 596,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 30091,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 30196,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 29138,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 28887,
+         "functionName": "a",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 434,
+         "functionName": "u",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 26430,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 30091,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, "..." ]
+   }
+}
+[1734948909.767][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "disposition": "currentTab",
+   "frameId": "5ED4775399DE5D82127031C04CD983CB",
+   "reason": "initialFrameNavigation",
+   "url": "about:srcdoc"
+}
+[1734948909.767][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "5ED4775399DE5D82127031C04CD983CB"
+}
+[1734948909.810][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "context": {
+      "auxData": {
+         "frameId": "5ED4775399DE5D82127031C04CD983CB",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 4,
+      "name": "",
+      "origin": "https://jp.pinterest.com",
+      "uniqueId": "5215572733346910132.-428591770827085569"
+   }
+}
+[1734948909.810][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "BC399B51F94303175C92ABB43AE2F01E"
+}
+[1734948909.810][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "BC399B51F94303175C92ABB43AE2F01E",
+   "reason": "remove"
+}
+[1734948909.810][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "executionContextId": 3,
+   "executionContextUniqueId": "1272892674221268157.-5429872521658228380"
+}
+[1734948909.810][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "5ED4775399DE5D82127031C04CD983CB"
+}
+[1734948909.810][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "5ED4775399DE5D82127031C04CD983CB"
+}
+[1734948909.810][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "5ED4775399DE5D82127031C04CD983CB",
+   "reason": "remove"
+}
+[1734948909.810][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "executionContextId": 4,
+   "executionContextUniqueId": "5215572733346910132.-428591770827085569"
+}
+[1734948910.017][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "args": [ {
+      "type": "string",
+      "value": "[GSI_LOGGER]: Your client application uses one of the Google One Tap prompt UI status methods that may stop functioning when FedCM becomes mandatory. Refer to the migration guide to update your cod..."
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 418,
+         "functionName": "_.O",
+         "lineNumber": 171,
+         "scriptId": "71",
+         "url": "https://accounts.google.com/gsi/client?hl=ja"
+      }, {
+         "columnNumber": 256,
+         "functionName": "js.ga",
+         "lineNumber": 309,
+         "scriptId": "71",
+         "url": "https://accounts.google.com/gsi/client?hl=ja"
+      }, {
+         "columnNumber": 303,
+         "functionName": "Zq.ga",
+         "lineNumber": 344,
+         "scriptId": "71",
+         "url": "https://accounts.google.com/gsi/client?hl=ja"
+      }, {
+         "columnNumber": 33,
+         "functionName": "dr",
+         "lineNumber": 277,
+         "scriptId": "71",
+         "url": "https://accounts.google.com/gsi/client?hl=ja"
+      }, {
+         "columnNumber": 12973,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "61",
+         "url": "https://s.pinimg.com/webapp/13377.ja-e16129dd554fd41e.mjs"
+      }, {
+         "columnNumber": 14008,
+         "functionName": "componentDidMount",
+         "lineNumber": 0,
+         "scriptId": "61",
+         "url": "https://s.pinimg.com/webapp/13377.ja-e16129dd554fd41e.mjs"
+      } ]
+   },
+   "timestamp": 1.73494891001689e+12,
+   "type": "warning"
+}
+[1734948910.020][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "BA3C4A22FA92E6D732987CDB98A27176",
+   "parentFrameId": "DE789A4516C81C7BED5162AC1923BCB4",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 92,
+         "functionName": "Kq",
+         "lineNumber": 271,
+         "scriptId": "71",
+         "url": "https://accounts.google.com/gsi/client?hl=ja"
+      }, {
+         "columnNumber": 244,
+         "functionName": "er",
+         "lineNumber": 316,
+         "scriptId": "71",
+         "url": "https://accounts.google.com/gsi/client?hl=ja"
+      }, {
+         "columnNumber": 99,
+         "functionName": "fr",
+         "lineNumber": 277,
+         "scriptId": "71",
+         "url": "https://accounts.google.com/gsi/client?hl=ja"
+      }, {
+         "columnNumber": 70810,
+         "functionName": "c",
+         "lineNumber": 208,
+         "scriptId": "46",
+         "url": "https://s.pinimg.com/webapp/www/_client.ja-76b2d514bdee4692.mjs"
+      }, {
+         "columnNumber": 91175,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "65",
+         "url": "https://s.pinimg.com/webapp/app-www-homepage-DesktopInspiredWallSignup.ja-b2ba4c9bc3a640b6.mjs"
+      } ]
+   }
+}
+[1734948910.020][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "disposition": "currentTab",
+   "frameId": "BA3C4A22FA92E6D732987CDB98A27176",
+   "reason": "initialFrameNavigation",
+   "url": "https://accounts.google.com/gsi/button?size=large&shape=pill&text=continue_with&theme=outline&width=268px&logo_alignment=left&click_listener=()%3D%3E%7Bs%26%26s()%2Co%26%26o()%2C(0%2Cn.EX)(%7Bevent..."
+}
+[1734948910.022][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "BA3C4A22FA92E6D732987CDB98A27176"
+}
+[1734948910.464][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "9A0F29733E390691DBF651D08F68F70D",
+   "parentFrameId": "DE789A4516C81C7BED5162AC1923BCB4",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 17,
+         "functionName": "",
+         "lineNumber": 199,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 153,
+         "functionName": "dg.render",
+         "lineNumber": 1085,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 179,
+         "functionName": "",
+         "lineNumber": 65,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 291,
+         "functionName": "",
+         "lineNumber": 527,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 152,
+         "functionName": "",
+         "lineNumber": 124,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 66,
+         "functionName": "dg",
+         "lineNumber": 1086,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 327,
+         "functionName": "",
+         "lineNumber": 343,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 391,
+         "functionName": "",
+         "lineNumber": 426,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 374,
+         "functionName": "V.window.\u003Ccomputed>.gor.V.window.\u003Ccomputed>.gor",
+         "lineNumber": 381,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 390,
+         "functionName": "",
+         "lineNumber": 382,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 155,
+         "functionName": "",
+         "lineNumber": 298,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 331,
+         "functionName": "",
+         "lineNumber": 382,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 5,
+         "functionName": "",
+         "lineNumber": 1117,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 379,
+         "functionName": "",
+         "lineNumber": 1123,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      } ]
+   }
+}
+[1734948910.464][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "disposition": "currentTab",
+   "frameId": "9A0F29733E390691DBF651D08F68F70D",
+   "reason": "initialFrameNavigation",
+   "url": "https://www.recaptcha.net/recaptcha/enterprise/anchor?ar=1&k=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r&co=aHR0cHM6Ly9qcC5waW50ZXJlc3QuY29tOjQ0Mw..&hl=ja&v=zIriijn3uj5Vpknvt_LnfNbF&size=invisible&cb=..."
+}
+[1734948910.465][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "9A0F29733E390691DBF651D08F68F70D"
+}
+[1734948910.604][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "sessionId": "884406C132EF1F086D917DD5C32C4A45",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "7430E012619FA8E1387935D1573F0C79",
+      "canAccessOpener": false,
+      "targetId": "BA3C4A22FA92E6D732987CDB98A27176",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734948910.604][DEBUG]: DevTools WebSocket Command: Page.enable (id=20) (session_id=884406C132EF1F086D917DD5C32C4A45) 884406C132EF1F086D917DD5C32C4A45 {
+}
+[1734948910.604][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=21) (session_id=884406C132EF1F086D917DD5C32C4A45) 884406C132EF1F086D917DD5C32C4A45 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948910.604][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=22) (session_id=884406C132EF1F086D917DD5C32C4A45) 884406C132EF1F086D917DD5C32C4A45 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948910.604][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=23) (session_id=884406C132EF1F086D917DD5C32C4A45) 884406C132EF1F086D917DD5C32C4A45 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734948910.606][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "7430E012619FA8E1387935D1573F0C79",
+      "canAccessOpener": false,
+      "targetId": "BA3C4A22FA92E6D732987CDB98A27176",
+      "title": "https://accounts.google.com/gsi/button?size=large&shape=pill&text=continue_with&theme=outline&width=268px&logo_alignment=left&click_listener=()%3D%3E%7Bs%26%26s()%2Co%26%26o()%2C(0%2Cn.EX)(%7Bevent...",
+      "type": "iframe",
+      "url": "https://accounts.google.com/gsi/button?size=large&shape=pill&text=continue_with&theme=outline&width=268px&logo_alignment=left&click_listener=()%3D%3E%7Bs%26%26s()%2Co%26%26o()%2C(0%2Cn.EX)(%7Bevent..."
+   }
+}
+[1734948910.606][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "BA3C4A22FA92E6D732987CDB98A27176",
+   "reason": "swap"
+}
+[1734948910.607][DEBUG]: DevTools WebSocket Response: Page.enable (id=20) (session_id=884406C132EF1F086D917DD5C32C4A45) 884406C132EF1F086D917DD5C32C4A45 {
+}
+[1734948910.607][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=21) (session_id=884406C132EF1F086D917DD5C32C4A45) 884406C132EF1F086D917DD5C32C4A45 {
+   "identifier": "1"
+}
+[1734948910.607][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=22) (session_id=884406C132EF1F086D917DD5C32C4A45) 884406C132EF1F086D917DD5C32C4A45 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734948910.607][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=23) (session_id=884406C132EF1F086D917DD5C32C4A45) 884406C132EF1F086D917DD5C32C4A45 {
+}
+[1734948910.607][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=24) (session_id=884406C132EF1F086D917DD5C32C4A45) 884406C132EF1F086D917DD5C32C4A45 {
+}
+[1734948910.608][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=884406C132EF1F086D917DD5C32C4A45) 884406C132EF1F086D917DD5C32C4A45 {
+   "context": {
+      "auxData": {
+         "frameId": "BA3C4A22FA92E6D732987CDB98A27176",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://accounts.google.com",
+      "uniqueId": "-1325460520910287936.-6014138904179880934"
+   }
+}
+[1734948910.608][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=24) (session_id=884406C132EF1F086D917DD5C32C4A45) 884406C132EF1F086D917DD5C32C4A45 {
+}
+[1734948910.754][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=884406C132EF1F086D917DD5C32C4A45) 884406C132EF1F086D917DD5C32C4A45 {
+   "timestamp": 58903.570034
+}
+[1734948910.754][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=884406C132EF1F086D917DD5C32C4A45) 884406C132EF1F086D917DD5C32C4A45 {
+   "timestamp": 58903.570201
+}
+[1734948910.754][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=884406C132EF1F086D917DD5C32C4A45) 884406C132EF1F086D917DD5C32C4A45 {
+   "frameId": "BA3C4A22FA92E6D732987CDB98A27176"
+}
+[1734948910.755][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "context": {
+      "auxData": {
+         "frameId": "9A0F29733E390691DBF651D08F68F70D",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 5,
+      "name": "",
+      "origin": "https://jp.pinterest.com",
+      "uniqueId": "-5506374872572919582.2137133975367056064"
+   }
+}
+[1734948910.849][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "sessionId": "87BDB5B0655B1BB8B812D4B15ECD72AD",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "7430E012619FA8E1387935D1573F0C79",
+      "canAccessOpener": false,
+      "targetId": "9A0F29733E390691DBF651D08F68F70D",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734948910.849][DEBUG]: DevTools WebSocket Command: Page.enable (id=25) (session_id=87BDB5B0655B1BB8B812D4B15ECD72AD) 87BDB5B0655B1BB8B812D4B15ECD72AD {
+}
+[1734948910.849][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=26) (session_id=87BDB5B0655B1BB8B812D4B15ECD72AD) 87BDB5B0655B1BB8B812D4B15ECD72AD {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948910.849][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=27) (session_id=87BDB5B0655B1BB8B812D4B15ECD72AD) 87BDB5B0655B1BB8B812D4B15ECD72AD {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734948910.849][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=28) (session_id=87BDB5B0655B1BB8B812D4B15ECD72AD) 87BDB5B0655B1BB8B812D4B15ECD72AD {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734948910.851][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "7430E012619FA8E1387935D1573F0C79",
+      "canAccessOpener": false,
+      "targetId": "9A0F29733E390691DBF651D08F68F70D",
+      "title": "https://www.recaptcha.net/recaptcha/enterprise/anchor?ar=1&k=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r&co=aHR0cHM6Ly9qcC5waW50ZXJlc3QuY29tOjQ0Mw..&hl=ja&v=zIriijn3uj5Vpknvt_LnfNbF&size=invisible&cb=...",
+      "type": "iframe",
+      "url": "https://www.recaptcha.net/recaptcha/enterprise/anchor?ar=1&k=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r&co=aHR0cHM6Ly9qcC5waW50ZXJlc3QuY29tOjQ0Mw..&hl=ja&v=zIriijn3uj5Vpknvt_LnfNbF&size=invisible&cb=..."
+   }
+}
+[1734948910.851][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "9A0F29733E390691DBF651D08F68F70D",
+   "reason": "swap"
+}
+[1734948910.851][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "executionContextId": 5,
+   "executionContextUniqueId": "-5506374872572919582.2137133975367056064"
+}
+[1734948910.853][DEBUG]: DevTools WebSocket Response: Page.enable (id=25) (session_id=87BDB5B0655B1BB8B812D4B15ECD72AD) 87BDB5B0655B1BB8B812D4B15ECD72AD {
+}
+[1734948910.853][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=26) (session_id=87BDB5B0655B1BB8B812D4B15ECD72AD) 87BDB5B0655B1BB8B812D4B15ECD72AD {
+   "identifier": "1"
+}
+[1734948910.853][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=27) (session_id=87BDB5B0655B1BB8B812D4B15ECD72AD) 87BDB5B0655B1BB8B812D4B15ECD72AD {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734948910.853][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=28) (session_id=87BDB5B0655B1BB8B812D4B15ECD72AD) 87BDB5B0655B1BB8B812D4B15ECD72AD {
+}
+[1734948910.853][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=29) (session_id=87BDB5B0655B1BB8B812D4B15ECD72AD) 87BDB5B0655B1BB8B812D4B15ECD72AD {
+}
+[1734948910.855][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=87BDB5B0655B1BB8B812D4B15ECD72AD) 87BDB5B0655B1BB8B812D4B15ECD72AD {
+   "context": {
+      "auxData": {
+         "frameId": "9A0F29733E390691DBF651D08F68F70D",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.recaptcha.net",
+      "uniqueId": "8532085355539177246.-1754212902474239278"
+   }
+}
+[1734948910.855][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=29) (session_id=87BDB5B0655B1BB8B812D4B15ECD72AD) 87BDB5B0655B1BB8B812D4B15ECD72AD {
+}
+[1734948911.141][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "entry": {
+      "level": "error",
+      "source": "other",
+      "text": "Provider's accounts list is empty.",
+      "timestamp": 1.73494891114091e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734948911.404][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "1A379BAB3C9DE1AE17659669B8BC67FC",
+   "parentFrameId": "DE789A4516C81C7BED5162AC1923BCB4",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 292,
+         "functionName": "",
+         "lineNumber": 419,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 247,
+         "functionName": "",
+         "lineNumber": 460,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 483,
+         "functionName": "",
+         "lineNumber": 30,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 57,
+         "functionName": "",
+         "lineNumber": 365,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 160,
+         "functionName": "N.next",
+         "lineNumber": 581,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 109,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 2,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 26,
+         "functionName": "",
+         "lineNumber": 170,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 397,
+         "functionName": "",
+         "lineNumber": 30,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 409,
+         "functionName": "",
+         "lineNumber": 146,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 57,
+         "functionName": "",
+         "lineNumber": 365,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 160,
+         "functionName": "N.next",
+         "lineNumber": 581,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 109,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 2,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 26,
+         "functionName": "",
+         "lineNumber": 170,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 331,
+         "functionName": "",
+         "lineNumber": 146,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 313,
+         "functionName": "",
+         "lineNumber": 979,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 57,
+         "functionName": "",
+         "lineNumber": 365,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 160,
+         "functionName": "N.next",
+         "lineNumber": 581,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, "..." ]
+   }
+}
+[1734948911.404][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "disposition": "currentTab",
+   "frameId": "1A379BAB3C9DE1AE17659669B8BC67FC",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734948911.404][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "1A379BAB3C9DE1AE17659669B8BC67FC",
+      "loaderId": "7EF97B10256BE8C9541CE9FD9FEB1B7B",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "DE789A4516C81C7BED5162AC1923BCB4",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734948911.404][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "1A379BAB3C9DE1AE17659669B8BC67FC"
+}
+[1734948911.405][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "context": {
+      "auxData": {
+         "frameId": "1A379BAB3C9DE1AE17659669B8BC67FC",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 6,
+      "name": "",
+      "origin": "https://jp.pinterest.com",
+      "uniqueId": "1175112544218163611.5616459943105035589"
+   }
+}
+[1734948911.405][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "frameId": "1A379BAB3C9DE1AE17659669B8BC67FC"
+}
+[1734948911.410][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=87BDB5B0655B1BB8B812D4B15ECD72AD) 87BDB5B0655B1BB8B812D4B15ECD72AD {
+   "timestamp": 58904.226296
+}
+[1734948911.461][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=87BDB5B0655B1BB8B812D4B15ECD72AD) 87BDB5B0655B1BB8B812D4B15ECD72AD {
+   "sessionId": "23A720BA80D878A8529C4E4EF0D7E288",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "7430E012619FA8E1387935D1573F0C79",
+      "canAccessOpener": false,
+      "targetId": "7C7C3F881E12B8FB69EFAEACCD1356F1",
+      "title": "https://www.recaptcha.net/recaptcha/enterprise/webworker.js?hl=ja&v=zIriijn3uj5Vpknvt_LnfNbF",
+      "type": "worker",
+      "url": "https://www.recaptcha.net/recaptcha/enterprise/webworker.js?hl=ja&v=zIriijn3uj5Vpknvt_LnfNbF"
+   },
+   "waitingForDebugger": false
+}
+[1734948911.469][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=87BDB5B0655B1BB8B812D4B15ECD72AD) 87BDB5B0655B1BB8B812D4B15ECD72AD {
+   "timestamp": 58904.284023
+}
+[1734948911.469][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=87BDB5B0655B1BB8B812D4B15ECD72AD) 87BDB5B0655B1BB8B812D4B15ECD72AD {
+   "frameId": "9A0F29733E390691DBF651D08F68F70D"
+}
+[1734948911.560][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=87BDB5B0655B1BB8B812D4B15ECD72AD) 87BDB5B0655B1BB8B812D4B15ECD72AD {
+   "frameId": "6AB2D7D4302F88AD0925C8CA7CB3E6C6",
+   "parentFrameId": "9A0F29733E390691DBF651D08F68F70D",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 292,
+         "functionName": "",
+         "lineNumber": 419,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 520,
+         "functionName": "",
+         "lineNumber": 700,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 447,
+         "functionName": "",
+         "lineNumber": 741,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 362,
+         "functionName": "",
+         "lineNumber": 224,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 517,
+         "functionName": "",
+         "lineNumber": 44,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 276,
+         "functionName": "",
+         "lineNumber": 25,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 300,
+         "functionName": "",
+         "lineNumber": 317,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 57,
+         "functionName": "",
+         "lineNumber": 365,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 160,
+         "functionName": "N.next",
+         "lineNumber": 581,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 109,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 2,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 26,
+         "functionName": "",
+         "lineNumber": 170,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 150,
+         "functionName": "p.B",
+         "lineNumber": 317,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 23,
+         "functionName": "",
+         "lineNumber": 45,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 57,
+         "functionName": "",
+         "lineNumber": 365,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 160,
+         "functionName": "N.next",
+         "lineNumber": 581,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 109,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 2,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 26,
+         "functionName": "",
+         "lineNumber": 170,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, "..." ]
+   }
+}
+[1734948911.560][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=87BDB5B0655B1BB8B812D4B15ECD72AD) 87BDB5B0655B1BB8B812D4B15ECD72AD {
+   "disposition": "currentTab",
+   "frameId": "6AB2D7D4302F88AD0925C8CA7CB3E6C6",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734948911.560][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=87BDB5B0655B1BB8B812D4B15ECD72AD) 87BDB5B0655B1BB8B812D4B15ECD72AD {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolatedFeatureDisabled",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "6AB2D7D4302F88AD0925C8CA7CB3E6C6",
+      "loaderId": "F94E4EC71911EE4EEEC9C3BF95A82C01",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "9A0F29733E390691DBF651D08F68F70D",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734948911.560][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=87BDB5B0655B1BB8B812D4B15ECD72AD) 87BDB5B0655B1BB8B812D4B15ECD72AD {
+   "frameId": "6AB2D7D4302F88AD0925C8CA7CB3E6C6"
+}
+[1734948911.560][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=87BDB5B0655B1BB8B812D4B15ECD72AD) 87BDB5B0655B1BB8B812D4B15ECD72AD {
+   "context": {
+      "auxData": {
+         "frameId": "6AB2D7D4302F88AD0925C8CA7CB3E6C6",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://www.recaptcha.net",
+      "uniqueId": "7644295432681367382.3131008378926670578"
+   }
+}
+[1734948911.560][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=87BDB5B0655B1BB8B812D4B15ECD72AD) 87BDB5B0655B1BB8B812D4B15ECD72AD {
+   "frameId": "6AB2D7D4302F88AD0925C8CA7CB3E6C6"
+}
+[1734948916.478][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=762C80EB8A6DA4F0147A2BA37D405655) DE789A4516C81C7BED5162AC1923BCB4 {
+   "args": [ {
+      "type": "string",
+      "value": "[GSI_LOGGER]: FedCM get() rejects with NetworkError: Error retrieving a token."
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 272,
+         "functionName": "_.C",
+         "lineNumber": 71,
+         "scriptId": "71",
+         "url": "https://accounts.google.com/gsi/client?hl=ja"
+      }, {
+         "columnNumber": 131,
+         "functionName": "js.Aa",
+         "lineNumber": 307,
+         "scriptId": "71",
+         "url": "https://accounts.google.com/gsi/client?hl=ja"
+      }, {
+         "columnNumber": 192,
+         "functionName": "Aa",
+         "lineNumber": 312,
+         "scriptId": "71",
+         "url": "https://accounts.google.com/gsi/client?hl=ja"
+      }, {
+         "columnNumber": 905,
+         "functionName": "",
+         "lineNumber": 283,
+         "scriptId": "71",
+         "url": "https://accounts.google.com/gsi/client?hl=ja"
+      } ]
+   },
+   "timestamp": 1.734948916477672e+12,
+   "type": "error"
+}
+[1734948919.414][INFO]: [04e2856588a4f6b5cadc3aee24d0ea4a] COMMAND Quit {
+}
+[1734948919.468][INFO]: [04e2856588a4f6b5cadc3aee24d0ea4a] RESPONSE Quit
+[1734948919.469][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1734948919.469][DEBUG]: Log type 'browser' lost 3 entries on destruction

@@ -1,0 +1,2291 @@
+[1734950389.484][INFO]: Starting Microsoft Edge WebDriver 131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70) on port 57596
+[1734950389.484][INFO]: Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+[1734950389.487][INFO]: msedgedriver was started successfully on port 57596
+[1734950389.496][INFO]: [249c5b9878fe0061c221433340e1754f] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "MicrosoftEdge",
+         "browserVersion": null,
+         "ms:edgeOptions": {
+            "args": [ "--disable-extensions", "--inprivate" ],
+            "binary": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1734950389.497][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1734950389.497][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1734950389.498][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1734950389.498][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1734950389.498][INFO]: WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS = 
+[1734950389.498][INFO]: Launching Microsoft Edge: /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-extensions --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --inprivate --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.EONOZM data:,
+
+DevTools listening on ws://127.0.0.1:57601/devtools/browser/aacd6111-fe66-40b2-9304-26f67156b9c7
+[1734950389.723][DEBUG]: DevTools HTTP Request: http://localhost:57601/json/version
+[1734950390.000][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Edg/131.0.2903.112",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
+   "V8-Version": "13.1.20.9",
+   "WebKit-Version": "537.36 (@16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+   "webSocketDebuggerUrl": "ws://localhost:57601/devtools/browser/aacd6111-fe66-40b2-9304-26f67156b9c7"
+}
+
+[1734950390.001][DEBUG]: DevTools HTTP Request: http://localhost:57601/json/list
+[1734950390.016][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:57601/devtools/page/D35B4A6B77718F1CB2246A8214562A68",
+   "id": "D35B4A6B77718F1CB2246A8214562A68",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:57601/devtools/page/D35B4A6B77718F1CB2246A8214562A68"
+} ]
+
+[1734950390.019][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1734950390.025][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1734950390.027][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "4D47EF3F9AA878A2758CE68B9010BCDC",
+      "canAccessOpener": false,
+      "pid": 0,
+      "targetId": "D35B4A6B77718F1CB2246A8214562A68",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1734950390.028][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "D35B4A6B77718F1CB2246A8214562A68"
+}
+[1734950390.041][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "0E15576748CA44AB3EEC6B397467F7DA",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "4D47EF3F9AA878A2758CE68B9010BCDC",
+      "canAccessOpener": false,
+      "pid": 30370,
+      "targetId": "D35B4A6B77718F1CB2246A8214562A68",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1734950390.042][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "0E15576748CA44AB3EEC6B397467F7DA"
+}
+[1734950390.042][DEBUG]: DevTools WebSocket Command: Page.enable (id=3) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+}
+[1734950390.042][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950390.044][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=5) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950390.045][DEBUG]: DevTools WebSocket Command: Log.enable (id=6) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+}
+[1734950390.045][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=7) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734950390.049][DEBUG]: DevTools WebSocket Response: Page.enable (id=3) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+}
+[1734950390.051][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "identifier": "1"
+}
+[1734950390.051][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=5) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734950390.051][DEBUG]: DevTools WebSocket Response: Log.enable (id=6) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+}
+[1734950390.052][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=7) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+}
+[1734950390.052][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+}
+[1734950390.053][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "context": {
+      "auxData": {
+         "frameId": "D35B4A6B77718F1CB2246A8214562A68",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "4840714811181369286.-7982168931591868853"
+   }
+}
+[1734950390.054][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+}
+[1734950390.054][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+}
+[1734950390.055][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+}
+[1734950390.055][INFO]: [249c5b9878fe0061c221433340e1754f] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "MicrosoftEdge",
+      "browserVersion": "131.0.2903.112",
+      "fedcm:accounts": true,
+      "ms:edgeOptions": {
+         "debuggerAddress": "localhost:57601"
+      },
+      "msedge": {
+         "msedgedriverVersion": "131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+         "userDataDir": "/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.EONOZM"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "249c5b9878fe0061c221433340e1754f"
+}
+[1734950390.056][INFO]: [249c5b9878fe0061c221433340e1754f] COMMAND Navigate {
+   "url": "https://naver.com"
+}
+[1734950390.057][INFO]: Waiting for pending navigations...
+[1734950390.057][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=10) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "expression": "1"
+}
+[1734950390.057][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=10) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950390.058][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=11) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "expression": "document",
+   "objectGroup": "10038f6d-7715-41db-bcc5-08372bcf3d2f"
+}
+[1734950390.058][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=11) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "-1747675187001523971.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734950390.058][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=12) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "objectId": "-1747675187001523971.1.1"
+}
+[1734950390.058][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=12) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734950390.060][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=13) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "objectGroup": "10038f6d-7715-41db-bcc5-08372bcf3d2f"
+}
+[1734950390.060][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "4840714811181369286.-7982168931591868853"
+}
+[1734950390.061][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=13) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+}
+[1734950390.061][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734950390.062][INFO]: Done waiting for pending navigations. Status: ok
+[1734950390.062][DEBUG]: DevTools WebSocket Command: Page.navigate (id=15) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "url": "https://naver.com"
+}
+[1734950390.064][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "D35B4A6B77718F1CB2246A8214562A68"
+}
+2024-12-23 19:39:50.261 Microsoft Edge[30362:1069797] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-23 19:39:50.261 Microsoft Edge[30362:1069797] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+[1734950390.560][DEBUG]: DevTools WebSocket Response: Page.navigate (id=15) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "D35B4A6B77718F1CB2246A8214562A68",
+   "loaderId": "E8B64216D810A9683D7A6623DAD5FF74"
+}
+[1734950390.561][INFO]: Waiting for pending navigations...
+[1734950390.561][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "expression": "1"
+}
+[1734950390.562][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+}
+[1734950390.564][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+}
+[1734950390.565][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "naver.com",
+      "gatedAPIFeatures": [  ],
+      "id": "D35B4A6B77718F1CB2246A8214562A68",
+      "loaderId": "E8B64216D810A9683D7A6623DAD5FF74",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.naver.com",
+      "url": "https://www.naver.com/"
+   },
+   "type": "Navigation"
+}
+[1734950390.577][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "context": {
+      "auxData": {
+         "frameId": "D35B4A6B77718F1CB2246A8214562A68",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.naver.com",
+      "uniqueId": "8914916260675105323.6025613592984131954"
+   }
+}
+[1734950390.580][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950391.085][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=17) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "expression": "1"
+}
+[1734950391.129][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "timestamp": 60384.00542
+}
+[1734950391.129][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "timestamp": 60384.005767
+}
+[1734950391.129][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "8914916260675105323.6025613592984131954"
+}
+[1734950391.129][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "D35B4A6B77718F1CB2246A8214562A68"
+}
+[1734950391.132][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=17) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950391.154][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "49F3AD8FCC06FD403DCB223BE042E871",
+   "parentFrameId": "D35B4A6B77718F1CB2246A8214562A68",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 683140,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683292,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 682907,
+         "functionName": "bl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 695603,
+         "functionName": "Vs",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, "..." ]
+   }
+}
+[1734950391.154][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "disposition": "currentTab",
+   "frameId": "49F3AD8FCC06FD403DCB223BE042E871",
+   "reason": "initialFrameNavigation",
+   "url": "https://shopsquare.naver.com/"
+}
+[1734950391.154][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "49F3AD8FCC06FD403DCB223BE042E871"
+}
+[1734950391.155][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "BE06673130A3F5B7E54C4DA2A312E2F0",
+   "parentFrameId": "D35B4A6B77718F1CB2246A8214562A68",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 683140,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683292,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683292,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 683260,
+         "functionName": "yl",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, "..." ]
+   }
+}
+[1734950391.155][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "disposition": "currentTab",
+   "frameId": "BE06673130A3F5B7E54C4DA2A312E2F0",
+   "reason": "initialFrameNavigation",
+   "url": "https://recoshopping.naver.com/"
+}
+[1734950391.155][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "BE06673130A3F5B7E54C4DA2A312E2F0"
+}
+[1734950391.157][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "151CE2E354510E99F2B880B5C04634B7",
+   "parentFrameId": "D35B4A6B77718F1CB2246A8214562A68",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 89170,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://ssl.pstatic.net/tveta/libs/ndpsdk/prod/ndp-core.js"
+      }, {
+         "columnNumber": 91224,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://ssl.pstatic.net/tveta/libs/ndpsdk/prod/ndp-core.js"
+      }, {
+         "columnNumber": 90786,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://ssl.pstatic.net/tveta/libs/ndpsdk/prod/ndp-core.js"
+      }, {
+         "columnNumber": 84977,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://ssl.pstatic.net/tveta/libs/ndpsdk/prod/ndp-core.js"
+      }, {
+         "columnNumber": 82235,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://ssl.pstatic.net/tveta/libs/ndpsdk/prod/ndp-core.js"
+      }, {
+         "columnNumber": 96197,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://ssl.pstatic.net/tveta/libs/ndpsdk/prod/ndp-core.js"
+      }, {
+         "columnNumber": 168456,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 95407,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://ssl.pstatic.net/tveta/libs/ndpsdk/prod/ndp-core.js"
+      }, {
+         "columnNumber": 168221,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 697143,
+         "functionName": "Vs",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 727389,
+         "functionName": "t.unstable_runWithPriority",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 639251,
+         "functionName": "Zi",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 693767,
+         "functionName": "Es",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 689878,
+         "functionName": "hs",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 687009,
+         "functionName": "ds",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 703093,
+         "functionName": "Xs",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 704479,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 690031,
+         "functionName": "gs",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 704464,
+         "functionName": "rc",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, "..." ]
+   }
+}
+[1734950391.157][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "disposition": "currentTab",
+   "frameId": "151CE2E354510E99F2B880B5C04634B7",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734950391.157][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "151CE2E354510E99F2B880B5C04634B7",
+      "loaderId": "77B3019D414201EBF43E2E3F92624DA4",
+      "mimeType": "text/html",
+      "name": "da_public_left_tgtLREC",
+      "parentId": "D35B4A6B77718F1CB2246A8214562A68",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734950391.157][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "151CE2E354510E99F2B880B5C04634B7"
+}
+[1734950391.159][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "context": {
+      "auxData": {
+         "frameId": "151CE2E354510E99F2B880B5C04634B7",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://www.naver.com",
+      "uniqueId": "-6557205923809061423.695340709869622846"
+   }
+}
+[1734950391.159][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "151CE2E354510E99F2B880B5C04634B7"
+}
+[1734950391.159][DEBUG]: DevTools WebSocket Event: Page.frameScheduledNavigation (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "delay": 0,
+   "frameId": "151CE2E354510E99F2B880B5C04634B7",
+   "reason": "scriptInitiated",
+   "url": "https://siape.veta.naver.com/fxshow?su=SU10868&nrefreshx=0#frameId=da_public_left_tgtLREC&origin=https%3A%2F%2Fwww.naver.com&msgToken=2137640194.2308984&isFluid=false&runtime=NDPSDK"
+}
+[1734950391.159][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "disposition": "currentTab",
+   "frameId": "151CE2E354510E99F2B880B5C04634B7",
+   "reason": "scriptInitiated",
+   "url": "https://siape.veta.naver.com/fxshow?su=SU10868&nrefreshx=0#frameId=da_public_left_tgtLREC&origin=https%3A%2F%2Fwww.naver.com&msgToken=2137640194.2308984&isFluid=false&runtime=NDPSDK"
+}
+[1734950391.159][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "151CE2E354510E99F2B880B5C04634B7"
+}
+[1734950391.159][DEBUG]: DevTools WebSocket Event: Page.frameClearedScheduledNavigation (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "151CE2E354510E99F2B880B5C04634B7"
+}
+[1734950391.159][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "32E402DFA68A2562770D5C2C2A92DD0A",
+   "parentFrameId": "D35B4A6B77718F1CB2246A8214562A68",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 89170,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://ssl.pstatic.net/tveta/libs/ndpsdk/prod/ndp-core.js"
+      }, {
+         "columnNumber": 91224,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://ssl.pstatic.net/tveta/libs/ndpsdk/prod/ndp-core.js"
+      }, {
+         "columnNumber": 90786,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://ssl.pstatic.net/tveta/libs/ndpsdk/prod/ndp-core.js"
+      }, {
+         "columnNumber": 84977,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://ssl.pstatic.net/tveta/libs/ndpsdk/prod/ndp-core.js"
+      }, {
+         "columnNumber": 82235,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://ssl.pstatic.net/tveta/libs/ndpsdk/prod/ndp-core.js"
+      }, {
+         "columnNumber": 96197,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://ssl.pstatic.net/tveta/libs/ndpsdk/prod/ndp-core.js"
+      }, {
+         "columnNumber": 168456,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 95407,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://ssl.pstatic.net/tveta/libs/ndpsdk/prod/ndp-core.js"
+      }, {
+         "columnNumber": 168221,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 697143,
+         "functionName": "Vs",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 727389,
+         "functionName": "t.unstable_runWithPriority",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 639251,
+         "functionName": "Zi",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 693767,
+         "functionName": "Es",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 689878,
+         "functionName": "hs",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 687009,
+         "functionName": "ds",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 703093,
+         "functionName": "Xs",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 704479,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 690031,
+         "functionName": "gs",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 704464,
+         "functionName": "rc",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, "..." ]
+   }
+}
+[1734950391.159][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "disposition": "currentTab",
+   "frameId": "32E402DFA68A2562770D5C2C2A92DD0A",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734950391.159][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "32E402DFA68A2562770D5C2C2A92DD0A",
+      "loaderId": "117DBCF5C87F5A99F2BCFD3EBE7A2A65",
+      "mimeType": "text/html",
+      "name": "da_public_right_tgtLREC",
+      "parentId": "D35B4A6B77718F1CB2246A8214562A68",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734950391.159][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "32E402DFA68A2562770D5C2C2A92DD0A"
+}
+[1734950391.160][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "context": {
+      "auxData": {
+         "frameId": "32E402DFA68A2562770D5C2C2A92DD0A",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 3,
+      "name": "",
+      "origin": "https://www.naver.com",
+      "uniqueId": "7334231418358505476.8648561220027427564"
+   }
+}
+[1734950391.160][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "32E402DFA68A2562770D5C2C2A92DD0A"
+}
+[1734950391.160][DEBUG]: DevTools WebSocket Event: Page.frameScheduledNavigation (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "delay": 0,
+   "frameId": "32E402DFA68A2562770D5C2C2A92DD0A",
+   "reason": "scriptInitiated",
+   "url": "https://siape.veta.naver.com/fxshow?su=SU10869&nrefreshx=0#frameId=da_public_right_tgtLREC&origin=https%3A%2F%2Fwww.naver.com&msgToken=2433524052.4031787&isFluid=false&runtime=NDPSDK"
+}
+[1734950391.160][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "disposition": "currentTab",
+   "frameId": "32E402DFA68A2562770D5C2C2A92DD0A",
+   "reason": "scriptInitiated",
+   "url": "https://siape.veta.naver.com/fxshow?su=SU10869&nrefreshx=0#frameId=da_public_right_tgtLREC&origin=https%3A%2F%2Fwww.naver.com&msgToken=2433524052.4031787&isFluid=false&runtime=NDPSDK"
+}
+[1734950391.160][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "32E402DFA68A2562770D5C2C2A92DD0A"
+}
+[1734950391.161][DEBUG]: DevTools WebSocket Event: Page.frameClearedScheduledNavigation (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "32E402DFA68A2562770D5C2C2A92DD0A"
+}
+[1734950391.161][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "AAA43A9488EEC5319040A223926AAC86",
+   "parentFrameId": "D35B4A6B77718F1CB2246A8214562A68",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 89170,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://ssl.pstatic.net/tveta/libs/ndpsdk/prod/ndp-core.js"
+      }, {
+         "columnNumber": 91224,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://ssl.pstatic.net/tveta/libs/ndpsdk/prod/ndp-core.js"
+      }, {
+         "columnNumber": 90786,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://ssl.pstatic.net/tveta/libs/ndpsdk/prod/ndp-core.js"
+      }, {
+         "columnNumber": 84977,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://ssl.pstatic.net/tveta/libs/ndpsdk/prod/ndp-core.js"
+      }, {
+         "columnNumber": 82235,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://ssl.pstatic.net/tveta/libs/ndpsdk/prod/ndp-core.js"
+      }, {
+         "columnNumber": 96197,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://ssl.pstatic.net/tveta/libs/ndpsdk/prod/ndp-core.js"
+      }, {
+         "columnNumber": 168456,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 95407,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "13",
+         "url": "https://ssl.pstatic.net/tveta/libs/ndpsdk/prod/ndp-core.js"
+      }, {
+         "columnNumber": 168221,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 697143,
+         "functionName": "Vs",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 727389,
+         "functionName": "t.unstable_runWithPriority",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 639251,
+         "functionName": "Zi",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 693767,
+         "functionName": "Es",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 689878,
+         "functionName": "hs",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 687009,
+         "functionName": "ds",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 703093,
+         "functionName": "Xs",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 704479,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 690031,
+         "functionName": "gs",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, {
+         "columnNumber": 704464,
+         "functionName": "rc",
+         "lineNumber": 1,
+         "scriptId": "21",
+         "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+      }, "..." ]
+   }
+}
+[1734950391.161][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "disposition": "currentTab",
+   "frameId": "AAA43A9488EEC5319040A223926AAC86",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734950391.161][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "AAA43A9488EEC5319040A223926AAC86",
+      "loaderId": "7EB936B5F456CE3F07A16AAA80EE3810",
+      "mimeType": "text/html",
+      "name": "veta_time2_tgtLREC",
+      "parentId": "D35B4A6B77718F1CB2246A8214562A68",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734950391.161][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "AAA43A9488EEC5319040A223926AAC86"
+}
+[1734950391.162][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "context": {
+      "auxData": {
+         "frameId": "AAA43A9488EEC5319040A223926AAC86",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 4,
+      "name": "",
+      "origin": "https://www.naver.com",
+      "uniqueId": "-3080497228113359850.6166915369317039688"
+   }
+}
+[1734950391.162][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "AAA43A9488EEC5319040A223926AAC86"
+}
+[1734950391.162][DEBUG]: DevTools WebSocket Event: Page.frameScheduledNavigation (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "delay": 0,
+   "frameId": "AAA43A9488EEC5319040A223926AAC86",
+   "reason": "scriptInitiated",
+   "url": "https://siape.veta.naver.com/fxshow?su=SU10870&nrefreshx=0#frameId=veta_time2_tgtLREC&origin=https%3A%2F%2Fwww.naver.com&msgToken=2394449359.372436&isFluid=false&runtime=NDPSDK"
+}
+[1734950391.162][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "disposition": "currentTab",
+   "frameId": "AAA43A9488EEC5319040A223926AAC86",
+   "reason": "scriptInitiated",
+   "url": "https://siape.veta.naver.com/fxshow?su=SU10870&nrefreshx=0#frameId=veta_time2_tgtLREC&origin=https%3A%2F%2Fwww.naver.com&msgToken=2394449359.372436&isFluid=false&runtime=NDPSDK"
+}
+[1734950391.162][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "AAA43A9488EEC5319040A223926AAC86"
+}
+[1734950391.162][DEBUG]: DevTools WebSocket Event: Page.frameClearedScheduledNavigation (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "AAA43A9488EEC5319040A223926AAC86"
+}
+[1734950391.185][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "context": {
+      "auxData": {
+         "frameId": "49F3AD8FCC06FD403DCB223BE042E871",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 5,
+      "name": "",
+      "origin": "https://www.naver.com",
+      "uniqueId": "-3307612350280806789.7226449639600780671"
+   }
+}
+[1734950391.185][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "context": {
+      "auxData": {
+         "frameId": "BE06673130A3F5B7E54C4DA2A312E2F0",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 6,
+      "name": "",
+      "origin": "https://www.naver.com",
+      "uniqueId": "-5941483245895864619.-6406909619584962658"
+   }
+}
+[1734950391.185][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "entry": {
+      "level": "info",
+      "source": "intervention",
+      "text": "Images loaded lazily and replaced with placeholders. Load events are deferred. See https://go.microsoft.com/fwlink/?linkid=2048113",
+      "timestamp": 1.734950391185196e+12,
+      "url": "https://www.naver.com/"
+   }
+}
+[1734950391.190][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734950391.190][INFO]: Done waiting for pending navigations. Status: ok
+[1734950391.190][INFO]: [249c5b9878fe0061c221433340e1754f] RESPONSE Navigate
+[1734950391.197][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 1,
+      "source": "security",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 173646,
+            "functionName": "",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 698567,
+            "functionName": "As",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 727389,
+            "functionName": "t.unstable_runWithPriority",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 639251,
+            "functionName": "Zi",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 698030,
+            "functionName": "Ms",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 689558,
+            "functionName": "hs",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 639474,
+            "functionName": "",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 727389,
+            "functionName": "t.unstable_runWithPriority",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 639251,
+            "functionName": "Zi",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 639419,
+            "functionName": "qi",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 639354,
+            "functionName": "Ki",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 690062,
+            "functionName": "gs",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 704464,
+            "functionName": "rc",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 711912,
+            "functionName": "t.render",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 594415,
+            "functionName": "",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         } ]
+      },
+      "text": "Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://shopsquare.naver.com') does not match the recipient window's origin ('https://www.naver.com').",
+      "timestamp": 1.734950391196951e+12,
+      "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+   }
+}
+[1734950391.197][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 1,
+      "source": "security",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 549691,
+            "functionName": "",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 698567,
+            "functionName": "As",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 727389,
+            "functionName": "t.unstable_runWithPriority",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 639251,
+            "functionName": "Zi",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 698030,
+            "functionName": "Ms",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 689558,
+            "functionName": "hs",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 639474,
+            "functionName": "",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 727389,
+            "functionName": "t.unstable_runWithPriority",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 639251,
+            "functionName": "Zi",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 639419,
+            "functionName": "qi",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 639354,
+            "functionName": "Ki",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 690062,
+            "functionName": "gs",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 704464,
+            "functionName": "rc",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 711912,
+            "functionName": "t.render",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         }, {
+            "columnNumber": 594415,
+            "functionName": "",
+            "lineNumber": 1,
+            "scriptId": "21",
+            "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+         } ]
+      },
+      "text": "Failed to execute 'postMessage' on 'DOMWindow': The target origin provided ('https://recoshopping.naver.com') does not match the recipient window's origin ('https://www.naver.com').",
+      "timestamp": 1.734950391196998e+12,
+      "url": "https://pm.pstatic.net/resources/js/main.9be642df.js?o=www"
+   }
+}
+[1734950391.204][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "04B56A170FBB5AF180766B7E7B9AC780",
+   "parentFrameId": "D35B4A6B77718F1CB2246A8214562A68",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 23731,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "25",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-ext-nda.js"
+      }, {
+         "columnNumber": 46091,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "25",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-ext-nda.js"
+      }, {
+         "columnNumber": 93302,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 102633,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 99379,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 84953,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 112371,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 112341,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 112438,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 117642,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      } ]
+   }
+}
+[1734950391.204][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "disposition": "currentTab",
+   "frameId": "04B56A170FBB5AF180766B7E7B9AC780",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734950391.204][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "04B56A170FBB5AF180766B7E7B9AC780",
+      "loaderId": "9AAEEDEDA38A57C7C4C914470EAD5836",
+      "mimeType": "text/html",
+      "name": "{\"iFrameId\":\"ad_timeboard_tgtLREC\",\"isFluid\":true,\"adm\":\"\u003Cscript src=\\\"https://ssl.pstatic.net/melona/libs/glad/bridge/gfp-bridge.js\\\">\u003C/script>\\r\\n\u003Clink rel=\\\"stylesheet\\\" href=\\\"https://ssl.pstat...",
+      "parentId": "D35B4A6B77718F1CB2246A8214562A68",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734950391.204][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "04B56A170FBB5AF180766B7E7B9AC780"
+}
+[1734950391.205][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "context": {
+      "auxData": {
+         "frameId": "04B56A170FBB5AF180766B7E7B9AC780",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 7,
+      "name": "",
+      "origin": "https://www.naver.com",
+      "uniqueId": "9220107989408590883.5684620990391147500"
+   }
+}
+[1734950391.205][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "04B56A170FBB5AF180766B7E7B9AC780"
+}
+[1734950391.217][DEBUG]: DevTools WebSocket Event: Page.documentOpened (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "naver.com",
+      "gatedAPIFeatures": [  ],
+      "id": "04B56A170FBB5AF180766B7E7B9AC780",
+      "loaderId": "9AAEEDEDA38A57C7C4C914470EAD5836",
+      "mimeType": "text/html",
+      "name": "{\"iFrameId\":\"ad_timeboard_tgtLREC\",\"isFluid\":true,\"adm\":\"\u003Cscript src=\\\"https://ssl.pstatic.net/melona/libs/glad/bridge/gfp-bridge.js\\\">\u003C/script>\\r\\n\u003Clink rel=\\\"stylesheet\\\" href=\\\"https://ssl.pstat...",
+      "parentId": "D35B4A6B77718F1CB2246A8214562A68",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.naver.com",
+      "url": "https://www.naver.com/"
+   }
+}
+[1734950391.357][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "8B061D5D0E05A3694DC093C8A51D4F52",
+   "parentFrameId": "D35B4A6B77718F1CB2246A8214562A68",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 23731,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "25",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-ext-nda.js"
+      }, {
+         "columnNumber": 38269,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "25",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-ext-nda.js"
+      }, {
+         "columnNumber": 223781,
+         "functionName": "l",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 223569,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 224206,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 231368,
+         "functionName": "i",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 231559,
+         "functionName": "a",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 231618,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 165760,
+         "functionName": "e",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 231505,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 38347,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "25",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-ext-nda.js"
+      }, {
+         "columnNumber": 93302,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 122567,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 99379,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 84097,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 112371,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 112341,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 112438,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 117642,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      } ]
+   }
+}
+[1734950391.357][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "disposition": "currentTab",
+   "frameId": "8B061D5D0E05A3694DC093C8A51D4F52",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734950391.358][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "8B061D5D0E05A3694DC093C8A51D4F52",
+      "loaderId": "F5978EB69DA39DB0D94F8F6F334101F1",
+      "mimeType": "text/html",
+      "name": "{\"iFrameId\":\"pc-main-ad-div-p_main_recipe-0_tgtLREC\",\"isFluid\":true,\"adm\":\"\u003Cdiv id=\\\"ad-element\\\" class=\\\"gfa_native_topic type_mute_thumb\\\">\u003Ca data-gfp-role=\\\"link\\\" class=\\\"link_area\\\">\u003Cdiv class...",
+      "parentId": "D35B4A6B77718F1CB2246A8214562A68",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734950391.358][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "8B061D5D0E05A3694DC093C8A51D4F52"
+}
+[1734950391.358][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "context": {
+      "auxData": {
+         "frameId": "8B061D5D0E05A3694DC093C8A51D4F52",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 8,
+      "name": "",
+      "origin": "https://www.naver.com",
+      "uniqueId": "7500202583842413906.5030194834560137971"
+   }
+}
+[1734950391.358][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "8B061D5D0E05A3694DC093C8A51D4F52"
+}
+[1734950391.360][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "11846CD057930589F7F9824AC75AE358",
+   "parentFrameId": "D35B4A6B77718F1CB2246A8214562A68",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 23731,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "25",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-ext-nda.js"
+      }, {
+         "columnNumber": 46091,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "25",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-ext-nda.js"
+      }, {
+         "columnNumber": 93302,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 102633,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 99379,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 84097,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 112371,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 112341,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 112438,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 117642,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      } ]
+   }
+}
+[1734950391.360][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "disposition": "currentTab",
+   "frameId": "11846CD057930589F7F9824AC75AE358",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734950391.360][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "11846CD057930589F7F9824AC75AE358",
+      "loaderId": "8FB38802E6ADCBF9A384258C194CDB47",
+      "mimeType": "text/html",
+      "name": "{\"iFrameId\":\"right-ad-1_tgtLREC\",\"isFluid\":false,\"adm\":\"\u003Cscript src=\\\"https://ssl.pstatic.net/melona/libs/glad/bridge/gfp-bridge.js\\\">\u003C/script>\\r\\n\\r\\n\u003Ca href=\\\"https://siape.veta.naver.com/fxclick...",
+      "parentId": "D35B4A6B77718F1CB2246A8214562A68",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734950391.360][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "11846CD057930589F7F9824AC75AE358"
+}
+[1734950391.361][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "context": {
+      "auxData": {
+         "frameId": "11846CD057930589F7F9824AC75AE358",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 9,
+      "name": "",
+      "origin": "https://www.naver.com",
+      "uniqueId": "-1900036984746804874.-6043290099362430608"
+   }
+}
+[1734950391.361][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "11846CD057930589F7F9824AC75AE358"
+}
+[1734950391.374][DEBUG]: DevTools WebSocket Event: Page.documentOpened (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "naver.com",
+      "gatedAPIFeatures": [  ],
+      "id": "8B061D5D0E05A3694DC093C8A51D4F52",
+      "loaderId": "F5978EB69DA39DB0D94F8F6F334101F1",
+      "mimeType": "text/html",
+      "name": "{\"iFrameId\":\"pc-main-ad-div-p_main_recipe-0_tgtLREC\",\"isFluid\":true,\"adm\":\"\u003Cdiv id=\\\"ad-element\\\" class=\\\"gfa_native_topic type_mute_thumb\\\">\u003Ca data-gfp-role=\\\"link\\\" class=\\\"link_area\\\">\u003Cdiv class...",
+      "parentId": "D35B4A6B77718F1CB2246A8214562A68",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.naver.com",
+      "url": "https://www.naver.com/"
+   }
+}
+[1734950391.376][DEBUG]: DevTools WebSocket Event: Page.documentOpened (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "naver.com",
+      "gatedAPIFeatures": [  ],
+      "id": "11846CD057930589F7F9824AC75AE358",
+      "loaderId": "8FB38802E6ADCBF9A384258C194CDB47",
+      "mimeType": "text/html",
+      "name": "{\"iFrameId\":\"right-ad-1_tgtLREC\",\"isFluid\":false,\"adm\":\"\u003Cscript src=\\\"https://ssl.pstatic.net/melona/libs/glad/bridge/gfp-bridge.js\\\">\u003C/script>\\r\\n\\r\\n\u003Ca href=\\\"https://siape.veta.naver.com/fxclick...",
+      "parentId": "D35B4A6B77718F1CB2246A8214562A68",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.naver.com",
+      "url": "https://www.naver.com/"
+   }
+}
+[1734950391.460][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "FBEFA91CD9B50FA954EDC8CCE60991B4",
+   "parentFrameId": "D35B4A6B77718F1CB2246A8214562A68",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 23731,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "25",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-ext-nda.js"
+      }, {
+         "columnNumber": 38269,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "25",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-ext-nda.js"
+      }, {
+         "columnNumber": 223781,
+         "functionName": "l",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 223569,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 224206,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 231368,
+         "functionName": "i",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 231559,
+         "functionName": "a",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 231618,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 165760,
+         "functionName": "e",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 231505,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 38347,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "25",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-ext-nda.js"
+      }, {
+         "columnNumber": 93302,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 122567,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 99379,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 84097,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 112371,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 112341,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 112438,
+         "functionName": "value",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      }, {
+         "columnNumber": 117642,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "14",
+         "url": "https://ssl.pstatic.net/tveta/libs/glad/prod/2.33.0/gfp-sdk.js"
+      } ]
+   }
+}
+[1734950391.460][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "disposition": "currentTab",
+   "frameId": "FBEFA91CD9B50FA954EDC8CCE60991B4",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734950391.461][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "FBEFA91CD9B50FA954EDC8CCE60991B4",
+      "loaderId": "E4B0D07CC2B973F984D5CA8B372CC18D",
+      "mimeType": "text/html",
+      "name": "{\"iFrameId\":\"right-ad-2_tgtLREC\",\"isFluid\":true,\"adm\":\"\u003Cdiv id=\\\"ad-element\\\" class=\\\"gfa_rollingboard\\\" data-gfp-role=\\\"adChoicePos\\\">  \u003Ca class=\\\"rb_anchor\\\" data-gfp-role=\\\"link\\\">    \u003Cstrong cl...",
+      "parentId": "D35B4A6B77718F1CB2246A8214562A68",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734950391.461][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "FBEFA91CD9B50FA954EDC8CCE60991B4"
+}
+[1734950391.461][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "context": {
+      "auxData": {
+         "frameId": "FBEFA91CD9B50FA954EDC8CCE60991B4",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 10,
+      "name": "",
+      "origin": "https://www.naver.com",
+      "uniqueId": "-11629800639962184.5523835902404370589"
+   }
+}
+[1734950391.461][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "FBEFA91CD9B50FA954EDC8CCE60991B4"
+}
+[1734950391.475][DEBUG]: DevTools WebSocket Event: Page.documentOpened (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "naver.com",
+      "gatedAPIFeatures": [  ],
+      "id": "FBEFA91CD9B50FA954EDC8CCE60991B4",
+      "loaderId": "E4B0D07CC2B973F984D5CA8B372CC18D",
+      "mimeType": "text/html",
+      "name": "{\"iFrameId\":\"right-ad-2_tgtLREC\",\"isFluid\":true,\"adm\":\"\u003Cdiv id=\\\"ad-element\\\" class=\\\"gfa_rollingboard\\\" data-gfp-role=\\\"adChoicePos\\\">  \u003Ca class=\\\"rb_anchor\\\" data-gfp-role=\\\"link\\\">    \u003Cstrong cl...",
+      "parentId": "D35B4A6B77718F1CB2246A8214562A68",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.naver.com",
+      "url": "https://www.naver.com/"
+   }
+}
+[1734950391.547][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "executionContextId": 3,
+   "executionContextUniqueId": "7334231418358505476.8648561220027427564"
+}
+[1734950391.547][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolatedFeatureDisabled",
+      "domainAndRegistry": "naver.com",
+      "gatedAPIFeatures": [  ],
+      "id": "32E402DFA68A2562770D5C2C2A92DD0A",
+      "loaderId": "666056FBBB321DF83086AE0D15CF5168",
+      "mimeType": "text/html",
+      "name": "da_public_right_tgtLREC",
+      "parentId": "D35B4A6B77718F1CB2246A8214562A68",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://siape.veta.naver.com",
+      "url": "https://siape.veta.naver.com/fxshow?su=SU10869&nrefreshx=0",
+      "urlFragment": "#frameId=da_public_right_tgtLREC&origin=https%3A%2F%2Fwww.naver.com&msgToken=2433524052.4031787&isFluid=false&runtime=NDPSDK"
+   },
+   "type": "Navigation"
+}
+[1734950391.548][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "context": {
+      "auxData": {
+         "frameId": "32E402DFA68A2562770D5C2C2A92DD0A",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 11,
+      "name": "",
+      "origin": "https://siape.veta.naver.com",
+      "uniqueId": "4024870302091871271.4387323152316773105"
+   }
+}
+[1734950391.575][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "executionContextId": 5,
+   "executionContextUniqueId": "-3307612350280806789.7226449639600780671"
+}
+[1734950391.575][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolatedFeatureDisabled",
+      "domainAndRegistry": "naver.com",
+      "gatedAPIFeatures": [  ],
+      "id": "49F3AD8FCC06FD403DCB223BE042E871",
+      "loaderId": "EDA948ADCCDE594E342BD73AFF325186",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "D35B4A6B77718F1CB2246A8214562A68",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://shopsquare.naver.com",
+      "url": "https://shopsquare.naver.com/"
+   },
+   "type": "Navigation"
+}
+[1734950391.576][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "context": {
+      "auxData": {
+         "frameId": "49F3AD8FCC06FD403DCB223BE042E871",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 12,
+      "name": "",
+      "origin": "https://shopsquare.naver.com",
+      "uniqueId": "-708173552930672957.3862257003197571635"
+   }
+}
+[1734950391.584][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "executionContextId": 6,
+   "executionContextUniqueId": "-5941483245895864619.-6406909619584962658"
+}
+[1734950391.584][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolatedFeatureDisabled",
+      "domainAndRegistry": "naver.com",
+      "gatedAPIFeatures": [  ],
+      "id": "BE06673130A3F5B7E54C4DA2A312E2F0",
+      "loaderId": "CAD14E4CBF7E9F1292131B8FA832DF0F",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "D35B4A6B77718F1CB2246A8214562A68",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://recoshopping.naver.com",
+      "url": "https://recoshopping.naver.com/"
+   },
+   "type": "Navigation"
+}
+[1734950391.586][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "context": {
+      "auxData": {
+         "frameId": "BE06673130A3F5B7E54C4DA2A312E2F0",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 13,
+      "name": "",
+      "origin": "https://recoshopping.naver.com",
+      "uniqueId": "6205826045026104159.2643879207361261019"
+   }
+}
+[1734950391.586][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "executionContextId": 2,
+   "executionContextUniqueId": "-6557205923809061423.695340709869622846"
+}
+[1734950391.586][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolatedFeatureDisabled",
+      "domainAndRegistry": "naver.com",
+      "gatedAPIFeatures": [  ],
+      "id": "151CE2E354510E99F2B880B5C04634B7",
+      "loaderId": "CF8156132295B79E164F5CE87567C0BB",
+      "mimeType": "text/html",
+      "name": "da_public_left_tgtLREC",
+      "parentId": "D35B4A6B77718F1CB2246A8214562A68",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://siape.veta.naver.com",
+      "url": "https://siape.veta.naver.com/fxshow?su=SU10868&nrefreshx=0",
+      "urlFragment": "#frameId=da_public_left_tgtLREC&origin=https%3A%2F%2Fwww.naver.com&msgToken=2137640194.2308984&isFluid=false&runtime=NDPSDK"
+   },
+   "type": "Navigation"
+}
+[1734950391.587][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "context": {
+      "auxData": {
+         "frameId": "151CE2E354510E99F2B880B5C04634B7",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 14,
+      "name": "",
+      "origin": "https://siape.veta.naver.com",
+      "uniqueId": "-8298826346830738558.-5919537123963619404"
+   }
+}
+[1734950391.597][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "32E402DFA68A2562770D5C2C2A92DD0A"
+}
+[1734950391.598][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "executionContextId": 4,
+   "executionContextUniqueId": "-3080497228113359850.6166915369317039688"
+}
+[1734950391.598][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolatedFeatureDisabled",
+      "domainAndRegistry": "naver.com",
+      "gatedAPIFeatures": [  ],
+      "id": "AAA43A9488EEC5319040A223926AAC86",
+      "loaderId": "5B9851A1929B75B7BC9098D2D1E41838",
+      "mimeType": "text/html",
+      "name": "veta_time2_tgtLREC",
+      "parentId": "D35B4A6B77718F1CB2246A8214562A68",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://siape.veta.naver.com",
+      "url": "https://siape.veta.naver.com/fxshow?su=SU10870&nrefreshx=0",
+      "urlFragment": "#frameId=veta_time2_tgtLREC&origin=https%3A%2F%2Fwww.naver.com&msgToken=2394449359.372436&isFluid=false&runtime=NDPSDK"
+   },
+   "type": "Navigation"
+}
+[1734950391.598][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "context": {
+      "auxData": {
+         "frameId": "AAA43A9488EEC5319040A223926AAC86",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 15,
+      "name": "",
+      "origin": "https://siape.veta.naver.com",
+      "uniqueId": "-3110219114986803787.-8084689981416003401"
+   }
+}
+[1734950391.627][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "151CE2E354510E99F2B880B5C04634B7"
+}
+[1734950391.634][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "AAA43A9488EEC5319040A223926AAC86"
+}
+[1734950392.463][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "BE06673130A3F5B7E54C4DA2A312E2F0",
+   "navigationType": "historyApi",
+   "url": "https://recoshopping.naver.com/"
+}
+[1734950392.475][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "BE06673130A3F5B7E54C4DA2A312E2F0"
+}
+[1734950392.540][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "49F3AD8FCC06FD403DCB223BE042E871",
+   "navigationType": "historyApi",
+   "url": "https://shopsquare.naver.com/"
+}
+[1734950392.540][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "49F3AD8FCC06FD403DCB223BE042E871",
+   "navigationType": "historyApi",
+   "url": "https://shopsquare.naver.com/"
+}
+[1734950392.550][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=0E15576748CA44AB3EEC6B397467F7DA) D35B4A6B77718F1CB2246A8214562A68 {
+   "frameId": "49F3AD8FCC06FD403DCB223BE042E871"
+}
+Trying to load the allocator multiple times. This is *not* supported.
+[1734950401.198][INFO]: [249c5b9878fe0061c221433340e1754f] COMMAND Quit {
+}
+[1734950401.255][INFO]: [249c5b9878fe0061c221433340e1754f] RESPONSE Quit
+[1734950401.256][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1734950401.256][DEBUG]: Log type 'browser' lost 2 entries on destruction

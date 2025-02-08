@@ -1,0 +1,30 @@
+console.error: "Warning: unrecognized command line flag" "-disable-extensions"
+
+console.error: "Warning: unrecognized command line flag" "-disable-extensions"
+
+console.error: services.settings: 
+
+console.error: services.settings: 
+
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.sys.mjs", 107))
+
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.sys.mjs", 107))
+
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.sys.mjs", 107))
+
+console.error: (new TypeError("NetworkError: Network request failed", "resource://services-settings/Utils.sys.mjs", 238))
+
+console.error: "Warning: unrecognized command line flag" "-disable-extensions"
+
+console.error: services.settings: 
+
+console.error: ({})
+
+console.error: "Warning: unrecognized command line flag" "-disable-extensions"
+
+console.error: services.settings: 
+
+console.error: ({})
+
+console.error: ({})
+

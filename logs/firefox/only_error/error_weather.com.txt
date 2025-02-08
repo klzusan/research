@@ -1,0 +1,14 @@
+console.error: "Warning: unrecognized command line flag" "-disable-extensions"
+
+JavaScript error: https://weather.com/ja-JP/weather/today/l/JAXX0085:1:JA?Goto=Redirected line 1 > injectedScript, line 2: ReferenceError: ReportingObserver is not defined
+
+JavaScript error: https://weather.com/daybreak-today/assets/77090.77090.b558456c6da0fba46902.js, line 1: Error: Braze must be initialized before calling methods.
+
+JavaScript error: https://gum.criteo.com/sync?c=72&r=2&j=TRC.getRTUS&us_privacy=1---&gdpr=0&gdpr_consent=, line 1: TypeError: window.CONFIG_JS_CALLBACK is not a function
+
+JavaScript error: https://gum.criteo.com/sync?c=72&r=2&j=TRC.getRTUS&us_privacy=1---&gdpr=0&gdpr_consent=, line 1: TypeError: window.CONFIG_JS_CALLBACK is not a function
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+

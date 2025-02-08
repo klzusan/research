@@ -1,0 +1,4 @@
+console.error: "Warning: unrecognized command line flag" "-disable-extensions"
+
+JavaScript error: resource://gre/actors/FormHandlerChild.sys.mjs, line 103: InvalidStateError: JSWindowActorChild.document getter: Cannot access property 'document' after actor 'FormHandler' has been destroyed
+

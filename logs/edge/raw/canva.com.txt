@@ -1,0 +1,1165 @@
+[1734950687.428][INFO]: Starting Microsoft Edge WebDriver 131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70) on port 58794
+[1734950687.428][INFO]: Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+[1734950687.430][INFO]: msedgedriver was started successfully on port 58794
+[1734950687.440][INFO]: [b570a2b9211539551fdc38b0beac0c38] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "MicrosoftEdge",
+         "browserVersion": null,
+         "ms:edgeOptions": {
+            "args": [ "--disable-extensions", "--inprivate" ],
+            "binary": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1734950687.441][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1734950687.441][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1734950687.441][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1734950687.441][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1734950687.441][INFO]: WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS = 
+[1734950687.441][INFO]: Launching Microsoft Edge: /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-extensions --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --inprivate --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.MCYD6c data:,
+
+DevTools listening on ws://127.0.0.1:58799/devtools/browser/423bfe40-abdf-41a7-ae7a-b8932f74e15b
+[1734950687.671][DEBUG]: DevTools HTTP Request: http://localhost:58799/json/version
+[1734950687.964][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Edg/131.0.2903.112",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
+   "V8-Version": "13.1.20.9",
+   "WebKit-Version": "537.36 (@16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+   "webSocketDebuggerUrl": "ws://localhost:58799/devtools/browser/423bfe40-abdf-41a7-ae7a-b8932f74e15b"
+}
+
+[1734950687.967][DEBUG]: DevTools HTTP Request: http://localhost:58799/json/list
+[1734950687.981][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:58799/devtools/page/877162086D95734E9AF4116C8B09B0A4",
+   "id": "877162086D95734E9AF4116C8B09B0A4",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:58799/devtools/page/877162086D95734E9AF4116C8B09B0A4"
+} ]
+
+[1734950687.983][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1734950687.986][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1734950687.991][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "7747C91757390B10DFC44E2D80BCA0DD",
+      "canAccessOpener": false,
+      "pid": 0,
+      "targetId": "877162086D95734E9AF4116C8B09B0A4",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1734950687.994][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "877162086D95734E9AF4116C8B09B0A4"
+}
+[1734950688.005][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "74D760EE1B85AA34FDBBC8EA6ACFE62E",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "7747C91757390B10DFC44E2D80BCA0DD",
+      "canAccessOpener": false,
+      "pid": 31811,
+      "targetId": "877162086D95734E9AF4116C8B09B0A4",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1734950688.007][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "74D760EE1B85AA34FDBBC8EA6ACFE62E"
+}
+[1734950688.007][DEBUG]: DevTools WebSocket Command: Page.enable (id=3) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+}
+[1734950688.008][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950688.008][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=5) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950688.008][DEBUG]: DevTools WebSocket Command: Log.enable (id=6) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+}
+[1734950688.008][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=7) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734950688.011][DEBUG]: DevTools WebSocket Response: Page.enable (id=3) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+}
+[1734950688.012][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "identifier": "1"
+}
+[1734950688.012][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=5) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734950688.012][DEBUG]: DevTools WebSocket Response: Log.enable (id=6) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+}
+[1734950688.012][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=7) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+}
+[1734950688.012][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+}
+[1734950688.012][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "context": {
+      "auxData": {
+         "frameId": "877162086D95734E9AF4116C8B09B0A4",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "-2424565606620376394.8997287892652137348"
+   }
+}
+[1734950688.014][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+}
+[1734950688.014][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+}
+[1734950688.015][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+}
+[1734950688.016][INFO]: [b570a2b9211539551fdc38b0beac0c38] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "MicrosoftEdge",
+      "browserVersion": "131.0.2903.112",
+      "fedcm:accounts": true,
+      "ms:edgeOptions": {
+         "debuggerAddress": "localhost:58799"
+      },
+      "msedge": {
+         "msedgedriverVersion": "131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+         "userDataDir": "/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.MCYD6c"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "b570a2b9211539551fdc38b0beac0c38"
+}
+[1734950688.017][INFO]: [b570a2b9211539551fdc38b0beac0c38] COMMAND Navigate {
+   "url": "https://canva.com"
+}
+[1734950688.020][INFO]: Waiting for pending navigations...
+[1734950688.020][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=10) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "expression": "1"
+}
+[1734950688.020][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=10) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950688.020][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=11) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "expression": "document",
+   "objectGroup": "8d83d27d-b018-40cd-9b90-c255cc8a0263"
+}
+[1734950688.021][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=11) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "-7126687386120872716.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734950688.022][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=12) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "objectId": "-7126687386120872716.1.1"
+}
+[1734950688.022][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=12) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734950688.022][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=13) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "objectGroup": "8d83d27d-b018-40cd-9b90-c255cc8a0263"
+}
+[1734950688.022][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-2424565606620376394.8997287892652137348"
+}
+[1734950688.024][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=13) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+}
+[1734950688.025][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734950688.025][INFO]: Done waiting for pending navigations. Status: ok
+[1734950688.025][DEBUG]: DevTools WebSocket Command: Page.navigate (id=15) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "url": "https://canva.com"
+}
+[1734950688.026][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "frameId": "877162086D95734E9AF4116C8B09B0A4"
+}
+2024-12-23 19:44:48.223 Microsoft Edge[31803:1085084] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-23 19:44:48.223 Microsoft Edge[31803:1085084] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+[1734950688.506][DEBUG]: DevTools WebSocket Response: Page.navigate (id=15) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "frameId": "877162086D95734E9AF4116C8B09B0A4",
+   "loaderId": "DA56E6CFED76C798DB71633F144617EC"
+}
+[1734950688.507][INFO]: Waiting for pending navigations...
+[1734950688.507][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "expression": "1"
+}
+[1734950688.508][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+}
+[1734950688.510][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+}
+[1734950688.510][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "canva.com",
+      "gatedAPIFeatures": [  ],
+      "id": "877162086D95734E9AF4116C8B09B0A4",
+      "loaderId": "DA56E6CFED76C798DB71633F144617EC",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.canva.com",
+      "url": "https://www.canva.com/ja_jp/"
+   },
+   "type": "Navigation"
+}
+[1734950688.524][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "context": {
+      "auxData": {
+         "frameId": "877162086D95734E9AF4116C8B09B0A4",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.canva.com",
+      "uniqueId": "-4999854800842256010.-3731239612616915435"
+   }
+}
+[1734950688.525][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950688.994][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "frameId": "D59EA28CED189E5B07EB393CFF944D23",
+   "parentFrameId": "877162086D95734E9AF4116C8B09B0A4",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 168762,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "25",
+         "url": "https://www.canva.com/ja_jp/"
+      }, {
+         "columnNumber": 169067,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "25",
+         "url": "https://www.canva.com/ja_jp/"
+      } ]
+   }
+}
+[1734950688.994][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "disposition": "currentTab",
+   "frameId": "D59EA28CED189E5B07EB393CFF944D23",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734950688.994][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "D59EA28CED189E5B07EB393CFF944D23",
+      "loaderId": "33C65937DEF40A3779B164FD90742660",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "877162086D95734E9AF4116C8B09B0A4",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734950688.994][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "frameId": "D59EA28CED189E5B07EB393CFF944D23"
+}
+[1734950688.994][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=17) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "expression": "1"
+}
+[1734950688.995][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "context": {
+      "auxData": {
+         "frameId": "D59EA28CED189E5B07EB393CFF944D23",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://www.canva.com",
+      "uniqueId": "3726608399504715318.4482845971471980934"
+   }
+}
+[1734950688.995][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "frameId": "D59EA28CED189E5B07EB393CFF944D23"
+}
+[1734950688.996][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=17) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950689.348][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "frameId": "877162086D95734E9AF4116C8B09B0A4",
+   "navigationType": "historyApi",
+   "url": "https://www.canva.com/ja_jp/"
+}
+[1734950689.348][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "expression": "1"
+}
+[1734950689.428][DEBUG]: DevTools WebSocket Event: Runtime.exceptionThrown (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "exceptionDetails": {
+      "columnNumber": 227273,
+      "exception": {
+         "className": "Error",
+         "description": "Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful...",
+         "objectId": "-5804857935940168891.1.1",
+         "preview": {
+            "description": "Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful...",
+            "overflow": false,
+            "properties": [ {
+               "name": "stack",
+               "type": "string",
+               "value": "Error: Minified React error #418; visit https://re…static.canva.com/web/44ba93b180fbd62e.js:1397:410"
+            }, {
+               "name": "message",
+               "type": "string",
+               "value": "Minified React error #418; visit https://reactjs.o… for full errors and additional helpful warnings."
+            }, {
+               "name": "__sentry_captured__",
+               "type": "boolean",
+               "value": "true"
+            } ],
+            "subtype": "error",
+            "type": "object"
+         },
+         "subtype": "error",
+         "type": "object"
+      },
+      "exceptionId": 1,
+      "executionContextId": 1,
+      "lineNumber": 1,
+      "scriptId": "18",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 227273,
+            "functionName": "uo",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 299905,
+            "functionName": "Ss",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 287475,
+            "functionName": "bu",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 287403,
+            "functionName": "gu",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 287266,
+            "functionName": "mu",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 284428,
+            "functionName": "su",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 225632,
+            "functionName": "zi",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 284928,
+            "functionName": "cu",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 306406,
+            "functionName": "t.flushSync",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 330,
+            "functionName": "yca",
+            "lineNumber": 82,
+            "scriptId": "12",
+            "url": "https://static.canva.com/web/44ba93b180fbd62e.js"
+         }, {
+            "columnNumber": 409,
+            "functionName": "",
+            "lineNumber": 1396,
+            "scriptId": "12",
+            "url": "https://static.canva.com/web/44ba93b180fbd62e.js"
+         } ]
+      },
+      "text": "Uncaught",
+      "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+   },
+   "timestamp": 1.734950689427412e+12
+}
+[1734950689.428][DEBUG]: DevTools WebSocket Event: Runtime.exceptionThrown (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "exceptionDetails": {
+      "columnNumber": 227273,
+      "exception": {
+         "className": "Error",
+         "description": "Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful...",
+         "objectId": "-5804857935940168891.1.2",
+         "preview": {
+            "description": "Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful...",
+            "overflow": false,
+            "properties": [ {
+               "name": "stack",
+               "type": "string",
+               "value": "Error: Minified React error #418; visit https://re…static.canva.com/web/44ba93b180fbd62e.js:1397:410"
+            }, {
+               "name": "message",
+               "type": "string",
+               "value": "Minified React error #418; visit https://reactjs.o… for full errors and additional helpful warnings."
+            }, {
+               "name": "__sentry_captured__",
+               "type": "boolean",
+               "value": "true"
+            } ],
+            "subtype": "error",
+            "type": "object"
+         },
+         "subtype": "error",
+         "type": "object"
+      },
+      "exceptionId": 2,
+      "executionContextId": 1,
+      "lineNumber": 1,
+      "scriptId": "18",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 227273,
+            "functionName": "uo",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 299905,
+            "functionName": "Ss",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 287475,
+            "functionName": "bu",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 287403,
+            "functionName": "gu",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 287266,
+            "functionName": "mu",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 284428,
+            "functionName": "su",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 225632,
+            "functionName": "zi",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 284928,
+            "functionName": "cu",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 306406,
+            "functionName": "t.flushSync",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 330,
+            "functionName": "yca",
+            "lineNumber": 82,
+            "scriptId": "12",
+            "url": "https://static.canva.com/web/44ba93b180fbd62e.js"
+         }, {
+            "columnNumber": 409,
+            "functionName": "",
+            "lineNumber": 1396,
+            "scriptId": "12",
+            "url": "https://static.canva.com/web/44ba93b180fbd62e.js"
+         } ]
+      },
+      "text": "Uncaught",
+      "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+   },
+   "timestamp": 1.734950689427711e+12
+}
+[1734950689.428][DEBUG]: DevTools WebSocket Event: Runtime.exceptionThrown (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "exceptionDetails": {
+      "columnNumber": 227273,
+      "exception": {
+         "className": "Error",
+         "description": "Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful...",
+         "objectId": "-5804857935940168891.1.3",
+         "preview": {
+            "description": "Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful...",
+            "overflow": false,
+            "properties": [ {
+               "name": "stack",
+               "type": "string",
+               "value": "Error: Minified React error #418; visit https://re…static.canva.com/web/44ba93b180fbd62e.js:1397:410"
+            }, {
+               "name": "message",
+               "type": "string",
+               "value": "Minified React error #418; visit https://reactjs.o… for full errors and additional helpful warnings."
+            }, {
+               "name": "__sentry_captured__",
+               "type": "boolean",
+               "value": "true"
+            } ],
+            "subtype": "error",
+            "type": "object"
+         },
+         "subtype": "error",
+         "type": "object"
+      },
+      "exceptionId": 3,
+      "executionContextId": 1,
+      "lineNumber": 1,
+      "scriptId": "18",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 227273,
+            "functionName": "uo",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 299905,
+            "functionName": "Ss",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 287475,
+            "functionName": "bu",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 287403,
+            "functionName": "gu",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 287266,
+            "functionName": "mu",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 284428,
+            "functionName": "su",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 225632,
+            "functionName": "zi",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 284928,
+            "functionName": "cu",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 306406,
+            "functionName": "t.flushSync",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 330,
+            "functionName": "yca",
+            "lineNumber": 82,
+            "scriptId": "12",
+            "url": "https://static.canva.com/web/44ba93b180fbd62e.js"
+         }, {
+            "columnNumber": 409,
+            "functionName": "",
+            "lineNumber": 1396,
+            "scriptId": "12",
+            "url": "https://static.canva.com/web/44ba93b180fbd62e.js"
+         } ]
+      },
+      "text": "Uncaught",
+      "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+   },
+   "timestamp": 1.734950689427872e+12
+}
+[1734950689.428][DEBUG]: DevTools WebSocket Event: Runtime.exceptionThrown (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "exceptionDetails": {
+      "columnNumber": 299591,
+      "exception": {
+         "className": "Error",
+         "description": "Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful...",
+         "objectId": "-5804857935940168891.1.4",
+         "preview": {
+            "description": "Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful...",
+            "overflow": false,
+            "properties": [ {
+               "name": "stack",
+               "type": "string",
+               "value": "Error: Minified React error #423; visit https://re…static.canva.com/web/44ba93b180fbd62e.js:1397:410"
+            }, {
+               "name": "message",
+               "type": "string",
+               "value": "Minified React error #423; visit https://reactjs.o… for full errors and additional helpful warnings."
+            }, {
+               "name": "__sentry_captured__",
+               "type": "boolean",
+               "value": "true"
+            } ],
+            "subtype": "error",
+            "type": "object"
+         },
+         "subtype": "error",
+         "type": "object"
+      },
+      "exceptionId": 4,
+      "executionContextId": 1,
+      "lineNumber": 1,
+      "scriptId": "18",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 299591,
+            "functionName": "Ss",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 287475,
+            "functionName": "bu",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 287403,
+            "functionName": "gu",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 287266,
+            "functionName": "mu",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 284101,
+            "functionName": "ou",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 284483,
+            "functionName": "su",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 225632,
+            "functionName": "zi",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 284928,
+            "functionName": "cu",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 306406,
+            "functionName": "t.flushSync",
+            "lineNumber": 1,
+            "scriptId": "18",
+            "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+         }, {
+            "columnNumber": 330,
+            "functionName": "yca",
+            "lineNumber": 82,
+            "scriptId": "12",
+            "url": "https://static.canva.com/web/44ba93b180fbd62e.js"
+         }, {
+            "columnNumber": 409,
+            "functionName": "",
+            "lineNumber": 1396,
+            "scriptId": "12",
+            "url": "https://static.canva.com/web/44ba93b180fbd62e.js"
+         } ]
+      },
+      "text": "Uncaught",
+      "url": "https://static.canva.com/web/abfeac8cc24f64e0.vendor.js"
+   },
+   "timestamp": 1.734950689428067e+12
+}
+[1734950689.441][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "timestamp": 60682.322134
+}
+[1734950689.448][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950689.958][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "expression": "1"
+}
+[1734950689.959][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950690.016][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "frameId": "2ABBD28C1ABDBCF6974BB90385CB0FBB",
+   "parentFrameId": "D59EA28CED189E5B07EB393CFF944D23",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 5861,
+         "functionName": "v",
+         "lineNumber": 0,
+         "scriptId": "43",
+         "url": "https://www.canva.com/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+      }, {
+         "columnNumber": 4941,
+         "functionName": "g",
+         "lineNumber": 0,
+         "scriptId": "43",
+         "url": "https://www.canva.com/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+      }, {
+         "columnNumber": 5016,
+         "functionName": "C",
+         "lineNumber": 0,
+         "scriptId": "43",
+         "url": "https://www.canva.com/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+      }, {
+         "columnNumber": 4389,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "43",
+         "url": "https://www.canva.com/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+      }, {
+         "columnNumber": 8735,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "43",
+         "url": "https://www.canva.com/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+      } ]
+   }
+}
+[1734950690.016][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=20) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "expression": "1"
+}
+[1734950690.016][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "disposition": "currentTab",
+   "frameId": "2ABBD28C1ABDBCF6974BB90385CB0FBB",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734950690.016][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "2ABBD28C1ABDBCF6974BB90385CB0FBB",
+      "loaderId": "6ACB587C9F21E877093F16BD45BE69D9",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "D59EA28CED189E5B07EB393CFF944D23",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734950690.016][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "frameId": "2ABBD28C1ABDBCF6974BB90385CB0FBB"
+}
+[1734950690.018][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "context": {
+      "auxData": {
+         "frameId": "2ABBD28C1ABDBCF6974BB90385CB0FBB",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 3,
+      "name": "",
+      "origin": "https://www.canva.com",
+      "uniqueId": "3918545090834440081.4434938671520348035"
+   }
+}
+[1734950690.018][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "frameId": "2ABBD28C1ABDBCF6974BB90385CB0FBB"
+}
+[1734950690.122][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "frameId": "2ABBD28C1ABDBCF6974BB90385CB0FBB"
+}
+[1734950690.131][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "frameId": "2ABBD28C1ABDBCF6974BB90385CB0FBB",
+   "reason": "remove"
+}
+[1734950690.132][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "executionContextId": 3,
+   "executionContextUniqueId": "3918545090834440081.4434938671520348035"
+}
+[1734950690.133][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=20) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950690.138][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 363,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 8675,
+            "functionName": "",
+            "lineNumber": 363,
+            "scriptId": "41",
+            "url": "https://accounts.google.com/gsi/client"
+         }, {
+            "columnNumber": 8697,
+            "functionName": "",
+            "lineNumber": 363,
+            "scriptId": "41",
+            "url": "https://accounts.google.com/gsi/client"
+         } ]
+      },
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950690138208e+12,
+      "url": "https://accounts.google.com/gsi/client"
+   }
+}
+[1734950690.138][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=21) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "expression": "1"
+}
+[1734950690.140][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "args": [ {
+      "type": "string",
+      "value": "[GSI_LOGGER]: Your client application uses one of the Google One Tap prompt UI status methods that may stop functioning when FedCM becomes mandatory. Refer to the migration guide to update your cod..."
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 5797,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "16",
+         "url": "https://static.canva.com/static/lib/sentry/7.16.0.min.js"
+      }, {
+         "columnNumber": 418,
+         "functionName": "_.O",
+         "lineNumber": 174,
+         "scriptId": "41",
+         "url": "https://accounts.google.com/gsi/client"
+      }, {
+         "columnNumber": 256,
+         "functionName": "js.ga",
+         "lineNumber": 312,
+         "scriptId": "41",
+         "url": "https://accounts.google.com/gsi/client"
+      }, {
+         "columnNumber": 303,
+         "functionName": "Zq.ga",
+         "lineNumber": 347,
+         "scriptId": "41",
+         "url": "https://accounts.google.com/gsi/client"
+      }, {
+         "columnNumber": 33,
+         "functionName": "dr",
+         "lineNumber": 280,
+         "scriptId": "41",
+         "url": "https://accounts.google.com/gsi/client"
+      }, {
+         "columnNumber": 426,
+         "functionName": "",
+         "lineNumber": 1333,
+         "scriptId": "12",
+         "url": "https://static.canva.com/web/44ba93b180fbd62e.js"
+      }, {
+         "columnNumber": 397,
+         "functionName": "prompt",
+         "lineNumber": 1333,
+         "scriptId": "12",
+         "url": "https://static.canva.com/web/44ba93b180fbd62e.js"
+      }, {
+         "columnNumber": 100,
+         "functionName": "Kna",
+         "lineNumber": 373,
+         "scriptId": "12",
+         "url": "https://static.canva.com/web/44ba93b180fbd62e.js"
+      } ]
+   },
+   "timestamp": 1.734950690139853e+12,
+   "type": "warning"
+}
+[1734950690.141][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=21) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950690.644][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=22) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "expression": "1"
+}
+[1734950690.645][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=22) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1223/194450.950393:ERROR:ffmpeg_common.cc(970)] Unsupported pixel format: -1
+[1223/194450.951570:ERROR:ffmpeg_common.cc(970)] Unsupported pixel format: -1
+[1734950690.958][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "timestamp": 60683.836582
+}
+[1734950690.958][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=23) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-4999854800842256010.-3731239612616915435"
+}
+[1734950690.958][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "frameId": "877162086D95734E9AF4116C8B09B0A4"
+}
+[1734950690.959][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=23) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734950690.959][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=24) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "expression": "1"
+}
+[1734950690.959][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=24) (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950690.959][INFO]: Done waiting for pending navigations. Status: ok
+[1734950690.959][INFO]: [b570a2b9211539551fdc38b0beac0c38] RESPONSE Navigate
+[1734950692.498][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31812.279",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.734950692497588e+12,
+      "url": "https://www.canva.com/_ajax/ae/createBatch"
+   }
+}
+Trying to load the allocator multiple times. This is *not* supported.
+[1734950692.827][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31812.281",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.734950692826339e+12,
+      "url": "https://www.canva.com/_ajax/ae/createBatch"
+   }
+}
+[1734950693.161][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31812.282",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.734950693159661e+12,
+      "url": "https://www.canva.com/_ajax/ae/createBatch"
+   }
+}
+[1734950693.503][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=74D760EE1B85AA34FDBBC8EA6ACFE62E) 877162086D95734E9AF4116C8B09B0A4 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "31812.283",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.734950693502221e+12,
+      "url": "https://www.canva.com/_ajax/ae/createBatch"
+   }
+}
+[1734950700.972][INFO]: [b570a2b9211539551fdc38b0beac0c38] COMMAND Quit {
+}
+[1734950701.036][INFO]: [b570a2b9211539551fdc38b0beac0c38] RESPONSE Quit
+[1734950701.036][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1734950701.036][DEBUG]: Log type 'browser' lost 10 entries on destruction

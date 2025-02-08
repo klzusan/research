@@ -1,0 +1,1469 @@
+[1734950210.816][INFO]: Starting Microsoft Edge WebDriver 131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70) on port 56808
+[1734950210.817][INFO]: Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+[1734950210.819][INFO]: msedgedriver was started successfully on port 56808
+[1734950210.829][INFO]: [267c97c2a4a294ef5bab693989d30d1e] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "MicrosoftEdge",
+         "browserVersion": null,
+         "ms:edgeOptions": {
+            "args": [ "--disable-extensions", "--inprivate" ],
+            "binary": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1734950210.830][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1734950210.830][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1734950210.830][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1734950210.830][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1734950210.830][INFO]: WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS = 
+[1734950210.830][INFO]: Launching Microsoft Edge: /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-extensions --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --inprivate --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.eCI6Im data:,
+
+DevTools listening on ws://127.0.0.1:56813/devtools/browser/c436db29-f149-4bab-ada5-180a86d781cc
+[1734950211.056][DEBUG]: DevTools HTTP Request: http://localhost:56813/json/version
+[1734950211.356][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Edg/131.0.2903.112",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
+   "V8-Version": "13.1.20.9",
+   "WebKit-Version": "537.36 (@16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+   "webSocketDebuggerUrl": "ws://localhost:56813/devtools/browser/c436db29-f149-4bab-ada5-180a86d781cc"
+}
+
+[1734950211.359][DEBUG]: DevTools HTTP Request: http://localhost:56813/json/list
+[1734950211.371][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:56813/devtools/page/DD1C1BDCE8258171E709A29DEDEA97DB",
+   "id": "DD1C1BDCE8258171E709A29DEDEA97DB",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:56813/devtools/page/DD1C1BDCE8258171E709A29DEDEA97DB"
+} ]
+
+[1734950211.374][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1734950211.377][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1734950211.381][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "20F65271A4B2C6C4344311BE5E3DBCC9",
+      "canAccessOpener": false,
+      "pid": 0,
+      "targetId": "DD1C1BDCE8258171E709A29DEDEA97DB",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1734950211.383][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "DD1C1BDCE8258171E709A29DEDEA97DB"
+}
+[1734950211.396][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "834CEC68BAE6040279DED67189726380",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "20F65271A4B2C6C4344311BE5E3DBCC9",
+      "canAccessOpener": false,
+      "pid": 29275,
+      "targetId": "DD1C1BDCE8258171E709A29DEDEA97DB",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1734950211.398][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "834CEC68BAE6040279DED67189726380"
+}
+[1734950211.398][DEBUG]: DevTools WebSocket Command: Page.enable (id=3) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+}
+[1734950211.398][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950211.398][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=5) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950211.398][DEBUG]: DevTools WebSocket Command: Log.enable (id=6) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+}
+[1734950211.398][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=7) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734950211.402][DEBUG]: DevTools WebSocket Response: Page.enable (id=3) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+}
+[1734950211.404][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "identifier": "1"
+}
+[1734950211.404][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=5) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734950211.404][DEBUG]: DevTools WebSocket Response: Log.enable (id=6) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+}
+[1734950211.404][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=7) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+}
+[1734950211.404][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+}
+[1734950211.406][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "context": {
+      "auxData": {
+         "frameId": "DD1C1BDCE8258171E709A29DEDEA97DB",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "-7119374792298089105.5487006437018237869"
+   }
+}
+[1734950211.407][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+}
+[1734950211.407][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+}
+[1734950211.407][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+}
+[1734950211.407][INFO]: [267c97c2a4a294ef5bab693989d30d1e] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "MicrosoftEdge",
+      "browserVersion": "131.0.2903.112",
+      "fedcm:accounts": true,
+      "ms:edgeOptions": {
+         "debuggerAddress": "localhost:56813"
+      },
+      "msedge": {
+         "msedgedriverVersion": "131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+         "userDataDir": "/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.eCI6Im"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "267c97c2a4a294ef5bab693989d30d1e"
+}
+[1734950211.408][INFO]: [267c97c2a4a294ef5bab693989d30d1e] COMMAND Navigate {
+   "url": "https://reddit.com"
+}
+[1734950211.408][INFO]: Waiting for pending navigations...
+[1734950211.409][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=10) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "expression": "1"
+}
+[1734950211.409][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=10) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950211.409][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=11) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "expression": "document",
+   "objectGroup": "167ba233-9b64-4c4c-91eb-5aac2d626a19"
+}
+[1734950211.409][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=11) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "-8043278235665863642.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734950211.409][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=12) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "objectId": "-8043278235665863642.1.1"
+}
+[1734950211.409][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=12) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734950211.409][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=13) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "objectGroup": "167ba233-9b64-4c4c-91eb-5aac2d626a19"
+}
+[1734950211.409][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-7119374792298089105.5487006437018237869"
+}
+[1734950211.412][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=13) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+}
+[1734950211.412][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734950211.412][INFO]: Done waiting for pending navigations. Status: ok
+[1734950211.412][DEBUG]: DevTools WebSocket Command: Page.navigate (id=15) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "url": "https://reddit.com"
+}
+[1734950211.414][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "frameId": "DD1C1BDCE8258171E709A29DEDEA97DB"
+}
+2024-12-23 19:36:51.614 Microsoft Edge[29267:1059858] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-23 19:36:51.614 Microsoft Edge[29267:1059858] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+[1734950211.902][DEBUG]: DevTools WebSocket Response: Page.navigate (id=15) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "frameId": "DD1C1BDCE8258171E709A29DEDEA97DB",
+   "loaderId": "BC433E308C671644DDB8472A20CD3FBB"
+}
+[1734950211.903][INFO]: Waiting for pending navigations...
+[1734950211.903][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "expression": "1"
+}
+[1734950211.905][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+}
+[1734950211.906][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+}
+[1734950211.907][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "reddit.com",
+      "gatedAPIFeatures": [  ],
+      "id": "DD1C1BDCE8258171E709A29DEDEA97DB",
+      "loaderId": "BC433E308C671644DDB8472A20CD3FBB",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.reddit.com",
+      "url": "https://www.reddit.com/?rdt=53707"
+   },
+   "type": "Navigation"
+}
+[1734950211.918][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "context": {
+      "auxData": {
+         "frameId": "DD1C1BDCE8258171E709A29DEDEA97DB",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.reddit.com",
+      "uniqueId": "683322013703705903.8315292332999612103"
+   }
+}
+[1734950211.920][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950212.430][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=17) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "expression": "1"
+}
+[1734950212.430][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=17) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950212.462][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Failed parsing 'srcset' attribute value since its 'w' descriptor is invalid.",
+      "timestamp": 1.734950212461463e+12
+   }
+}
+[1734950212.462][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Dropped srcset candidate \"https://preview.redd.it/hsgfugfvag8e1.jpg?width=216&crop=smart&auto=webp&s=92a9cea0974831cb8672ee3e587dbb792ee83c1b\"",
+      "timestamp": 1.7349502124615e+12
+   }
+}
+[1734950212.462][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Failed parsing 'srcset' attribute value since its 'w' descriptor is invalid.",
+      "timestamp": 1.734950212461512e+12
+   }
+}
+[1734950212.462][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Dropped srcset candidate \"https://preview.redd.it/hsgfugfvag8e1.jpg?width=320&crop=smart&auto=webp&s=8147b3729cb5bddfb11fd735427cc481725b8275\"",
+      "timestamp": 1.734950212461521e+12
+   }
+}
+[1734950212.462][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Failed parsing 'srcset' attribute value since its 'w' descriptor is invalid.",
+      "timestamp": 1.734950212461536e+12
+   }
+}
+[1734950212.462][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Dropped srcset candidate \"https://preview.redd.it/hsgfugfvag8e1.jpg?width=216&crop=smart&auto=webp&s=92a9cea0974831cb8672ee3e587dbb792ee83c1b\"",
+      "timestamp": 1.734950212461547e+12
+   }
+}
+[1734950212.462][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Failed parsing 'srcset' attribute value since its 'w' descriptor is invalid.",
+      "timestamp": 1.734950212461557e+12
+   }
+}
+[1734950212.462][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Dropped srcset candidate \"https://preview.redd.it/hsgfugfvag8e1.jpg?width=320&crop=smart&auto=webp&s=8147b3729cb5bddfb11fd735427cc481725b8275\"",
+      "timestamp": 1.734950212461567e+12
+   }
+}
+[1734950212.462][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Failed parsing 'srcset' attribute value since its 'w' descriptor is invalid.",
+      "timestamp": 1.734950212461576e+12
+   }
+}
+[1734950212.462][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Dropped srcset candidate \"https://preview.redd.it/hsgfugfvag8e1.jpg?width=216&crop=smart&auto=webp&s=92a9cea0974831cb8672ee3e587dbb792ee83c1b\"",
+      "timestamp": 1.734950212461586e+12
+   }
+}
+[1734950212.462][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Failed parsing 'srcset' attribute value since its 'w' descriptor is invalid.",
+      "timestamp": 1.734950212461595e+12
+   }
+}
+[1734950212.462][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Dropped srcset candidate \"https://preview.redd.it/hsgfugfvag8e1.jpg?width=320&crop=smart&auto=webp&s=8147b3729cb5bddfb11fd735427cc481725b8275\"",
+      "timestamp": 1.734950212461606e+12
+   }
+}
+[1734950212.462][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "expression": "1"
+}
+[1734950212.463][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "info",
+      "lineNumber": 14080,
+      "source": "intervention",
+      "text": "Images loaded lazily and replaced with placeholders. Load events are deferred. See https://go.microsoft.com/fwlink/?linkid=2048113",
+      "timestamp": 1.734950212462442e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950212.463][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950212.663][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "args": [ {
+      "type": "string",
+      "value": "Navigation listeners online"
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 146909,
+         "functionName": "enableHybridNavigation",
+         "lineNumber": 0,
+         "scriptId": "21",
+         "url": "https://www.redditstatic.com/shreddit/en-US/shell-091aa980.js"
+      }, {
+         "columnNumber": 152001,
+         "functionName": "hostConnected",
+         "lineNumber": 0,
+         "scriptId": "21",
+         "url": "https://www.redditstatic.com/shreddit/en-US/shell-091aa980.js"
+      }, {
+         "columnNumber": 4485,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "61",
+         "url": "https://www.redditstatic.com/shreddit/en-US/icon-bd54b9fa.js"
+      }, {
+         "columnNumber": 4411,
+         "functionName": "connectedCallback",
+         "lineNumber": 0,
+         "scriptId": "61",
+         "url": "https://www.redditstatic.com/shreddit/en-US/icon-bd54b9fa.js"
+      }, {
+         "columnNumber": 15340,
+         "functionName": "connectedCallback",
+         "lineNumber": 0,
+         "scriptId": "61",
+         "url": "https://www.redditstatic.com/shreddit/en-US/icon-bd54b9fa.js"
+      }, {
+         "columnNumber": 250503,
+         "functionName": "connectedCallback",
+         "lineNumber": 0,
+         "scriptId": "21",
+         "url": "https://www.redditstatic.com/shreddit/en-US/shell-091aa980.js"
+      }, {
+         "columnNumber": 249994,
+         "functionName": "connectedCallback",
+         "lineNumber": 0,
+         "scriptId": "21",
+         "url": "https://www.redditstatic.com/shreddit/en-US/shell-091aa980.js"
+      }, {
+         "columnNumber": 266458,
+         "functionName": "connectedCallback",
+         "lineNumber": 0,
+         "scriptId": "21",
+         "url": "https://www.redditstatic.com/shreddit/en-US/shell-091aa980.js"
+      }, {
+         "columnNumber": 3501,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "21",
+         "url": "https://www.redditstatic.com/shreddit/en-US/shell-091aa980.js"
+      }, {
+         "columnNumber": 3516,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "21",
+         "url": "https://www.redditstatic.com/shreddit/en-US/shell-091aa980.js"
+      }, {
+         "columnNumber": 851,
+         "functionName": "E",
+         "lineNumber": 0,
+         "scriptId": "21",
+         "url": "https://www.redditstatic.com/shreddit/en-US/shell-091aa980.js"
+      }, {
+         "columnNumber": 276094,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "21",
+         "url": "https://www.redditstatic.com/shreddit/en-US/shell-091aa980.js"
+      } ]
+   },
+   "timestamp": 1.734950212663089e+12,
+   "type": "log"
+}
+[1734950212.663][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "expression": "1"
+}
+[1734950212.667][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "sessionId": "6E1690501DE3A7DC6878160AE907BA69",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "20F65271A4B2C6C4344311BE5E3DBCC9",
+      "canAccessOpener": false,
+      "pid": 0,
+      "targetId": "4DC9CFE49D63A8F9DBEC56C4A533CE6F",
+      "title": "Service Worker https://www.reddit.com/sw.js",
+      "type": "service_worker",
+      "url": "https://www.reddit.com/sw.js"
+   },
+   "waitingForDebugger": false
+}
+[1734950212.674][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950212.778][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "timestamp": 60205.645677
+}
+[1734950212.778][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=20) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "expression": "1"
+}
+[1734950212.781][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "timestamp": 60205.654498
+}
+[1734950212.781][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=21) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "683322013703705903.8315292332999612103"
+}
+[1734950212.781][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "frameId": "DD1C1BDCE8258171E709A29DEDEA97DB"
+}
+[1734950212.781][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=20) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950212.783][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=21) (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734950212.783][INFO]: Done waiting for pending navigations. Status: ok
+[1734950212.783][INFO]: [267c97c2a4a294ef5bab693989d30d1e] RESPONSE Navigate
+[1223/193653.051703:ERROR:ffmpeg_common.cc(970)] Unsupported pixel format: -1
+sysctlbyname for kern.hv_vmm_present failed with status -1[1734950213.108][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js.",
+      "timestamp": 1.734950213107354e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.108][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js.",
+      "timestamp": 1.734950213107558e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.254][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 360,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 8675,
+            "functionName": "",
+            "lineNumber": 360,
+            "scriptId": "262",
+            "url": "https://accounts.google.com/gsi/client"
+         }, {
+            "columnNumber": 8697,
+            "functionName": "",
+            "lineNumber": 360,
+            "scriptId": "262",
+            "url": "https://accounts.google.com/gsi/client"
+         } ]
+      },
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950213253685e+12,
+      "url": "https://accounts.google.com/gsi/client"
+   }
+}
+[1734950213.255][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "args": [ {
+      "type": "string",
+      "value": "[GSI_LOGGER]: Your client application uses one of the Google One Tap prompt UI status methods that may stop functioning when FedCM becomes mandatory. Refer to the migration guide to update your cod..."
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 418,
+         "functionName": "_.O",
+         "lineNumber": 171,
+         "scriptId": "262",
+         "url": "https://accounts.google.com/gsi/client"
+      }, {
+         "columnNumber": 256,
+         "functionName": "js.ga",
+         "lineNumber": 309,
+         "scriptId": "262",
+         "url": "https://accounts.google.com/gsi/client"
+      }, {
+         "columnNumber": 303,
+         "functionName": "Zq.ga",
+         "lineNumber": 344,
+         "scriptId": "262",
+         "url": "https://accounts.google.com/gsi/client"
+      }, {
+         "columnNumber": 33,
+         "functionName": "dr",
+         "lineNumber": 277,
+         "scriptId": "262",
+         "url": "https://accounts.google.com/gsi/client"
+      }, {
+         "columnNumber": 1854,
+         "functionName": "D.showPrompt",
+         "lineNumber": 0,
+         "scriptId": "218",
+         "url": "https://www.redditstatic.com/shreddit/en-US/google-one-tap-52383ffa.js"
+      } ]
+   },
+   "timestamp": 1.734950213255059e+12,
+   "type": "warning"
+}
+[1734950213.376][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "frameId": "0FA9FB36170A64A485AFE3BBAB0C3075",
+   "parentFrameId": "DD1C1BDCE8258171E709A29DEDEA97DB",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 17,
+         "functionName": "",
+         "lineNumber": 199,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 153,
+         "functionName": "dg.render",
+         "lineNumber": 1085,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 179,
+         "functionName": "",
+         "lineNumber": 65,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 291,
+         "functionName": "",
+         "lineNumber": 527,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 152,
+         "functionName": "",
+         "lineNumber": 124,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 66,
+         "functionName": "dg",
+         "lineNumber": 1086,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 327,
+         "functionName": "",
+         "lineNumber": 343,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 391,
+         "functionName": "",
+         "lineNumber": 426,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 374,
+         "functionName": "V.window.\u003Ccomputed>.gor.V.window.\u003Ccomputed>.gor",
+         "lineNumber": 381,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 390,
+         "functionName": "",
+         "lineNumber": 382,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 155,
+         "functionName": "",
+         "lineNumber": 298,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 331,
+         "functionName": "",
+         "lineNumber": 382,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 5,
+         "functionName": "",
+         "lineNumber": 1117,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 379,
+         "functionName": "",
+         "lineNumber": 1123,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      } ]
+   }
+}
+[1734950213.376][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "disposition": "currentTab",
+   "frameId": "0FA9FB36170A64A485AFE3BBAB0C3075",
+   "reason": "initialFrameNavigation",
+   "url": "https://www.google.com/recaptcha/enterprise/anchor?ar=1&k=6LfirrMoAAAAAHZOipvza4kpp_VtTwLNuXVwURNQ&co=aHR0cHM6Ly93d3cucmVkZGl0LmNvbTo0NDM.&hl=ja&v=zIriijn3uj5Vpknvt_LnfNbF&size=invisible&cb=ka5cj53..."
+}
+[1734950213.377][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "frameId": "0FA9FB36170A64A485AFE3BBAB0C3075"
+}
+[1734950213.599][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "sessionId": "003CDD1806AF1BF91DDA56E37E8A2769",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "20F65271A4B2C6C4344311BE5E3DBCC9",
+      "canAccessOpener": false,
+      "pid": 29277,
+      "targetId": "0FA9FB36170A64A485AFE3BBAB0C3075",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734950213.599][DEBUG]: DevTools WebSocket Command: Page.enable (id=22) (session_id=003CDD1806AF1BF91DDA56E37E8A2769) 003CDD1806AF1BF91DDA56E37E8A2769 {
+}
+[1734950213.599][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=23) (session_id=003CDD1806AF1BF91DDA56E37E8A2769) 003CDD1806AF1BF91DDA56E37E8A2769 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950213.599][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=24) (session_id=003CDD1806AF1BF91DDA56E37E8A2769) 003CDD1806AF1BF91DDA56E37E8A2769 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950213.599][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=25) (session_id=003CDD1806AF1BF91DDA56E37E8A2769) 003CDD1806AF1BF91DDA56E37E8A2769 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734950213.601][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "20F65271A4B2C6C4344311BE5E3DBCC9",
+      "canAccessOpener": false,
+      "pid": 29277,
+      "targetId": "0FA9FB36170A64A485AFE3BBAB0C3075",
+      "title": "https://www.google.com/recaptcha/enterprise/anchor?ar=1&k=6LfirrMoAAAAAHZOipvza4kpp_VtTwLNuXVwURNQ&co=aHR0cHM6Ly93d3cucmVkZGl0LmNvbTo0NDM.&hl=ja&v=zIriijn3uj5Vpknvt_LnfNbF&size=invisible&cb=ka5cj53...",
+      "type": "iframe",
+      "url": "https://www.google.com/recaptcha/enterprise/anchor?ar=1&k=6LfirrMoAAAAAHZOipvza4kpp_VtTwLNuXVwURNQ&co=aHR0cHM6Ly93d3cucmVkZGl0LmNvbTo0NDM.&hl=ja&v=zIriijn3uj5Vpknvt_LnfNbF&size=invisible&cb=ka5cj53..."
+   }
+}
+[1734950213.601][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "frameId": "0FA9FB36170A64A485AFE3BBAB0C3075",
+   "reason": "swap"
+}
+[1734950213.603][DEBUG]: DevTools WebSocket Response: Page.enable (id=22) (session_id=003CDD1806AF1BF91DDA56E37E8A2769) 003CDD1806AF1BF91DDA56E37E8A2769 {
+}
+[1734950213.603][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=23) (session_id=003CDD1806AF1BF91DDA56E37E8A2769) 003CDD1806AF1BF91DDA56E37E8A2769 {
+   "identifier": "1"
+}
+[1734950213.603][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=24) (session_id=003CDD1806AF1BF91DDA56E37E8A2769) 003CDD1806AF1BF91DDA56E37E8A2769 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734950213.604][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=25) (session_id=003CDD1806AF1BF91DDA56E37E8A2769) 003CDD1806AF1BF91DDA56E37E8A2769 {
+}
+[1734950213.604][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=26) (session_id=003CDD1806AF1BF91DDA56E37E8A2769) 003CDD1806AF1BF91DDA56E37E8A2769 {
+}
+[1734950213.605][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/styles__ltr.css.",
+      "timestamp": 1.734950213604848e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.605][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/styles__ltr.css.",
+      "timestamp": 1.734950213604877e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.605][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=003CDD1806AF1BF91DDA56E37E8A2769) 003CDD1806AF1BF91DDA56E37E8A2769 {
+   "context": {
+      "auxData": {
+         "frameId": "0FA9FB36170A64A485AFE3BBAB0C3075",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.google.com",
+      "uniqueId": "-5533938380975118477.-4523546572627828886"
+   }
+}
+[1734950213.605][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=26) (session_id=003CDD1806AF1BF91DDA56E37E8A2769) 003CDD1806AF1BF91DDA56E37E8A2769 {
+}
+[1734950213.605][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/styles__ltr.css.",
+      "timestamp": 1.734950213604961e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.605][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/styles__ltr.css.",
+      "timestamp": 1.734950213605053e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.606][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js.",
+      "timestamp": 1.734950213605348e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.606][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js.",
+      "timestamp": 1.734950213605363e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.606][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js.",
+      "timestamp": 1.734950213605454e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.606][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js.",
+      "timestamp": 1.734950213605481e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.868][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/.",
+      "timestamp": 1.734950213867724e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.871][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/.",
+      "timestamp": 1.734950213870559e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.872][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/api2/logo_48.png.",
+      "timestamp": 1.73495021387164e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.872][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/api2/logo_48.png.",
+      "timestamp": 1.734950213871683e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.872][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/api2/logo_48.png.",
+      "timestamp": 1.7349502138717e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.872][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/api2/logo_48.png.",
+      "timestamp": 1.734950213871718e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.875][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "frameId": "DE802DEFCC18B6DA161BB92E4A3BC8AE",
+   "parentFrameId": "DD1C1BDCE8258171E709A29DEDEA97DB",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 292,
+         "functionName": "",
+         "lineNumber": 419,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 247,
+         "functionName": "",
+         "lineNumber": 460,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 483,
+         "functionName": "",
+         "lineNumber": 30,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 57,
+         "functionName": "",
+         "lineNumber": 365,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 160,
+         "functionName": "N.next",
+         "lineNumber": 581,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 109,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 2,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 26,
+         "functionName": "",
+         "lineNumber": 170,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 397,
+         "functionName": "",
+         "lineNumber": 30,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 409,
+         "functionName": "",
+         "lineNumber": 146,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 57,
+         "functionName": "",
+         "lineNumber": 365,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 160,
+         "functionName": "N.next",
+         "lineNumber": 581,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 109,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 2,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 26,
+         "functionName": "",
+         "lineNumber": 170,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 331,
+         "functionName": "",
+         "lineNumber": 146,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 313,
+         "functionName": "",
+         "lineNumber": 979,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 57,
+         "functionName": "",
+         "lineNumber": 365,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 160,
+         "functionName": "N.next",
+         "lineNumber": 581,
+         "scriptId": "263",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, "..." ]
+   }
+}
+[1734950213.875][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "disposition": "currentTab",
+   "frameId": "DE802DEFCC18B6DA161BB92E4A3BC8AE",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734950213.876][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "DE802DEFCC18B6DA161BB92E4A3BC8AE",
+      "loaderId": "0648B7E45DE3256C4E4924F8640C1DDE",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "DD1C1BDCE8258171E709A29DEDEA97DB",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734950213.876][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "frameId": "DE802DEFCC18B6DA161BB92E4A3BC8AE"
+}
+[1734950213.877][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "context": {
+      "auxData": {
+         "frameId": "DE802DEFCC18B6DA161BB92E4A3BC8AE",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://www.reddit.com",
+      "uniqueId": "5476006654162905313.-1595085720803202913"
+   }
+}
+[1734950213.877][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "frameId": "DE802DEFCC18B6DA161BB92E4A3BC8AE"
+}
+[1734950213.882][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=003CDD1806AF1BF91DDA56E37E8A2769) 003CDD1806AF1BF91DDA56E37E8A2769 {
+   "timestamp": 60206.756576
+}
+[1734950213.885][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/js/bg/FsaNIYyPN76i0sL7d3myIoFfjMDAw8eHc9AJuLUrm7A.js.",
+      "timestamp": 1.734950213884262e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.885][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/js/bg/FsaNIYyPN76i0sL7d3myIoFfjMDAw8eHc9AJuLUrm7A.js.",
+      "timestamp": 1.734950213884284e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.885][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/js/bg/FsaNIYyPN76i0sL7d3myIoFfjMDAw8eHc9AJuLUrm7A.js.",
+      "timestamp": 1.734950213884297e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.885][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/js/bg/FsaNIYyPN76i0sL7d3myIoFfjMDAw8eHc9AJuLUrm7A.js.",
+      "timestamp": 1.734950213884306e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.885][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2.",
+      "timestamp": 1.734950213884316e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.885][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2.",
+      "timestamp": 1.734950213884325e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.885][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2.",
+      "timestamp": 1.734950213884335e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.885][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2.",
+      "timestamp": 1.734950213884345e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.885][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2.",
+      "timestamp": 1.734950213884359e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.885][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2.",
+      "timestamp": 1.734950213884369e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.885][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2.",
+      "timestamp": 1.734950213884379e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.885][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=834CEC68BAE6040279DED67189726380) DD1C1BDCE8258171E709A29DEDEA97DB {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2.",
+      "timestamp": 1.734950213884389e+12,
+      "url": "https://www.reddit.com/?rdt=53707"
+   }
+}
+[1734950213.917][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=003CDD1806AF1BF91DDA56E37E8A2769) 003CDD1806AF1BF91DDA56E37E8A2769 {
+   "sessionId": "56D53E7DF6733C9D8E91BFEB762BCAD4",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "20F65271A4B2C6C4344311BE5E3DBCC9",
+      "canAccessOpener": false,
+      "pid": 29277,
+      "targetId": "D0538D324CFC9F87F247E7FF7502077A",
+      "title": "https://www.google.com/recaptcha/enterprise/webworker.js?hl=ja&v=zIriijn3uj5Vpknvt_LnfNbF",
+      "type": "worker",
+      "url": "https://www.google.com/recaptcha/enterprise/webworker.js?hl=ja&v=zIriijn3uj5Vpknvt_LnfNbF"
+   },
+   "waitingForDebugger": false
+}
+[1734950214.000][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=003CDD1806AF1BF91DDA56E37E8A2769) 003CDD1806AF1BF91DDA56E37E8A2769 {
+   "timestamp": 60206.874039
+}
+[1734950214.000][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=003CDD1806AF1BF91DDA56E37E8A2769) 003CDD1806AF1BF91DDA56E37E8A2769 {
+   "frameId": "0FA9FB36170A64A485AFE3BBAB0C3075"
+}
+[1734950214.012][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=003CDD1806AF1BF91DDA56E37E8A2769) 003CDD1806AF1BF91DDA56E37E8A2769 {
+   "frameId": "2706255937CE16DF57D86902A0FE10EA",
+   "parentFrameId": "0FA9FB36170A64A485AFE3BBAB0C3075",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 292,
+         "functionName": "",
+         "lineNumber": 419,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 520,
+         "functionName": "",
+         "lineNumber": 700,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 447,
+         "functionName": "",
+         "lineNumber": 741,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 362,
+         "functionName": "",
+         "lineNumber": 224,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 517,
+         "functionName": "",
+         "lineNumber": 44,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 276,
+         "functionName": "",
+         "lineNumber": 25,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 300,
+         "functionName": "",
+         "lineNumber": 317,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 57,
+         "functionName": "",
+         "lineNumber": 365,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 160,
+         "functionName": "N.next",
+         "lineNumber": 581,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 109,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 2,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 26,
+         "functionName": "",
+         "lineNumber": 170,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 150,
+         "functionName": "p.B",
+         "lineNumber": 317,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 23,
+         "functionName": "",
+         "lineNumber": 45,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 57,
+         "functionName": "",
+         "lineNumber": 365,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 160,
+         "functionName": "N.next",
+         "lineNumber": 581,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 109,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 2,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 26,
+         "functionName": "",
+         "lineNumber": 170,
+         "scriptId": "6",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, "..." ]
+   }
+}
+[1734950214.012][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=003CDD1806AF1BF91DDA56E37E8A2769) 003CDD1806AF1BF91DDA56E37E8A2769 {
+   "disposition": "currentTab",
+   "frameId": "2706255937CE16DF57D86902A0FE10EA",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734950214.012][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=003CDD1806AF1BF91DDA56E37E8A2769) 003CDD1806AF1BF91DDA56E37E8A2769 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolatedFeatureDisabled",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "2706255937CE16DF57D86902A0FE10EA",
+      "loaderId": "91EC53F42B054E3287F5FC76E402B97D",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "0FA9FB36170A64A485AFE3BBAB0C3075",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734950214.012][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=003CDD1806AF1BF91DDA56E37E8A2769) 003CDD1806AF1BF91DDA56E37E8A2769 {
+   "frameId": "2706255937CE16DF57D86902A0FE10EA"
+}
+[1734950214.015][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=003CDD1806AF1BF91DDA56E37E8A2769) 003CDD1806AF1BF91DDA56E37E8A2769 {
+   "context": {
+      "auxData": {
+         "frameId": "2706255937CE16DF57D86902A0FE10EA",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://www.google.com",
+      "uniqueId": "-2408910247577999848.1091306044428222175"
+   }
+}
+[1734950214.015][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=003CDD1806AF1BF91DDA56E37E8A2769) 003CDD1806AF1BF91DDA56E37E8A2769 {
+   "frameId": "2706255937CE16DF57D86902A0FE10EA"
+}
+Trying to load the allocator multiple times. This is *not* supported.
+[1734950222.796][INFO]: [267c97c2a4a294ef5bab693989d30d1e] COMMAND Quit {
+}
+[1734950222.854][INFO]: [267c97c2a4a294ef5bab693989d30d1e] RESPONSE Quit
+[1734950222.854][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1734950222.854][DEBUG]: Log type 'browser' lost 42 entries on destruction

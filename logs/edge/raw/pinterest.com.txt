@@ -1,0 +1,2174 @@
+[1734950493.494][INFO]: Starting Microsoft Edge WebDriver 131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70) on port 58025
+[1734950493.494][INFO]: Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+[1734950493.496][INFO]: msedgedriver was started successfully on port 58025
+[1734950493.506][INFO]: [5589b6915e5dd42073684d5713b5547d] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "MicrosoftEdge",
+         "browserVersion": null,
+         "ms:edgeOptions": {
+            "args": [ "--disable-extensions", "--inprivate" ],
+            "binary": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1734950493.506][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1734950493.507][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1734950493.507][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1734950493.507][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1734950493.507][INFO]: WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS = 
+[1734950493.507][INFO]: Launching Microsoft Edge: /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-extensions --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --inprivate --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.CITIt5 data:,
+
+DevTools listening on ws://127.0.0.1:58030/devtools/browser/a3ed214f-7e65-44e2-9a0c-3da18a00be6b
+[1734950493.748][DEBUG]: DevTools HTTP Request: http://localhost:58030/json/version
+[1734950494.016][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Edg/131.0.2903.112",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
+   "V8-Version": "13.1.20.9",
+   "WebKit-Version": "537.36 (@16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+   "webSocketDebuggerUrl": "ws://localhost:58030/devtools/browser/a3ed214f-7e65-44e2-9a0c-3da18a00be6b"
+}
+
+[1734950494.018][DEBUG]: DevTools HTTP Request: http://localhost:58030/json/list
+[1734950494.030][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:58030/devtools/page/6BA02977FA79EA4DD3B0AAC9D291B589",
+   "id": "6BA02977FA79EA4DD3B0AAC9D291B589",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:58030/devtools/page/6BA02977FA79EA4DD3B0AAC9D291B589"
+} ]
+
+[1734950494.032][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1734950494.040][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1734950494.042][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "7FEEFA8271DA6A3C7CCCE08B6EF7E2AC",
+      "canAccessOpener": false,
+      "pid": 0,
+      "targetId": "6BA02977FA79EA4DD3B0AAC9D291B589",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1734950494.044][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "6BA02977FA79EA4DD3B0AAC9D291B589"
+}
+[1734950494.057][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "7F9282D642DBFC78C1A743D2DBDC5367",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "7FEEFA8271DA6A3C7CCCE08B6EF7E2AC",
+      "canAccessOpener": false,
+      "pid": 30889,
+      "targetId": "6BA02977FA79EA4DD3B0AAC9D291B589",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1734950494.057][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "7F9282D642DBFC78C1A743D2DBDC5367"
+}
+[1734950494.058][DEBUG]: DevTools WebSocket Command: Page.enable (id=3) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+}
+[1734950494.058][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950494.058][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=5) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950494.058][DEBUG]: DevTools WebSocket Command: Log.enable (id=6) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+}
+[1734950494.060][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=7) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734950494.063][DEBUG]: DevTools WebSocket Response: Page.enable (id=3) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+}
+[1734950494.063][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "identifier": "1"
+}
+[1734950494.063][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=5) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734950494.063][DEBUG]: DevTools WebSocket Response: Log.enable (id=6) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+}
+[1734950494.063][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=7) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+}
+[1734950494.063][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+}
+[1734950494.064][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "context": {
+      "auxData": {
+         "frameId": "6BA02977FA79EA4DD3B0AAC9D291B589",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "2475888614379724696.5079276643198119733"
+   }
+}
+[1734950494.066][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+}
+[1734950494.066][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+}
+[1734950494.067][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+}
+[1734950494.069][INFO]: [5589b6915e5dd42073684d5713b5547d] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "MicrosoftEdge",
+      "browserVersion": "131.0.2903.112",
+      "fedcm:accounts": true,
+      "ms:edgeOptions": {
+         "debuggerAddress": "localhost:58030"
+      },
+      "msedge": {
+         "msedgedriverVersion": "131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+         "userDataDir": "/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.CITIt5"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "5589b6915e5dd42073684d5713b5547d"
+}
+[1734950494.070][INFO]: [5589b6915e5dd42073684d5713b5547d] COMMAND Navigate {
+   "url": "https://pinterest.com"
+}
+[1734950494.072][INFO]: Waiting for pending navigations...
+[1734950494.072][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=10) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "expression": "1"
+}
+[1734950494.072][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=10) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950494.073][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=11) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "expression": "document",
+   "objectGroup": "10ee1cfa-30f1-4c51-b53f-24229ce9dc9e"
+}
+[1734950494.073][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=11) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "2546412407344132064.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734950494.073][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=12) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "objectId": "2546412407344132064.1.1"
+}
+[1734950494.074][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=12) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734950494.074][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=13) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "objectGroup": "10ee1cfa-30f1-4c51-b53f-24229ce9dc9e"
+}
+[1734950494.074][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "2475888614379724696.5079276643198119733"
+}
+[1734950494.074][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=13) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+}
+[1734950494.074][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734950494.074][INFO]: Done waiting for pending navigations. Status: ok
+[1734950494.074][DEBUG]: DevTools WebSocket Command: Page.navigate (id=15) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "url": "https://pinterest.com"
+}
+[1734950494.077][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "6BA02977FA79EA4DD3B0AAC9D291B589"
+}
+2024-12-23 19:41:34.276 Microsoft Edge[30881:1075406] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-23 19:41:34.276 Microsoft Edge[30881:1075406] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+[1734950494.887][DEBUG]: DevTools WebSocket Response: Page.navigate (id=15) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "6BA02977FA79EA4DD3B0AAC9D291B589",
+   "loaderId": "347C23DFB923C656927E558470718095"
+}
+[1734950494.887][INFO]: Waiting for pending navigations...
+[1734950494.887][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "expression": "1"
+}
+[1734950494.891][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+}
+[1734950494.892][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+}
+[1734950494.892][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "pinterest.com",
+      "gatedAPIFeatures": [  ],
+      "id": "6BA02977FA79EA4DD3B0AAC9D291B589",
+      "loaderId": "347C23DFB923C656927E558470718095",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://jp.pinterest.com",
+      "url": "https://jp.pinterest.com/"
+   },
+   "type": "Navigation"
+}
+[1734950494.903][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "context": {
+      "auxData": {
+         "frameId": "6BA02977FA79EA4DD3B0AAC9D291B589",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://jp.pinterest.com",
+      "uniqueId": "-1062971397020373548.1597990751559283192"
+   }
+}
+[1734950494.910][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950495.420][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=17) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "expression": "1"
+}
+[1734950495.421][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=17) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950495.879][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "timestamp": 60488.757203
+}
+[1734950495.879][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "timestamp": 60488.757351
+}
+[1734950495.879][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-1062971397020373548.1597990751559283192"
+}
+[1734950495.879][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "6BA02977FA79EA4DD3B0AAC9D291B589"
+}
+[1734950495.886][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734950495.886][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "expression": "1"
+}
+[1734950495.898][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "C81D5C4AEEF5529B0989669738B40548",
+   "parentFrameId": "6BA02977FA79EA4DD3B0AAC9D291B589",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 89645,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "14",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "14",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89729,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "14",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "14",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "14",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "14",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "14",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "14",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "14",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "14",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "14",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "14",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "14",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "14",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "14",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "14",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "14",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "14",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, {
+         "columnNumber": 89698,
+         "functionName": "e",
+         "lineNumber": 24,
+         "scriptId": "14",
+         "url": "https://s.pinimg.com/webapp/vendor-react-6bd84e8471ff1baf.mjs"
+      }, "..." ]
+   }
+}
+[1734950495.898][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "disposition": "currentTab",
+   "frameId": "C81D5C4AEEF5529B0989669738B40548",
+   "reason": "initialFrameNavigation",
+   "url": "https://ct.pinterest.com/ct.html"
+}
+[1734950495.898][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "C81D5C4AEEF5529B0989669738B40548"
+}
+[1734950495.903][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950495.903][INFO]: Done waiting for pending navigations. Status: ok
+[1734950495.903][INFO]: [5589b6915e5dd42073684d5713b5547d] RESPONSE Navigate
+[1734950495.914][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/recaptcha/enterprise.js?onload=onloadRecaptchaJsCallback&render=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r.",
+      "timestamp": 1.734950495913458e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950495.914][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/recaptcha/enterprise.js?onload=onloadRecaptchaJsCallback&render=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r.",
+      "timestamp": 1.734950495913494e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950495.914][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/recaptcha/enterprise.js?onload=onloadRecaptchaJsCallback&render=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r.",
+      "timestamp": 1.734950495913506e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950495.914][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/recaptcha/enterprise.js?onload=onloadRecaptchaJsCallback&render=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r.",
+      "timestamp": 1.734950495913516e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950496.187][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js.",
+      "timestamp": 1.734950496186329e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950496.187][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js.",
+      "timestamp": 1.734950496186359e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950496.221][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolatedFeatureDisabled",
+      "domainAndRegistry": "pinterest.com",
+      "gatedAPIFeatures": [  ],
+      "id": "C81D5C4AEEF5529B0989669738B40548",
+      "loaderId": "F7C94835134BD81626B7B9724827E492",
+      "mimeType": "text/html",
+      "name": "epik_localstore",
+      "parentId": "6BA02977FA79EA4DD3B0AAC9D291B589",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://ct.pinterest.com",
+      "url": "https://ct.pinterest.com/ct.html"
+   },
+   "type": "Navigation"
+}
+[1734950496.222][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "context": {
+      "auxData": {
+         "frameId": "C81D5C4AEEF5529B0989669738B40548",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://ct.pinterest.com",
+      "uniqueId": "4902551209923558673.-4081617139427004646"
+   }
+}
+[1734950496.232][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "C81D5C4AEEF5529B0989669738B40548"
+}
+[1734950496.251][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "7A910B314B1AD21D568F7AB9845699E0",
+   "parentFrameId": "6BA02977FA79EA4DD3B0AAC9D291B589",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 4100,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 3873,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 30091,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 30196,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 29138,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 28887,
+         "functionName": "a",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 3599,
+         "functionName": "_",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 12983,
+         "functionName": "fonts",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 259,
+         "functionName": "c",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 26513,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 26472,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 596,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 30091,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 30196,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 29138,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 28887,
+         "functionName": "a",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 434,
+         "functionName": "u",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 26430,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 30091,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, "..." ]
+   }
+}
+[1734950496.251][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "disposition": "currentTab",
+   "frameId": "7A910B314B1AD21D568F7AB9845699E0",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734950496.251][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "7A910B314B1AD21D568F7AB9845699E0",
+      "loaderId": "2416DA66853C103C1DD49242C5B7801D",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "6BA02977FA79EA4DD3B0AAC9D291B589",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734950496.251][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "7A910B314B1AD21D568F7AB9845699E0"
+}
+[1734950496.252][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "context": {
+      "auxData": {
+         "frameId": "7A910B314B1AD21D568F7AB9845699E0",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 3,
+      "name": "",
+      "origin": "https://jp.pinterest.com",
+      "uniqueId": "-5781110471769451498.-8400175241229558496"
+   }
+}
+[1734950496.252][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "7A910B314B1AD21D568F7AB9845699E0"
+}
+[1734950496.253][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "85B829543A529AAF383FE2F0436F2081",
+   "parentFrameId": "6BA02977FA79EA4DD3B0AAC9D291B589",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 4100,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 3873,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 30091,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 30196,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 29138,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 28887,
+         "functionName": "a",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 3599,
+         "functionName": "_",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 16021,
+         "functionName": "fontPreferences",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 259,
+         "functionName": "c",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 26513,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 26472,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 596,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 30091,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 30196,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 29138,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 28887,
+         "functionName": "a",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 434,
+         "functionName": "u",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 26430,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, {
+         "columnNumber": 30091,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "70",
+         "url": "https://s.pinimg.com/webapp/65936-8ee698e4e4203fc7.mjs"
+      }, "..." ]
+   }
+}
+[1734950496.253][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "disposition": "currentTab",
+   "frameId": "85B829543A529AAF383FE2F0436F2081",
+   "reason": "initialFrameNavigation",
+   "url": "about:srcdoc"
+}
+[1734950496.253][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "85B829543A529AAF383FE2F0436F2081"
+}
+[1734950496.293][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "context": {
+      "auxData": {
+         "frameId": "85B829543A529AAF383FE2F0436F2081",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 4,
+      "name": "",
+      "origin": "https://jp.pinterest.com",
+      "uniqueId": "8629000264148202788.7853333796699665718"
+   }
+}
+[1734950496.293][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "7A910B314B1AD21D568F7AB9845699E0"
+}
+[1734950496.294][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "7A910B314B1AD21D568F7AB9845699E0",
+   "reason": "remove"
+}
+[1734950496.294][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "executionContextId": 3,
+   "executionContextUniqueId": "-5781110471769451498.-8400175241229558496"
+}
+[1734950496.294][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "85B829543A529AAF383FE2F0436F2081"
+}
+[1734950496.294][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "85B829543A529AAF383FE2F0436F2081"
+}
+[1734950496.294][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "85B829543A529AAF383FE2F0436F2081",
+   "reason": "remove"
+}
+[1734950496.294][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "executionContextId": 4,
+   "executionContextUniqueId": "8629000264148202788.7853333796699665718"
+}
+[1734950496.471][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 361,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 8675,
+            "functionName": "",
+            "lineNumber": 361,
+            "scriptId": "71",
+            "url": "https://accounts.google.com/gsi/client?hl=ja"
+         }, {
+            "columnNumber": 8697,
+            "functionName": "",
+            "lineNumber": 361,
+            "scriptId": "71",
+            "url": "https://accounts.google.com/gsi/client?hl=ja"
+         } ]
+      },
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950496470883e+12,
+      "url": "https://accounts.google.com/gsi/client?hl=ja"
+   }
+}
+[1734950496.473][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "args": [ {
+      "type": "string",
+      "value": "[GSI_LOGGER]: Your client application uses one of the Google One Tap prompt UI status methods that may stop functioning when FedCM becomes mandatory. Refer to the migration guide to update your cod..."
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 418,
+         "functionName": "_.O",
+         "lineNumber": 172,
+         "scriptId": "71",
+         "url": "https://accounts.google.com/gsi/client?hl=ja"
+      }, {
+         "columnNumber": 256,
+         "functionName": "js.ga",
+         "lineNumber": 310,
+         "scriptId": "71",
+         "url": "https://accounts.google.com/gsi/client?hl=ja"
+      }, {
+         "columnNumber": 303,
+         "functionName": "Zq.ga",
+         "lineNumber": 345,
+         "scriptId": "71",
+         "url": "https://accounts.google.com/gsi/client?hl=ja"
+      }, {
+         "columnNumber": 33,
+         "functionName": "dr",
+         "lineNumber": 278,
+         "scriptId": "71",
+         "url": "https://accounts.google.com/gsi/client?hl=ja"
+      }, {
+         "columnNumber": 12973,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "60",
+         "url": "https://s.pinimg.com/webapp/13377.ja-e16129dd554fd41e.mjs"
+      }, {
+         "columnNumber": 14008,
+         "functionName": "componentDidMount",
+         "lineNumber": 0,
+         "scriptId": "60",
+         "url": "https://s.pinimg.com/webapp/13377.ja-e16129dd554fd41e.mjs"
+      } ]
+   },
+   "timestamp": 1.734950496472914e+12,
+   "type": "warning"
+}
+[1734950496.475][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "C2D6885113646E8EB3463528AB8DAAB2",
+   "parentFrameId": "6BA02977FA79EA4DD3B0AAC9D291B589",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 92,
+         "functionName": "Kq",
+         "lineNumber": 272,
+         "scriptId": "71",
+         "url": "https://accounts.google.com/gsi/client?hl=ja"
+      }, {
+         "columnNumber": 244,
+         "functionName": "er",
+         "lineNumber": 317,
+         "scriptId": "71",
+         "url": "https://accounts.google.com/gsi/client?hl=ja"
+      }, {
+         "columnNumber": 99,
+         "functionName": "fr",
+         "lineNumber": 278,
+         "scriptId": "71",
+         "url": "https://accounts.google.com/gsi/client?hl=ja"
+      }, {
+         "columnNumber": 70810,
+         "functionName": "c",
+         "lineNumber": 208,
+         "scriptId": "51",
+         "url": "https://s.pinimg.com/webapp/www/_client.ja-76b2d514bdee4692.mjs"
+      }, {
+         "columnNumber": 91175,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "65",
+         "url": "https://s.pinimg.com/webapp/app-www-homepage-DesktopInspiredWallSignup.ja-b2ba4c9bc3a640b6.mjs"
+      } ]
+   }
+}
+[1734950496.476][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "disposition": "currentTab",
+   "frameId": "C2D6885113646E8EB3463528AB8DAAB2",
+   "reason": "initialFrameNavigation",
+   "url": "https://accounts.google.com/gsi/button?size=large&shape=pill&text=continue_with&theme=outline&width=268px&logo_alignment=left&click_listener=()%3D%3E%7Bs%26%26s()%2Co%26%26o()%2C(0%2Cn.EX)(%7Bevent..."
+}
+[1734950496.478][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "C2D6885113646E8EB3463528AB8DAAB2"
+}
+[1734950496.778][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "86ABCBA3344D64F9FE119EBD575CB7DF",
+   "parentFrameId": "6BA02977FA79EA4DD3B0AAC9D291B589",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 17,
+         "functionName": "",
+         "lineNumber": 199,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 153,
+         "functionName": "dg.render",
+         "lineNumber": 1085,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 179,
+         "functionName": "",
+         "lineNumber": 65,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 291,
+         "functionName": "",
+         "lineNumber": 527,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 152,
+         "functionName": "",
+         "lineNumber": 124,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 66,
+         "functionName": "dg",
+         "lineNumber": 1086,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 327,
+         "functionName": "",
+         "lineNumber": 343,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 391,
+         "functionName": "",
+         "lineNumber": 426,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 374,
+         "functionName": "V.window.\u003Ccomputed>.gor.V.window.\u003Ccomputed>.gor",
+         "lineNumber": 381,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 390,
+         "functionName": "",
+         "lineNumber": 382,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 155,
+         "functionName": "",
+         "lineNumber": 298,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 331,
+         "functionName": "",
+         "lineNumber": 382,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 5,
+         "functionName": "",
+         "lineNumber": 1117,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 379,
+         "functionName": "",
+         "lineNumber": 1123,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      } ]
+   }
+}
+[1734950496.778][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "disposition": "currentTab",
+   "frameId": "86ABCBA3344D64F9FE119EBD575CB7DF",
+   "reason": "initialFrameNavigation",
+   "url": "https://www.recaptcha.net/recaptcha/enterprise/anchor?ar=1&k=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r&co=aHR0cHM6Ly9qcC5waW50ZXJlc3QuY29tOjQ0Mw..&hl=ja&v=zIriijn3uj5Vpknvt_LnfNbF&size=invisible&cb=..."
+}
+[1734950496.779][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "86ABCBA3344D64F9FE119EBD575CB7DF"
+}
+[1734950496.783][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/recaptcha/enterprise/anchor?ar=1&k=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r&co=aHR0cHM6Ly9qcC5waW50ZXJlc3QuY29tOjQ0Mw..&h...",
+      "timestamp": 1.734950496782393e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950496.783][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/recaptcha/enterprise/anchor?ar=1&k=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r&co=aHR0cHM6Ly9qcC5waW50ZXJlc3QuY29tOjQ0Mw..&h...",
+      "timestamp": 1.734950496782421e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950496.783][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/recaptcha/enterprise/anchor?ar=1&k=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r&co=aHR0cHM6Ly9qcC5waW50ZXJlc3QuY29tOjQ0Mw..&h...",
+      "timestamp": 1.734950496782434e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950496.783][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/recaptcha/enterprise/anchor?ar=1&k=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r&co=aHR0cHM6Ly9qcC5waW50ZXJlc3QuY29tOjQ0Mw..&h...",
+      "timestamp": 1.734950496782446e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950496.998][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "sessionId": "BBA5F0A6FBA3B6ABB29E2B6F0CF2085D",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "7FEEFA8271DA6A3C7CCCE08B6EF7E2AC",
+      "canAccessOpener": false,
+      "pid": 30891,
+      "targetId": "C2D6885113646E8EB3463528AB8DAAB2",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734950496.998][DEBUG]: DevTools WebSocket Command: Page.enable (id=20) (session_id=BBA5F0A6FBA3B6ABB29E2B6F0CF2085D) BBA5F0A6FBA3B6ABB29E2B6F0CF2085D {
+}
+[1734950496.998][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=21) (session_id=BBA5F0A6FBA3B6ABB29E2B6F0CF2085D) BBA5F0A6FBA3B6ABB29E2B6F0CF2085D {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950496.998][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=22) (session_id=BBA5F0A6FBA3B6ABB29E2B6F0CF2085D) BBA5F0A6FBA3B6ABB29E2B6F0CF2085D {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950496.998][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=23) (session_id=BBA5F0A6FBA3B6ABB29E2B6F0CF2085D) BBA5F0A6FBA3B6ABB29E2B6F0CF2085D {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734950497.000][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "7FEEFA8271DA6A3C7CCCE08B6EF7E2AC",
+      "canAccessOpener": false,
+      "pid": 30891,
+      "targetId": "C2D6885113646E8EB3463528AB8DAAB2",
+      "title": "https://accounts.google.com/gsi/button?size=large&shape=pill&text=continue_with&theme=outline&width=268px&logo_alignment=left&click_listener=()%3D%3E%7Bs%26%26s()%2Co%26%26o()%2C(0%2Cn.EX)(%7Bevent...",
+      "type": "iframe",
+      "url": "https://accounts.google.com/gsi/button?size=large&shape=pill&text=continue_with&theme=outline&width=268px&logo_alignment=left&click_listener=()%3D%3E%7Bs%26%26s()%2Co%26%26o()%2C(0%2Cn.EX)(%7Bevent..."
+   }
+}
+[1734950497.000][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "C2D6885113646E8EB3463528AB8DAAB2",
+   "reason": "swap"
+}
+[1734950497.002][DEBUG]: DevTools WebSocket Response: Page.enable (id=20) (session_id=BBA5F0A6FBA3B6ABB29E2B6F0CF2085D) BBA5F0A6FBA3B6ABB29E2B6F0CF2085D {
+}
+[1734950497.002][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=21) (session_id=BBA5F0A6FBA3B6ABB29E2B6F0CF2085D) BBA5F0A6FBA3B6ABB29E2B6F0CF2085D {
+   "identifier": "1"
+}
+[1734950497.002][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=22) (session_id=BBA5F0A6FBA3B6ABB29E2B6F0CF2085D) BBA5F0A6FBA3B6ABB29E2B6F0CF2085D {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734950497.002][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=23) (session_id=BBA5F0A6FBA3B6ABB29E2B6F0CF2085D) BBA5F0A6FBA3B6ABB29E2B6F0CF2085D {
+}
+[1734950497.002][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=24) (session_id=BBA5F0A6FBA3B6ABB29E2B6F0CF2085D) BBA5F0A6FBA3B6ABB29E2B6F0CF2085D {
+}
+[1734950497.004][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=BBA5F0A6FBA3B6ABB29E2B6F0CF2085D) BBA5F0A6FBA3B6ABB29E2B6F0CF2085D {
+   "context": {
+      "auxData": {
+         "frameId": "C2D6885113646E8EB3463528AB8DAAB2",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://accounts.google.com",
+      "uniqueId": "4287506601321996445.-5758641583612630618"
+   }
+}
+[1734950497.004][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=24) (session_id=BBA5F0A6FBA3B6ABB29E2B6F0CF2085D) BBA5F0A6FBA3B6ABB29E2B6F0CF2085D {
+}
+[1734950497.184][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "sessionId": "44F9C2F1280D4EE3BC0B48B687ED67FC",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "7FEEFA8271DA6A3C7CCCE08B6EF7E2AC",
+      "canAccessOpener": false,
+      "pid": 30894,
+      "targetId": "86ABCBA3344D64F9FE119EBD575CB7DF",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734950497.184][DEBUG]: DevTools WebSocket Command: Page.enable (id=25) (session_id=44F9C2F1280D4EE3BC0B48B687ED67FC) 44F9C2F1280D4EE3BC0B48B687ED67FC {
+}
+[1734950497.184][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=26) (session_id=44F9C2F1280D4EE3BC0B48B687ED67FC) 44F9C2F1280D4EE3BC0B48B687ED67FC {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950497.184][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=27) (session_id=44F9C2F1280D4EE3BC0B48B687ED67FC) 44F9C2F1280D4EE3BC0B48B687ED67FC {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950497.184][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=28) (session_id=44F9C2F1280D4EE3BC0B48B687ED67FC) 44F9C2F1280D4EE3BC0B48B687ED67FC {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734950497.186][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "7FEEFA8271DA6A3C7CCCE08B6EF7E2AC",
+      "canAccessOpener": false,
+      "pid": 30894,
+      "targetId": "86ABCBA3344D64F9FE119EBD575CB7DF",
+      "title": "https://www.recaptcha.net/recaptcha/enterprise/anchor?ar=1&k=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r&co=aHR0cHM6Ly9qcC5waW50ZXJlc3QuY29tOjQ0Mw..&hl=ja&v=zIriijn3uj5Vpknvt_LnfNbF&size=invisible&cb=...",
+      "type": "iframe",
+      "url": "https://www.recaptcha.net/recaptcha/enterprise/anchor?ar=1&k=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r&co=aHR0cHM6Ly9qcC5waW50ZXJlc3QuY29tOjQ0Mw..&hl=ja&v=zIriijn3uj5Vpknvt_LnfNbF&size=invisible&cb=..."
+   }
+}
+[1734950497.187][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "86ABCBA3344D64F9FE119EBD575CB7DF",
+   "reason": "swap"
+}
+[1734950497.189][DEBUG]: DevTools WebSocket Response: Page.enable (id=25) (session_id=44F9C2F1280D4EE3BC0B48B687ED67FC) 44F9C2F1280D4EE3BC0B48B687ED67FC {
+}
+[1734950497.189][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=26) (session_id=44F9C2F1280D4EE3BC0B48B687ED67FC) 44F9C2F1280D4EE3BC0B48B687ED67FC {
+   "identifier": "1"
+}
+[1734950497.189][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=27) (session_id=44F9C2F1280D4EE3BC0B48B687ED67FC) 44F9C2F1280D4EE3BC0B48B687ED67FC {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734950497.189][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=28) (session_id=44F9C2F1280D4EE3BC0B48B687ED67FC) 44F9C2F1280D4EE3BC0B48B687ED67FC {
+}
+[1734950497.189][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=29) (session_id=44F9C2F1280D4EE3BC0B48B687ED67FC) 44F9C2F1280D4EE3BC0B48B687ED67FC {
+}
+[1734950497.190][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=44F9C2F1280D4EE3BC0B48B687ED67FC) 44F9C2F1280D4EE3BC0B48B687ED67FC {
+   "context": {
+      "auxData": {
+         "frameId": "86ABCBA3344D64F9FE119EBD575CB7DF",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.recaptcha.net",
+      "uniqueId": "-6355540287983459871.-1193315191973238530"
+   }
+}
+[1734950497.190][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=29) (session_id=44F9C2F1280D4EE3BC0B48B687ED67FC) 44F9C2F1280D4EE3BC0B48B687ED67FC {
+}
+[1734950497.191][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/styles__ltr.css.",
+      "timestamp": 1.734950497190863e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.191][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/styles__ltr.css.",
+      "timestamp": 1.734950497190988e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.191][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/styles__ltr.css.",
+      "timestamp": 1.734950497191051e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.191][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/styles__ltr.css.",
+      "timestamp": 1.734950497191114e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.192][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js.",
+      "timestamp": 1.734950497191505e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.192][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js.",
+      "timestamp": 1.734950497191529e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.192][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js.",
+      "timestamp": 1.73495049719162e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.192][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js.",
+      "timestamp": 1.734950497191645e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.193][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=BBA5F0A6FBA3B6ABB29E2B6F0CF2085D) BBA5F0A6FBA3B6ABB29E2B6F0CF2085D {
+   "timestamp": 60490.071169
+}
+[1734950497.193][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=BBA5F0A6FBA3B6ABB29E2B6F0CF2085D) BBA5F0A6FBA3B6ABB29E2B6F0CF2085D {
+   "timestamp": 60490.071388
+}
+[1734950497.193][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=BBA5F0A6FBA3B6ABB29E2B6F0CF2085D) BBA5F0A6FBA3B6ABB29E2B6F0CF2085D {
+   "frameId": "C2D6885113646E8EB3463528AB8DAAB2"
+}
+[1734950497.203][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/googlesans/v58/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrw2IJllpyw.ttf.",
+      "timestamp": 1.73495049720252e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.203][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/googlesans/v58/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrw2IJllpyw.ttf.",
+      "timestamp": 1.734950497202623e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.203][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/googlesans/v58/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrw2IJllpyw.ttf.",
+      "timestamp": 1.734950497202884e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.203][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/googlesans/v58/4Ua_rENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iqcsih3SAyH6cAwhX9RFD48TE63OOYKtrw2IJllpyw.ttf.",
+      "timestamp": 1.734950497202911e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.785][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/recaptcha/enterprise/webworker.js?hl=ja&v=zIriijn3uj5Vpknvt_LnfNbF.",
+      "timestamp": 1.73495049778495e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.785][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/recaptcha/enterprise/webworker.js?hl=ja&v=zIriijn3uj5Vpknvt_LnfNbF.",
+      "timestamp": 1.734950497784984e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.785][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/recaptcha/enterprise/webworker.js?hl=ja&v=zIriijn3uj5Vpknvt_LnfNbF.",
+      "timestamp": 1.734950497785048e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.785][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/.",
+      "timestamp": 1.734950497785089e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.785][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/recaptcha/enterprise/webworker.js?hl=ja&v=zIriijn3uj5Vpknvt_LnfNbF.",
+      "timestamp": 1.7349504977851e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.788][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/.",
+      "timestamp": 1.734950497787475e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.789][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/api2/logo_48.png.",
+      "timestamp": 1.734950497788594e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.789][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/api2/logo_48.png.",
+      "timestamp": 1.734950497788643e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.789][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/api2/logo_48.png.",
+      "timestamp": 1.73495049778873e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.789][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.gstatic.com/recaptcha/api2/logo_48.png.",
+      "timestamp": 1.734950497788826e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.792][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "4C2FFAD6AAEA69038733E03042510D04",
+   "parentFrameId": "6BA02977FA79EA4DD3B0AAC9D291B589",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 292,
+         "functionName": "",
+         "lineNumber": 419,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 247,
+         "functionName": "",
+         "lineNumber": 460,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 483,
+         "functionName": "",
+         "lineNumber": 30,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 57,
+         "functionName": "",
+         "lineNumber": 365,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 160,
+         "functionName": "N.next",
+         "lineNumber": 581,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 109,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 2,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 26,
+         "functionName": "",
+         "lineNumber": 170,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 397,
+         "functionName": "",
+         "lineNumber": 30,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 409,
+         "functionName": "",
+         "lineNumber": 146,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 57,
+         "functionName": "",
+         "lineNumber": 365,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 160,
+         "functionName": "N.next",
+         "lineNumber": 581,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 109,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 2,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 26,
+         "functionName": "",
+         "lineNumber": 170,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 331,
+         "functionName": "",
+         "lineNumber": 146,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 313,
+         "functionName": "",
+         "lineNumber": 979,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 57,
+         "functionName": "",
+         "lineNumber": 365,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 160,
+         "functionName": "N.next",
+         "lineNumber": 581,
+         "scriptId": "72",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, "..." ]
+   }
+}
+[1734950497.792][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "disposition": "currentTab",
+   "frameId": "4C2FFAD6AAEA69038733E03042510D04",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734950497.792][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "4C2FFAD6AAEA69038733E03042510D04",
+      "loaderId": "E48F561A9311D2B1E0DC6D03BCD3A918",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "6BA02977FA79EA4DD3B0AAC9D291B589",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734950497.792][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "4C2FFAD6AAEA69038733E03042510D04"
+}
+[1734950497.793][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "context": {
+      "auxData": {
+         "frameId": "4C2FFAD6AAEA69038733E03042510D04",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 5,
+      "name": "",
+      "origin": "https://jp.pinterest.com",
+      "uniqueId": "2353998386942573190.2151902738424029633"
+   }
+}
+[1734950497.793][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "frameId": "4C2FFAD6AAEA69038733E03042510D04"
+}
+[1734950497.798][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=44F9C2F1280D4EE3BC0B48B687ED67FC) 44F9C2F1280D4EE3BC0B48B687ED67FC {
+   "timestamp": 60490.6772
+}
+[1734950497.800][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/js/bg/FsaNIYyPN76i0sL7d3myIoFfjMDAw8eHc9AJuLUrm7A.js.",
+      "timestamp": 1.734950497799862e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.800][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/js/bg/FsaNIYyPN76i0sL7d3myIoFfjMDAw8eHc9AJuLUrm7A.js.",
+      "timestamp": 1.734950497799881e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.800][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/js/bg/FsaNIYyPN76i0sL7d3myIoFfjMDAw8eHc9AJuLUrm7A.js.",
+      "timestamp": 1.734950497799891e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.800][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/js/bg/FsaNIYyPN76i0sL7d3myIoFfjMDAw8eHc9AJuLUrm7A.js.",
+      "timestamp": 1.734950497799901e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.800][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2.",
+      "timestamp": 1.734950497799909e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.800][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2.",
+      "timestamp": 1.734950497799917e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.800][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2.",
+      "timestamp": 1.734950497799926e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.800][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2.",
+      "timestamp": 1.734950497799934e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.800][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2.",
+      "timestamp": 1.734950497799944e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.800][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2.",
+      "timestamp": 1.734950497799952e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.800][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2.",
+      "timestamp": 1.734950497799961e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.800][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2.",
+      "timestamp": 1.734950497799971e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950497.859][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=44F9C2F1280D4EE3BC0B48B687ED67FC) 44F9C2F1280D4EE3BC0B48B687ED67FC {
+   "sessionId": "8C9DDD828AB355356063E056D5E714CD",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "7FEEFA8271DA6A3C7CCCE08B6EF7E2AC",
+      "canAccessOpener": false,
+      "pid": 30894,
+      "targetId": "38C8F718CE37D9D58C752F43D6A76E14",
+      "title": "https://www.recaptcha.net/recaptcha/enterprise/webworker.js?hl=ja&v=zIriijn3uj5Vpknvt_LnfNbF",
+      "type": "worker",
+      "url": "https://www.recaptcha.net/recaptcha/enterprise/webworker.js?hl=ja&v=zIriijn3uj5Vpknvt_LnfNbF"
+   },
+   "waitingForDebugger": false
+}
+[1734950497.954][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=44F9C2F1280D4EE3BC0B48B687ED67FC) 44F9C2F1280D4EE3BC0B48B687ED67FC {
+   "frameId": "95B74069EB00A89CA1EDC47617627CDA",
+   "parentFrameId": "86ABCBA3344D64F9FE119EBD575CB7DF",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 292,
+         "functionName": "",
+         "lineNumber": 419,
+         "scriptId": "7",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 520,
+         "functionName": "",
+         "lineNumber": 700,
+         "scriptId": "7",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 447,
+         "functionName": "",
+         "lineNumber": 741,
+         "scriptId": "7",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 362,
+         "functionName": "",
+         "lineNumber": 224,
+         "scriptId": "7",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 517,
+         "functionName": "",
+         "lineNumber": 44,
+         "scriptId": "7",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 276,
+         "functionName": "",
+         "lineNumber": 25,
+         "scriptId": "7",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 300,
+         "functionName": "",
+         "lineNumber": 317,
+         "scriptId": "7",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 57,
+         "functionName": "",
+         "lineNumber": 365,
+         "scriptId": "7",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 160,
+         "functionName": "N.next",
+         "lineNumber": 581,
+         "scriptId": "7",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 109,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "7",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 2,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "7",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 26,
+         "functionName": "",
+         "lineNumber": 170,
+         "scriptId": "7",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 150,
+         "functionName": "p.B",
+         "lineNumber": 317,
+         "scriptId": "7",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 23,
+         "functionName": "",
+         "lineNumber": 45,
+         "scriptId": "7",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 57,
+         "functionName": "",
+         "lineNumber": 365,
+         "scriptId": "7",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 160,
+         "functionName": "N.next",
+         "lineNumber": 581,
+         "scriptId": "7",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 109,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "7",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 2,
+         "functionName": "",
+         "lineNumber": 143,
+         "scriptId": "7",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, {
+         "columnNumber": 26,
+         "functionName": "",
+         "lineNumber": 170,
+         "scriptId": "7",
+         "url": "https://www.gstatic.com/recaptcha/releases/zIriijn3uj5Vpknvt_LnfNbF/recaptcha__ja.js"
+      }, "..." ]
+   }
+}
+[1734950497.954][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=44F9C2F1280D4EE3BC0B48B687ED67FC) 44F9C2F1280D4EE3BC0B48B687ED67FC {
+   "disposition": "currentTab",
+   "frameId": "95B74069EB00A89CA1EDC47617627CDA",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734950497.954][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=44F9C2F1280D4EE3BC0B48B687ED67FC) 44F9C2F1280D4EE3BC0B48B687ED67FC {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolatedFeatureDisabled",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "95B74069EB00A89CA1EDC47617627CDA",
+      "loaderId": "B213341E473E4FC44B507AED3DBC9A36",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "86ABCBA3344D64F9FE119EBD575CB7DF",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734950497.954][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=44F9C2F1280D4EE3BC0B48B687ED67FC) 44F9C2F1280D4EE3BC0B48B687ED67FC {
+   "frameId": "95B74069EB00A89CA1EDC47617627CDA"
+}
+[1734950497.955][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=44F9C2F1280D4EE3BC0B48B687ED67FC) 44F9C2F1280D4EE3BC0B48B687ED67FC {
+   "context": {
+      "auxData": {
+         "frameId": "95B74069EB00A89CA1EDC47617627CDA",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://www.recaptcha.net",
+      "uniqueId": "3666443085985668674.-4572301918619986558"
+   }
+}
+[1734950497.955][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=44F9C2F1280D4EE3BC0B48B687ED67FC) 44F9C2F1280D4EE3BC0B48B687ED67FC {
+   "frameId": "95B74069EB00A89CA1EDC47617627CDA"
+}
+[1734950498.075][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=44F9C2F1280D4EE3BC0B48B687ED67FC) 44F9C2F1280D4EE3BC0B48B687ED67FC {
+   "timestamp": 60490.953546
+}
+[1734950498.075][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=44F9C2F1280D4EE3BC0B48B687ED67FC) 44F9C2F1280D4EE3BC0B48B687ED67FC {
+   "frameId": "86ABCBA3344D64F9FE119EBD575CB7DF"
+}
+[1734950499.069][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/js/bg/FsaNIYyPN76i0sL7d3myIoFfjMDAw8eHc9AJuLUrm7A.js.",
+      "timestamp": 1.734950499068096e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950499.069][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/js/bg/FsaNIYyPN76i0sL7d3myIoFfjMDAw8eHc9AJuLUrm7A.js.",
+      "timestamp": 1.734950499068164e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950499.069][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/js/bg/FsaNIYyPN76i0sL7d3myIoFfjMDAw8eHc9AJuLUrm7A.js.",
+      "timestamp": 1.734950499068196e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950499.069][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/js/bg/FsaNIYyPN76i0sL7d3myIoFfjMDAw8eHc9AJuLUrm7A.js.",
+      "timestamp": 1.73495049906822e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950500.194][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/js/bg/FsaNIYyPN76i0sL7d3myIoFfjMDAw8eHc9AJuLUrm7A.js.",
+      "timestamp": 1.734950500193433e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950500.195][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/js/bg/FsaNIYyPN76i0sL7d3myIoFfjMDAw8eHc9AJuLUrm7A.js.",
+      "timestamp": 1.734950500193619e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950500.195][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/js/bg/FsaNIYyPN76i0sL7d3myIoFfjMDAw8eHc9AJuLUrm7A.js.",
+      "timestamp": 1.734950500193688e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950500.195][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/js/bg/FsaNIYyPN76i0sL7d3myIoFfjMDAw8eHc9AJuLUrm7A.js.",
+      "timestamp": 1.734950500193919e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950500.309][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/recaptcha/enterprise/reload?k=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r.",
+      "timestamp": 1.734950500308682e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950500.309][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/recaptcha/enterprise/reload?k=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r.",
+      "timestamp": 1.734950500308744e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950500.309][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/recaptcha/enterprise/reload?k=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r.",
+      "timestamp": 1.734950500308786e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950500.309][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/recaptcha/enterprise/reload?k=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r.",
+      "timestamp": 1.734950500308939e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950500.411][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/recaptcha/enterprise/reload?k=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r.",
+      "timestamp": 1.734950500409504e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950500.420][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/recaptcha/enterprise/clr?k=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r.",
+      "timestamp": 1.734950500419628e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950500.420][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/recaptcha/enterprise/clr?k=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r.",
+      "timestamp": 1.7349505004197e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950500.420][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/recaptcha/enterprise/clr?k=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r.",
+      "timestamp": 1.734950500419726e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+[1734950500.427][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=7F9282D642DBFC78C1A743D2DBDC5367) 6BA02977FA79EA4DD3B0AAC9D291B589 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.recaptcha.net/recaptcha/enterprise/clr?k=6Ldx7ZkUAAAAAF3SZ05DRL2Kdh911tCa3qFP0-0r.",
+      "timestamp": 1.734950500426592e+12,
+      "url": "https://jp.pinterest.com/"
+   }
+}
+Trying to load the allocator multiple times. This is *not* supported.
+[1734950505.909][INFO]: [5589b6915e5dd42073684d5713b5547d] COMMAND Quit {
+}
+[1734950505.963][INFO]: [5589b6915e5dd42073684d5713b5547d] RESPONSE Quit
+[1734950505.964][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1734950505.964][DEBUG]: Log type 'browser' lost 63 entries on destruction

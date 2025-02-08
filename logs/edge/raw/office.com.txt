@@ -1,0 +1,3283 @@
+[1734950335.545][INFO]: Starting Microsoft Edge WebDriver 131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70) on port 57387
+[1734950335.545][INFO]: Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+[1734950335.547][INFO]: msedgedriver was started successfully on port 57387
+[1734950335.555][INFO]: [0bdb10d67ab1328c6f34d369bff2785e] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "MicrosoftEdge",
+         "browserVersion": null,
+         "ms:edgeOptions": {
+            "args": [ "--disable-extensions", "--inprivate" ],
+            "binary": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1734950335.555][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1734950335.555][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1734950335.555][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1734950335.555][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1734950335.555][INFO]: WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS = 
+[1734950335.555][INFO]: Launching Microsoft Edge: /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-extensions --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --inprivate --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.QooIvh data:,
+
+DevTools listening on ws://127.0.0.1:57392/devtools/browser/7c98d70f-1741-44f5-984d-3d9bbeb3926f
+[1734950335.792][DEBUG]: DevTools HTTP Request: http://localhost:57392/json/version
+[1734950336.068][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Edg/131.0.2903.112",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
+   "V8-Version": "13.1.20.9",
+   "WebKit-Version": "537.36 (@16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+   "webSocketDebuggerUrl": "ws://localhost:57392/devtools/browser/7c98d70f-1741-44f5-984d-3d9bbeb3926f"
+}
+
+[1734950336.070][DEBUG]: DevTools HTTP Request: http://localhost:57392/json/list
+[1734950336.087][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:57392/devtools/page/C07C48519B1153196FDD021844EC6355",
+   "id": "C07C48519B1153196FDD021844EC6355",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:57392/devtools/page/C07C48519B1153196FDD021844EC6355"
+} ]
+
+[1734950336.092][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1734950336.112][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1734950336.113][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "8A735571712FCE4D531956C1018961D3",
+      "canAccessOpener": false,
+      "pid": 0,
+      "targetId": "C07C48519B1153196FDD021844EC6355",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1734950336.114][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "C07C48519B1153196FDD021844EC6355"
+}
+[1734950336.118][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "486F146DA58E987B382C41BD35722E28",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "8A735571712FCE4D531956C1018961D3",
+      "canAccessOpener": false,
+      "pid": 30210,
+      "targetId": "C07C48519B1153196FDD021844EC6355",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1734950336.118][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "486F146DA58E987B382C41BD35722E28"
+}
+[1734950336.119][DEBUG]: DevTools WebSocket Command: Page.enable (id=3) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+}
+[1734950336.119][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950336.119][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=5) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950336.120][DEBUG]: DevTools WebSocket Command: Log.enable (id=6) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+}
+[1734950336.120][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=7) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734950336.120][DEBUG]: DevTools WebSocket Response: Page.enable (id=3) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+}
+[1734950336.122][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "identifier": "1"
+}
+[1734950336.122][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=5) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734950336.122][DEBUG]: DevTools WebSocket Response: Log.enable (id=6) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+}
+[1734950336.122][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=7) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+}
+[1734950336.122][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+}
+[1734950336.123][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "context": {
+      "auxData": {
+         "frameId": "C07C48519B1153196FDD021844EC6355",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "-827405168427218295.-7165726725634176115"
+   }
+}
+[1734950336.125][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+}
+[1734950336.125][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+}
+[1734950336.126][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+}
+[1734950336.126][INFO]: [0bdb10d67ab1328c6f34d369bff2785e] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "MicrosoftEdge",
+      "browserVersion": "131.0.2903.112",
+      "fedcm:accounts": true,
+      "ms:edgeOptions": {
+         "debuggerAddress": "localhost:57392"
+      },
+      "msedge": {
+         "msedgedriverVersion": "131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+         "userDataDir": "/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.QooIvh"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "0bdb10d67ab1328c6f34d369bff2785e"
+}
+[1734950336.127][INFO]: [0bdb10d67ab1328c6f34d369bff2785e] COMMAND Navigate {
+   "url": "https://office.com"
+}
+[1734950336.128][INFO]: Waiting for pending navigations...
+[1734950336.128][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=10) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950336.128][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=10) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950336.128][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=11) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "document",
+   "objectGroup": "3a4ac8ed-f81d-4daa-98be-daa5207bc583"
+}
+[1734950336.128][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=11) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "5048665911178613430.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734950336.128][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=12) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "objectId": "5048665911178613430.1.1"
+}
+[1734950336.129][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=12) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734950336.129][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=13) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "objectGroup": "3a4ac8ed-f81d-4daa-98be-daa5207bc583"
+}
+[1734950336.129][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-827405168427218295.-7165726725634176115"
+}
+[1734950336.129][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=13) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+}
+[1734950336.129][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734950336.129][INFO]: Done waiting for pending navigations. Status: ok
+[1734950336.129][DEBUG]: DevTools WebSocket Command: Page.navigate (id=15) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "url": "https://office.com"
+}
+[1734950336.131][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "frameId": "C07C48519B1153196FDD021844EC6355"
+}
+2024-12-23 19:38:56.324 Microsoft Edge[30202:1067752] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-23 19:38:56.324 Microsoft Edge[30202:1067752] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+[1734950336.478][DEBUG]: DevTools WebSocket Response: Page.navigate (id=15) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "frameId": "C07C48519B1153196FDD021844EC6355",
+   "loaderId": "73EFCF990C4F7BF082832147946C71F8"
+}
+[1734950336.478][INFO]: Waiting for pending navigations...
+[1734950336.478][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950336.480][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+}
+[1734950336.481][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+}
+[1734950336.481][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "office.com",
+      "gatedAPIFeatures": [  ],
+      "id": "C07C48519B1153196FDD021844EC6355",
+      "loaderId": "73EFCF990C4F7BF082832147946C71F8",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.office.com",
+      "url": "https://www.office.com/"
+   },
+   "type": "Navigation"
+}
+[1734950336.490][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "context": {
+      "auxData": {
+         "frameId": "C07C48519B1153196FDD021844EC6355",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.office.com",
+      "uniqueId": "-7736739983730186870.1753869919379300876"
+   }
+}
+[1734950336.494][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950336.664][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950336663694e+12,
+      "url": "https://www.office.com/"
+   }
+}
+[1734950336.664][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=17) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950336.665][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950336664126e+12,
+      "url": "https://www.office.com/"
+   }
+}
+[1734950336.665][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=17) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950336.817][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950336816262e+12,
+      "url": "https://www.office.com/"
+   }
+}
+[1734950336.817][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950336.817][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950336816591e+12,
+      "url": "https://www.office.com/"
+   }
+}
+[1734950336.819][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950336.833][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 1980,
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950336832672e+12,
+      "url": "https://www.office.com/"
+   }
+}
+[1734950336.833][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 1986,
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950336832795e+12,
+      "url": "https://www.office.com/"
+   }
+}
+[1734950336.833][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 1992,
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950336832844e+12,
+      "url": "https://www.office.com/"
+   }
+}
+[1734950336.833][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 1998,
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950336832886e+12,
+      "url": "https://www.office.com/"
+   }
+}
+[1734950336.833][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 2004,
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950336832926e+12,
+      "url": "https://www.office.com/"
+   }
+}
+[1734950336.833][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950336.844][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950336.849][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "frameId": "52A07FCABF9BCA4228BBE6ED7AF452D4",
+   "parentFrameId": "C07C48519B1153196FDD021844EC6355",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 10582,
+         "functionName": "getMsaData",
+         "lineNumber": 0,
+         "scriptId": "7",
+         "url": "https://res.cdn.office.net/officehub/bundles/unauth-vendor-d78f09b728.js"
+      }, {
+         "columnNumber": 12380,
+         "functionName": "getAadMsaData",
+         "lineNumber": 0,
+         "scriptId": "7",
+         "url": "https://res.cdn.office.net/officehub/bundles/unauth-vendor-d78f09b728.js"
+      }, {
+         "columnNumber": 13210,
+         "functionName": "getAccount",
+         "lineNumber": 0,
+         "scriptId": "7",
+         "url": "https://res.cdn.office.net/officehub/bundles/unauth-vendor-d78f09b728.js"
+      }, {
+         "columnNumber": 20259,
+         "functionName": "e.startDefaultSignIn",
+         "lineNumber": 4,
+         "scriptId": "8",
+         "url": "https://res.cdn.office.net/officehub/bundles/unauth-95f2f0fc50.js"
+      }, {
+         "columnNumber": 19900,
+         "functionName": "e.signIn",
+         "lineNumber": 4,
+         "scriptId": "8",
+         "url": "https://res.cdn.office.net/officehub/bundles/unauth-95f2f0fc50.js"
+      }, {
+         "columnNumber": 62,
+         "functionName": "",
+         "lineNumber": 2663,
+         "scriptId": "20",
+         "url": "https://www.office.com/"
+      } ]
+   }
+}
+[1734950336.849][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=20) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950336.850][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "disposition": "currentTab",
+   "frameId": "52A07FCABF9BCA4228BBE6ED7AF452D4",
+   "reason": "initialFrameNavigation",
+   "url": "https://login.live.com/Me.srf?wa=wsignin1.0&wreply=https://www.office.com/"
+}
+[1734950336.851][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "frameId": "52A07FCABF9BCA4228BBE6ED7AF452D4"
+}
+[1734950336.852][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "frameId": "A8177CCD6ACF61AA8673741C7A12DFAD",
+   "parentFrameId": "C07C48519B1153196FDD021844EC6355",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 9776,
+         "functionName": "getAadData",
+         "lineNumber": 0,
+         "scriptId": "7",
+         "url": "https://res.cdn.office.net/officehub/bundles/unauth-vendor-d78f09b728.js"
+      }, {
+         "columnNumber": 12440,
+         "functionName": "getAadMsaData",
+         "lineNumber": 0,
+         "scriptId": "7",
+         "url": "https://res.cdn.office.net/officehub/bundles/unauth-vendor-d78f09b728.js"
+      }, {
+         "columnNumber": 13210,
+         "functionName": "getAccount",
+         "lineNumber": 0,
+         "scriptId": "7",
+         "url": "https://res.cdn.office.net/officehub/bundles/unauth-vendor-d78f09b728.js"
+      }, {
+         "columnNumber": 20259,
+         "functionName": "e.startDefaultSignIn",
+         "lineNumber": 4,
+         "scriptId": "8",
+         "url": "https://res.cdn.office.net/officehub/bundles/unauth-95f2f0fc50.js"
+      }, {
+         "columnNumber": 19900,
+         "functionName": "e.signIn",
+         "lineNumber": 4,
+         "scriptId": "8",
+         "url": "https://res.cdn.office.net/officehub/bundles/unauth-95f2f0fc50.js"
+      }, {
+         "columnNumber": 62,
+         "functionName": "",
+         "lineNumber": 2663,
+         "scriptId": "20",
+         "url": "https://www.office.com/"
+      } ]
+   }
+}
+[1734950336.852][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "disposition": "currentTab",
+   "frameId": "A8177CCD6ACF61AA8673741C7A12DFAD",
+   "reason": "initialFrameNavigation",
+   "url": "https://login.microsoftonline.com/savedusers?wreply=https://www.office.com/&appid=4345a7b9-9a63-4910-a426-35363201d503"
+}
+[1734950336.853][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "frameId": "A8177CCD6ACF61AA8673741C7A12DFAD"
+}
+[1734950336.854][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "frameId": "C07C48519B1153196FDD021844EC6355",
+   "navigationType": "historyApi",
+   "url": "https://www.office.com/"
+}
+[1734950336.854][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=20) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950336.855][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "timestamp": 60329.728949
+}
+[1734950336.855][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=21) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950336.870][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=21) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950336.942][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 109535,
+            "functionName": "t.init",
+            "lineNumber": 0,
+            "scriptId": "23",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+         }, {
+            "columnNumber": 20075,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.73495033694212e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950336.942][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 109535,
+            "functionName": "t.init",
+            "lineNumber": 0,
+            "scriptId": "23",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+         }, {
+            "columnNumber": 20075,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950336942208e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950336.942][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=22) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950336.943][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 109535,
+            "functionName": "t.init",
+            "lineNumber": 0,
+            "scriptId": "23",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+         }, {
+            "columnNumber": 20075,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950336942389e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950336.943][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 109535,
+            "functionName": "t.init",
+            "lineNumber": 0,
+            "scriptId": "23",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+         }, {
+            "columnNumber": 20075,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950336942412e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950336.943][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 109535,
+            "functionName": "t.init",
+            "lineNumber": 0,
+            "scriptId": "23",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+         }, {
+            "columnNumber": 20075,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950336942466e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950336.944][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=22) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950337.135][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "sessionId": "2AD492913E2991733BF95BAB877B99A6",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "8A735571712FCE4D531956C1018961D3",
+      "canAccessOpener": false,
+      "pid": 30212,
+      "targetId": "52A07FCABF9BCA4228BBE6ED7AF452D4",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734950337.136][DEBUG]: DevTools WebSocket Command: Page.enable (id=23) (session_id=2AD492913E2991733BF95BAB877B99A6) 2AD492913E2991733BF95BAB877B99A6 {
+}
+[1734950337.136][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=24) (session_id=2AD492913E2991733BF95BAB877B99A6) 2AD492913E2991733BF95BAB877B99A6 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950337.136][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=25) (session_id=2AD492913E2991733BF95BAB877B99A6) 2AD492913E2991733BF95BAB877B99A6 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950337.136][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=26) (session_id=2AD492913E2991733BF95BAB877B99A6) 2AD492913E2991733BF95BAB877B99A6 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734950337.139][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "8A735571712FCE4D531956C1018961D3",
+      "canAccessOpener": false,
+      "pid": 30212,
+      "targetId": "52A07FCABF9BCA4228BBE6ED7AF452D4",
+      "title": "https://login.live.com/Me.srf?wa=wsignin1.0&wreply=https://www.office.com/",
+      "type": "iframe",
+      "url": "https://login.live.com/Me.srf?wa=wsignin1.0&wreply=https://www.office.com/"
+   }
+}
+[1734950337.140][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "frameId": "52A07FCABF9BCA4228BBE6ED7AF452D4",
+   "reason": "swap"
+}
+[1734950337.142][DEBUG]: DevTools WebSocket Response: Page.enable (id=23) (session_id=2AD492913E2991733BF95BAB877B99A6) 2AD492913E2991733BF95BAB877B99A6 {
+}
+[1734950337.142][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=24) (session_id=2AD492913E2991733BF95BAB877B99A6) 2AD492913E2991733BF95BAB877B99A6 {
+   "identifier": "1"
+}
+[1734950337.142][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=25) (session_id=2AD492913E2991733BF95BAB877B99A6) 2AD492913E2991733BF95BAB877B99A6 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734950337.143][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=26) (session_id=2AD492913E2991733BF95BAB877B99A6) 2AD492913E2991733BF95BAB877B99A6 {
+}
+[1734950337.143][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=27) (session_id=2AD492913E2991733BF95BAB877B99A6) 2AD492913E2991733BF95BAB877B99A6 {
+}
+[1734950337.147][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=2AD492913E2991733BF95BAB877B99A6) 2AD492913E2991733BF95BAB877B99A6 {
+   "context": {
+      "auxData": {
+         "frameId": "52A07FCABF9BCA4228BBE6ED7AF452D4",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://login.live.com",
+      "uniqueId": "-2702934188284336940.7389894208016854114"
+   }
+}
+[1734950337.147][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=27) (session_id=2AD492913E2991733BF95BAB877B99A6) 2AD492913E2991733BF95BAB877B99A6 {
+}
+[1734950337.147][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=28) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950337.148][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=2AD492913E2991733BF95BAB877B99A6) 2AD492913E2991733BF95BAB877B99A6 {
+   "timestamp": 60330.023987
+}
+[1734950337.148][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=28) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950337.148][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=29) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "document",
+   "objectGroup": "a863f2ac-ce61-4ac1-8589-d63bc5fa99ab"
+}
+[1734950337.148][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=29) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "3864266873096750831.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734950337.148][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=30) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "objectId": "3864266873096750831.1.1"
+}
+[1734950337.148][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=30) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "https://www.office.com/",
+      "childNodeCount": 2,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "https://www.office.com/",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734950337.148][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=31) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "objectGroup": "a863f2ac-ce61-4ac1-8589-d63bc5fa99ab"
+}
+[1734950337.148][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=32) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-7736739983730186870.1753869919379300876"
+}
+[1734950337.148][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=31) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+}
+[1734950337.149][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=32) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "type": "string",
+      "value": "interactive"
+   }
+}
+[1734950337.652][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=33) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950337.653][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=33) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950337.932][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=2AD492913E2991733BF95BAB877B99A6) 2AD492913E2991733BF95BAB877B99A6 {
+   "timestamp": 60330.808017
+}
+[1734950337.932][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=2AD492913E2991733BF95BAB877B99A6) 2AD492913E2991733BF95BAB877B99A6 {
+   "frameId": "52A07FCABF9BCA4228BBE6ED7AF452D4"
+}
+[1734950337.932][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=34) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950337.932][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=34) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950337.933][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "frameId": "52A07FCABF9BCA4228BBE6ED7AF452D4"
+}
+[1734950337.933][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "frameId": "52A07FCABF9BCA4228BBE6ED7AF452D4",
+   "reason": "remove"
+}
+[1734950337.933][DEBUG]: DevTools WebSocket Event: Target.detachedFromTarget (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "sessionId": "2AD492913E2991733BF95BAB877B99A6",
+   "targetId": "52A07FCABF9BCA4228BBE6ED7AF452D4"
+}
+[1734950337.933][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=35) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950337.934][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=35) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950338.220][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "sessionId": "32DAE94DB3E963F0B6FCE022B91B2C9C",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "8A735571712FCE4D531956C1018961D3",
+      "canAccessOpener": false,
+      "pid": 30213,
+      "targetId": "A8177CCD6ACF61AA8673741C7A12DFAD",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734950338.220][DEBUG]: DevTools WebSocket Command: Page.enable (id=36) (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+}
+[1734950338.220][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=37) (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950338.220][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=38) (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950338.220][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=39) (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734950338.223][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "8A735571712FCE4D531956C1018961D3",
+      "canAccessOpener": false,
+      "pid": 30213,
+      "targetId": "A8177CCD6ACF61AA8673741C7A12DFAD",
+      "title": "https://login.microsoftonline.com/savedusers?wreply=https://www.office.com/&appid=4345a7b9-9a63-4910-a426-35363201d503",
+      "type": "iframe",
+      "url": "https://login.microsoftonline.com/savedusers?wreply=https://www.office.com/&appid=4345a7b9-9a63-4910-a426-35363201d503"
+   }
+}
+[1734950338.223][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "frameId": "A8177CCD6ACF61AA8673741C7A12DFAD",
+   "reason": "swap"
+}
+[1734950338.225][DEBUG]: DevTools WebSocket Response: Page.enable (id=36) (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+}
+[1734950338.225][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=37) (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+   "identifier": "1"
+}
+[1734950338.225][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=38) (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734950338.225][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=39) (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+}
+[1734950338.225][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=40) (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+}
+[1734950338.229][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+   "context": {
+      "auxData": {
+         "frameId": "A8177CCD6ACF61AA8673741C7A12DFAD",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://login.microsoftonline.com",
+      "uniqueId": "-1501590761890365369.-2596556593180317395"
+   }
+}
+[1734950338.229][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=40) (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+}
+[1734950338.229][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=41) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950338.229][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=41) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950338.229][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=42) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "document",
+   "objectGroup": "2f36b97b-4c7c-49e8-ac2d-e8364718bb1d"
+}
+[1734950338.229][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=42) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "3864266873096750831.1.2",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734950338.229][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=43) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "objectId": "3864266873096750831.1.2"
+}
+[1734950338.230][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=43) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "https://www.office.com/",
+      "childNodeCount": 2,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "https://www.office.com/",
+      "isScrollable": true,
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734950338.230][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=44) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "objectGroup": "2f36b97b-4c7c-49e8-ac2d-e8364718bb1d"
+}
+[1734950338.230][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=45) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-7736739983730186870.1753869919379300876"
+}
+[1734950338.230][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=44) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+}
+[1734950338.230][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=45) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "type": "string",
+      "value": "interactive"
+   }
+}
+[1734950338.480][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+   "timestamp": 60331.349347
+}
+[1734950338.480][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+   "timestamp": 60331.356222
+}
+[1734950338.480][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+   "frameId": "A8177CCD6ACF61AA8673741C7A12DFAD"
+}
+[1734950338.480][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=46) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950338.480][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=46) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950338.481][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+   "args": [ {
+      "type": "string",
+      "value": "BSSO Telemetry: {\"result\":\"Error\",\"error\":\"NoExtension\",\"type\":\"ChromeSsoTelemetry\",\"data\":{},\"traces\":[\"BrowserSSO Initialized\",\"Creating ChromeBrowserCore provider\",\"Sending message for method Cr..."
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 79899,
+         "functionName": "",
+         "lineNumber": 17,
+         "scriptId": "10",
+         "url": "https://aadcdn.msauth.net/shared/1.0/content/js/BssoInterrupt_Core_zKox_QMcTIVut7mG_Z9Eew2.js"
+      }, {
+         "columnNumber": 79855,
+         "functionName": "E",
+         "lineNumber": 17,
+         "scriptId": "10",
+         "url": "https://aadcdn.msauth.net/shared/1.0/content/js/BssoInterrupt_Core_zKox_QMcTIVut7mG_Z9Eew2.js"
+      }, {
+         "columnNumber": 79792,
+         "functionName": "C",
+         "lineNumber": 17,
+         "scriptId": "10",
+         "url": "https://aadcdn.msauth.net/shared/1.0/content/js/BssoInterrupt_Core_zKox_QMcTIVut7mG_Z9Eew2.js"
+      } ]
+   },
+   "timestamp": 1.734950338480398e+12,
+   "type": "info"
+}
+[1734950338.481][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=47) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950338.481][DEBUG]: DevTools WebSocket Event: Page.frameScheduledNavigation (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+   "delay": 0,
+   "frameId": "A8177CCD6ACF61AA8673741C7A12DFAD",
+   "reason": "scriptInitiated",
+   "url": "https://login.microsoftonline.com/savedusers?wreply=https://www.office.com/&appid=4345a7b9-9a63-4910-a426-35363201d503&sso_reload=true"
+}
+[1734950338.481][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+   "disposition": "currentTab",
+   "frameId": "A8177CCD6ACF61AA8673741C7A12DFAD",
+   "reason": "scriptInitiated",
+   "url": "https://login.microsoftonline.com/savedusers?wreply=https://www.office.com/&appid=4345a7b9-9a63-4910-a426-35363201d503&sso_reload=true"
+}
+[1734950338.481][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=47) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950338.482][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+   "frameId": "A8177CCD6ACF61AA8673741C7A12DFAD"
+}
+[1734950338.482][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=48) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950338.483][DEBUG]: DevTools WebSocket Event: Page.frameClearedScheduledNavigation (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+   "frameId": "A8177CCD6ACF61AA8673741C7A12DFAD"
+}
+[1734950338.483][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=48) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950338.993][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=49) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950338.994][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=49) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950339.042][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+}
+[1734950339.042][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolatedFeatureDisabled",
+      "domainAndRegistry": "microsoftonline.com",
+      "gatedAPIFeatures": [  ],
+      "id": "A8177CCD6ACF61AA8673741C7A12DFAD",
+      "loaderId": "33A3AE17E8C4B6FC2B004053F9067EB9",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "C07C48519B1153196FDD021844EC6355",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://login.microsoftonline.com",
+      "url": "https://login.microsoftonline.com/savedusers?wreply=https://www.office.com/&appid=4345a7b9-9a63-4910-a426-35363201d503&sso_reload=true"
+   },
+   "type": "Navigation"
+}
+[1734950339.043][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=50) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950339.044][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "8A735571712FCE4D531956C1018961D3",
+      "canAccessOpener": false,
+      "pid": 30213,
+      "targetId": "A8177CCD6ACF61AA8673741C7A12DFAD",
+      "title": "https://login.microsoftonline.com/savedusers?wreply=https://www.office.com/&appid=4345a7b9-9a63-4910-a426-35363201d503&sso_reload=true",
+      "type": "iframe",
+      "url": "https://login.microsoftonline.com/savedusers?wreply=https://www.office.com/&appid=4345a7b9-9a63-4910-a426-35363201d503&sso_reload=true"
+   }
+}
+[1734950339.044][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=50) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950339.045][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=32DAE94DB3E963F0B6FCE022B91B2C9C) 32DAE94DB3E963F0B6FCE022B91B2C9C {
+   "context": {
+      "auxData": {
+         "frameId": "A8177CCD6ACF61AA8673741C7A12DFAD",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://login.microsoftonline.com",
+      "uniqueId": "9024988005799493934.-9146140062285980345"
+   }
+}
+[1734950339.045][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=51) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950339.046][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=51) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950339.047][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "frameId": "A8177CCD6ACF61AA8673741C7A12DFAD"
+}
+[1734950339.047][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "frameId": "A8177CCD6ACF61AA8673741C7A12DFAD",
+   "reason": "remove"
+}
+[1734950339.047][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=52) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950339.048][DEBUG]: DevTools WebSocket Event: Target.detachedFromTarget (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "sessionId": "32DAE94DB3E963F0B6FCE022B91B2C9C",
+   "targetId": "A8177CCD6ACF61AA8673741C7A12DFAD"
+}
+[1734950339.049][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=52) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950339.559][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=53) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950339.560][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=53) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950340.061][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=54) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950340.061][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=54) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950340.571][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=55) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950340.572][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=55) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950341.075][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=56) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950341.076][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=56) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950341.581][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=57) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950341.582][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=57) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950342.086][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=58) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950342.087][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=58) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950342.597][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=59) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950342.598][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=59) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950343.106][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=60) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950343.107][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=60) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950343.613][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=61) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950343.614][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=61) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950344.119][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=62) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950344.120][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=62) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950344.627][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=63) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950344.628][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=63) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950345.136][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=64) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950345.138][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=64) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950345.644][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=65) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950345.646][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=65) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950346.012][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "sessionId": "4013A3FBDA1A0211FB3124008BE8142E",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "8A735571712FCE4D531956C1018961D3",
+      "canAccessOpener": false,
+      "pid": 0,
+      "targetId": "1A35EBD2A88117D77206E32B56D411B2",
+      "title": "Service Worker https://www.office.com/sw?cdnDomain=res.cdn.office.net/officehub&workload=officehome",
+      "type": "service_worker",
+      "url": "https://www.office.com/sw?cdnDomain=res.cdn.office.net/officehub&workload=officehome"
+   },
+   "waitingForDebugger": false
+}
+[1734950346.013][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=66) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "expression": "1"
+}
+[1734950346.014][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "timestamp": 60338.889725
+}
+[1734950346.014][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=67) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-7736739983730186870.1753869919379300876"
+}
+[1734950346.015][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "frameId": "C07C48519B1153196FDD021844EC6355"
+}
+[1734950346.016][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "frameId": "3259E0650FAA6843BEC71F6CDBA606AD",
+   "parentFrameId": "C07C48519B1153196FDD021844EC6355",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 26397,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "23",
+         "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+      }, {
+         "columnNumber": 10603,
+         "functionName": "Pe",
+         "lineNumber": 0,
+         "scriptId": "18",
+         "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+      }, {
+         "columnNumber": 9510,
+         "functionName": "Te",
+         "lineNumber": 0,
+         "scriptId": "18",
+         "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+      }, {
+         "columnNumber": 24971,
+         "functionName": "Pt",
+         "lineNumber": 0,
+         "scriptId": "23",
+         "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+      }, {
+         "columnNumber": 24543,
+         "functionName": "Ft",
+         "lineNumber": 0,
+         "scriptId": "23",
+         "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+      }, {
+         "columnNumber": 38061,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "23",
+         "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+      }, {
+         "columnNumber": 34921,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "23",
+         "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meBoot.min.js"
+      } ]
+   }
+}
+[1734950346.017][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "disposition": "currentTab",
+   "frameId": "3259E0650FAA6843BEC71F6CDBA606AD",
+   "reason": "initialFrameNavigation",
+   "url": "https://mem.gfx.ms/me/mecache?partner=office&wreply=https%3A%2F%2Fwww.office.com"
+}
+[1734950346.020][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "frameId": "3259E0650FAA6843BEC71F6CDBA606AD"
+}
+[1734950346.021][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=66) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950346.021][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=67) (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734950346.021][INFO]: Done waiting for pending navigations. Status: ok
+[1734950346.021][INFO]: [0bdb10d67ab1328c6f34d369bff2785e] RESPONSE Navigate
+[1734950346.031][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346030093e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.032][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346030175e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.032][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346030375e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.033][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346030411e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.033][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346030441e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.033][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346030476e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.033][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346030511e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.033][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346030542e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.033][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.73495034603058e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.033][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346030612e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.033][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.73495034603064e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.033][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346030675e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.033][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346030704e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.033][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346030735e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.033][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.73495034603081e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.033][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950346030854e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.033][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346030931e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.033][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.73495034603096e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.033][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346030989e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.033][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346031024e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.033][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346031052e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.033][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346031081e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.033][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950346031157e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950346031184e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346031255e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346031288e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346031314e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346031342e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346031371e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346031396e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346031421e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346031446e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950346031604e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346031705e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346031735e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346031767e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346031792e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346031828e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346031856e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346031887e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346031914e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346031993e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346032017e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734950346032045e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.034][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 29902,
+            "functionName": "t.loadCss",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 33615,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "27",
+            "url": "https://mem.gfx.ms/scripts/me/MeControl/10.24228.4/ja-JP/meCore.min.js"
+         }, {
+            "columnNumber": 18283,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         }, {
+            "columnNumber": 9694,
+            "functionName": "",
+            "lineNumber": 0,
+            "scriptId": "18",
+            "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.73495034603207e+12,
+      "url": "https://mem.gfx.ms/meversion?partner=office&market=ja-jp&uhf=1"
+   }
+}
+[1734950346.124][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "sessionId": "6A559573E22CF82AF4611168DBB87513",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "8A735571712FCE4D531956C1018961D3",
+      "canAccessOpener": false,
+      "pid": 30214,
+      "targetId": "3259E0650FAA6843BEC71F6CDBA606AD",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734950346.124][DEBUG]: DevTools WebSocket Command: Page.enable (id=68) (session_id=6A559573E22CF82AF4611168DBB87513) 6A559573E22CF82AF4611168DBB87513 {
+}
+[1734950346.125][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=69) (session_id=6A559573E22CF82AF4611168DBB87513) 6A559573E22CF82AF4611168DBB87513 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950346.125][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=70) (session_id=6A559573E22CF82AF4611168DBB87513) 6A559573E22CF82AF4611168DBB87513 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950346.125][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=71) (session_id=6A559573E22CF82AF4611168DBB87513) 6A559573E22CF82AF4611168DBB87513 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734950346.126][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "8A735571712FCE4D531956C1018961D3",
+      "canAccessOpener": false,
+      "pid": 30214,
+      "targetId": "3259E0650FAA6843BEC71F6CDBA606AD",
+      "title": "https://mem.gfx.ms/me/mecache?partner=office&wreply=https%3A%2F%2Fwww.office.com",
+      "type": "iframe",
+      "url": "https://mem.gfx.ms/me/mecache?partner=office&wreply=https%3A%2F%2Fwww.office.com"
+   }
+}
+[1734950346.126][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "frameId": "3259E0650FAA6843BEC71F6CDBA606AD",
+   "reason": "swap"
+}
+[1734950346.128][DEBUG]: DevTools WebSocket Response: Page.enable (id=68) (session_id=6A559573E22CF82AF4611168DBB87513) 6A559573E22CF82AF4611168DBB87513 {
+}
+[1734950346.128][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=69) (session_id=6A559573E22CF82AF4611168DBB87513) 6A559573E22CF82AF4611168DBB87513 {
+   "identifier": "1"
+}
+[1734950346.128][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=70) (session_id=6A559573E22CF82AF4611168DBB87513) 6A559573E22CF82AF4611168DBB87513 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734950346.128][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=71) (session_id=6A559573E22CF82AF4611168DBB87513) 6A559573E22CF82AF4611168DBB87513 {
+}
+[1734950346.128][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=72) (session_id=6A559573E22CF82AF4611168DBB87513) 6A559573E22CF82AF4611168DBB87513 {
+}
+[1734950346.129][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=6A559573E22CF82AF4611168DBB87513) 6A559573E22CF82AF4611168DBB87513 {
+   "context": {
+      "auxData": {
+         "frameId": "3259E0650FAA6843BEC71F6CDBA606AD",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://mem.gfx.ms",
+      "uniqueId": "6002013700129605428.-2858037629377408713"
+   }
+}
+[1734950346.129][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=72) (session_id=6A559573E22CF82AF4611168DBB87513) 6A559573E22CF82AF4611168DBB87513 {
+}
+[1734950346.129][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=6A559573E22CF82AF4611168DBB87513) 6A559573E22CF82AF4611168DBB87513 {
+   "timestamp": 60339.005671
+}
+[1734950346.129][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=6A559573E22CF82AF4611168DBB87513) 6A559573E22CF82AF4611168DBB87513 {
+   "timestamp": 60339.005824
+}
+[1734950346.130][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=6A559573E22CF82AF4611168DBB87513) 6A559573E22CF82AF4611168DBB87513 {
+   "frameId": "3259E0650FAA6843BEC71F6CDBA606AD"
+}
+[1734950346.130][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "frameId": "3259E0650FAA6843BEC71F6CDBA606AD"
+}
+[1734950346.130][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "frameId": "3259E0650FAA6843BEC71F6CDBA606AD",
+   "reason": "remove"
+}
+[1734950346.130][DEBUG]: DevTools WebSocket Event: Target.detachedFromTarget (session_id=486F146DA58E987B382C41BD35722E28) C07C48519B1153196FDD021844EC6355 {
+   "sessionId": "6A559573E22CF82AF4611168DBB87513",
+   "targetId": "3259E0650FAA6843BEC71F6CDBA606AD"
+}
+Trying to load the allocator multiple times. This is *not* supported.
+[1734950356.034][INFO]: [0bdb10d67ab1328c6f34d369bff2785e] COMMAND Quit {
+}
+[1734950356.092][INFO]: [0bdb10d67ab1328c6f34d369bff2785e] RESPONSE Quit
+[1734950356.092][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1734950356.092][DEBUG]: Log type 'browser' lost 59 entries on destruction

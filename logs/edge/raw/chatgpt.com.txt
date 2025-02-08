@@ -1,0 +1,954 @@
+[1734950235.950][INFO]: Starting Microsoft Edge WebDriver 131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70) on port 56911
+[1734950235.950][INFO]: Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+[1734950235.955][INFO]: msedgedriver was started successfully on port 56911
+[1734950235.962][INFO]: [77e7837ec252acf4a98e87c6bfdbedd9] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "MicrosoftEdge",
+         "browserVersion": null,
+         "ms:edgeOptions": {
+            "args": [ "--disable-extensions", "--inprivate" ],
+            "binary": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1734950235.962][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1734950235.963][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1734950235.963][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1734950235.963][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1734950235.963][INFO]: WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS = 
+[1734950235.963][INFO]: Launching Microsoft Edge: /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-extensions --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --inprivate --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.OWl2zN data:,
+
+DevTools listening on ws://127.0.0.1:56916/devtools/browser/6365eec5-e740-47ab-a6e1-66b0f4466a3e
+[1734950236.179][DEBUG]: DevTools HTTP Request: http://localhost:56916/json/version
+[1734950236.468][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Edg/131.0.2903.112",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
+   "V8-Version": "13.1.20.9",
+   "WebKit-Version": "537.36 (@16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+   "webSocketDebuggerUrl": "ws://localhost:56916/devtools/browser/6365eec5-e740-47ab-a6e1-66b0f4466a3e"
+}
+
+[1734950236.470][DEBUG]: DevTools HTTP Request: http://localhost:56916/json/list
+[1734950236.484][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:56916/devtools/page/A8001F84C226E86A7502A585AD550F96",
+   "id": "A8001F84C226E86A7502A585AD550F96",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:56916/devtools/page/A8001F84C226E86A7502A585AD550F96"
+} ]
+
+[1734950236.487][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1734950236.489][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1734950236.491][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "657D15E0C97ADFB4666A72341ADFB43B",
+      "canAccessOpener": false,
+      "pid": 0,
+      "targetId": "A8001F84C226E86A7502A585AD550F96",
+      "title": "",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1734950236.493][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "A8001F84C226E86A7502A585AD550F96"
+}
+[1734950236.494][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "35C5E646715D0C3B016F53F41E5305E6",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "657D15E0C97ADFB4666A72341ADFB43B",
+      "canAccessOpener": false,
+      "pid": 29423,
+      "targetId": "A8001F84C226E86A7502A585AD550F96",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1734950236.496][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "35C5E646715D0C3B016F53F41E5305E6"
+}
+[1734950236.496][DEBUG]: DevTools WebSocket Command: Page.enable (id=3) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+}
+[1734950236.496][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950236.497][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=5) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734950236.499][DEBUG]: DevTools WebSocket Command: Log.enable (id=6) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+}
+[1734950236.499][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=7) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734950236.514][DEBUG]: DevTools WebSocket Response: Page.enable (id=3) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+}
+[1734950236.514][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "identifier": "1"
+}
+[1734950236.514][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=5) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734950236.514][DEBUG]: DevTools WebSocket Response: Log.enable (id=6) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+}
+[1734950236.515][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=7) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+}
+[1734950236.515][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+}
+[1734950236.519][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "context": {
+      "auxData": {
+         "frameId": "A8001F84C226E86A7502A585AD550F96",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "4307526099120937254.5078924017641276650"
+   }
+}
+[1734950236.520][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+}
+[1734950236.520][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+}
+[1734950236.520][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+}
+[1734950236.520][INFO]: [77e7837ec252acf4a98e87c6bfdbedd9] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "MicrosoftEdge",
+      "browserVersion": "131.0.2903.112",
+      "fedcm:accounts": true,
+      "ms:edgeOptions": {
+         "debuggerAddress": "localhost:56916"
+      },
+      "msedge": {
+         "msedgedriverVersion": "131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+         "userDataDir": "/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.OWl2zN"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "77e7837ec252acf4a98e87c6bfdbedd9"
+}
+[1734950236.525][INFO]: [77e7837ec252acf4a98e87c6bfdbedd9] COMMAND Navigate {
+   "url": "https://chatgpt.com"
+}
+[1734950236.526][INFO]: Waiting for pending navigations...
+[1734950236.526][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=10) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "expression": "1"
+}
+[1734950236.526][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=10) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950236.527][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=11) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "expression": "document",
+   "objectGroup": "69a7d284-6ee5-4a4f-9118-20218633fd31"
+}
+[1734950236.527][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=11) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "2520495982435071020.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734950236.527][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=12) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "objectId": "2520495982435071020.1.1"
+}
+[1734950236.527][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=12) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734950236.529][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=13) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "objectGroup": "69a7d284-6ee5-4a4f-9118-20218633fd31"
+}
+[1734950236.529][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "4307526099120937254.5078924017641276650"
+}
+[1734950236.529][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=13) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+}
+[1734950236.529][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734950236.529][INFO]: Done waiting for pending navigations. Status: ok
+[1734950236.529][DEBUG]: DevTools WebSocket Command: Page.navigate (id=15) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "url": "https://chatgpt.com"
+}
+[1734950236.531][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "frameId": "A8001F84C226E86A7502A585AD550F96"
+}
+2024-12-23 19:37:16.727 Microsoft Edge[29415:1061423] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-23 19:37:16.727 Microsoft Edge[29415:1061423] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+[1734950237.558][DEBUG]: DevTools WebSocket Response: Page.navigate (id=15) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "frameId": "A8001F84C226E86A7502A585AD550F96",
+   "loaderId": "B46A2A13ED616C2B69B79B0CE4582A46"
+}
+[1734950237.558][INFO]: Waiting for pending navigations...
+[1734950237.558][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "expression": "1"
+}
+[1734950237.559][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+}
+[1734950237.560][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+}
+[1734950237.560][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "chatgpt.com",
+      "gatedAPIFeatures": [  ],
+      "id": "A8001F84C226E86A7502A585AD550F96",
+      "loaderId": "B46A2A13ED616C2B69B79B0CE4582A46",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://chatgpt.com",
+      "url": "https://chatgpt.com/"
+   },
+   "type": "Navigation"
+}
+[1734950237.567][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "context": {
+      "auxData": {
+         "frameId": "A8001F84C226E86A7502A585AD550F96",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://chatgpt.com",
+      "uniqueId": "-7513888041308874586.-1187664252814590292"
+   }
+}
+[1734950237.570][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950237.575][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734950237574669e+12,
+      "url": "https://chatgpt.com/"
+   }
+}
+[1734950237.575][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=17) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "expression": "1"
+}
+[1734950237.576][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=17) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950237.977][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "frameId": "23C4EF1736549C82C7DD6FE89E2EAC69",
+   "parentFrameId": "A8001F84C226E86A7502A585AD550F96",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 2817,
+         "functionName": "",
+         "lineNumber": 34,
+         "scriptId": "29",
+         "url": "https://chatgpt.com/"
+      }, {
+         "columnNumber": 3122,
+         "functionName": "",
+         "lineNumber": 34,
+         "scriptId": "29",
+         "url": "https://chatgpt.com/"
+      } ]
+   }
+}
+[1734950237.977][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "disposition": "currentTab",
+   "frameId": "23C4EF1736549C82C7DD6FE89E2EAC69",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734950237.977][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "expression": "1"
+}
+[1734950237.978][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "23C4EF1736549C82C7DD6FE89E2EAC69",
+      "loaderId": "068FD9CB7B3770977DFF01194C09E42D",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "A8001F84C226E86A7502A585AD550F96",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734950237.978][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "frameId": "23C4EF1736549C82C7DD6FE89E2EAC69"
+}
+[1734950237.980][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "context": {
+      "auxData": {
+         "frameId": "23C4EF1736549C82C7DD6FE89E2EAC69",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://chatgpt.com",
+      "uniqueId": "-7263297129778145496.-3576804091227368865"
+   }
+}
+[1734950237.980][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "frameId": "23C4EF1736549C82C7DD6FE89E2EAC69"
+}
+[1734950237.981][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950237.982][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "timestamp": 60230.856971
+}
+[1734950237.982][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "expression": "1"
+}
+[1734950237.983][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950238.081][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "frameId": "CA072BFAEE1304F9297B39DFB831C7D4",
+   "parentFrameId": "23C4EF1736549C82C7DD6FE89E2EAC69",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 5221,
+         "functionName": "A",
+         "lineNumber": 0,
+         "scriptId": "31",
+         "url": "https://chatgpt.com/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+      }, {
+         "columnNumber": 4726,
+         "functionName": "f",
+         "lineNumber": 0,
+         "scriptId": "31",
+         "url": "https://chatgpt.com/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+      }, {
+         "columnNumber": 4801,
+         "functionName": "C",
+         "lineNumber": 0,
+         "scriptId": "31",
+         "url": "https://chatgpt.com/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+      }, {
+         "columnNumber": 4439,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "31",
+         "url": "https://chatgpt.com/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+      }, {
+         "columnNumber": 8797,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "31",
+         "url": "https://chatgpt.com/cdn-cgi/challenge-platform/scripts/jsd/main.js"
+      } ]
+   }
+}
+[1734950238.081][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=20) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "expression": "1"
+}
+[1734950238.082][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "disposition": "currentTab",
+   "frameId": "CA072BFAEE1304F9297B39DFB831C7D4",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734950238.082][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "CA072BFAEE1304F9297B39DFB831C7D4",
+      "loaderId": "6D234AF6D684C939848923C27C725B34",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "23C4EF1736549C82C7DD6FE89E2EAC69",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734950238.082][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "frameId": "CA072BFAEE1304F9297B39DFB831C7D4"
+}
+[1734950238.084][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "context": {
+      "auxData": {
+         "frameId": "CA072BFAEE1304F9297B39DFB831C7D4",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 3,
+      "name": "",
+      "origin": "https://chatgpt.com",
+      "uniqueId": "649725655294862339.148635796031894047"
+   }
+}
+[1734950238.084][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "frameId": "CA072BFAEE1304F9297B39DFB831C7D4"
+}
+[1734950238.199][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "frameId": "CA072BFAEE1304F9297B39DFB831C7D4"
+}
+[1734950238.208][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "frameId": "CA072BFAEE1304F9297B39DFB831C7D4",
+   "reason": "remove"
+}
+[1734950238.208][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "executionContextId": 3,
+   "executionContextUniqueId": "649725655294862339.148635796031894047"
+}
+[1734950238.209][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=20) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950238.433][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "timestamp": 60231.308318
+}
+[1734950238.433][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=21) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-7513888041308874586.-1187664252814590292"
+}
+[1734950238.434][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "frameId": "A8001F84C226E86A7502A585AD550F96"
+}
+[1734950238.434][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=21) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734950238.434][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=22) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "expression": "1"
+}
+[1734950238.437][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "frameId": "A8001F84C226E86A7502A585AD550F96"
+}
+[1734950238.437][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "frameId": "A8001F84C226E86A7502A585AD550F96",
+   "navigationType": "historyApi",
+   "url": "https://chatgpt.com/"
+}
+[1734950238.437][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "frameId": "A8001F84C226E86A7502A585AD550F96"
+}
+[1734950238.448][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=22) (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734950238.448][INFO]: Done waiting for pending navigations. Status: ok
+[1734950238.448][INFO]: [77e7837ec252acf4a98e87c6bfdbedd9] RESPONSE Navigate
+[1734950238.550][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "29424.122",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.734950238550037e+12,
+      "url": "https://chatgpt.com/backend-anon/me"
+   }
+}
+[1734950238.550][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "29424.125",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.734950238550246e+12,
+      "url": "https://chatgpt.com/backend-anon/conversation/init"
+   }
+}
+[1734950238.550][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "29424.124",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.734950238550331e+12,
+      "url": "https://chatgpt.com/backend-anon/prompt_library/?limit=4&offset=0"
+   }
+}
+[1734950238.557][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "29424.123",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.734950238556734e+12,
+      "url": "https://chatgpt.com/backend-anon/models"
+   }
+}
+[1734950238.563][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "29424.127",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.734950238563181e+12,
+      "url": "https://chatgpt.com/ces/v1/projects/oai/settings"
+   }
+}
+[1734950238.573][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "args": [ {
+      "type": "string",
+      "value": "\u003Chtml>\n  \u003Chead>\n    \u003Cmeta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    \u003Cstyle global>body{font-family:Arial,Helvetica,sans-serif}.container{align-items:center;display:flex;f..."
+   } ],
+   "executionContextId": 1,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 5053,
+         "functionName": "Qr.\u003Ccomputed>",
+         "lineNumber": 249,
+         "scriptId": "20",
+         "url": "https://cdn.oaistatic.com/assets/lklglvrzltpv3f05.js"
+      }, {
+         "columnNumber": 87487,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "43",
+         "url": "https://cdn.oaistatic.com/assets/hl0x70ysiq5hf9io.js"
+      } ]
+   },
+   "timestamp": 1.734950238572651e+12,
+   "type": "error"
+}
+[1734950238.575][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "29424.128",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.734950238574529e+12,
+      "url": "https://chatgpt.com/backend-anon/sentinel/chat-requirements"
+   }
+}
+[1734950238.607][DEBUG]: DevTools WebSocket Event: Runtime.exceptionThrown (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "exceptionDetails": {
+      "columnNumber": 23021,
+      "exception": {
+         "className": "$t",
+         "description": "RequestError: Something went wrong. If this issue persists please contact us through our help center at help.openai.com.\n    at C.fetch (https://cdn.oaistatic.com/assets/ltrr4mhf6s4m7a72.js:23:23022)",
+         "objectId": "-8372182921292450580.1.1",
+         "preview": {
+            "description": "RequestError: Something went wrong. If this issue persists please contact us through our help center at help.openai.com.\n    at C.fetch (https://cdn.oaistatic.com/assets/ltrr4mhf6s4m7a72.js:23:23022)",
+            "overflow": true,
+            "properties": [ {
+               "name": "name",
+               "type": "string",
+               "value": "RequestError"
+            }, {
+               "name": "detail",
+               "type": "object",
+               "value": "Object"
+            }, {
+               "name": "jsonError",
+               "type": "undefined",
+               "value": "undefined"
+            }, {
+               "name": "url",
+               "type": "string",
+               "value": "https://chatgpt.com/backend-anon/sentinel/chat-requirements"
+            }, {
+               "name": "status",
+               "type": "number",
+               "value": "403"
+            } ],
+            "subtype": "error",
+            "type": "object"
+         },
+         "subtype": "error",
+         "type": "object"
+      },
+      "exceptionId": 1,
+      "executionContextId": 1,
+      "lineNumber": 22,
+      "scriptId": "23",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 23021,
+            "functionName": "fetch",
+            "lineNumber": 22,
+            "scriptId": "23",
+            "url": "https://cdn.oaistatic.com/assets/ltrr4mhf6s4m7a72.js"
+         } ]
+      },
+      "text": "Uncaught (in promise)",
+      "url": "https://cdn.oaistatic.com/assets/ltrr4mhf6s4m7a72.js"
+   },
+   "timestamp": 1.734950238606432e+12
+}
+[1734950238.607][DEBUG]: DevTools WebSocket Event: Runtime.exceptionThrown (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "exceptionDetails": {
+      "columnNumber": 23021,
+      "exception": {
+         "className": "$t",
+         "description": "RequestError: Something went wrong. If this issue persists please contact us through our help center at help.openai.com.\n    at C.fetch (https://cdn.oaistatic.com/assets/ltrr4mhf6s4m7a72.js:23:23022)",
+         "objectId": "-8372182921292450580.1.2",
+         "preview": {
+            "description": "RequestError: Something went wrong. If this issue persists please contact us through our help center at help.openai.com.\n    at C.fetch (https://cdn.oaistatic.com/assets/ltrr4mhf6s4m7a72.js:23:23022)",
+            "overflow": true,
+            "properties": [ {
+               "name": "name",
+               "type": "string",
+               "value": "RequestError"
+            }, {
+               "name": "detail",
+               "type": "object",
+               "value": "Object"
+            }, {
+               "name": "jsonError",
+               "type": "undefined",
+               "value": "undefined"
+            }, {
+               "name": "url",
+               "type": "string",
+               "value": "https://chatgpt.com/backend-anon/sentinel/chat-requirements"
+            }, {
+               "name": "status",
+               "type": "number",
+               "value": "403"
+            } ],
+            "subtype": "error",
+            "type": "object"
+         },
+         "subtype": "error",
+         "type": "object"
+      },
+      "exceptionId": 2,
+      "executionContextId": 1,
+      "lineNumber": 22,
+      "scriptId": "23",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 23021,
+            "functionName": "fetch",
+            "lineNumber": 22,
+            "scriptId": "23",
+            "url": "https://cdn.oaistatic.com/assets/ltrr4mhf6s4m7a72.js"
+         } ]
+      },
+      "text": "Uncaught (in promise)",
+      "url": "https://cdn.oaistatic.com/assets/ltrr4mhf6s4m7a72.js"
+   },
+   "timestamp": 1.734950238606545e+12
+}
+[1734950238.833][DEBUG]: DevTools WebSocket Event: Runtime.exceptionThrown (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "exceptionDetails": {
+      "columnNumber": 23021,
+      "exception": {
+         "className": "$t",
+         "description": "RequestError: Something went wrong. If this issue persists please contact us through our help center at help.openai.com.\n    at C.fetch (https://cdn.oaistatic.com/assets/ltrr4mhf6s4m7a72.js:23:23022)",
+         "objectId": "-8372182921292450580.1.3",
+         "preview": {
+            "description": "RequestError: Something went wrong. If this issue persists please contact us through our help center at help.openai.com.\n    at C.fetch (https://cdn.oaistatic.com/assets/ltrr4mhf6s4m7a72.js:23:23022)",
+            "overflow": true,
+            "properties": [ {
+               "name": "name",
+               "type": "string",
+               "value": "RequestError"
+            }, {
+               "name": "detail",
+               "type": "object",
+               "value": "Object"
+            }, {
+               "name": "jsonError",
+               "type": "undefined",
+               "value": "undefined"
+            }, {
+               "name": "url",
+               "type": "string",
+               "value": "https://chatgpt.com/backend-anon/sentinel/chat-requirements"
+            }, {
+               "name": "status",
+               "type": "number",
+               "value": "403"
+            } ],
+            "subtype": "error",
+            "type": "object"
+         },
+         "subtype": "error",
+         "type": "object"
+      },
+      "exceptionId": 3,
+      "executionContextId": 1,
+      "lineNumber": 22,
+      "scriptId": "23",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 23021,
+            "functionName": "fetch",
+            "lineNumber": 22,
+            "scriptId": "23",
+            "url": "https://cdn.oaistatic.com/assets/ltrr4mhf6s4m7a72.js"
+         } ]
+      },
+      "text": "Uncaught (in promise)",
+      "url": "https://cdn.oaistatic.com/assets/ltrr4mhf6s4m7a72.js"
+   },
+   "timestamp": 1.734950238832159e+12
+}
+[1734950238.959][DEBUG]: DevTools WebSocket Event: Runtime.exceptionThrown (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "exceptionDetails": {
+      "columnNumber": 23021,
+      "exception": {
+         "className": "$t",
+         "description": "RequestError: Something went wrong. If this issue persists please contact us through our help center at help.openai.com.\n    at C.fetch (https://cdn.oaistatic.com/assets/ltrr4mhf6s4m7a72.js:23:23022)",
+         "objectId": "-8372182921292450580.1.4",
+         "preview": {
+            "description": "RequestError: Something went wrong. If this issue persists please contact us through our help center at help.openai.com.\n    at C.fetch (https://cdn.oaistatic.com/assets/ltrr4mhf6s4m7a72.js:23:23022)",
+            "overflow": true,
+            "properties": [ {
+               "name": "name",
+               "type": "string",
+               "value": "RequestError"
+            }, {
+               "name": "detail",
+               "type": "object",
+               "value": "Object"
+            }, {
+               "name": "jsonError",
+               "type": "undefined",
+               "value": "undefined"
+            }, {
+               "name": "url",
+               "type": "string",
+               "value": "https://chatgpt.com/backend-anon/sentinel/chat-requirements"
+            }, {
+               "name": "status",
+               "type": "number",
+               "value": "403"
+            } ],
+            "subtype": "error",
+            "type": "object"
+         },
+         "subtype": "error",
+         "type": "object"
+      },
+      "exceptionId": 4,
+      "executionContextId": 1,
+      "lineNumber": 22,
+      "scriptId": "23",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 23021,
+            "functionName": "fetch",
+            "lineNumber": 22,
+            "scriptId": "23",
+            "url": "https://cdn.oaistatic.com/assets/ltrr4mhf6s4m7a72.js"
+         } ]
+      },
+      "text": "Uncaught (in promise)",
+      "url": "https://cdn.oaistatic.com/assets/ltrr4mhf6s4m7a72.js"
+   },
+   "timestamp": 1.734950238959046e+12
+}
+[1734950239.045][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "sessionId": "F1B8E584C9D9BA62AA4FAD278E3035C3",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "657D15E0C97ADFB4666A72341ADFB43B",
+      "canAccessOpener": false,
+      "pid": 29424,
+      "targetId": "C7D74DAA66A9E4F8502B7FC32CEBC382",
+      "title": "blob:https://chatgpt.com/ee98a37e-bad5-49d4-aef3-c4349178d1e7",
+      "type": "worker",
+      "url": "blob:https://chatgpt.com/ee98a37e-bad5-49d4-aef3-c4349178d1e7"
+   },
+   "waitingForDebugger": false
+}
+[1734950239.586][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "29424.140",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.734950239584849e+12,
+      "url": "https://chatgpt.com/backend-anon/models"
+   }
+}
+Trying to load the allocator multiple times. This is *not* supported.
+[1734950241.623][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "29424.142",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.734950241622477e+12,
+      "url": "https://chatgpt.com/backend-anon/models"
+   }
+}
+[1734950245.661][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=35C5E646715D0C3B016F53F41E5305E6) A8001F84C226E86A7502A585AD550F96 {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "29424.143",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 403 ()",
+      "timestamp": 1.734950245660054e+12,
+      "url": "https://chatgpt.com/backend-anon/models"
+   }
+}
+[1734950248.460][INFO]: [77e7837ec252acf4a98e87c6bfdbedd9] COMMAND Quit {
+}
+[1734950248.518][INFO]: [77e7837ec252acf4a98e87c6bfdbedd9] RESPONSE Quit
+[1734950248.519][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1734950248.519][DEBUG]: Log type 'browser' lost 15 entries on destruction

@@ -1,0 +1,8 @@
+console.error: "Warning: unrecognized command line flag" "-disable-extensions"
+
+JavaScript error: https://f69b2edd580626ce0c4e1c2a65eabbc0.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html, line 2: SecurityError: Permission denied to access property "addEventListener" on cross-origin object
+
+JavaScript error: https://f69b2edd580626ce0c4e1c2a65eabbc0.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html line 18 > injectedScript, line 2: SecurityError: Permission denied to access property "addEventListener" on cross-origin object
+
+JavaScript error: https://f69b2edd580626ce0c4e1c2a65eabbc0.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html, line 2: SecurityError: Permission denied to access property "addEventListener" on cross-origin object
+

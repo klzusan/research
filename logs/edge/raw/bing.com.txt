@@ -1,0 +1,1385 @@
+[1734953011.154][INFO]: Starting Microsoft Edge WebDriver 131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70) on port 59734
+[1734953011.154][INFO]: Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+[1734953011.157][INFO]: msedgedriver was started successfully on port 59734
+[1734953011.164][INFO]: [9f95133a7d7abc212a481cf9a6285a1d] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "MicrosoftEdge",
+         "browserVersion": null,
+         "ms:edgeOptions": {
+            "args": [ "--disable-extensions", "--inprivate" ],
+            "binary": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1734953011.165][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1734953011.165][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1734953011.165][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1734953011.165][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1734953011.165][INFO]: WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS = 
+[1734953011.165][INFO]: Launching Microsoft Edge: /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-extensions --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --inprivate --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.i4qFr9 data:,
+
+DevTools listening on ws://127.0.0.1:59739/devtools/browser/66a6d56a-a21a-4de2-8425-8bfd331bd1df
+[1734953011.386][DEBUG]: DevTools HTTP Request: http://localhost:59739/json/version
+[1734953011.674][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Edg/131.0.2903.112",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
+   "V8-Version": "13.1.20.9",
+   "WebKit-Version": "537.36 (@16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+   "webSocketDebuggerUrl": "ws://localhost:59739/devtools/browser/66a6d56a-a21a-4de2-8425-8bfd331bd1df"
+}
+
+[1734953011.675][DEBUG]: DevTools HTTP Request: http://localhost:59739/json/list
+[1734953011.688][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:59739/devtools/page/64A1E6C37954A267D576E5DB36EFE0AF",
+   "id": "64A1E6C37954A267D576E5DB36EFE0AF",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:59739/devtools/page/64A1E6C37954A267D576E5DB36EFE0AF"
+} ]
+
+[1734953011.690][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1734953011.697][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1734953011.711][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "1FF0AC3DB9A67507C577B40DDB9026C5",
+      "canAccessOpener": false,
+      "pid": 0,
+      "targetId": "64A1E6C37954A267D576E5DB36EFE0AF",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1734953011.713][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "64A1E6C37954A267D576E5DB36EFE0AF"
+}
+[1734953011.721][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "B117B76BB5A8E38D1A5A2CC988C62158",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "1FF0AC3DB9A67507C577B40DDB9026C5",
+      "canAccessOpener": false,
+      "pid": 33412,
+      "targetId": "64A1E6C37954A267D576E5DB36EFE0AF",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1734953011.723][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "B117B76BB5A8E38D1A5A2CC988C62158"
+}
+[1734953011.723][DEBUG]: DevTools WebSocket Command: Page.enable (id=3) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+}
+[1734953011.723][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734953011.725][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=5) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734953011.726][DEBUG]: DevTools WebSocket Command: Log.enable (id=6) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+}
+[1734953011.726][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=7) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734953011.726][DEBUG]: DevTools WebSocket Response: Page.enable (id=3) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+}
+[1734953011.726][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "identifier": "1"
+}
+[1734953011.726][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=5) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734953011.726][DEBUG]: DevTools WebSocket Response: Log.enable (id=6) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+}
+[1734953011.726][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=7) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+}
+[1734953011.726][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+}
+[1734953011.726][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "context": {
+      "auxData": {
+         "frameId": "64A1E6C37954A267D576E5DB36EFE0AF",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "4883620502596047100.-5862767483092424935"
+   }
+}
+[1734953011.729][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+}
+[1734953011.729][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+}
+[1734953011.729][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+}
+[1734953011.731][INFO]: [9f95133a7d7abc212a481cf9a6285a1d] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "MicrosoftEdge",
+      "browserVersion": "131.0.2903.112",
+      "fedcm:accounts": true,
+      "ms:edgeOptions": {
+         "debuggerAddress": "localhost:59739"
+      },
+      "msedge": {
+         "msedgedriverVersion": "131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+         "userDataDir": "/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.i4qFr9"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "9f95133a7d7abc212a481cf9a6285a1d"
+}
+[1734953011.732][INFO]: [9f95133a7d7abc212a481cf9a6285a1d] COMMAND Navigate {
+   "url": "https://bing.com"
+}
+[1734953011.733][INFO]: Waiting for pending navigations...
+[1734953011.733][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=10) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "expression": "1"
+}
+[1734953011.733][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=10) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734953011.733][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=11) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "expression": "document",
+   "objectGroup": "5e2817af-e400-4147-bfc5-dd28decd3fc1"
+}
+[1734953011.734][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=11) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "2239196539564206162.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734953011.734][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=12) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "objectId": "2239196539564206162.1.1"
+}
+[1734953011.734][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=12) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734953011.736][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=13) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "objectGroup": "5e2817af-e400-4147-bfc5-dd28decd3fc1"
+}
+[1734953011.736][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "4883620502596047100.-5862767483092424935"
+}
+[1734953011.737][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=13) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+}
+[1734953011.737][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734953011.737][INFO]: Done waiting for pending navigations. Status: ok
+[1734953011.737][DEBUG]: DevTools WebSocket Command: Page.navigate (id=15) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "url": "https://bing.com"
+}
+[1734953011.738][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "frameId": "64A1E6C37954A267D576E5DB36EFE0AF"
+}
+2024-12-23 20:23:31.930 Microsoft Edge[33404:1128065] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-23 20:23:31.930 Microsoft Edge[33404:1128065] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+[1734953012.058][DEBUG]: DevTools WebSocket Response: Page.navigate (id=15) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "frameId": "64A1E6C37954A267D576E5DB36EFE0AF",
+   "loaderId": "7DC4E50B3C0E367F44E93BE99C1844FB"
+}
+[1734953012.058][INFO]: Waiting for pending navigations...
+[1734953012.059][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "expression": "1"
+}
+[1734953012.059][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+}
+[1734953012.061][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+}
+[1734953012.061][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "bing.com",
+      "gatedAPIFeatures": [  ],
+      "id": "64A1E6C37954A267D576E5DB36EFE0AF",
+      "loaderId": "7DC4E50B3C0E367F44E93BE99C1844FB",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.bing.com",
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   },
+   "type": "Navigation"
+}
+[1734953012.069][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "context": {
+      "auxData": {
+         "frameId": "64A1E6C37954A267D576E5DB36EFE0AF",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.bing.com",
+      "uniqueId": "-8543680279142923402.4974710374034750659"
+   }
+}
+[1734953012.071][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734953012070725e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953012.072][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 0,
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734953012072146e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953012.074][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734953012.087][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 7,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 37007,
+            "functionName": "",
+            "lineNumber": 7,
+            "scriptId": "9",
+            "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+         }, {
+            "columnNumber": 37203,
+            "functionName": "",
+            "lineNumber": 7,
+            "scriptId": "9",
+            "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+         } ]
+      },
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734953012086776e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953012.087][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 7,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 37007,
+            "functionName": "",
+            "lineNumber": 7,
+            "scriptId": "9",
+            "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+         }, {
+            "columnNumber": 37203,
+            "functionName": "",
+            "lineNumber": 7,
+            "scriptId": "9",
+            "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+         } ]
+      },
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734953012086834e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953012.087][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=17) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "expression": "1"
+}
+[1734953012.098][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=17) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734953012.100][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "timestamp": 63005.013832
+}
+[1734953012.100][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "expression": "1"
+}
+[1734953012.100][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734953012.146][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734953012145521e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953012.146][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "expression": "1"
+}
+[1734953012.146][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734953012.309][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "timestamp": 63005.22301
+}
+[1734953012.309][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=20) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-8543680279142923402.4974710374034750659"
+}
+[1734953012.309][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "frameId": "64A1E6C37954A267D576E5DB36EFE0AF"
+}
+[1734953012.310][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=20) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734953012.310][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=21) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "expression": "1"
+}
+[1734953012.311][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=21) (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734953012.311][INFO]: Done waiting for pending navigations. Status: ok
+[1734953012.311][INFO]: [9f95133a7d7abc212a481cf9a6285a1d] RESPONSE Navigate
+[1734953012.489][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734953012488573e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953012.490][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734953012488687e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953012.490][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734953012488757e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953012.490][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "deprecation",
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734953012488788e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.204][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://trc.taboola.com/sg/msn/1/cm?taboola_hm=2EBE1DD67F0A61D4099D08887E816033&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016203189e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.204][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://trc.taboola.com/sg/msn/1/cm?taboola_hm=2EBE1DD67F0A61D4099D08887E816033&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016203737e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.204][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://trc.taboola.com/sg/msn/1/cm?taboola_hm=2EBE1DD67F0A61D4099D08887E816033&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016203755e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.204][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://trc.taboola.com/sg/msn/1/cm?taboola_hm=2EBE1DD67F0A61D4099D08887E816033&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016203769e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.204][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://sync.outbrain.com/uidmappixel?ext_uid=2EBE1DD67F0A61D4099D08887E816033&pname=MSN&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.73495301620378e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.204][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://sync.outbrain.com/uidmappixel?ext_uid=2EBE1DD67F0A61D4099D08887E816033&pname=MSN&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016203791e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.204][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://sync.outbrain.com/uidmappixel?ext_uid=2EBE1DD67F0A61D4099D08887E816033&pname=MSN&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016203798e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.204][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://sync.outbrain.com/uidmappixel?ext_uid=2EBE1DD67F0A61D4099D08887E816033&pname=MSN&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016203807e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.204][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://pr-bh.ybp.yahoo.com/sync/msn?gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016203817e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.204][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://pr-bh.ybp.yahoo.com/sync/msn?gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016203826e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.204][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://pr-bh.ybp.yahoo.com/sync/msn?gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016203835e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.204][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://pr-bh.ybp.yahoo.com/sync/msn?gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016203843e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.204][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://hbx.media.net/cksync.php?type=nms&cs=3&ovsid=2EBE1DD67F0A61D4099D08887E816033&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016203973e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.204][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://hbx.media.net/cksync.php?type=nms&cs=3&ovsid=2EBE1DD67F0A61D4099D08887E816033&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016203982e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.204][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://hbx.media.net/cksync.php?type=nms&cs=3&ovsid=2EBE1DD67F0A61D4099D08887E816033&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016204041e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.204][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://hbx.media.net/cksync.php?type=nms&cs=3&ovsid=2EBE1DD67F0A61D4099D08887E816033&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.73495301620406e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.204][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://cm.mgid.com/m?cdsp=516415&c=2EBE1DD67F0A61D4099D08887E816033&mode=inverse&msn_src=ntp&&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016204218e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.205][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://cm.mgid.com/m?cdsp=516415&c=2EBE1DD67F0A61D4099D08887E816033&mode=inverse&msn_src=ntp&&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016204236e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.205][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://cm.mgid.com/m?cdsp=516415&c=2EBE1DD67F0A61D4099D08887E816033&mode=inverse&msn_src=ntp&&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016204246e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.205][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://cm.mgid.com/m?cdsp=516415&c=2EBE1DD67F0A61D4099D08887E816033&mode=inverse&msn_src=ntp&&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016204255e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.205][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://eb2.3lift.com/mapuid?suid=2EBE1DD67F0A61D4099D08887E816033&sid=16&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016204447e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.205][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://eb2.3lift.com/mapuid?suid=2EBE1DD67F0A61D4099D08887E816033&sid=16&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016204465e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.205][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://eb2.3lift.com/mapuid?suid=2EBE1DD67F0A61D4099D08887E816033&sid=16&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016204476e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.205][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://eb2.3lift.com/mapuid?suid=2EBE1DD67F0A61D4099D08887E816033&sid=16&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016204515e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.205][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://visitor.omnitagjs.com/visitor/sync?uid=9871605be8d4b2a982914bf5c9348e7b&name=MSN&visitor=2EBE1DD67F0A61D4099D08887E816033&external=true&gdp...",
+      "timestamp": 1.734953016204696e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.205][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://visitor.omnitagjs.com/visitor/sync?uid=9871605be8d4b2a982914bf5c9348e7b&name=MSN&visitor=2EBE1DD67F0A61D4099D08887E816033&external=true&gdp...",
+      "timestamp": 1.734953016204716e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.205][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://trace.mediago.io/cs/msn?id=2EBE1DD67F0A61D4099D08887E816033&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016204751e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.205][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://trace.mediago.io/cs/msn?id=2EBE1DD67F0A61D4099D08887E816033&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016204784e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.205][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://sync.inmobi.com/oRTB?redirect={PubRedirectUrl}&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016204937e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.205][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://sync.inmobi.com/oRTB?redirect={PubRedirectUrl}&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.73495301620496e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.307][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://visitor.omnitagjs.com/visitor/sync?uid=9871605be8d4b2a982914bf5c9348e7b&name=MSN&visitor=2EBE1DD67F0A61D4099D08887E816033&external=true&gdp...",
+      "timestamp": 1.734953016306269e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.307][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://visitor.omnitagjs.com/visitor/sync?uid=9871605be8d4b2a982914bf5c9348e7b&name=MSN&visitor=2EBE1DD67F0A61D4099D08887E816033&external=true&gdp...",
+      "timestamp": 1.734953016306299e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.411][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://trace.mediago.io/cs/msn?id=2EBE1DD67F0A61D4099D08887E816033&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016410594e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.411][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://trace.mediago.io/cs/msn?id=2EBE1DD67F0A61D4099D08887E816033&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016410656e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.478][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://hbx.media.net/cksync.php?type=nms&cs=3&ovsid=2EBE1DD67F0A61D4099D08887E816033&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016476621e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.478][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://hbx.media.net/cksync.php?type=nms&cs=3&ovsid=2EBE1DD67F0A61D4099D08887E816033&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016477759e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.608][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 2923,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 37001,
+            "functionName": "appendTo",
+            "lineNumber": 2923,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 33110,
+            "functionName": "render",
+            "lineNumber": 2923,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 25851,
+            "functionName": "renderTemplate",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 24357,
+            "functionName": "connect",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 30106,
+            "functionName": "connectedCallback",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 293613,
+            "functionName": "initializeAsync",
+            "lineNumber": 4460,
+            "scriptId": "46",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/common.e24c6d3ccc3413b6ce58.js"
+         } ]
+      },
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734953016607972e+12,
+      "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+   }
+}
+[1734953016.652][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 2917,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 26406,
+            "functionName": "",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 26301,
+            "functionName": "m",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 16214,
+            "functionName": "withStrategy",
+            "lineNumber": 2923,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 15865,
+            "functionName": "get strategy",
+            "lineNumber": 2923,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 15916,
+            "functionName": "addStylesTo",
+            "lineNumber": 2923,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 23888,
+            "functionName": "addStyles",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 24392,
+            "functionName": "connect",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 30106,
+            "functionName": "connectedCallback",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 293613,
+            "functionName": "initializeAsync",
+            "lineNumber": 4460,
+            "scriptId": "46",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/common.e24c6d3ccc3413b6ce58.js"
+         } ]
+      },
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734953016651533e+12,
+      "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+   }
+}
+[1734953016.652][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 2917,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 26406,
+            "functionName": "",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 26301,
+            "functionName": "m",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 16214,
+            "functionName": "withStrategy",
+            "lineNumber": 2923,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 15865,
+            "functionName": "get strategy",
+            "lineNumber": 2923,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 15916,
+            "functionName": "addStylesTo",
+            "lineNumber": 2923,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 23888,
+            "functionName": "addStyles",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 24392,
+            "functionName": "connect",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 30106,
+            "functionName": "connectedCallback",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 293613,
+            "functionName": "initializeAsync",
+            "lineNumber": 4460,
+            "scriptId": "46",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/common.e24c6d3ccc3413b6ce58.js"
+         } ]
+      },
+      "text": "-ms-high-contrast-adjust is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors...",
+      "timestamp": 1.734953016651589e+12,
+      "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+   }
+}
+[1734953016.662][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "33416.145",
+      "source": "network",
+      "text": "Failed to load resource: the server responded with a status of 400 ()",
+      "timestamp": 1.734953016661578e+12,
+      "url": "https://cm.mgid.com/m?cdsp=516415&c=2EBE1DD67F0A61D4099D08887E816033&mode=inverse&msn_src=ntp&&gdpr=0&gdpr_consent="
+   }
+}
+[1734953016.663][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://pr-bh.ybp.yahoo.com/sync/msn?gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016662386e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.663][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://sync.inmobi.com/oRTB?redirect={PubRedirectUrl}&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016662685e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.663][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://sync.inmobi.com/oRTB?redirect={PubRedirectUrl}&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016662704e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.693][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://sync.outbrain.com/uidmappixel?ext_uid=2EBE1DD67F0A61D4099D08887E816033&pname=MSN&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016692339e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.754][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://eb2.3lift.com/mapuid?suid=2EBE1DD67F0A61D4099D08887E816033&sid=16&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016753438e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.754][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://eb2.3lift.com/mapuid?suid=2EBE1DD67F0A61D4099D08887E816033&sid=16&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016753475e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.754][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://eb2.3lift.com/mapuid?suid=2EBE1DD67F0A61D4099D08887E816033&sid=16&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016753605e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.754][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://eb2.3lift.com/mapuid?suid=2EBE1DD67F0A61D4099D08887E816033&sid=16&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953016753617e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.755][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://eb2.3lift.com/getuid?ld=1&gdpr=0&cmp_cs=&us_privacy=.",
+      "timestamp": 1.734953016754777e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.755][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://eb2.3lift.com/getuid?ld=1&gdpr=0&cmp_cs=&us_privacy=.",
+      "timestamp": 1.734953016754799e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.899][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "info",
+      "source": "intervention",
+      "text": "Images loaded lazily and replaced with placeholders. Load events are deferred. See https://go.microsoft.com/fwlink/?linkid=2048113",
+      "timestamp": 1.734953016898851e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953016.938][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 2917,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 26406,
+            "functionName": "",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 26301,
+            "functionName": "m",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 16214,
+            "functionName": "withStrategy",
+            "lineNumber": 2923,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 15865,
+            "functionName": "get strategy",
+            "lineNumber": 2923,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 15916,
+            "functionName": "addStylesTo",
+            "lineNumber": 2923,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 23888,
+            "functionName": "addStyles",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 24392,
+            "functionName": "connect",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 30106,
+            "functionName": "connectedCallback",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 293613,
+            "functionName": "initializeAsync",
+            "lineNumber": 4460,
+            "scriptId": "46",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/common.e24c6d3ccc3413b6ce58.js"
+         } ]
+      },
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.734953016937368e+12,
+      "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+   }
+}
+[1734953016.938][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 2917,
+      "source": "deprecation",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 26406,
+            "functionName": "",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 26301,
+            "functionName": "m",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 16214,
+            "functionName": "withStrategy",
+            "lineNumber": 2923,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 15865,
+            "functionName": "get strategy",
+            "lineNumber": 2923,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 15916,
+            "functionName": "addStylesTo",
+            "lineNumber": 2923,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 23888,
+            "functionName": "addStyles",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 24392,
+            "functionName": "connect",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 30106,
+            "functionName": "connectedCallback",
+            "lineNumber": 2917,
+            "scriptId": "45",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+         }, {
+            "columnNumber": 293613,
+            "functionName": "initializeAsync",
+            "lineNumber": 4460,
+            "scriptId": "46",
+            "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/common.e24c6d3ccc3413b6ce58.js"
+         } ]
+      },
+      "text": "-ms-high-constrast is in the process of being deprecated. Please see https://blogs.windows.com/msedgedev/2024/04/29/deprecating-ms-high-contrast/ for tips on updating to the new Forced Colors Mode ...",
+      "timestamp": 1.73495301693744e+12,
+      "url": "https://assets.msn.com/bundles/v1/bingHomepage/latest/microsoft.ff04aa362c2638144055.js"
+   }
+}
+[33404:41987:1223/202336.979368:ERROR:cert_issuer_source_aia.cc(136)] AiaRequest::OnFetchCompleted got error -105
+[1734953017.662][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://trace.mediago.io/cs/msn?id=2EBE1DD67F0A61D4099D08887E816033&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953017661422e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[33409:12035:1223/202337.835840:ERROR:ssl_client_socket_impl.cc(892)] handshake failed; returned -1, SSL error code 1, net_error -201
+[1734953017.839][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "error",
+      "networkRequestId": "33416.149",
+      "source": "network",
+      "text": "Failed to load resource: net::ERR_CERT_DATE_INVALID",
+      "timestamp": 1.734953017838119e+12,
+      "url": "https://code.yengo.com/sync?ssp=msn&id=2EBE1DD67F0A61D4099D08887E816033&gdpr=0&gdpr_consent="
+   }
+}
+[1734953017.863][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://sync.inmobi.com/oRTB?redirect={PubRedirectUrl}&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953017861806e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953017.863][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://sync.inmobi.com/oRTB?redirect={PubRedirectUrl}&gdpr=0&gdpr_consent=.",
+      "timestamp": 1.734953017861936e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953017.863][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://sync.inmobi.com/sync?redirect=%7BPubRedirectUrl%7D&gdpr_consent=&gdpr=0&us_privacy=&gdpr_pd=&source=5&google_push=&retry=.",
+      "timestamp": 1.734953017862242e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953017.863][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://sync.inmobi.com/sync?redirect=%7BPubRedirectUrl%7D&gdpr_consent=&gdpr=0&us_privacy=&gdpr_pd=&source=5&google_push=&retry=.",
+      "timestamp": 1.734953017862328e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953018.086][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://sync.inmobi.com/sync?redirect=%7BPubRedirectUrl%7D&gdpr_consent=&gdpr=0&us_privacy=&gdpr_pd=&source=5&google_push=&retry=.",
+      "timestamp": 1.734953018084148e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953018.086][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://sync.inmobi.com/sync?redirect=%7BPubRedirectUrl%7D&gdpr_consent=&gdpr=0&us_privacy=&gdpr_pd=&source=5&google_push=&retry=.",
+      "timestamp": 1.734953018085247e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953018.086][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://sync.inmobi.com/sync?redirect=%7BPubRedirectUrl%7D&gdpr_consent=&gdpr=0&us_privacy=&gdpr_pd=&source=5&google_push=&retry=.",
+      "timestamp": 1.734953018085433e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953018.087][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://sync.inmobi.com/sync?redirect=%7BPubRedirectUrl%7D&gdpr_consent=&gdpr=0&us_privacy=&gdpr_pd=&source=5&google_push=&retry=true.",
+      "timestamp": 1.734953018086974e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+[1734953018.087][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=B117B76BB5A8E38D1A5A2CC988C62158) 64A1E6C37954A267D576E5DB36EFE0AF {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://sync.inmobi.com/sync?redirect=%7BPubRedirectUrl%7D&gdpr_consent=&gdpr=0&us_privacy=&gdpr_pd=&source=5&google_push=&retry=true.",
+      "timestamp": 1.734953018087034e+12,
+      "url": "https://www.bing.com/?toWww=1&redig=6DAF3A5CCA9D4919B381149389A117E0"
+   }
+}
+Trying to load the allocator multiple times. This is *not* supported.
+[1734953022.318][INFO]: [9f95133a7d7abc212a481cf9a6285a1d] COMMAND Quit {
+}
+[1734953022.373][INFO]: [9f95133a7d7abc212a481cf9a6285a1d] RESPONSE Quit
+[1734953022.373][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1734953022.373][DEBUG]: Log type 'browser' lost 72 entries on destruction

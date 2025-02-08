@@ -1,0 +1,3614 @@
+[1734952871.986][INFO]: Starting ChromeDriver 131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7}) on port 59290
+[1734952871.986][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1734952871.987][INFO]: ChromeDriver was started successfully on port 59290
+[1734952871.996][INFO]: [b7fc40e747c7c48bff1407efaadaf759] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "chrome",
+         "browserVersion": null,
+         "goog:chromeOptions": {
+            "args": [ "--incognito", "--disable-extensions" ],
+            "binary": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1734952871.997][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1734952871.997][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1734952871.997][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1734952871.997][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1734952871.997][INFO]: Launching chrome: /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-extensions --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --incognito --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.org.chromium.Chromium.71XDdU data:,
+
+DevTools listening on ws://127.0.0.1:59295/devtools/browser/cd36c274-4746-4380-8457-f5e00cf74272
+[1734952872.212][DEBUG]: DevTools HTTP Request: http://localhost:59295/json/version
+[1734952872.545][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Chrome/131.0.6778.205",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+   "V8-Version": "13.1.201.19",
+   "WebKit-Version": "537.36 (@81b36b9535e3e3b610a52df3da48cd81362ec860)",
+   "webSocketDebuggerUrl": "ws://localhost:59295/devtools/browser/cd36c274-4746-4380-8457-f5e00cf74272"
+}
+
+[1734952872.547][DEBUG]: DevTools HTTP Request: http://localhost:59295/json/list
+[1734952872.565][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:59295/devtools/page/043497253B72F906424F4425CD6A5EC0",
+   "id": "043497253B72F906424F4425CD6A5EC0",
+   "title": "data:,",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:59295/devtools/page/043497253B72F906424F4425CD6A5EC0"
+} ]
+
+[1734952872.568][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1734952872.586][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1734952872.598][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "6F8863857578BBAF4DC22E28EFC4D289",
+      "canAccessOpener": false,
+      "targetId": "043497253B72F906424F4425CD6A5EC0",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1734952872.598][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "043497253B72F906424F4425CD6A5EC0"
+}
+[1734952872.599][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "757C1A881ECA542C77568F0DAE6CEF97",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "6F8863857578BBAF4DC22E28EFC4D289",
+      "canAccessOpener": false,
+      "targetId": "043497253B72F906424F4425CD6A5EC0",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1734952872.599][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "757C1A881ECA542C77568F0DAE6CEF97"
+}
+[1734952872.602][DEBUG]: DevTools WebSocket Command: Page.enable (id=3) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+}
+[1734952872.602][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734952872.602][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=5) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734952872.602][DEBUG]: DevTools WebSocket Command: Log.enable (id=6) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+}
+[1734952872.603][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=7) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734952872.603][DEBUG]: DevTools WebSocket Response: Page.enable (id=3) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+}
+[1734952872.603][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "identifier": "1"
+}
+[1734952872.603][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=5) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734952872.603][DEBUG]: DevTools WebSocket Response: Log.enable (id=6) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+}
+[1734952872.603][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=7) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+}
+[1734952872.603][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+}
+[1734952872.604][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "context": {
+      "auxData": {
+         "frameId": "043497253B72F906424F4425CD6A5EC0",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "-9114767967991512740.-34435291576832412"
+   }
+}
+[1734952872.606][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+}
+[1734952872.606][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+}
+[1734952872.606][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+}
+[1734952872.609][INFO]: [b7fc40e747c7c48bff1407efaadaf759] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "131.0.6778.205",
+      "chrome": {
+         "chromedriverVersion": "131.0.6778.204 (52183f9e99a61056f9b78535f53d256f1516f2a0-refs/branch-heads/6778_155@{#7})",
+         "userDataDir": "/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.org.chromium.Chromium.71XDdU"
+      },
+      "fedcm:accounts": true,
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:59295"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "b7fc40e747c7c48bff1407efaadaf759"
+}
+[1734952872.609][INFO]: [b7fc40e747c7c48bff1407efaadaf759] COMMAND Navigate {
+   "url": "https://yandex.ru"
+}
+[1734952872.612][INFO]: Waiting for pending navigations...
+[1734952872.612][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=10) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952872.612][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=10) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952872.612][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=11) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "document",
+   "objectGroup": "a0a5a0bb-fa5e-4e2f-9cda-3695889ba91f"
+}
+[1734952872.612][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=11) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "-126856753381668220.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734952872.612][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=12) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "objectId": "-126856753381668220.1.1"
+}
+[1734952872.612][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=12) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734952872.615][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=13) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "objectGroup": "a0a5a0bb-fa5e-4e2f-9cda-3695889ba91f"
+}
+[1734952872.615][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-9114767967991512740.-34435291576832412"
+}
+[1734952872.615][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=13) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+}
+[1734952872.615][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734952872.615][INFO]: Done waiting for pending navigations. Status: ok
+[1734952872.615][DEBUG]: DevTools WebSocket Command: Page.navigate (id=15) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "url": "https://yandex.ru"
+}
+[1734952872.617][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "043497253B72F906424F4425CD6A5EC0"
+}
+2024-12-23 20:21:12.803 Google Chrome[32744:1121066] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-23 20:21:12.803 Google Chrome[32744:1121066] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+[1734952875.637][DEBUG]: DevTools WebSocket Response: Page.navigate (id=15) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "043497253B72F906424F4425CD6A5EC0",
+   "loaderId": "3562716C2F04E002181A350CE04EE488"
+}
+[1734952875.637][INFO]: Waiting for pending navigations...
+[1734952875.637][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952875.638][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+}
+[1734952875.639][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+}
+[1734952875.639][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "yandex.ru",
+      "gatedAPIFeatures": [  ],
+      "id": "043497253B72F906424F4425CD6A5EC0",
+      "loaderId": "3562716C2F04E002181A350CE04EE488",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://sso.passport.yandex.ru",
+      "url": "https://sso.passport.yandex.ru/push?uuid=43c7e51d-483e-44c1-8a52-6f31b974918f&retpath=https%3A%2F%2Fdzen.ru%2F%3Fyredirect%3Dtrue%26is_autologin_ya%3Dtrue"
+   },
+   "type": "Navigation"
+}
+[1734952875.649][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "context": {
+      "auxData": {
+         "frameId": "043497253B72F906424F4425CD6A5EC0",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://sso.passport.yandex.ru",
+      "uniqueId": "1577533369913969662.-6016721960117429094"
+   }
+}
+[1734952875.651][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952875.651][DEBUG]: DevTools WebSocket Event: Page.frameScheduledNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "delay": 0,
+   "frameId": "043497253B72F906424F4425CD6A5EC0",
+   "reason": "formSubmissionPost",
+   "url": "https://sso.dzen.ru/install?uuid=43c7e51d-483e-44c1-8a52-6f31b974918f"
+}
+[1734952875.651][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "disposition": "currentTab",
+   "frameId": "043497253B72F906424F4425CD6A5EC0",
+   "reason": "formSubmissionPost",
+   "url": "https://sso.dzen.ru/install?uuid=43c7e51d-483e-44c1-8a52-6f31b974918f"
+}
+[1734952875.651][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=17) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952875.653][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "043497253B72F906424F4425CD6A5EC0"
+}
+[1734952875.654][DEBUG]: DevTools WebSocket Event: Page.frameClearedScheduledNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "043497253B72F906424F4425CD6A5EC0"
+}
+[1734952875.654][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=17) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952875.661][DEBUG]: DevTools WebSocket Event: Page.frameResized (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+}
+[1734952875.661][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952875.846][DEBUG]: DevTools WebSocket Event: Page.frameResized (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+}
+[1734952876.673][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+}
+[1734952876.674][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+}
+[1734952876.675][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "dzen.ru",
+      "gatedAPIFeatures": [  ],
+      "id": "043497253B72F906424F4425CD6A5EC0",
+      "loaderId": "0E4BCCDC8A2E93FFA787FE991025AA12",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://sso.dzen.ru",
+      "url": "https://sso.dzen.ru/install?uuid=43c7e51d-483e-44c1-8a52-6f31b974918f"
+   },
+   "type": "Navigation"
+}
+[1734952876.683][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "context": {
+      "auxData": {
+         "frameId": "043497253B72F906424F4425CD6A5EC0",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://sso.dzen.ru",
+      "uniqueId": "-3477709414906311247.3490579311028997276"
+   }
+}
+[1734952876.691][DEBUG]: DevTools WebSocket Event: Page.frameScheduledNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "delay": 0,
+   "frameId": "043497253B72F906424F4425CD6A5EC0",
+   "reason": "scriptInitiated",
+   "url": "https://dzen.ru/?yredirect=true&is_autologin_ya=true"
+}
+[1734952876.691][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "disposition": "currentTab",
+   "frameId": "043497253B72F906424F4425CD6A5EC0",
+   "reason": "scriptInitiated",
+   "url": "https://dzen.ru/?yredirect=true&is_autologin_ya=true"
+}
+[1734952876.692][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "043497253B72F906424F4425CD6A5EC0"
+}
+[1734952876.693][DEBUG]: DevTools WebSocket Event: Page.frameClearedScheduledNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "043497253B72F906424F4425CD6A5EC0"
+}
+[1734952876.693][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952877.193][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952878.903][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+}
+[1734952878.905][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "dzen.ru",
+      "gatedAPIFeatures": [  ],
+      "id": "043497253B72F906424F4425CD6A5EC0",
+      "loaderId": "27847051887434DDEF43C07D30AF6FCB",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://dzen.ru",
+      "url": "https://dzen.ru/?yredirect=true&is_autologin_ya=true"
+   },
+   "type": "Navigation"
+}
+[1734952878.908][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "context": {
+      "auxData": {
+         "frameId": "043497253B72F906424F4425CD6A5EC0",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://dzen.ru",
+      "uniqueId": "3715769415001528736.4220109196783729972"
+   }
+}
+[1734952878.908][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952878.977][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "043497253B72F906424F4425CD6A5EC0",
+   "navigationType": "historyApi",
+   "url": "https://dzen.ru/?yredirect=true"
+}
+[1734952878.977][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=20) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952878.980][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=20) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952879.486][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=21) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952879.487][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=21) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952879.992][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=22) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952880.020][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=22) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952880.029][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "7AD2B8ECDE74793BF13396A61BD2EAC1",
+   "parentFrameId": "043497253B72F906424F4425CD6A5EC0"
+}
+[1734952880.029][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "disposition": "currentTab",
+   "frameId": "7AD2B8ECDE74793BF13396A61BD2EAC1",
+   "reason": "initialFrameNavigation",
+   "url": "https://suggest.sso.dzen.ru/portal/dzensearch/desktop?enable_suggest_sso_dzen_host=1&ext-test-id=736493&yu=7760965051734952873&clid=&theme=light"
+}
+[1734952880.029][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=23) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952880.029][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "7AD2B8ECDE74793BF13396A61BD2EAC1"
+}
+[1734952880.033][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "context": {
+      "auxData": {
+         "frameId": "7AD2B8ECDE74793BF13396A61BD2EAC1",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 3,
+      "name": "",
+      "origin": "https://dzen.ru",
+      "uniqueId": "2190135598884670181.7358198757401278192"
+   }
+}
+[1734952880.042][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=23) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952880.543][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=24) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952880.544][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=24) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952881.035][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "executionContextId": 3,
+   "executionContextUniqueId": "2190135598884670181.7358198757401278192"
+}
+[1734952881.035][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolatedFeatureDisabled",
+      "domainAndRegistry": "dzen.ru",
+      "gatedAPIFeatures": [  ],
+      "id": "7AD2B8ECDE74793BF13396A61BD2EAC1",
+      "loaderId": "5EBC8022EBA07D8919C33530DB325E52",
+      "mimeType": "text/html",
+      "name": "search_0.154464987742869",
+      "parentId": "043497253B72F906424F4425CD6A5EC0",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://suggest.sso.dzen.ru",
+      "url": "https://suggest.sso.dzen.ru/portal/dzensearch/desktop?enable_suggest_sso_dzen_host=1&ext-test-id=736493&yu=7760965051734952873&clid=&theme=light"
+   },
+   "type": "Navigation"
+}
+[1734952881.035][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=25) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952881.037][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "context": {
+      "auxData": {
+         "frameId": "7AD2B8ECDE74793BF13396A61BD2EAC1",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 4,
+      "name": "",
+      "origin": "https://suggest.sso.dzen.ru",
+      "uniqueId": "-6016427595239516332.6949434919997536053"
+   }
+}
+[1734952881.037][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=25) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952881.542][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=26) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952881.543][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=26) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952882.046][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=27) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952882.245][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "timestamp": 62875.157211
+}
+[1734952882.305][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=27) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952882.385][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "53A75C86FDE324285E969AEAF025DA3C",
+   "parentFrameId": "043497253B72F906424F4425CD6A5EC0",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 106775,
+         "functionName": "",
+         "lineNumber": 14,
+         "scriptId": "38",
+         "url": "https://static.dzeninfra.ru/s3/zen-lib/1.57.1/dzen-layout/dzen-layout-header-desktop.modern.bundle.js"
+      }, {
+         "columnNumber": 93082,
+         "functionName": "ol",
+         "lineNumber": 67,
+         "scriptId": "38",
+         "url": "https://static.dzeninfra.ru/s3/zen-lib/1.57.1/dzen-layout/dzen-layout-header-desktop.modern.bundle.js"
+      }, {
+         "columnNumber": 113037,
+         "functionName": "Sc",
+         "lineNumber": 67,
+         "scriptId": "38",
+         "url": "https://static.dzeninfra.ru/s3/zen-lib/1.57.1/dzen-layout/dzen-layout-header-desktop.modern.bundle.js"
+      }, {
+         "columnNumber": 105426,
+         "functionName": "cc",
+         "lineNumber": 67,
+         "scriptId": "38",
+         "url": "https://static.dzeninfra.ru/s3/zen-lib/1.57.1/dzen-layout/dzen-layout-header-desktop.modern.bundle.js"
+      }, {
+         "columnNumber": 46636,
+         "functionName": "Ho",
+         "lineNumber": 67,
+         "scriptId": "38",
+         "url": "https://static.dzeninfra.ru/s3/zen-lib/1.57.1/dzen-layout/dzen-layout-header-desktop.modern.bundle.js"
+      }, {
+         "columnNumber": 111869,
+         "functionName": "",
+         "lineNumber": 67,
+         "scriptId": "38",
+         "url": "https://static.dzeninfra.ru/s3/zen-lib/1.57.1/dzen-layout/dzen-layout-header-desktop.modern.bundle.js"
+      }, {
+         "columnNumber": 111874,
+         "functionName": "Ec",
+         "lineNumber": 67,
+         "scriptId": "38",
+         "url": "https://static.dzeninfra.ru/s3/zen-lib/1.57.1/dzen-layout/dzen-layout-header-desktop.modern.bundle.js"
+      }, {
+         "columnNumber": 104434,
+         "functionName": "ic",
+         "lineNumber": 67,
+         "scriptId": "38",
+         "url": "https://static.dzeninfra.ru/s3/zen-lib/1.57.1/dzen-layout/dzen-layout-header-desktop.modern.bundle.js"
+      }, {
+         "columnNumber": 1363,
+         "functionName": "E",
+         "lineNumber": 93,
+         "scriptId": "38",
+         "url": "https://static.dzeninfra.ru/s3/zen-lib/1.57.1/dzen-layout/dzen-layout-header-desktop.modern.bundle.js"
+      }, {
+         "columnNumber": 1895,
+         "functionName": "N",
+         "lineNumber": 93,
+         "scriptId": "38",
+         "url": "https://static.dzeninfra.ru/s3/zen-lib/1.57.1/dzen-layout/dzen-layout-header-desktop.modern.bundle.js"
+      } ]
+   }
+}
+[1734952882.385][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=28) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952882.385][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "disposition": "currentTab",
+   "frameId": "53A75C86FDE324285E969AEAF025DA3C",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734952882.385][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "53A75C86FDE324285E969AEAF025DA3C",
+      "loaderId": "FE1976E8E93C8A6B82988D96E6D9A5FE",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "043497253B72F906424F4425CD6A5EC0",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734952882.385][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "53A75C86FDE324285E969AEAF025DA3C"
+}
+[1734952882.386][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "context": {
+      "auxData": {
+         "frameId": "53A75C86FDE324285E969AEAF025DA3C",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 5,
+      "name": "",
+      "origin": "https://dzen.ru",
+      "uniqueId": "1424271563498882492.4218216537977384813"
+   }
+}
+[1734952882.386][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "53A75C86FDE324285E969AEAF025DA3C"
+}
+[1734952882.575][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=28) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952882.579][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "sessionId": "1B5C636D7A8EFB6812B9429B2C908315",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "6F8863857578BBAF4DC22E28EFC4D289",
+      "canAccessOpener": false,
+      "targetId": "669F5F27588FDBC22A0837AC5879AEDA",
+      "title": "blob:https://dzen.ru/6cb8f2c2-c7bd-4eb6-9766-1f38b067b345",
+      "type": "worker",
+      "url": "blob:https://dzen.ru/6cb8f2c2-c7bd-4eb6-9766-1f38b067b345"
+   },
+   "waitingForDebugger": false
+}
+[1734952882.579][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=29) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952882.587][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=29) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952883.092][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=30) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952883.092][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=30) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952883.354][DEBUG]: DevTools WebSocket Event: Page.frameScheduledNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "delay": 0,
+   "frameId": "53A75C86FDE324285E969AEAF025DA3C",
+   "reason": "scriptInitiated",
+   "url": "https://id.vk.com/button_one_tap_auth?app_id=51441269&response_type=silent_token&v=1.61.5-alpha.sakSdk.bjviA&origin=https%3A%2F%2Fdzen.ru&uuid=SwftTvTNjR3XQQneqwExI&display=default&button_skin=prim..."
+}
+[1734952883.354][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "disposition": "currentTab",
+   "frameId": "53A75C86FDE324285E969AEAF025DA3C",
+   "reason": "scriptInitiated",
+   "url": "https://id.vk.com/button_one_tap_auth?app_id=51441269&response_type=silent_token&v=1.61.5-alpha.sakSdk.bjviA&origin=https%3A%2F%2Fdzen.ru&uuid=SwftTvTNjR3XQQneqwExI&display=default&button_skin=prim..."
+}
+[1734952883.354][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=31) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952883.356][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "53A75C86FDE324285E969AEAF025DA3C"
+}
+[1734952883.356][DEBUG]: DevTools WebSocket Event: Page.frameClearedScheduledNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "53A75C86FDE324285E969AEAF025DA3C"
+}
+[1734952883.356][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=31) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952883.429][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "39558F5B0D4D8FD9D9F0E4E50079B612",
+   "parentFrameId": "7AD2B8ECDE74793BF13396A61BD2EAC1",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 83,
+         "functionName": "ug",
+         "lineNumber": 101,
+         "scriptId": "73",
+         "url": "https://mc.yandex.ru/metrika/watch_zen.js"
+      }, {
+         "columnNumber": 427,
+         "functionName": "",
+         "lineNumber": 262,
+         "scriptId": "73",
+         "url": "https://mc.yandex.ru/metrika/watch_zen.js"
+      }, {
+         "columnNumber": 219,
+         "functionName": "b",
+         "lineNumber": 97,
+         "scriptId": "73",
+         "url": "https://mc.yandex.ru/metrika/watch_zen.js"
+      }, {
+         "columnNumber": 336,
+         "functionName": "",
+         "lineNumber": 97,
+         "scriptId": "73",
+         "url": "https://mc.yandex.ru/metrika/watch_zen.js"
+      }, {
+         "columnNumber": 164,
+         "functionName": "",
+         "lineNumber": 115,
+         "scriptId": "73",
+         "url": "https://mc.yandex.ru/metrika/watch_zen.js"
+      }, {
+         "columnNumber": 463,
+         "functionName": "Zh",
+         "lineNumber": 134,
+         "scriptId": "73",
+         "url": "https://mc.yandex.ru/metrika/watch_zen.js"
+      }, {
+         "columnNumber": 430,
+         "functionName": "",
+         "lineNumber": 134,
+         "scriptId": "73",
+         "url": "https://mc.yandex.ru/metrika/watch_zen.js"
+      }, {
+         "columnNumber": 369,
+         "functionName": "",
+         "lineNumber": 262,
+         "scriptId": "73",
+         "url": "https://mc.yandex.ru/metrika/watch_zen.js"
+      }, {
+         "columnNumber": 499,
+         "functionName": "",
+         "lineNumber": 118,
+         "scriptId": "73",
+         "url": "https://mc.yandex.ru/metrika/watch_zen.js"
+      }, {
+         "columnNumber": 408,
+         "functionName": "",
+         "lineNumber": 118,
+         "scriptId": "73",
+         "url": "https://mc.yandex.ru/metrika/watch_zen.js"
+      }, {
+         "columnNumber": 58,
+         "functionName": "",
+         "lineNumber": 131,
+         "scriptId": "73",
+         "url": "https://mc.yandex.ru/metrika/watch_zen.js"
+      }, {
+         "columnNumber": 477,
+         "functionName": "",
+         "lineNumber": 129,
+         "scriptId": "73",
+         "url": "https://mc.yandex.ru/metrika/watch_zen.js"
+      }, {
+         "columnNumber": 334,
+         "functionName": "",
+         "lineNumber": 69,
+         "scriptId": "73",
+         "url": "https://mc.yandex.ru/metrika/watch_zen.js"
+      }, {
+         "columnNumber": 109,
+         "functionName": "f",
+         "lineNumber": 3,
+         "scriptId": "73",
+         "url": "https://mc.yandex.ru/metrika/watch_zen.js"
+      }, {
+         "columnNumber": 42,
+         "functionName": "Tm",
+         "lineNumber": 116,
+         "scriptId": "73",
+         "url": "https://mc.yandex.ru/metrika/watch_zen.js"
+      }, {
+         "columnNumber": 300,
+         "functionName": "",
+         "lineNumber": 167,
+         "scriptId": "73",
+         "url": "https://mc.yandex.ru/metrika/watch_zen.js"
+      }, {
+         "columnNumber": 430,
+         "functionName": "",
+         "lineNumber": 134,
+         "scriptId": "73",
+         "url": "https://mc.yandex.ru/metrika/watch_zen.js"
+      }, {
+         "columnNumber": 502,
+         "functionName": "",
+         "lineNumber": 115,
+         "scriptId": "73",
+         "url": "https://mc.yandex.ru/metrika/watch_zen.js"
+      }, {
+         "columnNumber": 463,
+         "functionName": "Zh",
+         "lineNumber": 134,
+         "scriptId": "73",
+         "url": "https://mc.yandex.ru/metrika/watch_zen.js"
+      }, "..." ]
+   }
+}
+[1734952883.429][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=32) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952883.429][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "disposition": "currentTab",
+   "frameId": "39558F5B0D4D8FD9D9F0E4E50079B612",
+   "reason": "initialFrameNavigation",
+   "url": "https://mc.yandex.ru/metrika/metrika_match.html"
+}
+[1734952883.430][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "39558F5B0D4D8FD9D9F0E4E50079B612"
+}
+[1734952883.431][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=32) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952883.549][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "E4C49DE789ECD9173E4DCF18E2BDC9A7",
+   "parentFrameId": "043497253B72F906424F4425CD6A5EC0",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 42014,
+         "functionName": "t.createTestIframe",
+         "lineNumber": 2,
+         "scriptId": "76",
+         "url": ""
+      }, {
+         "columnNumber": 64668,
+         "functionName": "t",
+         "lineNumber": 2,
+         "scriptId": "76",
+         "url": ""
+      }, {
+         "columnNumber": 32446,
+         "functionName": "c",
+         "lineNumber": 2,
+         "scriptId": "76",
+         "url": ""
+      }, {
+         "columnNumber": 32653,
+         "functionName": "R",
+         "lineNumber": 2,
+         "scriptId": "76",
+         "url": ""
+      }, {
+         "columnNumber": 31066,
+         "functionName": "M",
+         "lineNumber": 2,
+         "scriptId": "76",
+         "url": ""
+      }, {
+         "columnNumber": 33887,
+         "functionName": "t.detect",
+         "lineNumber": 2,
+         "scriptId": "76",
+         "url": ""
+      }, {
+         "columnNumber": 70269,
+         "functionName": "t.init",
+         "lineNumber": 2,
+         "scriptId": "76",
+         "url": ""
+      }, {
+         "columnNumber": 4837,
+         "functionName": "",
+         "lineNumber": 95,
+         "scriptId": "36",
+         "url": "https://dzen.ru/?yredirect=true"
+      }, {
+         "columnNumber": 7860,
+         "functionName": "S.t.\u003Ccomputed>",
+         "lineNumber": 95,
+         "scriptId": "36",
+         "url": "https://dzen.ru/?yredirect=true"
+      } ]
+   }
+}
+[1734952883.549][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=33) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952883.549][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "disposition": "currentTab",
+   "frameId": "E4C49DE789ECD9173E4DCF18E2BDC9A7",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734952883.550][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "E4C49DE789ECD9173E4DCF18E2BDC9A7",
+      "loaderId": "CC8B0DA80E7A5375C92356E8527517D3",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "043497253B72F906424F4425CD6A5EC0",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734952883.550][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "E4C49DE789ECD9173E4DCF18E2BDC9A7"
+}
+[1734952883.551][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "context": {
+      "auxData": {
+         "frameId": "E4C49DE789ECD9173E4DCF18E2BDC9A7",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 6,
+      "name": "",
+      "origin": "https://dzen.ru",
+      "uniqueId": "8691666042889544989.-6309246170023416674"
+   }
+}
+[1734952883.551][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "E4C49DE789ECD9173E4DCF18E2BDC9A7"
+}
+[1734952883.553][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=33) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952883.636][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "context": {
+      "auxData": {
+         "frameId": "39558F5B0D4D8FD9D9F0E4E50079B612",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 7,
+      "name": "",
+      "origin": "https://suggest.sso.dzen.ru",
+      "uniqueId": "9187470889065652449.-5632520455378680637"
+   }
+}
+[1734952883.636][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=34) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952883.656][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=34) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952884.161][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=35) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952884.170][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=35) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952884.427][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "sessionId": "324D27192D8C6E6FD4F6C4E82DB3A2AA",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "6F8863857578BBAF4DC22E28EFC4D289",
+      "canAccessOpener": false,
+      "targetId": "39558F5B0D4D8FD9D9F0E4E50079B612",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734952884.427][DEBUG]: DevTools WebSocket Command: Page.enable (id=36) (session_id=324D27192D8C6E6FD4F6C4E82DB3A2AA) 324D27192D8C6E6FD4F6C4E82DB3A2AA {
+}
+[1734952884.427][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=37) (session_id=324D27192D8C6E6FD4F6C4E82DB3A2AA) 324D27192D8C6E6FD4F6C4E82DB3A2AA {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734952884.427][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=38) (session_id=324D27192D8C6E6FD4F6C4E82DB3A2AA) 324D27192D8C6E6FD4F6C4E82DB3A2AA {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734952884.428][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=39) (session_id=324D27192D8C6E6FD4F6C4E82DB3A2AA) 324D27192D8C6E6FD4F6C4E82DB3A2AA {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734952884.431][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "6F8863857578BBAF4DC22E28EFC4D289",
+      "canAccessOpener": false,
+      "targetId": "39558F5B0D4D8FD9D9F0E4E50079B612",
+      "title": "https://mc.yandex.ru/metrika/metrika_match.html",
+      "type": "iframe",
+      "url": "https://mc.yandex.ru/metrika/metrika_match.html"
+   }
+}
+[1734952884.434][DEBUG]: DevTools WebSocket Response: Page.enable (id=36) (session_id=324D27192D8C6E6FD4F6C4E82DB3A2AA) 324D27192D8C6E6FD4F6C4E82DB3A2AA {
+}
+[1734952884.434][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=37) (session_id=324D27192D8C6E6FD4F6C4E82DB3A2AA) 324D27192D8C6E6FD4F6C4E82DB3A2AA {
+   "identifier": "1"
+}
+[1734952884.434][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=38) (session_id=324D27192D8C6E6FD4F6C4E82DB3A2AA) 324D27192D8C6E6FD4F6C4E82DB3A2AA {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734952884.434][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=39) (session_id=324D27192D8C6E6FD4F6C4E82DB3A2AA) 324D27192D8C6E6FD4F6C4E82DB3A2AA {
+}
+[1734952884.434][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=40) (session_id=324D27192D8C6E6FD4F6C4E82DB3A2AA) 324D27192D8C6E6FD4F6C4E82DB3A2AA {
+}
+[1734952884.434][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "39558F5B0D4D8FD9D9F0E4E50079B612",
+   "reason": "swap"
+}
+[1734952884.435][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "executionContextId": 7,
+   "executionContextUniqueId": "9187470889065652449.-5632520455378680637"
+}
+[1734952884.437][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=324D27192D8C6E6FD4F6C4E82DB3A2AA) 324D27192D8C6E6FD4F6C4E82DB3A2AA {
+   "context": {
+      "auxData": {
+         "frameId": "39558F5B0D4D8FD9D9F0E4E50079B612",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://mc.yandex.ru",
+      "uniqueId": "-3585404938421073521.6480975284592706507"
+   }
+}
+[1734952884.437][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=40) (session_id=324D27192D8C6E6FD4F6C4E82DB3A2AA) 324D27192D8C6E6FD4F6C4E82DB3A2AA {
+}
+[1734952884.437][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=41) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952884.438][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=41) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952884.438][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=42) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "document",
+   "objectGroup": "75404c2a-765e-46a2-aaa5-439cd4c8e59e"
+}
+[1734952884.438][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=324D27192D8C6E6FD4F6C4E82DB3A2AA) 324D27192D8C6E6FD4F6C4E82DB3A2AA {
+   "timestamp": 62877.349724
+}
+[1734952884.438][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=324D27192D8C6E6FD4F6C4E82DB3A2AA) 324D27192D8C6E6FD4F6C4E82DB3A2AA {
+   "timestamp": 62877.350087
+}
+[1734952884.438][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=324D27192D8C6E6FD4F6C4E82DB3A2AA) 324D27192D8C6E6FD4F6C4E82DB3A2AA {
+   "frameId": "39558F5B0D4D8FD9D9F0E4E50079B612"
+}
+[1734952884.440][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "7AD2B8ECDE74793BF13396A61BD2EAC1"
+}
+[1734952884.440][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=42) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "-2707607443694542589.2.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734952884.440][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=43) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "objectId": "-2707607443694542589.2.1"
+}
+[1734952884.440][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "39558F5B0D4D8FD9D9F0E4E50079B612"
+}
+[1734952884.441][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "39558F5B0D4D8FD9D9F0E4E50079B612",
+   "reason": "remove"
+}
+[1734952884.441][DEBUG]: DevTools WebSocket Event: Target.detachedFromTarget (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "sessionId": "324D27192D8C6E6FD4F6C4E82DB3A2AA",
+   "targetId": "39558F5B0D4D8FD9D9F0E4E50079B612"
+}
+[1734952884.441][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=43) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "https://dzen.ru/?yredirect=true",
+      "childNodeCount": 2,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "https://dzen.ru/?yredirect=true",
+      "isScrollable": true,
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734952884.441][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=44) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "objectGroup": "75404c2a-765e-46a2-aaa5-439cd4c8e59e"
+}
+[1734952884.442][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=45) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "3715769415001528736.4220109196783729972"
+}
+[1734952884.442][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=44) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+}
+[1734952884.442][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=45) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "type": "string",
+      "value": "interactive"
+   }
+}
+[1734952884.645][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "D8FBD38E49328D86DC5B31EB497B55B4",
+   "parentFrameId": "043497253B72F906424F4425CD6A5EC0",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 106258,
+         "functionName": "",
+         "lineNumber": 4,
+         "scriptId": "82",
+         "url": "https://ad.mail.ru/static/sync-loader.js"
+      }, {
+         "columnNumber": 105965,
+         "functionName": "mi",
+         "lineNumber": 4,
+         "scriptId": "82",
+         "url": "https://ad.mail.ru/static/sync-loader.js"
+      }, {
+         "columnNumber": 114151,
+         "functionName": "Ai",
+         "lineNumber": 4,
+         "scriptId": "82",
+         "url": "https://ad.mail.ru/static/sync-loader.js"
+      }, {
+         "columnNumber": 152235,
+         "functionName": "",
+         "lineNumber": 4,
+         "scriptId": "82",
+         "url": "https://ad.mail.ru/static/sync-loader.js"
+      } ]
+   }
+}
+[1734952884.645][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=46) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952884.646][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "disposition": "currentTab",
+   "frameId": "D8FBD38E49328D86DC5B31EB497B55B4",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734952884.646][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "D8FBD38E49328D86DC5B31EB497B55B4",
+      "loaderId": "830FBA691D0FACFAA6EB42F7FC10CB86",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "043497253B72F906424F4425CD6A5EC0",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734952884.646][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "D8FBD38E49328D86DC5B31EB497B55B4"
+}
+[1734952884.647][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "context": {
+      "auxData": {
+         "frameId": "D8FBD38E49328D86DC5B31EB497B55B4",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 8,
+      "name": "",
+      "origin": "https://dzen.ru",
+      "uniqueId": "-3069916105723953672.2043740227540090879"
+   }
+}
+[1734952884.647][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "D8FBD38E49328D86DC5B31EB497B55B4"
+}
+[1734952884.647][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "544E3B2B714C8975FBD3165C06203BC9",
+   "parentFrameId": "043497253B72F906424F4425CD6A5EC0",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 106258,
+         "functionName": "",
+         "lineNumber": 4,
+         "scriptId": "82",
+         "url": "https://ad.mail.ru/static/sync-loader.js"
+      }, {
+         "columnNumber": 105965,
+         "functionName": "mi",
+         "lineNumber": 4,
+         "scriptId": "82",
+         "url": "https://ad.mail.ru/static/sync-loader.js"
+      }, {
+         "columnNumber": 118014,
+         "functionName": "Fi",
+         "lineNumber": 4,
+         "scriptId": "82",
+         "url": "https://ad.mail.ru/static/sync-loader.js"
+      }, {
+         "columnNumber": 152235,
+         "functionName": "",
+         "lineNumber": 4,
+         "scriptId": "82",
+         "url": "https://ad.mail.ru/static/sync-loader.js"
+      } ]
+   }
+}
+[1734952884.648][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "disposition": "currentTab",
+   "frameId": "544E3B2B714C8975FBD3165C06203BC9",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734952884.648][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "544E3B2B714C8975FBD3165C06203BC9",
+      "loaderId": "D26CC9AAFFE177EAEBDEFE8A9CBD1B05",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "043497253B72F906424F4425CD6A5EC0",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734952884.648][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "544E3B2B714C8975FBD3165C06203BC9"
+}
+[1734952884.649][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "context": {
+      "auxData": {
+         "frameId": "544E3B2B714C8975FBD3165C06203BC9",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 9,
+      "name": "",
+      "origin": "https://dzen.ru",
+      "uniqueId": "-1075417981195789254.-8407310199109741280"
+   }
+}
+[1734952884.649][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "544E3B2B714C8975FBD3165C06203BC9"
+}
+[1734952884.649][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "04DB26059F987E70B5462F7C864DEDBC",
+   "parentFrameId": "043497253B72F906424F4425CD6A5EC0",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 106258,
+         "functionName": "",
+         "lineNumber": 4,
+         "scriptId": "82",
+         "url": "https://ad.mail.ru/static/sync-loader.js"
+      }, {
+         "columnNumber": 105965,
+         "functionName": "mi",
+         "lineNumber": 4,
+         "scriptId": "82",
+         "url": "https://ad.mail.ru/static/sync-loader.js"
+      }, {
+         "columnNumber": 124700,
+         "functionName": "zi",
+         "lineNumber": 4,
+         "scriptId": "82",
+         "url": "https://ad.mail.ru/static/sync-loader.js"
+      }, {
+         "columnNumber": 152235,
+         "functionName": "",
+         "lineNumber": 4,
+         "scriptId": "82",
+         "url": "https://ad.mail.ru/static/sync-loader.js"
+      } ]
+   }
+}
+[1734952884.649][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "disposition": "currentTab",
+   "frameId": "04DB26059F987E70B5462F7C864DEDBC",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734952884.649][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "04DB26059F987E70B5462F7C864DEDBC",
+      "loaderId": "1BC5D68E9064A5A83799BD8052B7B22A",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "043497253B72F906424F4425CD6A5EC0",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734952884.650][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "04DB26059F987E70B5462F7C864DEDBC"
+}
+[1734952884.650][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "context": {
+      "auxData": {
+         "frameId": "04DB26059F987E70B5462F7C864DEDBC",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 10,
+      "name": "",
+      "origin": "https://dzen.ru",
+      "uniqueId": "6702169938813171539.2105583899186050650"
+   }
+}
+[1734952884.650][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "04DB26059F987E70B5462F7C864DEDBC"
+}
+[1734952884.651][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "90527BE1FB8F0796C9760645494F4182",
+   "parentFrameId": "043497253B72F906424F4425CD6A5EC0",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 106258,
+         "functionName": "",
+         "lineNumber": 4,
+         "scriptId": "82",
+         "url": "https://ad.mail.ru/static/sync-loader.js"
+      }, {
+         "columnNumber": 105965,
+         "functionName": "mi",
+         "lineNumber": 4,
+         "scriptId": "82",
+         "url": "https://ad.mail.ru/static/sync-loader.js"
+      }, {
+         "columnNumber": 122296,
+         "functionName": "Hi.e",
+         "lineNumber": 4,
+         "scriptId": "82",
+         "url": "https://ad.mail.ru/static/sync-loader.js"
+      }, {
+         "columnNumber": 122790,
+         "functionName": "Hi",
+         "lineNumber": 4,
+         "scriptId": "82",
+         "url": "https://ad.mail.ru/static/sync-loader.js"
+      }, {
+         "columnNumber": 152235,
+         "functionName": "",
+         "lineNumber": 4,
+         "scriptId": "82",
+         "url": "https://ad.mail.ru/static/sync-loader.js"
+      } ]
+   }
+}
+[1734952884.652][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "disposition": "currentTab",
+   "frameId": "90527BE1FB8F0796C9760645494F4182",
+   "reason": "initialFrameNavigation",
+   "url": "about:srcdoc"
+}
+[1734952884.652][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "90527BE1FB8F0796C9760645494F4182"
+}
+[1734952884.659][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "context": {
+      "auxData": {
+         "frameId": "90527BE1FB8F0796C9760645494F4182",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 11,
+      "name": "",
+      "origin": "https://dzen.ru",
+      "uniqueId": "8074786866974166891.-1216281196784790111"
+   }
+}
+[1734952884.659][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "90527BE1FB8F0796C9760645494F4182"
+}
+[1734952884.659][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "90527BE1FB8F0796C9760645494F4182"
+}
+[1734952884.659][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "90527BE1FB8F0796C9760645494F4182",
+   "reason": "remove"
+}
+[1734952884.659][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "executionContextId": 11,
+   "executionContextUniqueId": "8074786866974166891.-1216281196784790111"
+}
+[1734952884.682][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "entry": {
+      "level": "warning",
+      "lineNumber": 4,
+      "source": "other",
+      "stackTrace": {
+         "callFrames": [ {
+            "columnNumber": 91655,
+            "functionName": "",
+            "lineNumber": 4,
+            "scriptId": "82",
+            "url": "https://ad.mail.ru/static/sync-loader.js"
+         }, {
+            "columnNumber": 91591,
+            "functionName": "",
+            "lineNumber": 4,
+            "scriptId": "82",
+            "url": "https://ad.mail.ru/static/sync-loader.js"
+         }, {
+            "columnNumber": 92063,
+            "functionName": "",
+            "lineNumber": 4,
+            "scriptId": "82",
+            "url": "https://ad.mail.ru/static/sync-loader.js"
+         } ]
+      },
+      "text": "Failed to parse video contentType: video/ogg; codecs=theora",
+      "timestamp": 1.734952884681671e+12,
+      "url": "https://ad.mail.ru/static/sync-loader.js"
+   }
+}
+[1734952884.684][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=46) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952884.685][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "04DB26059F987E70B5462F7C864DEDBC"
+}
+[1734952884.687][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "04DB26059F987E70B5462F7C864DEDBC",
+   "reason": "remove"
+}
+[1734952884.687][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "executionContextId": 10,
+   "executionContextUniqueId": "6702169938813171539.2105583899186050650"
+}
+[1734952884.687][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=47) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952884.719][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=47) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952884.723][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "D8FBD38E49328D86DC5B31EB497B55B4"
+}
+[1734952884.723][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=48) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952884.723][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "D8FBD38E49328D86DC5B31EB497B55B4",
+   "reason": "remove"
+}
+[1734952884.723][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "executionContextId": 8,
+   "executionContextUniqueId": "-3069916105723953672.2043740227540090879"
+}
+[1734952884.724][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "544E3B2B714C8975FBD3165C06203BC9"
+}
+[1734952884.724][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "544E3B2B714C8975FBD3165C06203BC9",
+   "reason": "remove"
+}
+[1734952884.724][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "executionContextId": 9,
+   "executionContextUniqueId": "-1075417981195789254.-8407310199109741280"
+}
+[1734952884.734][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=48) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[32749:15107:1223/202124.812250:ERROR:socket_manager.cc(147)] Failed to resolve address for stun3.l.google.com., errorcode: -105
+[32749:15107:1223/202124.812291:ERROR:socket_manager.cc(147)] Failed to resolve address for stun3.l.google.com., errorcode: -105
+[32749:15107:1223/202124.812305:ERROR:socket_manager.cc(147)] Failed to resolve address for stun3.l.google.com., errorcode: -105
+[32749:15107:1223/202124.816907:ERROR:socket_manager.cc(147)] Failed to resolve address for stun4.l.google.com., errorcode: -105
+[32749:15107:1223/202124.816969:ERROR:socket_manager.cc(147)] Failed to resolve address for stun4.l.google.com., errorcode: -105
+[32749:15107:1223/202124.817007:ERROR:socket_manager.cc(147)] Failed to resolve address for stun4.l.google.com., errorcode: -105
+[1734952885.059][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "sessionId": "6B230D338CC9D3F1FADE1CF66300E7E9",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "6F8863857578BBAF4DC22E28EFC4D289",
+      "canAccessOpener": false,
+      "targetId": "53A75C86FDE324285E969AEAF025DA3C",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734952885.059][DEBUG]: DevTools WebSocket Command: Page.enable (id=49) (session_id=6B230D338CC9D3F1FADE1CF66300E7E9) 6B230D338CC9D3F1FADE1CF66300E7E9 {
+}
+[1734952885.059][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=50) (session_id=6B230D338CC9D3F1FADE1CF66300E7E9) 6B230D338CC9D3F1FADE1CF66300E7E9 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734952885.059][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=51) (session_id=6B230D338CC9D3F1FADE1CF66300E7E9) 6B230D338CC9D3F1FADE1CF66300E7E9 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734952885.059][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=52) (session_id=6B230D338CC9D3F1FADE1CF66300E7E9) 6B230D338CC9D3F1FADE1CF66300E7E9 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734952885.061][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "6F8863857578BBAF4DC22E28EFC4D289",
+      "canAccessOpener": false,
+      "targetId": "53A75C86FDE324285E969AEAF025DA3C",
+      "title": "https://id.vk.com/button_one_tap_auth?app_id=51441269&response_type=silent_token&v=1.61.5-alpha.sakSdk.bjviA&origin=https%3A%2F%2Fdzen.ru&uuid=SwftTvTNjR3XQQneqwExI&display=default&button_skin=prim...",
+      "type": "iframe",
+      "url": "https://id.vk.com/button_one_tap_auth?app_id=51441269&response_type=silent_token&v=1.61.5-alpha.sakSdk.bjviA&origin=https%3A%2F%2Fdzen.ru&uuid=SwftTvTNjR3XQQneqwExI&display=default&button_skin=prim..."
+   }
+}
+[1734952885.062][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "53A75C86FDE324285E969AEAF025DA3C",
+   "reason": "swap"
+}
+[1734952885.062][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "executionContextId": 5,
+   "executionContextUniqueId": "1424271563498882492.4218216537977384813"
+}
+[1734952885.063][DEBUG]: DevTools WebSocket Response: Page.enable (id=49) (session_id=6B230D338CC9D3F1FADE1CF66300E7E9) 6B230D338CC9D3F1FADE1CF66300E7E9 {
+}
+[1734952885.063][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=50) (session_id=6B230D338CC9D3F1FADE1CF66300E7E9) 6B230D338CC9D3F1FADE1CF66300E7E9 {
+   "identifier": "1"
+}
+[1734952885.063][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=51) (session_id=6B230D338CC9D3F1FADE1CF66300E7E9) 6B230D338CC9D3F1FADE1CF66300E7E9 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734952885.063][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=52) (session_id=6B230D338CC9D3F1FADE1CF66300E7E9) 6B230D338CC9D3F1FADE1CF66300E7E9 {
+}
+[1734952885.063][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=53) (session_id=6B230D338CC9D3F1FADE1CF66300E7E9) 6B230D338CC9D3F1FADE1CF66300E7E9 {
+}
+[1734952885.065][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=6B230D338CC9D3F1FADE1CF66300E7E9) 6B230D338CC9D3F1FADE1CF66300E7E9 {
+   "context": {
+      "auxData": {
+         "frameId": "53A75C86FDE324285E969AEAF025DA3C",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://id.vk.com",
+      "uniqueId": "-6286836168898462629.7986544372706437937"
+   }
+}
+[1734952885.065][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=53) (session_id=6B230D338CC9D3F1FADE1CF66300E7E9) 6B230D338CC9D3F1FADE1CF66300E7E9 {
+}
+[1734952885.065][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=54) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952885.065][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=54) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952885.065][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=55) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "document",
+   "objectGroup": "0469aead-5c82-4cf7-be09-202ba2dfce62"
+}
+[1734952885.065][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=55) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "-2707607443694542589.2.2",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734952885.066][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=56) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "objectId": "-2707607443694542589.2.2"
+}
+[1734952885.066][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=56) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "https://dzen.ru/?yredirect=true",
+      "childNodeCount": 2,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "https://dzen.ru/?yredirect=true",
+      "isScrollable": true,
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734952885.066][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=57) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "objectGroup": "0469aead-5c82-4cf7-be09-202ba2dfce62"
+}
+[1734952885.066][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=58) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "3715769415001528736.4220109196783729972"
+}
+[1734952885.066][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=57) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+}
+[1734952885.066][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=58) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "type": "string",
+      "value": "interactive"
+   }
+}
+[1734952885.147][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "1D20C53DEF583EFA7CD959DE44D586E0",
+   "parentFrameId": "043497253B72F906424F4425CD6A5EC0",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 23285,
+         "functionName": "n",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 26809,
+         "functionName": "n",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 65238,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 65288,
+         "functionName": "ze",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 236818,
+         "functionName": "bc",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 274304,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 47340,
+         "functionName": "p",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 274297,
+         "functionName": "Cc",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 79304,
+         "functionName": "e.privateInit",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 77075,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 75776,
+         "functionName": "e.startCurrentStage",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 76160,
+         "functionName": "e.executeQueue",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 76809,
+         "functionName": "e.init",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 89465,
+         "functionName": "initPlayer",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 86714,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      } ]
+   }
+}
+[1734952885.147][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=59) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952885.147][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "disposition": "currentTab",
+   "frameId": "1D20C53DEF583EFA7CD959DE44D586E0",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734952885.147][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "1D20C53DEF583EFA7CD959DE44D586E0",
+      "loaderId": "569512A3E27D0608B24E5F7923E8FA27",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "043497253B72F906424F4425CD6A5EC0",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734952885.148][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "1D20C53DEF583EFA7CD959DE44D586E0"
+}
+[1734952885.148][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "context": {
+      "auxData": {
+         "frameId": "1D20C53DEF583EFA7CD959DE44D586E0",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 12,
+      "name": "",
+      "origin": "https://dzen.ru",
+      "uniqueId": "-4506550571990059405.-5417494624871927261"
+   }
+}
+[1734952885.148][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "1D20C53DEF583EFA7CD959DE44D586E0"
+}
+[1734952885.149][DEBUG]: DevTools WebSocket Event: Page.documentOpened (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "dzen.ru",
+      "gatedAPIFeatures": [  ],
+      "id": "1D20C53DEF583EFA7CD959DE44D586E0",
+      "loaderId": "569512A3E27D0608B24E5F7923E8FA27",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "043497253B72F906424F4425CD6A5EC0",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://dzen.ru",
+      "url": "https://dzen.ru/?yredirect=true"
+   }
+}
+[1734952885.151][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "1D20C53DEF583EFA7CD959DE44D586E0"
+}
+[1734952885.151][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "1D20C53DEF583EFA7CD959DE44D586E0",
+   "navigationType": "historyApi",
+   "url": "https://dzen.ru/#use_friendly_frame=true&vsid=7c993e72cb48fa03189a935eb5408ef831b813d028b1xZWPx1266x1734952885&from=zen&reqid=55584858.1119.1734952878616.96155&flags=%7B%22disable_autoplay_slow_con..."
+}
+[1734952885.151][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "1D20C53DEF583EFA7CD959DE44D586E0"
+}
+[1734952885.155][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "1836EFC2151DCA604E2654B1F17A52FE",
+   "parentFrameId": "043497253B72F906424F4425CD6A5EC0",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 23285,
+         "functionName": "n",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 26809,
+         "functionName": "n",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 65238,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 65288,
+         "functionName": "ze",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 236818,
+         "functionName": "bc",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 274304,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 47340,
+         "functionName": "p",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 274297,
+         "functionName": "Cc",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 79304,
+         "functionName": "e.privateInit",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 77075,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 75776,
+         "functionName": "e.startCurrentStage",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 76160,
+         "functionName": "e.executeQueue",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 76809,
+         "functionName": "e.init",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 89465,
+         "functionName": "initPlayer",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 86714,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      } ]
+   }
+}
+[1734952885.155][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "disposition": "currentTab",
+   "frameId": "1836EFC2151DCA604E2654B1F17A52FE",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734952885.155][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "1836EFC2151DCA604E2654B1F17A52FE",
+      "loaderId": "42F1E4A4A39CE76F172EE130E6CCE19A",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "043497253B72F906424F4425CD6A5EC0",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734952885.155][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "1836EFC2151DCA604E2654B1F17A52FE"
+}
+[1734952885.156][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "context": {
+      "auxData": {
+         "frameId": "1836EFC2151DCA604E2654B1F17A52FE",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 13,
+      "name": "",
+      "origin": "https://dzen.ru",
+      "uniqueId": "-2530979097982756897.1591294704699136356"
+   }
+}
+[1734952885.156][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "1836EFC2151DCA604E2654B1F17A52FE"
+}
+[1734952885.156][DEBUG]: DevTools WebSocket Event: Page.documentOpened (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "dzen.ru",
+      "gatedAPIFeatures": [  ],
+      "id": "1836EFC2151DCA604E2654B1F17A52FE",
+      "loaderId": "42F1E4A4A39CE76F172EE130E6CCE19A",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "043497253B72F906424F4425CD6A5EC0",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://dzen.ru",
+      "url": "https://dzen.ru/?yredirect=true"
+   }
+}
+[1734952885.157][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "1836EFC2151DCA604E2654B1F17A52FE"
+}
+[1734952885.157][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "1836EFC2151DCA604E2654B1F17A52FE",
+   "navigationType": "historyApi",
+   "url": "https://dzen.ru/#use_friendly_frame=true&vsid=7274c0bb03d356abd7412a06f751a82d56d33bad1391xZWPx1266x1734952885&from=zen&reqid=55584858.1119.1734952878616.96155&flags=%7B%22disable_autoplay_slow_con..."
+}
+[1734952885.157][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "1836EFC2151DCA604E2654B1F17A52FE"
+}
+[1734952885.159][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "CAE027239188F410DA46A784E651D0C4",
+   "parentFrameId": "043497253B72F906424F4425CD6A5EC0",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 23285,
+         "functionName": "n",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 26809,
+         "functionName": "n",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 65238,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 65288,
+         "functionName": "ze",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 236818,
+         "functionName": "bc",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 274304,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 47340,
+         "functionName": "p",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 274297,
+         "functionName": "Cc",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 79304,
+         "functionName": "e.privateInit",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 77075,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 75776,
+         "functionName": "e.startCurrentStage",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 76160,
+         "functionName": "e.executeQueue",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 76809,
+         "functionName": "e.init",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 89465,
+         "functionName": "initPlayer",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 86714,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      } ]
+   }
+}
+[1734952885.159][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "disposition": "currentTab",
+   "frameId": "CAE027239188F410DA46A784E651D0C4",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734952885.159][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "CAE027239188F410DA46A784E651D0C4",
+      "loaderId": "4A6190AD1CC2633D4662987B995F6284",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "043497253B72F906424F4425CD6A5EC0",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734952885.159][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "CAE027239188F410DA46A784E651D0C4"
+}
+[1734952885.160][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "context": {
+      "auxData": {
+         "frameId": "CAE027239188F410DA46A784E651D0C4",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 14,
+      "name": "",
+      "origin": "https://dzen.ru",
+      "uniqueId": "7101263614991120479.2262647803579442999"
+   }
+}
+[1734952885.160][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "CAE027239188F410DA46A784E651D0C4"
+}
+[1734952885.160][DEBUG]: DevTools WebSocket Event: Page.documentOpened (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "dzen.ru",
+      "gatedAPIFeatures": [  ],
+      "id": "CAE027239188F410DA46A784E651D0C4",
+      "loaderId": "4A6190AD1CC2633D4662987B995F6284",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "043497253B72F906424F4425CD6A5EC0",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://dzen.ru",
+      "url": "https://dzen.ru/?yredirect=true"
+   }
+}
+[1734952885.161][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "CAE027239188F410DA46A784E651D0C4"
+}
+[1734952885.161][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "CAE027239188F410DA46A784E651D0C4",
+   "navigationType": "historyApi",
+   "url": "https://dzen.ru/#use_friendly_frame=true&vsid=3f8e407d62f83dea53d7ff17710e354fc7022bbcca0axZWPx1266x1734952885&from=zen&reqid=55584858.1119.1734952878616.96155&flags=%7B%22disable_autoplay_slow_con..."
+}
+[1734952885.161][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "CAE027239188F410DA46A784E651D0C4"
+}
+[1734952885.162][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "286A655D5373FADFFC2C3844E9BE48D2",
+   "parentFrameId": "043497253B72F906424F4425CD6A5EC0",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 23285,
+         "functionName": "n",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 26809,
+         "functionName": "n",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 65238,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 65288,
+         "functionName": "ze",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 236818,
+         "functionName": "bc",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 274304,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 47340,
+         "functionName": "p",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 274297,
+         "functionName": "Cc",
+         "lineNumber": 1,
+         "scriptId": "89",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player-api.modern.js"
+      }, {
+         "columnNumber": 79304,
+         "functionName": "e.privateInit",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 77075,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 75776,
+         "functionName": "e.startCurrentStage",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 76160,
+         "functionName": "e.executeQueue",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 76809,
+         "functionName": "e.init",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 89465,
+         "functionName": "initPlayer",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      }, {
+         "columnNumber": 86714,
+         "functionName": "",
+         "lineNumber": 0,
+         "scriptId": "90",
+         "url": "https://static.dzeninfra.ru/video-player/0x1816a2c7b69/pages-common/vh-player-js/_vh-player-js.js"
+      } ]
+   }
+}
+[1734952885.162][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "disposition": "currentTab",
+   "frameId": "286A655D5373FADFFC2C3844E9BE48D2",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734952885.163][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "286A655D5373FADFFC2C3844E9BE48D2",
+      "loaderId": "50CDEFAA4FF26DA21AB2F0278E5B9C73",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "043497253B72F906424F4425CD6A5EC0",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734952885.163][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "286A655D5373FADFFC2C3844E9BE48D2"
+}
+[1734952885.163][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "context": {
+      "auxData": {
+         "frameId": "286A655D5373FADFFC2C3844E9BE48D2",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 15,
+      "name": "",
+      "origin": "https://dzen.ru",
+      "uniqueId": "72657725107961222.3083619420501613701"
+   }
+}
+[1734952885.163][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "286A655D5373FADFFC2C3844E9BE48D2"
+}
+[1734952885.163][DEBUG]: DevTools WebSocket Event: Page.documentOpened (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "dzen.ru",
+      "gatedAPIFeatures": [  ],
+      "id": "286A655D5373FADFFC2C3844E9BE48D2",
+      "loaderId": "50CDEFAA4FF26DA21AB2F0278E5B9C73",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "043497253B72F906424F4425CD6A5EC0",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://dzen.ru",
+      "url": "https://dzen.ru/?yredirect=true"
+   }
+}
+[1734952885.164][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "286A655D5373FADFFC2C3844E9BE48D2"
+}
+[1734952885.164][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "286A655D5373FADFFC2C3844E9BE48D2",
+   "navigationType": "historyApi",
+   "url": "https://dzen.ru/#use_friendly_frame=true&vsid=e52373745cad0cbdadbbca90fc01f7cf6c9976488a6exZWPx1266x1734952885&from=zen&reqid=55584858.1119.1734952878616.96155&flags=%7B%22disable_autoplay_slow_con..."
+}
+[1734952885.164][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "286A655D5373FADFFC2C3844E9BE48D2"
+}
+[1734952885.167][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=59) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952885.672][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=60) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952885.672][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=60) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952885.956][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "9AD672C17A3922D2B5B0E5ECFC7574B5",
+   "parentFrameId": "043497253B72F906424F4425CD6A5EC0",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 279,
+         "functionName": "fj",
+         "lineNumber": 179,
+         "scriptId": "91",
+         "url": "https://mc.yandex.ru/metrika/tag.js"
+      }, {
+         "columnNumber": 427,
+         "functionName": "",
+         "lineNumber": 421,
+         "scriptId": "91",
+         "url": "https://mc.yandex.ru/metrika/tag.js"
+      }, {
+         "columnNumber": 416,
+         "functionName": "c",
+         "lineNumber": 175,
+         "scriptId": "91",
+         "url": "https://mc.yandex.ru/metrika/tag.js"
+      }, {
+         "columnNumber": 24,
+         "functionName": "",
+         "lineNumber": 176,
+         "scriptId": "91",
+         "url": "https://mc.yandex.ru/metrika/tag.js"
+      }, {
+         "columnNumber": 339,
+         "functionName": "",
+         "lineNumber": 197,
+         "scriptId": "91",
+         "url": "https://mc.yandex.ru/metrika/tag.js"
+      }, {
+         "columnNumber": 98,
+         "functionName": "kl",
+         "lineNumber": 218,
+         "scriptId": "91",
+         "url": "https://mc.yandex.ru/metrika/tag.js"
+      }, {
+         "columnNumber": 65,
+         "functionName": "",
+         "lineNumber": 218,
+         "scriptId": "91",
+         "url": "https://mc.yandex.ru/metrika/tag.js"
+      }, {
+         "columnNumber": 369,
+         "functionName": "",
+         "lineNumber": 421,
+         "scriptId": "91",
+         "url": "https://mc.yandex.ru/metrika/tag.js"
+      }, {
+         "columnNumber": 435,
+         "functionName": "",
+         "lineNumber": 201,
+         "scriptId": "91",
+         "url": "https://mc.yandex.ru/metrika/tag.js"
+      }, {
+         "columnNumber": 344,
+         "functionName": "",
+         "lineNumber": 201,
+         "scriptId": "91",
+         "url": "https://mc.yandex.ru/metrika/tag.js"
+      }, {
+         "columnNumber": 259,
+         "functionName": "",
+         "lineNumber": 214,
+         "scriptId": "91",
+         "url": "https://mc.yandex.ru/metrika/tag.js"
+      }, {
+         "columnNumber": 177,
+         "functionName": "",
+         "lineNumber": 213,
+         "scriptId": "91",
+         "url": "https://mc.yandex.ru/metrika/tag.js"
+      }, {
+         "columnNumber": 33,
+         "functionName": "",
+         "lineNumber": 146,
+         "scriptId": "91",
+         "url": "https://mc.yandex.ru/metrika/tag.js"
+      }, {
+         "columnNumber": 110,
+         "functionName": "f",
+         "lineNumber": 3,
+         "scriptId": "91",
+         "url": "https://mc.yandex.ru/metrika/tag.js"
+      }, {
+         "columnNumber": 428,
+         "functionName": "Os",
+         "lineNumber": 198,
+         "scriptId": "91",
+         "url": "https://mc.yandex.ru/metrika/tag.js"
+      }, {
+         "columnNumber": 252,
+         "functionName": "",
+         "lineNumber": 263,
+         "scriptId": "91",
+         "url": "https://mc.yandex.ru/metrika/tag.js"
+      }, {
+         "columnNumber": 65,
+         "functionName": "",
+         "lineNumber": 218,
+         "scriptId": "91",
+         "url": "https://mc.yandex.ru/metrika/tag.js"
+      }, {
+         "columnNumber": 172,
+         "functionName": "",
+         "lineNumber": 198,
+         "scriptId": "91",
+         "url": "https://mc.yandex.ru/metrika/tag.js"
+      }, {
+         "columnNumber": 98,
+         "functionName": "kl",
+         "lineNumber": 218,
+         "scriptId": "91",
+         "url": "https://mc.yandex.ru/metrika/tag.js"
+      }, "..." ]
+   }
+}
+[1734952885.956][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=61) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952885.956][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "disposition": "currentTab",
+   "frameId": "9AD672C17A3922D2B5B0E5ECFC7574B5",
+   "reason": "initialFrameNavigation",
+   "url": "https://mc.yandex.ru/metrika/metrika_match.html"
+}
+[1734952885.957][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "9AD672C17A3922D2B5B0E5ECFC7574B5"
+}
+[1734952885.958][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "sessionId": "B529C9ABAA39F351C81DAC37A3BFCCDE",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "6F8863857578BBAF4DC22E28EFC4D289",
+      "canAccessOpener": false,
+      "targetId": "9AD672C17A3922D2B5B0E5ECFC7574B5",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734952885.958][DEBUG]: DevTools WebSocket Command: Page.enable (id=62) (session_id=B529C9ABAA39F351C81DAC37A3BFCCDE) B529C9ABAA39F351C81DAC37A3BFCCDE {
+}
+[1734952885.959][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=63) (session_id=B529C9ABAA39F351C81DAC37A3BFCCDE) B529C9ABAA39F351C81DAC37A3BFCCDE {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734952885.959][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=64) (session_id=B529C9ABAA39F351C81DAC37A3BFCCDE) B529C9ABAA39F351C81DAC37A3BFCCDE {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734952885.959][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=65) (session_id=B529C9ABAA39F351C81DAC37A3BFCCDE) B529C9ABAA39F351C81DAC37A3BFCCDE {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734952885.959][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=61) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952885.960][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "6F8863857578BBAF4DC22E28EFC4D289",
+      "canAccessOpener": false,
+      "targetId": "9AD672C17A3922D2B5B0E5ECFC7574B5",
+      "title": "https://mc.yandex.ru/metrika/metrika_match.html",
+      "type": "iframe",
+      "url": "https://mc.yandex.ru/metrika/metrika_match.html"
+   }
+}
+[1734952885.961][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "9AD672C17A3922D2B5B0E5ECFC7574B5",
+   "reason": "swap"
+}
+[1734952885.961][DEBUG]: DevTools WebSocket Response: Page.enable (id=62) (session_id=B529C9ABAA39F351C81DAC37A3BFCCDE) B529C9ABAA39F351C81DAC37A3BFCCDE {
+}
+[1734952885.961][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=63) (session_id=B529C9ABAA39F351C81DAC37A3BFCCDE) B529C9ABAA39F351C81DAC37A3BFCCDE {
+   "identifier": "1"
+}
+[1734952885.961][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=64) (session_id=B529C9ABAA39F351C81DAC37A3BFCCDE) B529C9ABAA39F351C81DAC37A3BFCCDE {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734952885.961][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=65) (session_id=B529C9ABAA39F351C81DAC37A3BFCCDE) B529C9ABAA39F351C81DAC37A3BFCCDE {
+}
+[1734952885.961][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=66) (session_id=B529C9ABAA39F351C81DAC37A3BFCCDE) B529C9ABAA39F351C81DAC37A3BFCCDE {
+}
+[1734952885.961][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=B529C9ABAA39F351C81DAC37A3BFCCDE) B529C9ABAA39F351C81DAC37A3BFCCDE {
+   "timestamp": 62878.873712
+}
+[1734952885.961][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=B529C9ABAA39F351C81DAC37A3BFCCDE) B529C9ABAA39F351C81DAC37A3BFCCDE {
+   "timestamp": 62878.873857
+}
+[1734952885.961][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=B529C9ABAA39F351C81DAC37A3BFCCDE) B529C9ABAA39F351C81DAC37A3BFCCDE {
+   "frameId": "9AD672C17A3922D2B5B0E5ECFC7574B5"
+}
+[1734952885.962][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=B529C9ABAA39F351C81DAC37A3BFCCDE) B529C9ABAA39F351C81DAC37A3BFCCDE {
+   "context": {
+      "auxData": {
+         "frameId": "9AD672C17A3922D2B5B0E5ECFC7574B5",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://mc.yandex.ru",
+      "uniqueId": "-7396738386580249654.-5036999313784986476"
+   }
+}
+[1734952885.962][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=66) (session_id=B529C9ABAA39F351C81DAC37A3BFCCDE) B529C9ABAA39F351C81DAC37A3BFCCDE {
+}
+[1734952885.962][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=67) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "document",
+   "objectGroup": "73142170-d927-49bc-b2a5-0c239e0a241e"
+}
+[1734952885.963][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=67) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "-2707607443694542589.2.3",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734952885.963][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=68) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "objectId": "-2707607443694542589.2.3"
+}
+[1734952885.963][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=68) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "https://dzen.ru/?yredirect=true",
+      "childNodeCount": 2,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "https://dzen.ru/?yredirect=true",
+      "isScrollable": true,
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734952885.963][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=69) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "objectGroup": "73142170-d927-49bc-b2a5-0c239e0a241e"
+}
+[1734952885.963][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=70) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "3715769415001528736.4220109196783729972"
+}
+[1734952885.964][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "9AD672C17A3922D2B5B0E5ECFC7574B5"
+}
+[1734952885.964][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "9AD672C17A3922D2B5B0E5ECFC7574B5",
+   "reason": "remove"
+}
+[1734952885.964][DEBUG]: DevTools WebSocket Event: Target.detachedFromTarget (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "sessionId": "B529C9ABAA39F351C81DAC37A3BFCCDE",
+   "targetId": "9AD672C17A3922D2B5B0E5ECFC7574B5"
+}
+[1734952885.964][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=69) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+}
+[1734952885.964][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=70) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "type": "string",
+      "value": "interactive"
+   }
+}
+[1734952886.468][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=71) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952886.468][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=71) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952886.974][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=72) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952886.974][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=72) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952887.367][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "1D20C53DEF583EFA7CD959DE44D586E0"
+}
+[1734952887.367][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=73) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952887.367][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "1D20C53DEF583EFA7CD959DE44D586E0",
+   "navigationType": "historyApi",
+   "url": "https://dzen.ru/?use_friendly_frame=true&vsid=7c993e72cb48fa03189a935eb5408ef831b813d028b1xZWPx1266x1734952885&from=zen&reqid=55584858.1119.1734952878616.96155&flags=%7B%22disable_autoplay_slow_con..."
+}
+[1734952887.367][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "1D20C53DEF583EFA7CD959DE44D586E0"
+}
+[1734952887.375][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=73) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952887.376][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "1836EFC2151DCA604E2654B1F17A52FE"
+}
+[1734952887.376][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=74) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952887.376][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "1836EFC2151DCA604E2654B1F17A52FE",
+   "navigationType": "historyApi",
+   "url": "https://dzen.ru/?use_friendly_frame=true&vsid=7274c0bb03d356abd7412a06f751a82d56d33bad1391xZWPx1266x1734952885&from=zen&reqid=55584858.1119.1734952878616.96155&flags=%7B%22disable_autoplay_slow_con..."
+}
+[1734952887.376][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "1836EFC2151DCA604E2654B1F17A52FE"
+}
+[1734952887.379][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "CAE027239188F410DA46A784E651D0C4"
+}
+[1734952887.379][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "CAE027239188F410DA46A784E651D0C4",
+   "navigationType": "historyApi",
+   "url": "https://dzen.ru/?use_friendly_frame=true&vsid=3f8e407d62f83dea53d7ff17710e354fc7022bbcca0axZWPx1266x1734952885&from=zen&reqid=55584858.1119.1734952878616.96155&flags=%7B%22disable_autoplay_slow_con..."
+}
+[1734952887.379][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "CAE027239188F410DA46A784E651D0C4"
+}
+[1734952887.381][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "286A655D5373FADFFC2C3844E9BE48D2"
+}
+[1734952887.381][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "286A655D5373FADFFC2C3844E9BE48D2",
+   "navigationType": "historyApi",
+   "url": "https://dzen.ru/?use_friendly_frame=true&vsid=e52373745cad0cbdadbbca90fc01f7cf6c9976488a6exZWPx1266x1734952885&from=zen&reqid=55584858.1119.1734952878616.96155&flags=%7B%22disable_autoplay_slow_con..."
+}
+[1734952887.381][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "286A655D5373FADFFC2C3844E9BE48D2"
+}
+[1734952887.383][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=74) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952887.507][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=6B230D338CC9D3F1FADE1CF66300E7E9) 6B230D338CC9D3F1FADE1CF66300E7E9 {
+   "timestamp": 62880.418931
+}
+[1734952887.507][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=6B230D338CC9D3F1FADE1CF66300E7E9) 6B230D338CC9D3F1FADE1CF66300E7E9 {
+   "timestamp": 62880.419665
+}
+[1734952887.507][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=6B230D338CC9D3F1FADE1CF66300E7E9) 6B230D338CC9D3F1FADE1CF66300E7E9 {
+   "frameId": "53A75C86FDE324285E969AEAF025DA3C"
+}
+[1734952887.507][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=75) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952887.508][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=75) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952887.543][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "E4C49DE789ECD9173E4DCF18E2BDC9A7"
+}
+[1734952887.543][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=76) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952887.545][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "E4C49DE789ECD9173E4DCF18E2BDC9A7",
+   "reason": "remove"
+}
+[1734952887.545][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "executionContextId": 6,
+   "executionContextUniqueId": "8691666042889544989.-6309246170023416674"
+}
+[1734952887.545][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=76) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952887.682][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "args": [ {
+      "type": "string",
+      "value": "EmeEncryptionSchemePolyfill: Waiting to detect encryptionScheme support."
+   } ],
+   "executionContextId": 12,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 26,
+         "functionName": "hl",
+         "lineNumber": 12773,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 12,
+         "functionName": "Hj",
+         "lineNumber": 12996,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 12,
+         "functionName": "",
+         "lineNumber": 11379,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 26,
+         "functionName": "",
+         "lineNumber": 11362,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 266206,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 87730,
+         "functionName": "t",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 87782,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 168689,
+         "functionName": "Dr",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      } ]
+   },
+   "timestamp": 1.73495288768154e+12,
+   "type": "debug"
+}
+[1734952887.682][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "args": [ {
+      "type": "string",
+      "value": "McEncryptionSchemePolyfill: Waiting to detect encryptionScheme support."
+   } ],
+   "executionContextId": 12,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 26,
+         "functionName": "ql",
+         "lineNumber": 12857,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 12,
+         "functionName": "Hj",
+         "lineNumber": 12997,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 12,
+         "functionName": "",
+         "lineNumber": 11379,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 26,
+         "functionName": "",
+         "lineNumber": 11362,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 266206,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 87730,
+         "functionName": "t",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 87782,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 168689,
+         "functionName": "Dr",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      } ]
+   },
+   "timestamp": 1.734952887681637e+12,
+   "type": "debug"
+}
+[1734952887.682][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=77) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952887.686][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=77) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952887.687][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "args": [ {
+      "type": "string",
+      "value": "EmeEncryptionSchemePolyfill: Waiting to detect encryptionScheme support."
+   } ],
+   "executionContextId": 14,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 26,
+         "functionName": "hl",
+         "lineNumber": 12773,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 12,
+         "functionName": "Hj",
+         "lineNumber": 12996,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 12,
+         "functionName": "",
+         "lineNumber": 11379,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 26,
+         "functionName": "",
+         "lineNumber": 11362,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 266206,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 87730,
+         "functionName": "t",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 87782,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 168689,
+         "functionName": "Dr",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      } ]
+   },
+   "timestamp": 1.734952887686276e+12,
+   "type": "debug"
+}
+[1734952887.687][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "args": [ {
+      "type": "string",
+      "value": "McEncryptionSchemePolyfill: Waiting to detect encryptionScheme support."
+   } ],
+   "executionContextId": 14,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 26,
+         "functionName": "ql",
+         "lineNumber": 12857,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 12,
+         "functionName": "Hj",
+         "lineNumber": 12997,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 12,
+         "functionName": "",
+         "lineNumber": 11379,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 26,
+         "functionName": "",
+         "lineNumber": 11362,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 266206,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 87730,
+         "functionName": "t",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 87782,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 168689,
+         "functionName": "Dr",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      } ]
+   },
+   "timestamp": 1.734952887686357e+12,
+   "type": "debug"
+}
+[1734952887.687][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=78) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952887.689][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "args": [ {
+      "type": "string",
+      "value": "EmeEncryptionSchemePolyfill: Waiting to detect encryptionScheme support."
+   } ],
+   "executionContextId": 15,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 26,
+         "functionName": "hl",
+         "lineNumber": 12773,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 12,
+         "functionName": "Hj",
+         "lineNumber": 12996,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 12,
+         "functionName": "",
+         "lineNumber": 11379,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 26,
+         "functionName": "",
+         "lineNumber": 11362,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 266206,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 87730,
+         "functionName": "t",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 87782,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 168689,
+         "functionName": "Dr",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      } ]
+   },
+   "timestamp": 1.734952887688097e+12,
+   "type": "debug"
+}
+[1734952887.689][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "args": [ {
+      "type": "string",
+      "value": "McEncryptionSchemePolyfill: Waiting to detect encryptionScheme support."
+   } ],
+   "executionContextId": 15,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 26,
+         "functionName": "ql",
+         "lineNumber": 12857,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 12,
+         "functionName": "Hj",
+         "lineNumber": 12997,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 12,
+         "functionName": "",
+         "lineNumber": 11379,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 26,
+         "functionName": "",
+         "lineNumber": 11362,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 266206,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 87730,
+         "functionName": "t",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 87782,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 168689,
+         "functionName": "Dr",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      } ]
+   },
+   "timestamp": 1.734952887688144e+12,
+   "type": "debug"
+}
+[1734952887.690][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "args": [ {
+      "type": "string",
+      "value": "EmeEncryptionSchemePolyfill: Waiting to detect encryptionScheme support."
+   } ],
+   "executionContextId": 13,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 26,
+         "functionName": "hl",
+         "lineNumber": 12773,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 12,
+         "functionName": "Hj",
+         "lineNumber": 12996,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 12,
+         "functionName": "",
+         "lineNumber": 11379,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 26,
+         "functionName": "",
+         "lineNumber": 11362,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 266206,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 87730,
+         "functionName": "t",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 87782,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 168689,
+         "functionName": "Dr",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      } ]
+   },
+   "timestamp": 1.734952887689509e+12,
+   "type": "debug"
+}
+[1734952887.690][DEBUG]: DevTools WebSocket Event: Runtime.consoleAPICalled (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "args": [ {
+      "type": "string",
+      "value": "McEncryptionSchemePolyfill: Waiting to detect encryptionScheme support."
+   } ],
+   "executionContextId": 13,
+   "stackTrace": {
+      "callFrames": [ {
+         "columnNumber": 26,
+         "functionName": "ql",
+         "lineNumber": 12857,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 12,
+         "functionName": "Hj",
+         "lineNumber": 12997,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 12,
+         "functionName": "",
+         "lineNumber": 11379,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 26,
+         "functionName": "",
+         "lineNumber": 11362,
+         "scriptId": "124",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/shaka-player.compiled.js"
+      }, {
+         "columnNumber": 266206,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 87730,
+         "functionName": "t",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 87782,
+         "functionName": "",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      }, {
+         "columnNumber": 168689,
+         "functionName": "Dr",
+         "lineNumber": 1,
+         "scriptId": "117",
+         "url": "https://static.dzeninfra.ru/yandex-video-player-iframe-api-bundles/1.0-1266/js/player.v2.modern.js"
+      } ]
+   },
+   "timestamp": 1.734952887689547e+12,
+   "type": "debug"
+}
+[1734952887.691][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=78) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952888.196][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=79) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952888.198][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=79) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952888.703][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=80) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952888.703][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=80) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952889.208][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=81) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952889.209][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=81) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952889.261][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "286A655D5373FADFFC2C3844E9BE48D2"
+}
+[1734952889.261][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=82) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952889.262][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "286A655D5373FADFFC2C3844E9BE48D2",
+   "navigationType": "historyApi",
+   "url": "https://dzen.ru/?use_friendly_frame=true&vsid=e52373745cad0cbdadbbca90fc01f7cf6c9976488a6exZWPx1266x1734952885&from=zen&reqid=55584858.1119.1734952878616.96155&flags=%7B%22disable_autoplay_slow_con..."
+}
+[1734952889.262][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "286A655D5373FADFFC2C3844E9BE48D2"
+}
+[1734952889.268][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "286A655D5373FADFFC2C3844E9BE48D2"
+}
+[1734952889.269][DEBUG]: DevTools WebSocket Event: Page.navigatedWithinDocument (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "286A655D5373FADFFC2C3844E9BE48D2",
+   "navigationType": "historyApi",
+   "url": "https://dzen.ru/?use_friendly_frame=true&vsid=e52373745cad0cbdadbbca90fc01f7cf6c9976488a6exZWPx1266x1734952885&from=zen&reqid=55584858.1119.1734952878616.96155&flags=%7B%22disable_autoplay_slow_con..."
+}
+[1734952889.269][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "286A655D5373FADFFC2C3844E9BE48D2"
+}
+[1734952889.281][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=82) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952889.786][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=83) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952889.787][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=83) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952890.292][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=84) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952890.293][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=84) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952890.798][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=85) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952890.804][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=85) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952891.310][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=86) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952891.311][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=86) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+sysctlbyname for kern.hv_vmm_present failed with status -1[1734952891.816][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=87) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952891.817][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=87) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952892.322][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=88) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952892.323][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=88) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952892.827][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=89) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952892.827][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=89) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952893.332][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=90) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952893.333][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=90) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952893.836][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=91) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952893.837][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=91) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952894.343][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=92) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952894.344][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=92) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952894.849][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=93) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952894.850][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=93) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952894.901][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "timestamp": 62887.808947
+}
+[1734952894.901][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=94) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "3715769415001528736.4220109196783729972"
+}
+[1734952894.901][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "frameId": "043497253B72F906424F4425CD6A5EC0"
+}
+[1734952894.906][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=94) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734952894.906][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=95) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "expression": "1"
+}
+[1734952894.906][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=95) (session_id=757C1A881ECA542C77568F0DAE6CEF97) 043497253B72F906424F4425CD6A5EC0 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734952894.906][INFO]: Done waiting for pending navigations. Status: ok
+[1734952894.906][INFO]: [b7fc40e747c7c48bff1407efaadaf759] RESPONSE Navigate
+Created TensorFlow Lite XNNPACK delegate for CPU.
+[1734952904.914][INFO]: [b7fc40e747c7c48bff1407efaadaf759] COMMAND Quit {
+}
+[1734952904.966][INFO]: [b7fc40e747c7c48bff1407efaadaf759] RESPONSE Quit
+[1734952904.966][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1734952904.966][DEBUG]: Log type 'browser' lost 1 entries on destruction

@@ -1,0 +1,2020 @@
+[1734953022.457][INFO]: Starting Microsoft Edge WebDriver 131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70) on port 59791
+[1734953022.457][INFO]: Please see https://aka.ms/WebDriverSecurity for suggestions on keeping Microsoft Edge WebDriver safe.
+[1734953022.459][INFO]: msedgedriver was started successfully on port 59791
+[1734953022.466][INFO]: [dcd53c4b53398aa00aa9d7170bc4828a] COMMAND InitSession {
+   "capabilities": {
+      "alwaysMatch": {
+         "browserName": "MicrosoftEdge",
+         "browserVersion": null,
+         "ms:edgeOptions": {
+            "args": [ "--disable-extensions", "--inprivate" ],
+            "binary": "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "normal"
+      },
+      "firstMatch": [ {
+      } ]
+   }
+}
+[1734953022.467][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1734953022.467][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1734953022.467][INFO]: ChromeDriver supports communication with Chrome via pipes. This is more reliable and more secure.
+[1734953022.467][INFO]: Use the --remote-debugging-pipe Chrome switch instead of the default --remote-debugging-port to enable this communication mode.
+[1734953022.467][INFO]: WEBVIEW2_ADDITIONAL_BROWSER_ARGUMENTS = 
+[1734953022.467][INFO]: Launching Microsoft Edge: /Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge --allow-pre-commit-input --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-extensions --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-logging --inprivate --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir=/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.yp8Vg6 data:,
+
+DevTools listening on ws://127.0.0.1:59796/devtools/browser/2431ef3e-7386-4653-8772-7b4cd2a32042
+[1734953022.680][DEBUG]: DevTools HTTP Request: http://localhost:59796/json/version
+[1734953022.954][DEBUG]: DevTools HTTP Response: {
+   "Browser": "Edg/131.0.2903.112",
+   "Protocol-Version": "1.3",
+   "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0",
+   "V8-Version": "13.1.20.9",
+   "WebKit-Version": "537.36 (@16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+   "webSocketDebuggerUrl": "ws://localhost:59796/devtools/browser/2431ef3e-7386-4653-8772-7b4cd2a32042"
+}
+
+[1734953022.957][DEBUG]: DevTools HTTP Request: http://localhost:59796/json/list
+[1734953022.970][DEBUG]: DevTools HTTP Response: [ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:59796/devtools/page/8F1BFD5F278D64D8D8D88683F5EBB4A4",
+   "id": "8F1BFD5F278D64D8D8D88683F5EBB4A4",
+   "title": "",
+   "type": "page",
+   "url": "data:,",
+   "webSocketDebuggerUrl": "ws://localhost:59796/devtools/page/8F1BFD5F278D64D8D8D88683F5EBB4A4"
+} ]
+
+[1734953022.973][INFO]: resolved localhost to ["127.0.0.1","::1"]
+[1734953022.976][DEBUG]: DevTools WebSocket Command: Target.getTargets (id=1) (session_id=) browser {
+}
+[1734953022.981][DEBUG]: DevTools WebSocket Response: Target.getTargets (id=1) (session_id=) browser {
+   "targetInfos": [ {
+      "attached": false,
+      "browserContextId": "486C5D1117C6794C7F78E6F35BB634E2",
+      "canAccessOpener": false,
+      "pid": 0,
+      "targetId": "8F1BFD5F278D64D8D8D88683F5EBB4A4",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   } ]
+}
+[1734953022.981][DEBUG]: DevTools WebSocket Command: Target.attachToTarget (id=2) (session_id=) browser {
+   "flatten": true,
+   "targetId": "8F1BFD5F278D64D8D8D88683F5EBB4A4"
+}
+[1734953023.001][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=) browser {
+   "sessionId": "FE1FF51E961EDF342C2C1D328AD7E2FA",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "486C5D1117C6794C7F78E6F35BB634E2",
+      "canAccessOpener": false,
+      "pid": 33486,
+      "targetId": "8F1BFD5F278D64D8D8D88683F5EBB4A4",
+      "title": "data:,",
+      "type": "page",
+      "url": "data:,"
+   },
+   "waitingForDebugger": false
+}
+[1734953023.001][DEBUG]: DevTools WebSocket Response: Target.attachToTarget (id=2) (session_id=) browser {
+   "sessionId": "FE1FF51E961EDF342C2C1D328AD7E2FA"
+}
+[1734953023.001][DEBUG]: DevTools WebSocket Command: Page.enable (id=3) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+}
+[1734953023.002][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734953023.002][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=5) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734953023.002][DEBUG]: DevTools WebSocket Command: Log.enable (id=6) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+}
+[1734953023.002][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=7) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734953023.007][DEBUG]: DevTools WebSocket Response: Page.enable (id=3) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+}
+[1734953023.009][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=4) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "identifier": "1"
+}
+[1734953023.009][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=5) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734953023.009][DEBUG]: DevTools WebSocket Response: Log.enable (id=6) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+}
+[1734953023.009][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=7) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+}
+[1734953023.009][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=8) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+}
+[1734953023.009][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "context": {
+      "auxData": {
+         "frameId": "8F1BFD5F278D64D8D8D88683F5EBB4A4",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "://",
+      "uniqueId": "-5021342790266918469.5208837890968576645"
+   }
+}
+[1734953023.009][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=8) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+}
+[1734953023.009][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=9) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+}
+[1734953023.010][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=9) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+}
+[1734953023.012][INFO]: [dcd53c4b53398aa00aa9d7170bc4828a] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "MicrosoftEdge",
+      "browserVersion": "131.0.2903.112",
+      "fedcm:accounts": true,
+      "ms:edgeOptions": {
+         "debuggerAddress": "localhost:59796"
+      },
+      "msedge": {
+         "msedgedriverVersion": "131.0.2903.112 (16ab910a6e75f1c7d2da060bbe9ac569dfe64f70)",
+         "userDataDir": "/var/folders/rh/qx9vyws96s355z2yrj2t0gf80000gn/T/.com.microsoft.edgemac.yp8Vg6"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "mac",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "dcd53c4b53398aa00aa9d7170bc4828a"
+}
+[1734953023.013][INFO]: [dcd53c4b53398aa00aa9d7170bc4828a] COMMAND Navigate {
+   "url": "https://netflix.com"
+}
+[1734953023.014][INFO]: Waiting for pending navigations...
+[1734953023.014][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=10) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "expression": "1"
+}
+[1734953023.014][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=10) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734953023.015][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=11) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "expression": "document",
+   "objectGroup": "0ed1b2c8-0f2d-4413-95d3-be14315adba3"
+}
+[1734953023.015][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=11) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "result": {
+      "className": "HTMLDocument",
+      "description": "#document",
+      "objectId": "-1560363856020871581.1.1",
+      "subtype": "node",
+      "type": "object"
+   }
+}
+[1734953023.015][DEBUG]: DevTools WebSocket Command: DOM.describeNode (id=12) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "objectId": "-1560363856020871581.1.1"
+}
+[1734953023.015][DEBUG]: DevTools WebSocket Response: DOM.describeNode (id=12) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "node": {
+      "backendNodeId": 1,
+      "baseURL": "data:,",
+      "childNodeCount": 1,
+      "compatibilityMode": "NoQuirksMode",
+      "documentURL": "data:,",
+      "localName": "",
+      "nodeId": 0,
+      "nodeName": "#document",
+      "nodeType": 9,
+      "nodeValue": "",
+      "xmlVersion": ""
+   }
+}
+[1734953023.016][DEBUG]: DevTools WebSocket Command: Runtime.releaseObjectGroup (id=13) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "objectGroup": "0ed1b2c8-0f2d-4413-95d3-be14315adba3"
+}
+[1734953023.016][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=14) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "-5021342790266918469.5208837890968576645"
+}
+[1734953023.017][DEBUG]: DevTools WebSocket Response: Runtime.releaseObjectGroup (id=13) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+}
+[1734953023.017][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=14) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734953023.017][INFO]: Done waiting for pending navigations. Status: ok
+[1734953023.017][DEBUG]: DevTools WebSocket Command: Page.navigate (id=15) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "url": "https://netflix.com"
+}
+[1734953023.020][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "frameId": "8F1BFD5F278D64D8D8D88683F5EBB4A4"
+}
+2024-12-23 20:23:43.215 Microsoft Edge[33478:1128678] +[IMKClient subclass]: chose IMKClient_Modern
+2024-12-23 20:23:43.215 Microsoft Edge[33478:1128678] +[IMKInputSession subclass]: chose IMKInputSession_Modern
+[1734953025.208][DEBUG]: DevTools WebSocket Response: Page.navigate (id=15) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "frameId": "8F1BFD5F278D64D8D8D88683F5EBB4A4",
+   "loaderId": "8E8A3FC5489A151FA2223C5094EE77F3"
+}
+[1734953025.208][INFO]: Waiting for pending navigations...
+[1734953025.208][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=16) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "expression": "1"
+}
+[1734953025.210][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+}
+[1734953025.211][DEBUG]: DevTools WebSocket Event: Runtime.executionContextsCleared (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+}
+[1734953025.212][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none"
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "netflix.com",
+      "gatedAPIFeatures": [  ],
+      "id": "8F1BFD5F278D64D8D8D88683F5EBB4A4",
+      "loaderId": "8E8A3FC5489A151FA2223C5094EE77F3",
+      "mimeType": "text/html",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://www.netflix.com",
+      "url": "https://www.netflix.com/jp/"
+   },
+   "type": "Navigation"
+}
+[1734953025.226][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "context": {
+      "auxData": {
+         "frameId": "8F1BFD5F278D64D8D8D88683F5EBB4A4",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.netflix.com",
+      "uniqueId": "8453604879567324096.-7028697971474734745"
+   }
+}
+[1734953025.228][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=16) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734953025.733][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=17) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "expression": "1"
+}
+[1734953025.734][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=17) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734953026.235][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=18) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "expression": "1"
+}
+[1734953026.235][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=18) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734953026.509][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "timestamp": 63019.423008
+}
+[1734953026.509][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=19) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "expression": "1"
+}
+[1734953026.510][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=19) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734953026.587][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "timestamp": 63019.500805
+}
+[1734953026.587][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=20) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "awaitPromise": false,
+   "expression": "document.readyState",
+   "returnByValue": true,
+   "uniqueContextId": "8453604879567324096.-7028697971474734745"
+}
+[1734953026.587][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "frameId": "8F1BFD5F278D64D8D8D88683F5EBB4A4"
+}
+[1734953026.587][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=20) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "result": {
+      "type": "string",
+      "value": "complete"
+   }
+}
+[1734953026.587][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=21) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "expression": "1"
+}
+[1734953026.587][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=21) (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "result": {
+      "description": "1",
+      "type": "number",
+      "value": 1
+   }
+}
+[1734953026.587][INFO]: Done waiting for pending navigations. Status: ok
+[1734953026.587][INFO]: [dcd53c4b53398aa00aa9d7170bc4828a] RESPONSE Navigate
+[1734953026.687][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "frameId": "5D8BBF68592C0092CB446BE6939A4793",
+   "parentFrameId": "8F1BFD5F278D64D8D8D88683F5EBB4A4",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 238106,
+         "functionName": "send",
+         "lineNumber": 30,
+         "scriptId": "8",
+         "url": "https://assets.nflxext.com/web/ffe/wp/ui/signup/nmhp/nmhpFrameworkClient.d4c07044eb44555016f0.js"
+      }, {
+         "columnNumber": 233765,
+         "functionName": "sendAdTech",
+         "lineNumber": 30,
+         "scriptId": "8",
+         "url": "https://assets.nflxext.com/web/ffe/wp/ui/signup/nmhp/nmhpFrameworkClient.d4c07044eb44555016f0.js"
+      }, {
+         "columnNumber": 262935,
+         "functionName": "",
+         "lineNumber": 30,
+         "scriptId": "8",
+         "url": "https://assets.nflxext.com/web/ffe/wp/ui/signup/nmhp/nmhpFrameworkClient.d4c07044eb44555016f0.js"
+      } ]
+   }
+}
+[1734953026.687][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "disposition": "currentTab",
+   "frameId": "5D8BBF68592C0092CB446BE6939A4793",
+   "reason": "initialFrameNavigation",
+   "url": "https://ae.nflximg.net/monet/scripts/adtech_iframe_target_05.html?data=%7B%22membership_status%22%3A%22ANONYMOUS%22%2C%22country%22%3A%22JP%22%2C%22region_code%22%3A%2229%22%2C%22is_member%22%3A%22..."
+}
+[1734953026.688][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "frameId": "5D8BBF68592C0092CB446BE6939A4793"
+}
+[1734953027.200][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "frameId": "18DB8240F5DDA622B9DAE7BDDF850B9D",
+   "parentFrameId": "8F1BFD5F278D64D8D8D88683F5EBB4A4",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 22930,
+         "functionName": "a.append",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 226633,
+         "functionName": "n.insertPcHtml",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 451683,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 1976,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 946,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 697,
+         "functionName": "F",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 450694,
+         "functionName": "pi.windowLoadBanner",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 21671,
+         "functionName": "r",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 21818,
+         "functionName": "a.trigger",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 140168,
+         "functionName": "ao.loadBanner",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 334778,
+         "functionName": "gr.LoadBanner",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 472230,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 1976,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 751,
+         "functionName": "n",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      } ]
+   }
+}
+[1734953027.200][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "disposition": "currentTab",
+   "frameId": "18DB8240F5DDA622B9DAE7BDDF850B9D",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734953027.200][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "18DB8240F5DDA622B9DAE7BDDF850B9D",
+      "loaderId": "718D8C1249395B3057CAD1FA18569AD7",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "8F1BFD5F278D64D8D8D88683F5EBB4A4",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734953027.200][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "frameId": "18DB8240F5DDA622B9DAE7BDDF850B9D"
+}
+[1734953027.202][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "context": {
+      "auxData": {
+         "frameId": "18DB8240F5DDA622B9DAE7BDDF850B9D",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://www.netflix.com",
+      "uniqueId": "6413461222081834877.4484373783454257757"
+   }
+}
+[1734953027.202][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "frameId": "18DB8240F5DDA622B9DAE7BDDF850B9D"
+}
+[1734953027.202][DEBUG]: DevTools WebSocket Event: Page.frameSubtreeWillBeDetached (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "frameId": "18DB8240F5DDA622B9DAE7BDDF850B9D"
+}
+[1734953027.204][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "frameId": "18DB8240F5DDA622B9DAE7BDDF850B9D",
+   "reason": "remove"
+}
+[1734953027.204][DEBUG]: DevTools WebSocket Event: Runtime.executionContextDestroyed (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "executionContextId": 2,
+   "executionContextUniqueId": "6413461222081834877.4484373783454257757"
+}
+[1734953027.204][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "frameId": "23817AE7E17A87C4F82F3F9CC5140975",
+   "parentFrameId": "8F1BFD5F278D64D8D8D88683F5EBB4A4",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 22930,
+         "functionName": "a.append",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 226686,
+         "functionName": "n.insertPcHtml",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 451683,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 1976,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 946,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 697,
+         "functionName": "F",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 450694,
+         "functionName": "pi.windowLoadBanner",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 21671,
+         "functionName": "r",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 21818,
+         "functionName": "a.trigger",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 140168,
+         "functionName": "ao.loadBanner",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 334778,
+         "functionName": "gr.LoadBanner",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 472230,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 1976,
+         "functionName": "",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      }, {
+         "columnNumber": 751,
+         "functionName": "n",
+         "lineNumber": 6,
+         "scriptId": "15",
+         "url": "https://help.nflxext.com/helpcenter/OneTrust/oneTrust_production/scripttemplates/202411.1.0/otBannerSdk.js"
+      } ]
+   }
+}
+[1734953027.204][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "disposition": "currentTab",
+   "frameId": "23817AE7E17A87C4F82F3F9CC5140975",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734953027.204][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "23817AE7E17A87C4F82F3F9CC5140975",
+      "loaderId": "9E818255423C3558FF82A08156F15EB0",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "8F1BFD5F278D64D8D8D88683F5EBB4A4",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734953027.204][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "frameId": "23817AE7E17A87C4F82F3F9CC5140975"
+}
+[1734953027.205][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "context": {
+      "auxData": {
+         "frameId": "23817AE7E17A87C4F82F3F9CC5140975",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 3,
+      "name": "",
+      "origin": "https://www.netflix.com",
+      "uniqueId": "-1183315533548697448.3522104434243310506"
+   }
+}
+[1734953027.205][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "frameId": "23817AE7E17A87C4F82F3F9CC5140975"
+}
+[1734953027.207][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "sessionId": "301000DCD55E43BC34175A9C3DF90661",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "486C5D1117C6794C7F78E6F35BB634E2",
+      "canAccessOpener": false,
+      "pid": 33488,
+      "targetId": "5D8BBF68592C0092CB446BE6939A4793",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734953027.207][DEBUG]: DevTools WebSocket Command: Page.enable (id=22) (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+}
+[1734953027.208][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=23) (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734953027.208][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=24) (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734953027.208][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=25) (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734953027.210][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "486C5D1117C6794C7F78E6F35BB634E2",
+      "canAccessOpener": false,
+      "pid": 33488,
+      "targetId": "5D8BBF68592C0092CB446BE6939A4793",
+      "title": "https://ae.nflximg.net/monet/scripts/adtech_iframe_target_05.html?data=%7B%22membership_status%22%3A%22ANONYMOUS%22%2C%22country%22%3A%22JP%22%2C%22region_code%22%3A%2229%22%2C%22is_member%22%3A%22...",
+      "type": "iframe",
+      "url": "https://ae.nflximg.net/monet/scripts/adtech_iframe_target_05.html?data=%7B%22membership_status%22%3A%22ANONYMOUS%22%2C%22country%22%3A%22JP%22%2C%22region_code%22%3A%2229%22%2C%22is_member%22%3A%22..."
+   }
+}
+[1734953027.211][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "frameId": "5D8BBF68592C0092CB446BE6939A4793",
+   "reason": "swap"
+}
+[1734953027.212][DEBUG]: DevTools WebSocket Response: Page.enable (id=22) (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+}
+[1734953027.212][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=23) (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "identifier": "1"
+}
+[1734953027.212][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=24) (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734953027.212][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=25) (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+}
+[1734953027.212][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=26) (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+}
+[1734953027.215][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "frameId": "3ED41474E39BB5DA8B393EAF82F93A07",
+   "parentFrameId": "5D8BBF68592C0092CB446BE6939A4793",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 15,
+         "functionName": "",
+         "lineNumber": 100,
+         "scriptId": "6",
+         "url": "https://ae.nflximg.net/monet/scripts/adtech_iframe_target_05.html?data=%7B%22membership_status%22%3A%22ANONYMOUS%22%2C%22country%22%3A%22JP%22%2C%22region_code%22%3A%2229%22%2C%22is_member%22%3A%22..."
+      } ]
+   }
+}
+[1734953027.215][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "disposition": "currentTab",
+   "frameId": "3ED41474E39BB5DA8B393EAF82F93A07",
+   "reason": "initialFrameNavigation",
+   "url": "https://ae.nflximg.net/monet/scripts/netflix_tag_05.html?data=%7B%22membership_status%22%3A%22ANONYMOUS%22%2C%22country%22%3A%22JP%22%2C%22region_code%22%3A%2229%22%2C%22is_member%22%3A%22ANONYMOUS..."
+}
+[1734953027.215][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "frameId": "3ED41474E39BB5DA8B393EAF82F93A07"
+}
+[1734953027.221][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "context": {
+      "auxData": {
+         "frameId": "3ED41474E39BB5DA8B393EAF82F93A07",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://ae.nflximg.net",
+      "uniqueId": "8202250060916571830.-6259472993521209701"
+   }
+}
+[1734953027.222][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "context": {
+      "auxData": {
+         "frameId": "5D8BBF68592C0092CB446BE6939A4793",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://ae.nflximg.net",
+      "uniqueId": "5338438990775639985.6347343913095268354"
+   }
+}
+[1734953027.222][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=26) (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+}
+[1734953027.222][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "timestamp": 63020.136245
+}
+[1734953027.304][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolatedFeatureDisabled",
+      "domainAndRegistry": "nflximg.net",
+      "gatedAPIFeatures": [  ],
+      "id": "3ED41474E39BB5DA8B393EAF82F93A07",
+      "loaderId": "E13BA9BB2EC523DB9C1C5A9929E239EA",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "5D8BBF68592C0092CB446BE6939A4793",
+      "secureContextType": "Secure",
+      "securityOrigin": "https://ae.nflximg.net",
+      "url": "https://ae.nflximg.net/monet/scripts/netflix_tag_05.html?data=%7B%22membership_status%22%3A%22ANONYMOUS%22%2C%22country%22%3A%22JP%22%2C%22region_code%22%3A%2229%22%2C%22is_member%22%3A%22ANONYMOUS..."
+   },
+   "type": "Navigation"
+}
+[1734953027.309][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CRI5GNBC77UDCGHCQ7C0&lib=ttq.",
+      "timestamp": 1.734953027308534e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.309][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CRI5GNBC77UDCGHCQ7C0&lib=ttq.",
+      "timestamp": 1.734953027308784e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.309][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CRI5GNBC77UDCGHCQ7C0&lib=ttq.",
+      "timestamp": 1.734953027308817e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.309][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CRI5GNBC77UDCGHCQ7C0&lib=ttq.",
+      "timestamp": 1.734953027308836e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.309][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.facebook.com/tr?id=1313278799538375&ev=Purchase&eid=&dl=Netflix.com.",
+      "timestamp": 1.734953027308898e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.309][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.facebook.com/tr?id=1313278799538375&ev=Purchase&eid=&dl=Netflix.com.",
+      "timestamp": 1.734953027308947e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.309][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.facebook.com/tr?id=1313278799538375&ev=Purchase&eid=&dl=Netflix.com.",
+      "timestamp": 1.734953027309041e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.309][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.facebook.com/tr?id=1313278799538375&ev=Purchase&eid=&dl=Netflix.com.",
+      "timestamp": 1.734953027309078e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.310][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.facebook.com/tr?id=829253787145710&ev=NM_landing&dl=https://netflix.com.",
+      "timestamp": 1.734953027309373e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.310][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.facebook.com/tr?id=829253787145710&ev=NM_landing&dl=https://netflix.com.",
+      "timestamp": 1.734953027309394e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.310][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.facebook.com/tr?id=829253787145710&ev=NM_landing&dl=https://netflix.com.",
+      "timestamp": 1.734953027309485e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.310][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.facebook.com/tr?id=829253787145710&ev=NM_landing&dl=https://netflix.com.",
+      "timestamp": 1.73495302730951e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.687][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=CRI5GNBC77UDCGHCQ7C0&lib=ttq.",
+      "timestamp": 1.73495302768604e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.690][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.tiktok.com/i18n/pixel/static/main.MWE1OTI4NzI4MA.js.",
+      "timestamp": 1.734953027688917e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.690][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.tiktok.com/i18n/pixel/static/main.MWE1OTI4NzI4MA.js.",
+      "timestamp": 1.734953027688997e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.690][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.tiktok.com/i18n/pixel/static/main.MWE1OTI4NzI4MA.js.",
+      "timestamp": 1.73495302768903e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.690][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.tiktok.com/i18n/pixel/static/main.MWE1OTI4NzI4MA.js.",
+      "timestamp": 1.734953027689201e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.738][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "frameId": "E98352990EE563D7505970FA0F3533F0",
+   "parentFrameId": "3ED41474E39BB5DA8B393EAF82F93A07",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 317,
+         "functionName": "oc",
+         "lineNumber": 139,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 128,
+         "functionName": "Ju",
+         "lineNumber": 468,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 366,
+         "functionName": "Mw",
+         "lineNumber": 513,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 51,
+         "functionName": "",
+         "lineNumber": 524,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 398,
+         "functionName": "fx",
+         "lineNumber": 526,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 472,
+         "functionName": "gx",
+         "lineNumber": 522,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 71,
+         "functionName": "f",
+         "lineNumber": 636,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 51,
+         "functionName": "",
+         "lineNumber": 638,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 149,
+         "functionName": "el",
+         "lineNumber": 306,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 431,
+         "functionName": "El",
+         "lineNumber": 311,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 37,
+         "functionName": "pE",
+         "lineNumber": 638,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 27,
+         "functionName": "fn",
+         "lineNumber": 327,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 161,
+         "functionName": "en.flush",
+         "lineNumber": 329,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 430,
+         "functionName": "en.push",
+         "lineNumber": 327,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 290,
+         "functionName": "config",
+         "lineNumber": 561,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 468,
+         "functionName": "Sz",
+         "lineNumber": 570,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 42,
+         "functionName": "Uz",
+         "lineNumber": 572,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      } ]
+   }
+}
+[1734953027.739][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "disposition": "currentTab",
+   "frameId": "E98352990EE563D7505970FA0F3533F0",
+   "reason": "initialFrameNavigation",
+   "url": "https://td.doubleclick.net/td/rul/981179826?random=1734953027726&cv=11&fst=1734953027726&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za200&gcd=13l3l3l3l1l1&dma=0&tag_exp=101925629~1020675..."
+}
+[1734953027.740][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "frameId": "E98352990EE563D7505970FA0F3533F0"
+}
+[1734953027.744][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "frameId": "A56C9E56278E11ADE76CAF0F05FC9EF0",
+   "parentFrameId": "3ED41474E39BB5DA8B393EAF82F93A07",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 317,
+         "functionName": "oc",
+         "lineNumber": 139,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 128,
+         "functionName": "Ju",
+         "lineNumber": 468,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 366,
+         "functionName": "Mw",
+         "lineNumber": 513,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 51,
+         "functionName": "",
+         "lineNumber": 524,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 165,
+         "functionName": "",
+         "lineNumber": 528,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      } ]
+   }
+}
+[1734953027.744][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "disposition": "currentTab",
+   "frameId": "A56C9E56278E11ADE76CAF0F05FC9EF0",
+   "reason": "initialFrameNavigation",
+   "url": "https://td.doubleclick.net/td/rul/981179826?random=1734953027738&cv=11&fst=1734953027738&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za200&gcd=13l3l3l3l1l1&dma=0&tag_exp=101925629~1020675..."
+}
+[1734953027.744][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "frameId": "A56C9E56278E11ADE76CAF0F05FC9EF0"
+}
+[1734953027.744][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://td.doubleclick.net/td/rul/981179826?random=1734953027726&cv=11&fst=1734953027726&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za20...",
+      "timestamp": 1.734953027741705e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.744][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "frameId": "7CA2AB577B6D2390F8F262A6F7A29AE3",
+   "parentFrameId": "3ED41474E39BB5DA8B393EAF82F93A07",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 317,
+         "functionName": "oc",
+         "lineNumber": 139,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 38,
+         "functionName": "h.Im",
+         "lineNumber": 455,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 208,
+         "functionName": "",
+         "lineNumber": 454,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      } ]
+   }
+}
+[1734953027.745][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "disposition": "currentTab",
+   "frameId": "7CA2AB577B6D2390F8F262A6F7A29AE3",
+   "reason": "initialFrameNavigation",
+   "url": "about:blank"
+}
+[1734953027.745][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://td.doubleclick.net/td/rul/981179826?random=1734953027726&cv=11&fst=1734953027726&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za20...",
+      "timestamp": 1.734953027743139e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.745][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://td.doubleclick.net/td/rul/981179826?random=1734953027726&cv=11&fst=1734953027726&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za20...",
+      "timestamp": 1.734953027743168e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.745][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://td.doubleclick.net/td/rul/981179826?random=1734953027726&cv=11&fst=1734953027726&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za20...",
+      "timestamp": 1.734953027743188e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.745][DEBUG]: DevTools WebSocket Event: Page.frameNavigated (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "frame": {
+      "adFrameStatus": {
+         "adFrameType": "none",
+         "explanations": [  ]
+      },
+      "crossOriginIsolatedContextType": "NotIsolatedFeatureDisabled",
+      "domainAndRegistry": "",
+      "gatedAPIFeatures": [  ],
+      "id": "7CA2AB577B6D2390F8F262A6F7A29AE3",
+      "loaderId": "4B424AB81A876B617270808910C7A4CA",
+      "mimeType": "text/html",
+      "name": "",
+      "parentId": "3ED41474E39BB5DA8B393EAF82F93A07",
+      "secureContextType": "Secure",
+      "securityOrigin": "://",
+      "url": "about:blank"
+   },
+   "type": "Navigation"
+}
+[1734953027.745][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "frameId": "7CA2AB577B6D2390F8F262A6F7A29AE3"
+}
+[1734953027.745][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://td.doubleclick.net/td/rul/981179826?random=1734953027738&cv=11&fst=1734953027738&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za20...",
+      "timestamp": 1.734953027744547e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.745][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "context": {
+      "auxData": {
+         "frameId": "7CA2AB577B6D2390F8F262A6F7A29AE3",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 3,
+      "name": "",
+      "origin": "https://ae.nflximg.net",
+      "uniqueId": "-2970838309617867121.-5151504755159222749"
+   }
+}
+[1734953027.745][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "frameId": "7CA2AB577B6D2390F8F262A6F7A29AE3"
+}
+[1734953027.746][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://td.doubleclick.net/td/rul/981179826?random=1734953027738&cv=11&fst=1734953027738&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za20...",
+      "timestamp": 1.734953027744704e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.746][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://td.doubleclick.net/td/rul/981179826?random=1734953027738&cv=11&fst=1734953027738&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za20...",
+      "timestamp": 1.734953027744928e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.746][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://td.doubleclick.net/td/rul/981179826?random=1734953027738&cv=11&fst=1734953027738&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za20...",
+      "timestamp": 1.734953027744946e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.746][DEBUG]: DevTools WebSocket Event: Page.frameAttached (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "frameId": "C298BBF391DCC8ADB622F0A0371CE9E0",
+   "parentFrameId": "7CA2AB577B6D2390F8F262A6F7A29AE3",
+   "stack": {
+      "callFrames": [ {
+         "columnNumber": 358,
+         "functionName": "q",
+         "lineNumber": 455,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 77,
+         "functionName": "h.Im",
+         "lineNumber": 456,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      }, {
+         "columnNumber": 208,
+         "functionName": "",
+         "lineNumber": 454,
+         "scriptId": "11",
+         "url": "https://www.googletagmanager.com/gtag/js?id=AW-981179826"
+      } ]
+   }
+}
+[1734953027.747][DEBUG]: DevTools WebSocket Event: Page.frameRequestedNavigation (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "disposition": "currentTab",
+   "frameId": "C298BBF391DCC8ADB622F0A0371CE9E0",
+   "reason": "initialFrameNavigation",
+   "url": "https://www.googletagmanager.com/static/service_worker/4cc0/sw_iframe.html?origin=https%3A%2F%2Fae.nflximg.net"
+}
+[1734953027.748][DEBUG]: DevTools WebSocket Event: Page.frameStartedLoading (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "frameId": "C298BBF391DCC8ADB622F0A0371CE9E0"
+}
+[1734953027.748][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/ccm/collect?en=page_view&dl=https%3A%2F%2Fae.nflximg.net%2Fmonet%2Fscripts%2Fnetflix_tag_05.html&scrsrc=www.googletagmanager...",
+      "timestamp": 1.734953027747182e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.748][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/ccm/collect?en=page_view&dl=https%3A%2F%2Fae.nflximg.net%2Fmonet%2Fscripts%2Fnetflix_tag_05.html&scrsrc=www.googletagmanager...",
+      "timestamp": 1.734953027747203e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.748][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/ccm/collect?en=page_view&dl=https%3A%2F%2Fae.nflximg.net%2Fmonet%2Fscripts%2Fnetflix_tag_05.html&scrsrc=www.googletagmanager...",
+      "timestamp": 1.734953027747221e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.748][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/ccm/collect?en=page_view&dl=https%3A%2F%2Fae.nflximg.net%2Fmonet%2Fscripts%2Fnetflix_tag_05.html&scrsrc=www.googletagmanager...",
+      "timestamp": 1.734953027747238e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.749][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://googleads.g.doubleclick.net/pagead/viewthroughconversion/981179826/?random=1734953027726&cv=11&fst=1734953027726&bg=ffffff&guid=ON&async=1&...",
+      "timestamp": 1.734953027748057e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.749][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://googleads.g.doubleclick.net/pagead/viewthroughconversion/981179826/?random=1734953027726&cv=11&fst=1734953027726&bg=ffffff&guid=ON&async=1&...",
+      "timestamp": 1.734953027748164e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.749][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://googleads.g.doubleclick.net/pagead/viewthroughconversion/981179826/?random=1734953027726&cv=11&fst=1734953027726&bg=ffffff&guid=ON&async=1&...",
+      "timestamp": 1.734953027748273e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.749][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://googleads.g.doubleclick.net/pagead/viewthroughconversion/981179826/?random=1734953027726&cv=11&fst=1734953027726&bg=ffffff&guid=ON&async=1&...",
+      "timestamp": 1.734953027748288e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.750][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-conversion/981179826/?random=1734953027738&cv=11&fst=1734953027738&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v87627221...",
+      "timestamp": 1.734953027749097e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.750][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-conversion/981179826/?random=1734953027738&cv=11&fst=1734953027738&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v87627221...",
+      "timestamp": 1.734953027749195e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.750][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-conversion/981179826/?random=1734953027738&cv=11&fst=1734953027738&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v87627221...",
+      "timestamp": 1.734953027749214e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.750][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-conversion/981179826/?random=1734953027738&cv=11&fst=1734953027738&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v87627221...",
+      "timestamp": 1.734953027749362e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.750][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://googleads.g.doubleclick.net/pagead/viewthroughconversion/981179826/?random=1734953027738&cv=11&fst=1734953027738&fmt=3&bg=ffffff&guid=ON&as...",
+      "timestamp": 1.734953027749587e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.750][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://googleads.g.doubleclick.net/pagead/viewthroughconversion/981179826/?random=1734953027738&cv=11&fst=1734953027738&fmt=3&bg=ffffff&guid=ON&as...",
+      "timestamp": 1.734953027749605e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.751][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://googleads.g.doubleclick.net/pagead/viewthroughconversion/981179826/?random=1734953027738&cv=11&fst=1734953027738&fmt=3&bg=ffffff&guid=ON&as...",
+      "timestamp": 1.734953027749702e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.751][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://googleads.g.doubleclick.net/pagead/viewthroughconversion/981179826/?random=1734953027738&cv=11&fst=1734953027738&fmt=3&bg=ffffff&guid=ON&as...",
+      "timestamp": 1.734953027749718e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.795][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.tiktok.com/i18n/pixel/static/identify_45dd5971.js.",
+      "timestamp": 1.734953027794184e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.795][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.tiktok.com/i18n/pixel/static/identify_45dd5971.js.",
+      "timestamp": 1.73495302779422e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.795][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.tiktok.com/i18n/pixel/static/identify_45dd5971.js.",
+      "timestamp": 1.734953027794299e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.795][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.tiktok.com/i18n/pixel/static/identify_45dd5971.js.",
+      "timestamp": 1.734953027794358e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.799][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.tiktok.com/api/v2/pixel.",
+      "timestamp": 1.734953027799107e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.799][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.tiktok.com/api/v2/pixel.",
+      "timestamp": 1.734953027799124e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.799][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.tiktok.com/api/v2/pixel.",
+      "timestamp": 1.734953027799141e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953027.799][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://analytics.tiktok.com/api/v2/pixel.",
+      "timestamp": 1.734953027799202e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953028.432][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "sessionId": "BE536F3186D29F917C5DEA7E7B839F02",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "486C5D1117C6794C7F78E6F35BB634E2",
+      "canAccessOpener": false,
+      "pid": 33494,
+      "targetId": "C298BBF391DCC8ADB622F0A0371CE9E0",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734953028.432][DEBUG]: DevTools WebSocket Command: Page.enable (id=27) (session_id=BE536F3186D29F917C5DEA7E7B839F02) BE536F3186D29F917C5DEA7E7B839F02 {
+}
+[1734953028.432][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=28) (session_id=BE536F3186D29F917C5DEA7E7B839F02) BE536F3186D29F917C5DEA7E7B839F02 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734953028.432][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=29) (session_id=BE536F3186D29F917C5DEA7E7B839F02) BE536F3186D29F917C5DEA7E7B839F02 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734953028.433][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=30) (session_id=BE536F3186D29F917C5DEA7E7B839F02) BE536F3186D29F917C5DEA7E7B839F02 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734953028.435][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "486C5D1117C6794C7F78E6F35BB634E2",
+      "canAccessOpener": false,
+      "pid": 33494,
+      "targetId": "C298BBF391DCC8ADB622F0A0371CE9E0",
+      "title": "https://www.googletagmanager.com/static/service_worker/4cc0/sw_iframe.html?origin=https%3A%2F%2Fae.nflximg.net",
+      "type": "iframe",
+      "url": "https://www.googletagmanager.com/static/service_worker/4cc0/sw_iframe.html?origin=https%3A%2F%2Fae.nflximg.net"
+   }
+}
+[1734953028.435][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "frameId": "C298BBF391DCC8ADB622F0A0371CE9E0",
+   "reason": "swap"
+}
+[1734953028.437][DEBUG]: DevTools WebSocket Response: Page.enable (id=27) (session_id=BE536F3186D29F917C5DEA7E7B839F02) BE536F3186D29F917C5DEA7E7B839F02 {
+}
+[1734953028.437][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=28) (session_id=BE536F3186D29F917C5DEA7E7B839F02) BE536F3186D29F917C5DEA7E7B839F02 {
+   "identifier": "1"
+}
+[1734953028.437][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=29) (session_id=BE536F3186D29F917C5DEA7E7B839F02) BE536F3186D29F917C5DEA7E7B839F02 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734953028.437][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=30) (session_id=BE536F3186D29F917C5DEA7E7B839F02) BE536F3186D29F917C5DEA7E7B839F02 {
+}
+[1734953028.437][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=31) (session_id=BE536F3186D29F917C5DEA7E7B839F02) BE536F3186D29F917C5DEA7E7B839F02 {
+}
+[1734953028.440][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=BE536F3186D29F917C5DEA7E7B839F02) BE536F3186D29F917C5DEA7E7B839F02 {
+   "context": {
+      "auxData": {
+         "frameId": "C298BBF391DCC8ADB622F0A0371CE9E0",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://www.googletagmanager.com",
+      "uniqueId": "-3356404108381334503.8395304938382536794"
+   }
+}
+[1734953028.440][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=31) (session_id=BE536F3186D29F917C5DEA7E7B839F02) BE536F3186D29F917C5DEA7E7B839F02 {
+}
+[1734953028.440][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=BE536F3186D29F917C5DEA7E7B839F02) BE536F3186D29F917C5DEA7E7B839F02 {
+   "timestamp": 63021.354207
+}
+[1734953028.440][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=BE536F3186D29F917C5DEA7E7B839F02) BE536F3186D29F917C5DEA7E7B839F02 {
+   "timestamp": 63021.354414
+}
+[1734953028.440][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=BE536F3186D29F917C5DEA7E7B839F02) BE536F3186D29F917C5DEA7E7B839F02 {
+   "frameId": "C298BBF391DCC8ADB622F0A0371CE9E0"
+}
+[1734953028.441][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "sessionId": "386AC7E62788B8201DF15788651C2D9A",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "486C5D1117C6794C7F78E6F35BB634E2",
+      "canAccessOpener": false,
+      "pid": 0,
+      "targetId": "5D35C86961FE40FA0576D7DA4E247E38",
+      "title": "Service Worker https://www.googletagmanager.com/static/service_worker/4cc0/sw.js?origin=https%3A%2F%2Fae.nflximg.net",
+      "type": "service_worker",
+      "url": "https://www.googletagmanager.com/static/service_worker/4cc0/sw.js?origin=https%3A%2F%2Fae.nflximg.net"
+   },
+   "waitingForDebugger": false
+}
+[1734953028.539][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "sessionId": "FFF2BC88F0C28689068976323426E649",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "486C5D1117C6794C7F78E6F35BB634E2",
+      "canAccessOpener": false,
+      "pid": 33493,
+      "targetId": "E98352990EE563D7505970FA0F3533F0",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734953028.539][DEBUG]: DevTools WebSocket Command: Page.enable (id=32) (session_id=FFF2BC88F0C28689068976323426E649) FFF2BC88F0C28689068976323426E649 {
+}
+[1734953028.539][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=33) (session_id=FFF2BC88F0C28689068976323426E649) FFF2BC88F0C28689068976323426E649 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734953028.539][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=34) (session_id=FFF2BC88F0C28689068976323426E649) FFF2BC88F0C28689068976323426E649 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734953028.539][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=35) (session_id=FFF2BC88F0C28689068976323426E649) FFF2BC88F0C28689068976323426E649 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734953028.539][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://td.doubleclick.net/td/rul/981179826?random=1734953027726&cv=11&fst=1734953027726&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za20...",
+      "timestamp": 1.734953028537816e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953028.540][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://td.doubleclick.net/td/rul/981179826?random=1734953027738&cv=11&fst=1734953027738&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za20...",
+      "timestamp": 1.734953028539942e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953028.541][DEBUG]: DevTools WebSocket Event: Target.attachedToTarget (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "sessionId": "364C2564876758F7DA5A1DCD42ED24A0",
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "486C5D1117C6794C7F78E6F35BB634E2",
+      "canAccessOpener": false,
+      "pid": 33493,
+      "targetId": "A56C9E56278E11ADE76CAF0F05FC9EF0",
+      "title": "",
+      "type": "iframe",
+      "url": ""
+   },
+   "waitingForDebugger": false
+}
+[1734953028.541][DEBUG]: DevTools WebSocket Command: Page.enable (id=36) (session_id=364C2564876758F7DA5A1DCD42ED24A0) 364C2564876758F7DA5A1DCD42ED24A0 {
+}
+[1734953028.541][DEBUG]: DevTools WebSocket Command: Page.addScriptToEvaluateOnNewDocument (id=37) (session_id=364C2564876758F7DA5A1DCD42ED24A0) 364C2564876758F7DA5A1DCD42ED24A0 {
+   "source": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734953028.541][DEBUG]: DevTools WebSocket Command: Runtime.evaluate (id=38) (session_id=364C2564876758F7DA5A1DCD42ED24A0) 364C2564876758F7DA5A1DCD42ED24A0 {
+   "expression": "(function () {window.cdc_adoQpoasnfa76pfcZLmcfl_Array = window.Array;window.cdc_adoQpoasnfa76pfcZLmcfl_Object = window.Object;window.cdc_adoQpoasnfa76pfcZLmcfl_Promise = window.Promise;window.cdc_a..."
+}
+[1734953028.541][DEBUG]: DevTools WebSocket Command: Target.setAutoAttach (id=39) (session_id=364C2564876758F7DA5A1DCD42ED24A0) 364C2564876758F7DA5A1DCD42ED24A0 {
+   "autoAttach": true,
+   "flatten": true,
+   "waitForDebuggerOnStart": false
+}
+[1734953028.542][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "486C5D1117C6794C7F78E6F35BB634E2",
+      "canAccessOpener": false,
+      "pid": 33493,
+      "targetId": "E98352990EE563D7505970FA0F3533F0",
+      "title": "https://td.doubleclick.net/td/rul/981179826?random=1734953027726&cv=11&fst=1734953027726&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za200&gcd=13l3l3l3l1l1&dma=0&tag_exp=101925629~1020675...",
+      "type": "iframe",
+      "url": "https://td.doubleclick.net/td/rul/981179826?random=1734953027726&cv=11&fst=1734953027726&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za200&gcd=13l3l3l3l1l1&dma=0&tag_exp=101925629~1020675..."
+   }
+}
+[1734953028.542][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "frameId": "E98352990EE563D7505970FA0F3533F0",
+   "reason": "swap"
+}
+[1734953028.543][DEBUG]: DevTools WebSocket Response: Page.enable (id=32) (session_id=FFF2BC88F0C28689068976323426E649) FFF2BC88F0C28689068976323426E649 {
+}
+[1734953028.543][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=33) (session_id=FFF2BC88F0C28689068976323426E649) FFF2BC88F0C28689068976323426E649 {
+   "identifier": "1"
+}
+[1734953028.543][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=34) (session_id=FFF2BC88F0C28689068976323426E649) FFF2BC88F0C28689068976323426E649 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734953028.543][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=35) (session_id=FFF2BC88F0C28689068976323426E649) FFF2BC88F0C28689068976323426E649 {
+}
+[1734953028.545][DEBUG]: DevTools WebSocket Event: Target.targetInfoChanged (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "targetInfo": {
+      "attached": true,
+      "browserContextId": "486C5D1117C6794C7F78E6F35BB634E2",
+      "canAccessOpener": false,
+      "pid": 33493,
+      "targetId": "A56C9E56278E11ADE76CAF0F05FC9EF0",
+      "title": "https://td.doubleclick.net/td/rul/981179826?random=1734953027738&cv=11&fst=1734953027738&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za200&gcd=13l3l3l3l1l1&dma=0&tag_exp=101925629~1020675...",
+      "type": "iframe",
+      "url": "https://td.doubleclick.net/td/rul/981179826?random=1734953027738&cv=11&fst=1734953027738&fmt=3&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za200&gcd=13l3l3l3l1l1&dma=0&tag_exp=101925629~1020675..."
+   }
+}
+[1734953028.545][DEBUG]: DevTools WebSocket Event: Page.frameDetached (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "frameId": "A56C9E56278E11ADE76CAF0F05FC9EF0",
+   "reason": "swap"
+}
+[1734953028.546][DEBUG]: DevTools WebSocket Response: Page.enable (id=36) (session_id=364C2564876758F7DA5A1DCD42ED24A0) 364C2564876758F7DA5A1DCD42ED24A0 {
+}
+[1734953028.546][DEBUG]: DevTools WebSocket Response: Page.addScriptToEvaluateOnNewDocument (id=37) (session_id=364C2564876758F7DA5A1DCD42ED24A0) 364C2564876758F7DA5A1DCD42ED24A0 {
+   "identifier": "1"
+}
+[1734953028.547][DEBUG]: DevTools WebSocket Response: Runtime.evaluate (id=38) (session_id=364C2564876758F7DA5A1DCD42ED24A0) 364C2564876758F7DA5A1DCD42ED24A0 {
+   "result": {
+      "type": "undefined"
+   }
+}
+[1734953028.547][DEBUG]: DevTools WebSocket Response: Target.setAutoAttach (id=39) (session_id=364C2564876758F7DA5A1DCD42ED24A0) 364C2564876758F7DA5A1DCD42ED24A0 {
+}
+[1734953028.547][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=40) (session_id=364C2564876758F7DA5A1DCD42ED24A0) 364C2564876758F7DA5A1DCD42ED24A0 {
+}
+[1734953028.547][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=FFF2BC88F0C28689068976323426E649) FFF2BC88F0C28689068976323426E649 {
+   "timestamp": 63021.461487
+}
+[1734953028.547][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=FFF2BC88F0C28689068976323426E649) FFF2BC88F0C28689068976323426E649 {
+   "timestamp": 63021.461657
+}
+[1734953028.547][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=FFF2BC88F0C28689068976323426E649) FFF2BC88F0C28689068976323426E649 {
+   "frameId": "E98352990EE563D7505970FA0F3533F0"
+}
+[1734953028.547][DEBUG]: DevTools WebSocket Event: Page.domContentEventFired (session_id=364C2564876758F7DA5A1DCD42ED24A0) 364C2564876758F7DA5A1DCD42ED24A0 {
+   "timestamp": 63021.461836
+}
+[1734953028.547][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=364C2564876758F7DA5A1DCD42ED24A0) 364C2564876758F7DA5A1DCD42ED24A0 {
+   "timestamp": 63021.461959
+}
+[1734953028.547][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=364C2564876758F7DA5A1DCD42ED24A0) 364C2564876758F7DA5A1DCD42ED24A0 {
+   "frameId": "A56C9E56278E11ADE76CAF0F05FC9EF0"
+}
+[1734953028.547][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=364C2564876758F7DA5A1DCD42ED24A0) 364C2564876758F7DA5A1DCD42ED24A0 {
+   "context": {
+      "auxData": {
+         "frameId": "A56C9E56278E11ADE76CAF0F05FC9EF0",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 2,
+      "name": "",
+      "origin": "https://td.doubleclick.net",
+      "uniqueId": "4337002505637125430.-2293130566350928338"
+   }
+}
+[1734953028.547][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=40) (session_id=364C2564876758F7DA5A1DCD42ED24A0) 364C2564876758F7DA5A1DCD42ED24A0 {
+}
+[1734953028.547][DEBUG]: DevTools WebSocket Command: Runtime.enable (id=41) (session_id=FFF2BC88F0C28689068976323426E649) FFF2BC88F0C28689068976323426E649 {
+}
+[1734953028.548][DEBUG]: DevTools WebSocket Event: Runtime.executionContextCreated (session_id=FFF2BC88F0C28689068976323426E649) FFF2BC88F0C28689068976323426E649 {
+   "context": {
+      "auxData": {
+         "frameId": "E98352990EE563D7505970FA0F3533F0",
+         "isDefault": true,
+         "type": "default"
+      },
+      "id": 1,
+      "name": "",
+      "origin": "https://td.doubleclick.net",
+      "uniqueId": "-6558667853814661481.126062644259784334"
+   }
+}
+[1734953028.548][DEBUG]: DevTools WebSocket Response: Runtime.enable (id=41) (session_id=FFF2BC88F0C28689068976323426E649) FFF2BC88F0C28689068976323426E649 {
+}
+[1734953028.552][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://googleads.g.doubleclick.net/pagead/viewthroughconversion/981179826/?random=1734953027738&cv=11&fst=1734953027738&fmt=3&bg=ffffff&guid=ON&as...",
+      "timestamp": 1.734953028551797e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953028.557][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-conversion/981179826/?random=952443191&cv=11&fst=1734953027738&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za2...",
+      "timestamp": 1.734953028556226e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953028.557][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-conversion/981179826/?random=952443191&cv=11&fst=1734953027738&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za2...",
+      "timestamp": 1.734953028556263e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953028.557][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-conversion/981179826/?random=952443191&cv=11&fst=1734953027738&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za2...",
+      "timestamp": 1.734953028556357e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953028.557][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-conversion/981179826/?random=952443191&cv=11&fst=1734953027738&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za2...",
+      "timestamp": 1.734953028556382e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953028.558][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://googleads.g.doubleclick.net/pagead/viewthroughconversion/981179826/?random=1734953027726&cv=11&fst=1734953027726&bg=ffffff&guid=ON&async=1&...",
+      "timestamp": 1.734953028557391e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953028.559][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-user-list/981179826/?random=1734953027726&cv=11&fst=1734951600000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219...",
+      "timestamp": 1.734953028558503e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953028.559][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-user-list/981179826/?random=1734953027726&cv=11&fst=1734951600000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219...",
+      "timestamp": 1.734953028558528e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953028.559][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-user-list/981179826/?random=1734953027726&cv=11&fst=1734951600000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219...",
+      "timestamp": 1.734953028558546e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953028.559][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-user-list/981179826/?random=1734953027726&cv=11&fst=1734951600000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219...",
+      "timestamp": 1.734953028558564e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953028.559][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.co.jp/pagead/1p-user-list/981179826/?random=1734953027726&cv=11&fst=1734951600000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v8762722...",
+      "timestamp": 1.734953028558656e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953028.559][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.co.jp/pagead/1p-user-list/981179826/?random=1734953027726&cv=11&fst=1734951600000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v8762722...",
+      "timestamp": 1.734953028558694e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953028.559][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.co.jp/pagead/1p-user-list/981179826/?random=1734953027726&cv=11&fst=1734951600000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v8762722...",
+      "timestamp": 1.734953028558753e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953028.559][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.co.jp/pagead/1p-user-list/981179826/?random=1734953027726&cv=11&fst=1734951600000&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v8762722...",
+      "timestamp": 1.734953028558786e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953028.611][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-conversion/981179826/?random=952443191&cv=11&fst=1734953027738&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za2...",
+      "timestamp": 1.734953028611016e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953028.611][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.com/pagead/1p-conversion/981179826/?random=952443191&cv=11&fst=1734953027738&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219za2...",
+      "timestamp": 1.734953028611054e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953028.612][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.co.jp/pagead/1p-conversion/981179826/?random=952443191&cv=11&fst=1734953027738&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219z...",
+      "timestamp": 1.73495302861138e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953028.612][DEBUG]: DevTools WebSocket Event: Log.entryAdded (session_id=FE1FF51E961EDF342C2C1D328AD7E2FA) 8F1BFD5F278D64D8D8D88683F5EBB4A4 {
+   "entry": {
+      "level": "warning",
+      "source": "other",
+      "text": "Tracking Prevention blocked access to storage for https://www.google.co.jp/pagead/1p-conversion/981179826/?random=952443191&cv=11&fst=1734953027738&bg=ffffff&guid=ON&async=1&gtm=45be4cc1v876272219z...",
+      "timestamp": 1.734953028611404e+12,
+      "url": "https://www.netflix.com/jp/"
+   }
+}
+[1734953028.739][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "frameId": "3ED41474E39BB5DA8B393EAF82F93A07"
+}
+[1734953028.739][DEBUG]: DevTools WebSocket Event: Page.loadEventFired (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "timestamp": 63021.652893
+}
+[1734953028.739][DEBUG]: DevTools WebSocket Event: Page.frameStoppedLoading (session_id=301000DCD55E43BC34175A9C3DF90661) 301000DCD55E43BC34175A9C3DF90661 {
+   "frameId": "5D8BBF68592C0092CB446BE6939A4793"
+}
+Trying to load the allocator multiple times. This is *not* supported.
+[1734953036.594][INFO]: [dcd53c4b53398aa00aa9d7170bc4828a] COMMAND Quit {
+}
+[1734953036.650][INFO]: [dcd53c4b53398aa00aa9d7170bc4828a] RESPONSE Quit
+[1734953036.650][DEBUG]: Log type 'driver' lost 0 entries on destruction
+[1734953036.650][DEBUG]: Log type 'browser' lost 69 entries on destruction
